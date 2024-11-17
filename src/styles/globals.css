@@ -2,20 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.curve .svg, .background{
+        position: fixed;
+        height: calc(100vh + 600px);
+        width: 100vw;
+        pointer-events: none;
+        left: 0;
+        top: 0;
+        z-index: 99;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.curve .background{
+        background-color: black;
+        transition: opacity 0s linear 0.1s;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.curve .route{
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        color: white;
+        z-index: 100;
+        transform: translateX(-50%);
+        text-align: center;
 }
