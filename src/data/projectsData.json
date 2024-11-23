@@ -1,14 +1,17 @@
 [
   {
     "title": "Iniva",
-    "description": "Description 1",
-    "image": "https://picsum.photos/1000/1000"
-
+    "description": "Iniva (Institute of International Visual Arts) is an evolving, radical visual arts organisation dedicated to developing an artistic programme that reflects on the social and political impact of globalisation.",
+    "image": "/images/projects/iniva/iniva.jpg",
+    "imageGrid" : [
+      "/images/projects/iniva/iniva.jpg",
+      "/images/projects/iniva/iniva.jpg"
+    ]
   },
   {
     "title": "Project 2",
-    "description": "Description 2",
-    "image": "https://picsum.photos/1500/1000"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod\n semper nunc, vel ultricies sapien. Nulla facilisi. Nullam nec.",
+    "image": "https://picsum.photos/1400/1000"
   },
   {
     "title": "Project 3",

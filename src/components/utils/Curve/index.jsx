@@ -8,7 +8,7 @@ const routes = {
     "/": "Accueil",
     "/about": "À Propos",
     "/projects": "Projets",
-    "/projects/[slug]": "Projets 1"
+    "/test": "Test"
 }
 
 const anim = (variants) => {
@@ -44,8 +44,8 @@ export default function Curve({children, backgroundColor}) {
     return (
         <div className='page curve' style={{backgroundColor}}>
             <div style={{opacity: dimensions.width == null ? 1 : 0}} className='background'/>
-            <motion.p className='route font-secondary md:text-6xl uppercase italic' {...anim(text)}>
-                {routes[router.route]}
+            <motion.p className='route font-primary text-3xl md:text-6xl uppercase' {...anim(text)}>
+                {routes[router.route] || 'Default Route'}
             </motion.p>
             {dimensions.width != null && <SVG {...dimensions}/>}
             {children}
@@ -57,7 +57,7 @@ const SVG = ({height, width}) => {
 
     const initialPath = `
         M0 300 
-        Q${width/2} 0 ${width} 300
+        Q${width / 2} 0 ${width} 300
         L${width} ${height + 300}
         Q${width/2} ${height + 600} 0 ${height + 300}
         L0 0

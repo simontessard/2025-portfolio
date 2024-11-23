@@ -4,8 +4,8 @@ export default function Nav() {
     return (
         <nav className="ml-auto">
             <ul className="flex gap-8 justify-center">
-                <NavLink href="/projects" text="Projects"/>
-                <NavLink href="/about" text="About"/>
+                <NavLink href="/projects" text="Projets"/>
+                <NavLink href="/about" text="à propos"/>
             </ul>
         </nav>
     )

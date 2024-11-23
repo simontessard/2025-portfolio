@@ -1,9 +1,10 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import Header from "@/components/global/Header";
+import Header from "@/components/global/Header/Header";
 import {Merriweather} from "next/font/google";
 import {Fira_Sans} from "next/font/google";
 import {AnimatePresence} from "framer-motion";
+import Scroll from "@/components/utils/Scroll";
 
 const poppins = Fira_Sans({
     subsets: ["latin"],
@@ -20,10 +21,12 @@ const fraunces = Merriweather({
 export default function App({ Component, pageProps, router }: AppProps) {
   return (
       <div className={`${poppins.variable} ${fraunces.variable}`}>
-        <Header/>
-          <AnimatePresence mode='wait'>
-              <Component key={router.route} {...pageProps} />
-          </AnimatePresence>
+          <Scroll>
+              <Header/>
+              <AnimatePresence mode='wait'>
+                  <Component key={router.route} {...pageProps} />
+              </AnimatePresence>
+          </Scroll>
       </div>
   )
 }
