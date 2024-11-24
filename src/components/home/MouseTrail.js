@@ -1,7 +1,7 @@
 'use client';
 import { useRef, useEffect } from 'react';
 
-export default function MouseTrail() {
+export default function MouseTrail({ children, className }) {
     let steps = 0;
     let currentIndex = 0;
     let nbOfImages = 0;
@@ -12,7 +12,6 @@ export default function MouseTrail() {
     const manageMouseMove = (e) => {
         const { clientX, clientY, movementX, movementY } = e;
 
-        // Réinitialiser le timeout d'inactivité
         resetIdleTimer();
 
         steps += Math.abs(movementX) + Math.abs(movementY);
@@ -44,7 +43,7 @@ export default function MouseTrail() {
     const setZIndex = () => {
         const images = getCurrentImages();
         for (let i = 0; i < images.length; i++) {
-            images[i].style.zIndex = i;
+            images[i].style.zIndex = 50 + i;
         }
     };
 
@@ -82,19 +81,18 @@ export default function MouseTrail() {
     };
 
     useEffect(() => {
-        // Nettoyer le timeout lors du démontage du composant
         return () => {
             if (idleTimeout) clearTimeout(idleTimeout);
         };
     }, []);
 
     return (
-        <div
-            onMouseMove={(e) => {
-                manageMouseMove(e);
-            }}
-            className="flex h-screen relative bg-red-100 overflow-hidden"
-        >
+        <div onMouseMove={(e) => {manageMouseMove(e)}}
+            onMouseLeave={() => {hideAllImages()}}
+            className={`relative cursor-pointer ${className}`}>
+
+            {children}
+
             {
                 [...Array(19).keys()].map((_, index) => {
                     const ref = useRef(null);
