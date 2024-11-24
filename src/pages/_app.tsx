@@ -19,11 +19,15 @@ const fraunces = Merriweather({
 });
 
 export default function App({ Component, pageProps, router }: AppProps) {
+  const OnExitComplete = () => {
+        window.scrollTo({ top: 0 });
+  };
+
   return (
       <div className={`${poppins.variable} ${fraunces.variable}`}>
           <Scroll>
               <Header/>
-              <AnimatePresence mode='wait'>
+              <AnimatePresence mode='wait' onExitComplete={OnExitComplete}>
                   <Component key={router.route} {...pageProps} />
               </AnimatePresence>
           </Scroll>

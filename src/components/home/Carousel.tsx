@@ -12,7 +12,7 @@ export default function Carousel() {
                 slidesPerView={1}
                 autoplay={{delay: 500}}
                 effect="fade"
-                className="max-lg:h-1/2 w-full lg:w-2/5 lg:mt-20"
+                className="max-lg:h-1/2 w-full lg:w-2/5 2xl:w-1/2 lg:mt-20"
                 >
                 <SwiperSlide>
                     <img src="https://picsum.photos/1500/1000" alt="Random" className="object-cover w-full h-full"/>

@@ -1,5 +1,5 @@
 "use client";
-import Projet from "@/pages/projects/Project";
+import Projet from "@/components/projects/Project";
 import projects from "@/data/projectsData.json";
 import {gsap} from "gsap";
 import {useGSAP} from "@gsap/react";
@@ -28,9 +28,9 @@ export default function ProjectsGrid() {
     })
 
     return (
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 md:gap-y-14 md:gap-x-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-y-14 md:gap-x-12">
             {projects.map((project, index) => (
-                <Projet key={index} {...project} index={index}/>
+                <Projet key={index} {...project} index={'iniva'}/>
             ))}
         </div>
     )

@@ -50,7 +50,7 @@ export default function Menu() {
                         <MenuLink href="/projects" text="projets" hideMenu={hideMenu}/>
                         <MenuLink href="/about" text="à propos" hideMenu={hideMenu}/>
                     </div>
-                    <div className="flex gap-6 text-white font-medium uppercase w-full">
+                    <div className="flex gap-6 md:gap-8 text-white font-medium uppercase w-full">
                         <p>LinkedIn</p>
                         <p>Email</p>
                     </div>
