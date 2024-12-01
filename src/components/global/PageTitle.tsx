@@ -1,7 +1,7 @@
-export default function PageTitle({ title }: { title: string }) {
+export default function PageTitle({ title, className }: { title: string, className?: string }) {
     return (
-        <h1 className="max-lg:text-center font-primary text-primary tracking-tight
-        font-medium text-5xl lg:text-6xl xl:text-7xl uppercase mb-16 lg:mb-24 xl:mb-32">
+        <h1 className={`font-primary text-primary tracking-tight
+        font-medium text-5xl lg:text-6xl xl:text-7xl uppercase ${className}`}>
             {title}
         </h1>
     )

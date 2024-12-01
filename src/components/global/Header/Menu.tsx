@@ -36,7 +36,7 @@ export default function Menu() {
     }
 
     return (
-        <div className="menu hidden fixed z-50 top-0 h-screen bg-primary w-full flex-col justify-between p-4 lg:p-6">
+        <div className="menu hidden fixed z-50 top-0 h-screen bg-black w-full flex-col justify-between p-4 lg:p-6">
             <div className="flex justify-between w-full">
                 <span className="text-white md:text-lg font-primary">S. TESSARD</span>
                 <MenuCloseButton/>
@@ -44,9 +44,9 @@ export default function Menu() {
             <div className="flex justify-between">
 
                 <div className="flex flex-col justify-end">
-                    <div className="flex flex-wrap items-center md:max-w-xl xl:max-w-4xl gap-y-6 xl:gap-y-8 gap-x-6 md:gap-x-8 xl:gap-x-10 self-end w-full mb-12 md:mb-20">
+                    <div className="flex flex-wrap items-center md:max-w-xl xl:max-w-4xl gap-y-2 xl:gap-y-4 gap-x-6 md:gap-x-7 xl:gap-x-8 self-end w-full mb-12 md:mb-20">
                         <MenuLink href="/" text="accueil" hideMenu={hideMenu}/>
-                        <span className="block size-3 md:size-4 xl:size-5 bg-white rounded-full"/>
+                        <span className="block size-3 md:size-4 xl:size-4 bg-white rounded-full"/>
                         <MenuLink href="/projects" text="projets" hideMenu={hideMenu}/>
                         <MenuLink href="/about" text="à propos" hideMenu={hideMenu}/>
                     </div>
@@ -66,11 +66,15 @@ export default function Menu() {
 function MenuLink({href, text, hideMenu}) {
     const pathname = usePathname();
     return (
-        <Link onClick={hideMenu} href={href} className={`relative text-white tracking-tight font-primary uppercase 
-        text-4xl md:text-5xl xl:text-7xl 2xl:text-8xl`}>
+        <Link onClick={hideMenu} href={href}
+              className={`relative group overflow-hidden text-white tracking-tight font-primary py-2 uppercase text-4xl md:text-5xl xl:text-7xl`}>
             {text}
             {pathname === href &&
-                <span className="absolute top-0 bottom-0 my-auto bg-white block h-1 md:h-1.5 w-full"/>}
+                <span className="absolute top-0 bottom-0 my-auto bg-white block h-1 xl:h-1.5 w-full"/>
+            }
+            {pathname != href &&
+                <span className="absolute top-0 bottom-0 -left-full my-auto bg-white block h-1 xl:h-1.5 w-full md:group-hover:translate-x-full transition-transform duration-300"/>
+            }
         </Link>
     )
 }

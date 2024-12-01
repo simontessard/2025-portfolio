@@ -1,6 +1,6 @@
 export default function Intro() {
     return (
-        <div className="flex max-lg:flex-col justify-between w-full mb-24 md:mb-40">
+        <div className="flex max-lg:flex-col justify-between w-full mb-24 md:mb-40 lg:pr-8 xl:pr-20 2xl:pr-52">
             <h2 className="uppercase text-4xl lg:text-5xl xl:text-6xl text-primary font-semibold max-lg:mb-12">
                 à propos
             </h2>

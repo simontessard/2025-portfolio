@@ -1,5 +1,6 @@
 'use client';
 import { useRef, useEffect } from 'react';
+import {gsap} from "gsap";
 
 export default function MouseTrail({ children, className }) {
     let steps = 0;
@@ -34,7 +35,11 @@ export default function MouseTrail({ children, className }) {
         const currentImage = refs[currentIndex].current;
         currentImage.style.left = x + "px";
         currentImage.style.top = y + "px";
-        currentImage.style.display = "block";
+        gsap.to(currentImage, {
+            display: "block",
+            duration: 0.3,
+            scale: 1,
+        })
         currentIndex++;
         nbOfImages++;
         setZIndex();
@@ -49,7 +54,11 @@ export default function MouseTrail({ children, className }) {
 
     const removeImage = () => {
         const images = getCurrentImages();
-        images[0].style.display = "none";
+        gsap.to(images[0], {
+            display: "none",
+            duration: 0.3,
+            scale: 0,
+        })
         nbOfImages--;
     };
 
@@ -74,7 +83,11 @@ export default function MouseTrail({ children, className }) {
     const hideAllImages = () => {
         refs.forEach((ref) => {
             if (ref.current) {
-                ref.current.style.display = "none";
+                gsap.to(ref.current, {
+                    scale: 0,
+                    display: "none",
+                    duration: 0.3,
+                });
             }
         });
         nbOfImages = 0;
@@ -101,7 +114,7 @@ export default function MouseTrail({ children, className }) {
                         <img
                             key={index}
                             ref={ref}
-                            className="size-40 object-cover absolute hidden -translate-y-1/2 -translate-x-1/2"
+                            className="scale-0 size-40 object-cover absolute hidden -translate-y-1/2 -translate-x-1/2"
                             src={`/images/${index}.jpg`}
                         />
                     );

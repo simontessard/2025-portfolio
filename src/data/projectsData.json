@@ -1,12 +1,16 @@
 [
   {
     "path": "iniva",
-    "title": "Iniva",
-    "description": "Iniva (Institute of International Visual Arts) is an evolving, radical visual arts organisation dedicated to developing an artistic programme that reflects on the social and political impact of globalisation.",
+    "title": "Iniva Tourism",
+    "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine pour Iniva Tourism, une suite d'hôtels située au Gabon.",
     "cover": "/images/projects/iniva/iniva.jpg",
     "gallery" : [
       "/images/projects/iniva/iniva-main.png",
-      "/images/projects/iniva/iniva.jpg"
+      "/images/projects/iniva/desktop-1.png",
+      "/images/projects/iniva/phone.png",
+      "/images/projects/iniva/phone-2.png",
+      "/images/projects/iniva/phone-3.png",
+      "/images/projects/iniva/desktop-map.png"
     ]
   },
   {

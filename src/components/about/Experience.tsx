@@ -2,19 +2,22 @@ export default function Experience() {
     const experience = [
         {
             title: "Fondateur",
-            company: "Linary"
+            company: "Linary",
+            date: "2025 - Aujourd'hui"
         },
         {
             title: "Développeur full-stack",
-            company: "Freelance"
+            company: "Freelance",
+            date: "2024 - Aujourd'hui"
         },
         {
             title: "Développeur Front-end",
-            company: "Cobalt Studio"
+            company: "Cobalt Studio",
+            date: "2023 - 2024"
         }
     ];
     return (
-        <div className="flex max-lg:flex-col lg:items-start justify-between w-full mb-24 md:mb-32">
+        <div className="flex max-lg:flex-col lg:items-start justify-between w-full mb-24 md:mb-32 lg:pr-8 xl:pr-20 2xl:pr-52">
             <h2 className="uppercase text-4xl lg:text-5xl xl:text-6xl text-primary font-semibold max-lg:mb-14">
                 Expériences
             </h2>
@@ -22,9 +25,12 @@ export default function Experience() {
                 {experience.map((exp, index) => (
                     <li key={index} className="pb-6 lg:pb-8">
                         <span className="block h-0.5 w-full bg-primary mb-6 lg:mb-8"></span>
-                        <p className="uppercase text-primary text-2xl lg:text-3xl font-medium mb-2">{exp.title}</p>
-                        <p className="text-primary text-lg md:text-xl tracking-tight uppercase font-primary">
-                            {exp.company}
+                        <div className="flex justify-between">
+                            <p className="uppercase text-primary text-xl lg:text-3xl font-medium mb-2">{exp.title}</p>
+                            <p className="uppercase text-primary lg:text-xl font-medium mb-2">{exp.date}</p>
+                        </div>
+                        <p className="text-primary md:text-xl tracking-tight uppercase font-primary">
+                        {exp.company}
                         </p>
                     </li>
                 ))}
