@@ -7,9 +7,13 @@ export default function Projects() {
 
     return (
         <Curve>
-            <section className="bg-white px-4 md:px-6 pt-32 md:pt-40 xl:pt-44 pb-6">
-                <PageTitle title="Projets" className="mb-16 lg:mb-20 xl:mb-24"/>
-                <ProjectsGrid/>
+            <section className="bg-white">
+                <span id="top" className="opacity-0">top</span>
+
+                <div className="px-4 md:px-6 pt-32 md:pt-40 xl:pt-44 pb-6">
+                    <PageTitle title="Projets" className="mb-16 lg:mb-20 xl:mb-24"/>
+                    <ProjectsGrid/>
+                </div>
             </section>
             <Footer/>
         </Curve>
