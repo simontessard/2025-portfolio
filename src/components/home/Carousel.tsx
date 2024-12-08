@@ -15,16 +15,16 @@ export default function Carousel() {
                 className="size-full"
                 >
                 <SwiperSlide>
-                    <img src="/images/projects/iniva/iniva.jpg" alt="Random" className="object-cover size-full"/>
+                    <img src="/images/home/elephant.jpg" alt="Random" className="object-cover size-full"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://picsum.photos/1400/1000" alt="Random" className="object-cover size-full"/>
+                    <img src="/images/home/iniva.jpg" alt="Random" className="object-cover size-full"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://picsum.photos/1600/1000" alt="Random" className="object-cover size-full"/>
+                    <img src="/images/home/stairs.jpg" alt="Random" className="object-cover size-full"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://picsum.photos/1300/1000" alt="Random" className="object-cover size-full"/>
+                    <img src="/images/home/house.png" alt="Random" className="object-cover size-full"/>
                 </SwiperSlide>
             </Swiper>
     )

@@ -1,11 +1,6 @@
 export default function Experience() {
     const experience = [
         {
-            title: "Fondateur",
-            company: "Linary",
-            date: "2025 - Aujourd'hui"
-        },
-        {
             title: "Développeur full-stack",
             company: "Freelance",
             date: "2024 - Aujourd'hui"
@@ -26,11 +21,15 @@ export default function Experience() {
                     <li key={index} className="pb-6 lg:pb-8">
                         <span className="block h-0.5 w-full bg-primary mb-6 lg:mb-8"></span>
                         <div className="flex justify-between">
-                            <p className="uppercase text-primary text-xl lg:text-3xl font-medium mb-2">{exp.title}</p>
-                            <p className="uppercase text-primary lg:text-xl font-medium mb-2">{exp.date}</p>
+                            <p className="uppercase text-primary text-xl lg:text-3xl font-medium mb-2">
+                                {exp.title}
+                            </p>
+                            <p className="uppercase text-primary lg:text-xl font-medium mb-2">
+                                {exp.date}
+                            </p>
                         </div>
                         <p className="text-primary md:text-xl tracking-tight uppercase font-primary">
-                        {exp.company}
+                            {exp.company}
                         </p>
                     </li>
                 ))}

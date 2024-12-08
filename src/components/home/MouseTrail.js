@@ -104,7 +104,7 @@ export default function MouseTrail({ children, className }) {
             onMouseLeave={() => {hideAllImages()}}
             className={`relative cursor-pointer ${className}`}>
 
-            {children}
+              {children}
 
             {
                 [...Array(19).keys()].map((_, index) => {
@@ -114,6 +114,7 @@ export default function MouseTrail({ children, className }) {
                         <img
                             key={index}
                             ref={ref}
+                            alt="Image carré"
                             className="scale-0 size-40 object-cover absolute hidden -translate-y-1/2 -translate-x-1/2"
                             src={`/images/${index}.jpg`}
                         />

@@ -21,25 +21,25 @@ export default function InfiniteCarousel() {
             className="swiper-container-free-mode mb-16 md:mb-24 xl:mb-32"
         >
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4">
-                <img src="https://picsum.photos/1500/1000" alt="Random" className="object-cover size-full"/>
+                <img src="/images/home/iniva.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4">
-                <img src="https://picsum.photos/1400/1000" alt="Random" className="object-cover size-full"/>
+                <img src="/images/home/house.png" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4">
-                <img src="https://picsum.photos/1600/1000" alt="Random" className="object-cover size-full"/>
+                <img src="/images/home/elephant.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4">
-                <img src="https://picsum.photos/1300/1000" alt="Random" className="object-cover size-full"/>
+                <img src="/images/home/stairs.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4">
-                <img src="https://picsum.photos/1000/1000" alt="Random" className="object-cover size-full"/>
+                <img src="/images/home/stairs.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4">
-                <img src="https://picsum.photos/1100/1000" alt="Random" className="object-cover size-full"/>
+                <img src="/images/home/house.png" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4">
-                <img src="https://picsum.photos/1400/1000" alt="Random" className="object-cover size-full"/>
+                <img src="/images/home/house.png" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
         </Swiper>
     )
