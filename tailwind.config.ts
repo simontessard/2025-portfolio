@@ -13,7 +13,7 @@ const config: Config = {
         secondary: ["var(--font-fraunces)"],
       },
       colors: {
-        primary: "#5d0362",
+        primary: "#00509d",
         secondary: "#005db4",
         background: "var(--background)",
         foreground: "var(--foreground)",

@@ -14,10 +14,10 @@
         left: 0;
         top: 0;
         z-index: 99;
-        fill : #5d0362;
+        fill : #00509d;
 }
 .curve .background{
-        background-color: #5d0362;
+        background-color: #00509d;
         transition: opacity 0s linear 0.1s;
 }
 .curve .route{
