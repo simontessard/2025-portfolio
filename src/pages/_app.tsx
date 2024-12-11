@@ -5,6 +5,7 @@ import {Merriweather} from "next/font/google";
 import {Fira_Sans} from "next/font/google";
 import {AnimatePresence} from "framer-motion";
 import Scroll from "@/components/utils/Scroll";
+import localFont from 'next/font/local'
 
 const poppins = Fira_Sans({
     subsets: ["latin"],
@@ -18,13 +19,15 @@ const fraunces = Merriweather({
     variable: "--font-fraunces",
 });
 
+const editorial = localFont({ src: './fonts/pp-editorial-new-regular.otf' })
+
 export default function App({ Component, pageProps, router }: AppProps) {
   const OnExitComplete = () => {
         window.scrollTo({ top: 0 });
   };
 
   return (
-      <div className={`${poppins.variable} ${fraunces.variable}`}>
+      <div className={`${poppins.variable} ${fraunces.variable} ${editorial.className}`}>
           <Scroll>
               <Header/>
               <AnimatePresence mode='wait' onExitComplete={OnExitComplete}>

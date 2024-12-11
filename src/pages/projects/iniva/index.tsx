@@ -14,19 +14,19 @@ export default function Project() {
             <span id="top" className="opacity-0">top</span>
 
             <div className="pt-32 md:pt-40 xl:pt-44 pb-12 px-4 md:px-6 ">
-                <div className="flex max-xl:flex-col xl:justify-between w-full xl:items-end">
+                <div className="flex flex-col w-full ">
 
                     <Heading project={project}/>
 
                     <Link href="https://inivatourism.com/" target="_blank"
-                          className="group size-fit max-xl:ml-auto flex items-center gap-2 uppercase md:text-lg xl:text-2xl text-primary font-medium">
-                        Voir le site
-                        <svg
-                            className="shrink-0 -rotate-45 size-6 xl:size-7 md:group-hover:-translate-y-0.5 md:group-hover:translate-x-0.5 duration-500"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" strokeWidth="2"
-                                  strokeLinecap="round" strokeLinejoin="round"/>
+                          className="group size-fit flex items-center gap-2 font-primary uppercase text-xl md:text-2xl xl:text-3xl text-primary font-semibold">
+                        Visiter le site
+                        <svg className="shrink-0 rotate-45 size-7 md:size-8 xl:size-10 md:group-hover:-translate-y-0.5 md:group-hover:translate-x-0.5 duration-500"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
+                            <path fillRule="evenodd" clipRule="evenodd"
+                                  d="M12.252 41L41 12.252 69.749 41l-4.832 4.832-20.5-20.5v43.002h-6.834V25.331l-20.5 20.5L12.252 41z"
+                                  fill="currentColor"
+                            />
                         </svg>
                     </Link>
 
@@ -38,7 +38,7 @@ export default function Project() {
                 <MainImage project={project}/>
                 <Carousel project={project}/>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-10">
                     <img
                         className="object-cover size-full"
                         src={project.gallery[1]}

@@ -1,10 +1,10 @@
 export default function Intro() {
     return (
         <div className="flex max-lg:flex-col justify-between w-full mb-24 md:mb-40 lg:pr-8 xl:pr-20 2xl:pr-52">
-            <h2 className="uppercase text-4xl lg:text-5xl xl:text-6xl text-primary font-semibold max-lg:mb-12">
+            <h2 className="uppercase font-primary text-4xl lg:text-5xl xl:text-6xl text-primary font-semibold max-lg:mb-12">
                 à propos
             </h2>
-            <div className="w-full lg:w-1/2">
+            <div className="w-full lg:w-1/2 font-primary">
                 <p className="tracking-tight text-xl lg:text-2xl md:leading-9 md:max-w-6xl uppercase text-primary lg:font-medium mb-8">
                     Je suis Simon TESSARD, un Développeur Web de 24 ans vivant à Rennes.
                 </p>

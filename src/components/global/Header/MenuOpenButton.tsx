@@ -19,7 +19,7 @@ export function MenuCloseButton() {
     }
     return (
         <button onClick={closeMenu} className="size-fit uppercase tracking-tight font-primary text-white">
-            Close
+            Fermer
         </button>
     )
 }

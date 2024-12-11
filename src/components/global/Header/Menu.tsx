@@ -51,8 +51,8 @@ export default function Menu() {
                         <MenuLink href="/about" text="à propos" hideMenu={hideMenu}/>
                     </div>
                     <div className="flex gap-6 md:gap-8 text-white font-medium uppercase w-full">
-                        <p>LinkedIn</p>
-                        <p>Email</p>
+                        <a href="https://www.linkedin.com/in/simon-tessard-138733198/" target="_blank">LinkedIn</a>
+                        <a href="mailto:pro@simontessard.fr" target="_blank">Email</a>
                     </div>
                 </div>
 
@@ -66,8 +66,7 @@ export default function Menu() {
 function MenuLink({href, text, hideMenu}) {
     const pathname = usePathname();
     return (
-        <Link onClick={hideMenu} href={href}
-              className={`relative group overflow-hidden text-white tracking-tight font-primary py-2 uppercase text-4xl md:text-5xl xl:text-7xl`}>
+        <Link onClick={hideMenu} href={href} className={`relative group overflow-hidden text-white tracking-tight font-primary py-2 uppercase text-4xl md:text-5xl xl:text-7xl`}>
             {text}
             {pathname === href &&
                 <span className="absolute top-0 bottom-0 my-auto bg-white block h-1 xl:h-1.5 w-full"/>

@@ -10,10 +10,13 @@ export default function Projet({ title, description, cover, index }) {
                 <h2 className="text-primary tracking-tight font-primary text-2xl md:text-3xl uppercase">
                     {title}
                 </h2>
-                <svg className="size-6 md:size-7 stroke-primary md:group-hover:-translate-x-1 transition-transform duration-300"
-                     width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 12H20M20 12L14 6M20 12L14 18" strokeWidth="2"
-                          strokeLinecap="round" strokeLinejoin="round"/>
+                <svg
+                    className="rotate-90 text-primary size-7 lg:size-8 md:group-hover:-translate-x-1 transition-transform duration-300"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
+                    <path fillRule="evenodd" clipRule="evenodd"
+                          d="M12.252 41L41 12.252 69.749 41l-4.832 4.832-20.5-20.5v43.002h-6.834V25.331l-20.5 20.5L12.252 41z"
+                          fill="currentColor"
+                    />
                 </svg>
             </div>
         </Link>

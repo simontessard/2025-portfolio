@@ -1,19 +1,19 @@
 export default function Experience() {
     const experience = [
         {
-            title: "Développeur full-stack",
+            title: "Développeur Full-stack",
             company: "Freelance",
             date: "2024 - Aujourd'hui"
         },
         {
-            title: "Développeur Front-end",
+            title: "Développeur Full-stack",
             company: "Cobalt Studio",
             date: "2023 - 2024"
         }
     ];
     return (
         <div className="flex max-lg:flex-col lg:items-start justify-between w-full mb-24 md:mb-32 lg:pr-8 xl:pr-20 2xl:pr-52">
-            <h2 className="uppercase text-4xl lg:text-5xl xl:text-6xl text-primary font-semibold max-lg:mb-14">
+            <h2 className="uppercase font-primary text-4xl lg:text-5xl xl:text-6xl text-primary font-semibold max-lg:mb-14">
                 Expériences
             </h2>
             <ul className="w-full lg:w-1/2">
@@ -21,10 +21,10 @@ export default function Experience() {
                     <li key={index} className="pb-6 lg:pb-8">
                         <span className="block h-0.5 w-full bg-primary mb-6 lg:mb-8"></span>
                         <div className="flex justify-between">
-                            <p className="uppercase text-primary text-xl lg:text-3xl font-medium mb-2">
+                            <p className="uppercase text-primary font-primary text-xl lg:text-3xl font-medium mb-2">
                                 {exp.title}
                             </p>
-                            <p className="uppercase text-primary lg:text-xl font-medium mb-2">
+                            <p className="uppercase text-primary font-primary lg:text-xl font-medium mb-2">
                                 {exp.date}
                             </p>
                         </div>
