@@ -50,7 +50,7 @@ export default function Menu() {
                         <MenuLink href="/projects" text="projets" hideMenu={hideMenu}/>
                         <MenuLink href="/about" text="à propos" hideMenu={hideMenu}/>
                     </div>
-                    <div className="flex gap-6 md:gap-8 text-white font-medium uppercase w-full">
+                    <div className="flex gap-6 md:gap-8 text-white font-primary font-medium uppercase w-full">
                         <a href="https://www.linkedin.com/in/simon-tessard-138733198/" target="_blank">LinkedIn</a>
                         <a href="mailto:pro@simontessard.fr" target="_blank">Email</a>
                     </div>

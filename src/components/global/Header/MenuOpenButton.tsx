@@ -6,7 +6,7 @@ export default function MenuOpenButton() {
         setMenuIsOpen(true);
     }
     return (
-        <button onClick={openMenu} className="size-fit uppercase tracking-tight font-primary text-primary">
+        <button onClick={openMenu} className="size-fit uppercase md:text-lg tracking-tight font-primary text-primary">
             Menu
         </button>
     )
@@ -18,7 +18,7 @@ export function MenuCloseButton() {
         setMenuIsOpen(false);
     }
     return (
-        <button onClick={closeMenu} className="size-fit uppercase tracking-tight font-primary text-white">
+        <button onClick={closeMenu} className="size-fit uppercase md:text-lg tracking-tight font-primary text-white">
             Fermer
         </button>
     )

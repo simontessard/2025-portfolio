@@ -19,9 +19,9 @@ export default function Project() {
                     <Heading project={project}/>
 
                     <Link href="https://inivatourism.com/" target="_blank"
-                          className="group size-fit flex items-center gap-2 font-primary uppercase text-xl md:text-2xl xl:text-3xl text-primary font-semibold">
+                          className="group size-fit flex items-center gap-2 font-primary uppercase text-lg md:text-xl xl:text-2xl text-primary font-semibold">
                         Visiter le site
-                        <svg className="shrink-0 rotate-45 size-7 md:size-8 xl:size-10 md:group-hover:-translate-y-0.5 md:group-hover:translate-x-0.5 duration-500"
+                        <svg className="shrink-0 rotate-45 size-6 md:size-7 xl:size-8 md:group-hover:-translate-y-0.5 md:group-hover:translate-x-0.5 duration-500"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
                             <path fillRule="evenodd" clipRule="evenodd"
                                   d="M12.252 41L41 12.252 69.749 41l-4.832 4.832-20.5-20.5v43.002h-6.834V25.331l-20.5 20.5L12.252 41z"

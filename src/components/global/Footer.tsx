@@ -23,7 +23,7 @@ export default function Footer() {
                     </div>
 
                     <button onClick={() => lenis.scrollTo('#top', {lerp: 0.01})}>
-                        <svg className="shrink-0 size-16 md:size-20 xl:size-24 text-primary"
+                        <svg className="shrink-0 size-12 md:size-16 xl:size-20 text-primary"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
                             <path fillRule="evenodd" clipRule="evenodd"
                                   d="M12.252 41L41 12.252 69.749 41l-4.832 4.832-20.5-20.5v43.002h-6.834V25.331l-20.5 20.5L12.252 41z"
@@ -35,7 +35,7 @@ export default function Footer() {
 
             </div>
 
-            <div className="flex max-md:justify-center gap-6 text-primary font-medium uppercase w-full">
+            <div className="flex max-md:justify-center gap-6 font-primary text-primary uppercase w-full">
                 <a href="https://www.linkedin.com/in/simon-tessard-138733198/" target="_blank">LinkedIn</a>
                 <a href="mailto:pro@simontessard.fr" target="_blank">Email</a>
             </div>
