@@ -21,7 +21,7 @@ const anim = (variants) => {
     }
 }
 
-export default function Curve({children, backgroundColor}) {
+export default function Curve({children}) {
     const router = useRouter();
     const [dimensions, setDimensions] = useState({
         width: null,
@@ -43,7 +43,7 @@ export default function Curve({children, backgroundColor}) {
     }, [])
 
     return (
-        <div className='page curve' style={{backgroundColor}}>
+        <div className='page curve'>
             <div style={{opacity: dimensions.width == null ? 1 : 0}} className='background'/>
                 <motion.p className='route text-center text-white font-primary text-3xl md:text-6xl uppercase' {...anim(text)}>
                     {routes[router.route]}
