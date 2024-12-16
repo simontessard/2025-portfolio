@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["var(--font-poppins)"],
-        secondary: ["var(--font-fraunces)"],
+        primary: ["var(--font-montreal)"],
+        secondary: ["var(--font-editorial)"],
       },
       colors: {
         primary: "#00509d",

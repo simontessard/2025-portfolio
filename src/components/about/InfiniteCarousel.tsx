@@ -15,7 +15,7 @@ export default function InfiniteCarousel() {
                 },
             }}
             freeMode={true}
-            speed={10000}
+            speed={8000}
             loop={true}
             autoplay={{delay: 1, disableOnInteraction: false, pauseOnMouseEnter: true, waitForTransition: true, stopOnLastSlide: false}}
             className="swiper-container-free-mode mb-16 md:mb-24 xl:mb-32"

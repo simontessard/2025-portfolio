@@ -19,7 +19,8 @@ const fraunces = Merriweather({
     variable: "--font-fraunces",
 });
 
-const editorial = localFont({ src: './../../public/fonts/pp-editorial-new-regular.otf' })
+const montreal = localFont({ src: './../../public/fonts/pp-neue-montreal/ppneuemontreal-medium.otf', variable: '--font-montreal' })
+const editorial = localFont({ src: './../../public/fonts/pp-edito.otf', variable: '--font-editorial' })
 
 export default function App({ Component, pageProps, router }: AppProps) {
   const OnExitComplete = () => {
@@ -27,7 +28,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
   };
 
   return (
-      <div className={`${poppins.variable} ${fraunces.variable} ${editorial.className}`}>
+      <div className={`${poppins.variable} ${fraunces.variable} ${montreal.variable} ${editorial.variable}`}>
           <Scroll>
               <Header/>
               <AnimatePresence mode='wait' onExitComplete={OnExitComplete}>

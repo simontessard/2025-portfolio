@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <footer className="flex flex-col border-t-2 border-t-primary pt-8 pb-4 mx-4 md:mx-6 mt-8 md:mt-16 xl:mt-20">
 
-            <div className="flex flex-col gap-6 md:gap-4 mb-6 md:mb-8">
+            <div className="flex flex-col gap-6 md:gap-4 mb-6 md:mb-10">
                 <div className="flex items-start justify-between w-full">
 
                     <div className="flex flex-col">
@@ -23,11 +23,8 @@ export default function Footer() {
                     </div>
 
                     <button onClick={() => lenis?.scrollTo('#top', {lerp: 0.01})}>
-                        <svg className="shrink-0 size-12 md:size-16 xl:size-20 text-primary"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
-                            <path fillRule="evenodd" clipRule="evenodd"
-                                  d="M12.252 41L41 12.252 69.749 41l-4.832 4.832-20.5-20.5v43.002h-6.834V25.331l-20.5 20.5L12.252 41z"
-                                  fill="currentColor"/>
+                        <svg className="shrink-0 size-12 md:size-16 xl:size-20 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
+                            <path fillRule="evenodd" clipRule="evenodd" d="M12.252 41L41 12.252 69.749 41l-4.832 4.832-20.5-20.5v43.002h-6.834V25.331l-20.5 20.5L12.252 41z" fill="currentColor"/>
                         </svg>
                     </button>
 
@@ -36,8 +33,12 @@ export default function Footer() {
             </div>
 
             <div className="flex max-md:justify-center gap-6 font-primary text-primary uppercase w-full">
-                <a href="https://www.linkedin.com/in/simon-tessard-138733198/" target="_blank">LinkedIn</a>
-                <a href="mailto:pro@simontessard.fr" target="_blank">Email</a>
+                <Link href="https://www.linkedin.com/in/simon-tessard-138733198/" target="_blank">
+                    LinkedIn
+                </Link>
+                <Link href="mailto:pro@simontessard.fr" target="_blank">
+                    Email
+                </Link>
             </div>
 
         </footer>
@@ -47,7 +48,7 @@ export default function Footer() {
 function FooterLink({href, text} : {href: string, text: string}) {
     const pathname = usePathname();
     return (
-        <Link href={href} className={`relative group size-fit overflow-hidden text-primary tracking-tight font-primary uppercase text-3xl md:text-4xl xl:pt-1 xl:text-5xl 2xl:text-6xl`}>
+        <Link scroll={false} href={href} className={`relative group size-fit overflow-hidden text-primary tracking-tight font-primary uppercase text-3xl md:text-4xl xl:pt-1 xl:text-5xl 2xl:text-6xl`}>
             {text}
             {pathname === href &&
                 <span className="absolute top-0 bottom-0 my-auto bg-primary block h-1 xl:h-1.5 w-full"/>
