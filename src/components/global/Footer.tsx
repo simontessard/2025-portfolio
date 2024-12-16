@@ -22,7 +22,7 @@ export default function Footer() {
                         <FooterLink href="/about" text="À propos"/>
                     </div>
 
-                    <button onClick={() => lenis.scrollTo('#top', {lerp: 0.01})}>
+                    <button onClick={() => lenis?.scrollTo('#top', {lerp: 0.01})}>
                         <svg className="shrink-0 size-12 md:size-16 xl:size-20 text-primary"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
                             <path fillRule="evenodd" clipRule="evenodd"

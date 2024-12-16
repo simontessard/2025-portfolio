@@ -19,7 +19,7 @@ const fraunces = Merriweather({
     variable: "--font-fraunces",
 });
 
-const editorial = localFont({ src: './fonts/pp-editorial-new-regular.otf' })
+const editorial = localFont({ src: './../../public/fonts/pp-editorial-new-regular.otf' })
 
 export default function App({ Component, pageProps, router }: AppProps) {
   const OnExitComplete = () => {

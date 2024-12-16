@@ -45,10 +45,10 @@ export default function Curve({children, backgroundColor}) {
     return (
         <div className='page curve' style={{backgroundColor}}>
             <div style={{opacity: dimensions.width == null ? 1 : 0}} className='background'/>
-            <motion.p className='route font-primary text-3xl md:text-6xl uppercase' {...anim(text)}>
-                {routes[router.route]}
-            </motion.p>
-            {dimensions.width != null && <SVG {...dimensions}/>}
+                <motion.p className='route text-center text-white font-primary text-3xl md:text-6xl uppercase' {...anim(text)}>
+                    {routes[router.route]}
+                </motion.p>
+                {dimensions.width != null && <SVG {...dimensions}/>}
             {children}
         </div>
     )
