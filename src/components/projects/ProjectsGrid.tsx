@@ -7,11 +7,11 @@ import {useGSAP} from "@gsap/react";
 export default function ProjectsGrid() {
 
     useGSAP( () => {
-        const projects = gsap.utils.toArray('.gsap-project');
+        const projects: HTMLElement[] = gsap.utils.toArray('.gsap-project');
 
         projects.forEach((project, index) => {
             const allProjectsButNotActual: HTMLElement[] = [];
-            allProjectsButNotActual.push(projects.filter((p, i) => i !== index));
+            allProjectsButNotActual.push(...projects.filter((p, i) => i !== index));
             project.addEventListener('mouseenter', () => {
                 gsap.to(allProjectsButNotActual, {
                     duration: .5,
