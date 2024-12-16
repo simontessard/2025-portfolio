@@ -63,7 +63,7 @@ export default function Menu() {
     )
 }
 
-function MenuLink({href, text, hideMenu}) {
+function MenuLink({href, text, hideMenu} : {href: string, text: string, hideMenu: () => void}) {
     const pathname = usePathname();
     return (
         <Link onClick={hideMenu} href={href} className={`relative group overflow-hidden text-white tracking-tight font-primary py-2 uppercase text-4xl md:text-5xl xl:text-7xl`}>
