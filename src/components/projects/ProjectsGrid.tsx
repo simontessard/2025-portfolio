@@ -10,7 +10,7 @@ export default function ProjectsGrid() {
         const projects = gsap.utils.toArray('.gsap-project');
 
         projects.forEach((project, index) => {
-            const allProjectsButNotActual = [];
+            const allProjectsButNotActual: HTMLElement[] = [];
             allProjectsButNotActual.push(projects.filter((p, i) => i !== index));
             project.addEventListener('mouseenter', () => {
                 gsap.to(allProjectsButNotActual, {
