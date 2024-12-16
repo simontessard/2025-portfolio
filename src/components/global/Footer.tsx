@@ -44,7 +44,7 @@ export default function Footer() {
     )
 }
 
-function FooterLink({href, text}) {
+function FooterLink({href, text} : {href: string, text: string}) {
     const pathname = usePathname();
     return (
         <Link href={href} className={`relative group size-fit overflow-hidden text-primary tracking-tight font-primary uppercase text-3xl md:text-4xl xl:pt-1 xl:text-5xl 2xl:text-6xl`}>
