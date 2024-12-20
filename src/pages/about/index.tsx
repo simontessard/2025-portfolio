@@ -11,7 +11,7 @@ export default function About() {
             <span id="top" className="opacity-0">top</span>
 
             <section className="bg-white pt-32 md:pt-36 xl:pt-40">
-                <PageTitle title="Donner la vie à vos idées" className="px-4 md:px-6 mb-6 md:mb-8"/>
+                <PageTitle title="Donner la vie" secondWords="à vos idées" className="px-4 md:px-6 mb-6 md:mb-8"/>
                 <InfiniteCarousel/>
                 <div className="px-4 md:px-6">
                     <Intro/>

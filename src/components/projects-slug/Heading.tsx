@@ -1,21 +1,45 @@
+import Link from "next/link";
+
 export default function Heading({project} : {project: any}) {
     return (
-        <div className="mb-8 md:mb-12">
+        <>
+            <div className="flex flex-col w-full">
 
-            {/* Title */}
-            <div className="flex gap-2 font-primary items-start mb-8 md:mb-12">
-                <h1 className="text-4xl md:text-6xl xl:text-8xl uppercase text-primary font-semibold">
-                    {project.title}
-                </h1>
-                <p className="editorial italic text-primary mt-1 xl:mt-2.5">
-                    {project.date}
-                </p>
+                <div className="mb-8 md:mb-12">
+
+                    {/* Title */}
+                    <div className="flex gap-2 font-primary items-start mb-8 md:mb-12">
+                        <h1 className="text-4xl md:text-6xl xl:text-8xl uppercase text-primary font-semibold">
+                            {project.title}
+                        </h1>
+                        <p className="editorial italic md:text-xl text-primary mt-1 xl:mt-2.5">
+                            {project.date}
+                        </p>
+                    </div>
+
+                    {/* Desc */}
+                    <p className="font-primary text-xl md:text-2xl md:leading-9 md:max-w-4xl 2xl:max-w-4xl uppercase text-primary">
+                        {project.description}
+                    </p>
+                </div>
+
+                <Link href="https://inivatourism.com/" target="_blank"
+                      className="group size-fit flex items-center gap-2 font-primary uppercase text-lg md:text-xl xl:text-2xl text-primary font-semibold">
+                    Visiter le site
+                    <svg
+                        className="shrink-0 rotate-45 size-6 md:size-7 xl:size-8 md:group-hover:-translate-y-0.5 md:group-hover:translate-x-0.5 duration-300"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
+                        <path fillRule="evenodd" clipRule="evenodd"
+                              d="M12.252 41L41 12.252 69.749 41l-4.832 4.832-20.5-20.5v43.002h-6.834V25.331l-20.5 20.5L12.252 41z"
+                              fill="currentColor"
+                        />
+                    </svg>
+                </Link>
+
             </div>
 
-            {/* Desc */}
-            <p className="font-primary text-xl md:text-2xl md:leading-9 md:max-w-4xl 2xl:max-w-4xl uppercase text-primary">
-                {project.description}
-            </p>
-        </div>
+            <span className="block h-0.5 w-full bg-primary my-8 md:my-14"></span>
+
+        </>
     )
 }

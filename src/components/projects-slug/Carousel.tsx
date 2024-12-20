@@ -62,7 +62,7 @@ export default function Carousel({ project }: { project: any }) {
             </Swiper>
 
             <div className="flex gap-1.5 md:gap-2 mt-2 md:mt-4 justify-end">
-                <button className="custom-prev-button enabled:md:hover:-translate-x-1 transition-transform duration-500 disabled:opacity-50">
+                <button className="custom-prev-button enabled:md:hover:-translate-x-1 transition-transform duration-300 disabled:opacity-50">
                     <svg className="size-9 md:size-10 text-primary -rotate-90"
                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
                         <path fillRule="evenodd" clipRule="evenodd"
@@ -71,7 +71,7 @@ export default function Carousel({ project }: { project: any }) {
                         />
                     </svg>
                 </button>
-                <button className="custom-next-button enabled:md:hover:translate-x-1 transition-transform duration-500 disabled:opacity-50">
+                <button className="custom-next-button enabled:md:hover:translate-x-1 transition-transform duration-300 disabled:opacity-50">
                     <svg className="size-9 md:size-10 text-primary rotate-90"
                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
                         <path fillRule="evenodd" clipRule="evenodd"
