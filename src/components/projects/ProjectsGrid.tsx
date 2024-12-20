@@ -7,7 +7,8 @@ import {useGSAP} from "@gsap/react";
 export default function ProjectsGrid() {
 
     useGSAP( () => {
-        const projects: HTMLElement[] = gsap.utils.toArray('.gsap-project');
+        {/*
+         const projects: HTMLElement[] = gsap.utils.toArray('.gsap-project');
 
         projects.forEach((project, index) => {
             const allProjectsButNotActual: HTMLElement[] = [];
@@ -25,6 +26,7 @@ export default function ProjectsGrid() {
                 });
             })
         });
+        */}
     })
 
     return (
