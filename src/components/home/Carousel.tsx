@@ -15,9 +15,7 @@ export default function Carousel() {
                 effect="fade"
                 className="size-full"
                 >
-                <SwiperSlide>
-                    <img src="/images/home/elephant.jpg" alt="Random" className="object-cover size-full"/>
-                </SwiperSlide>
+                
                 <SwiperSlide>
                     <img src="/images/home/iniva.jpg" alt="Random" className="object-cover size-full"/>
                 </SwiperSlide>
