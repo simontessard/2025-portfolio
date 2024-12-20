@@ -10,6 +10,8 @@ export default function Carousel() {
                 modules={[EffectFade, Autoplay]}
                 slidesPerView={1}
                 autoplay={{delay: 1000}}
+                loop={true}
+                speed={800}
                 effect="fade"
                 className="size-full"
                 >
