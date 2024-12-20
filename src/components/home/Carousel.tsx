@@ -1,6 +1,9 @@
 import {Swiper, SwiperSlide} from "swiper/react";
 import {EffectFade, Autoplay} from "swiper/modules";
 
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+
 export default function Carousel() {
     return (
             <Swiper
