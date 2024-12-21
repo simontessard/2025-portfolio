@@ -46,7 +46,9 @@ export default function Entrance() {
             stagger: 0.1,
             ease: 'power4.inOut',
             onComplete: () => {
-                document.querySelector('.js-entrance').remove()
+                if (document.querySelector('.js-entrance')) {
+                    document.querySelector('.js-entrance').remove()
+                }
                 setEntranceIsDone(true)
             }
         }, '-=.6')
