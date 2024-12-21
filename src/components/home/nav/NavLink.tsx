@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NavLink({ href, text }: { href: string, text: string }) {
     return (
         <li>
-            <Link href={href} className="group flex items-center gap-1.5 md:gap-2 font-primary text-primary uppercase
+            <Link href={href} className="group flex items-center gap-1 md:gap-2 font-primary text-primary uppercase
             text-lg md:text-2xl lg:text-3xl lg:leading-3 font-medium">
                 {text}
                 <svg
