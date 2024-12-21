@@ -23,6 +23,13 @@ bun dev
 - [ ] Home layout mobile
 - [ ] Menu animations
 - [ ] Entrance animation integration
+- [ ] Hover menu/close button
+- [ ] More info on projet heading
+
+## Future Features
+- [ ] Blog
+- [ ] Color change on project detail
+- [ ] Internationalization
     
 ### Bugs
 
