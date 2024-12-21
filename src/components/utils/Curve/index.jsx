@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router';
 import { text, curve, translate } from './anim';
+import Entrance from "../Entrance";
 
 const routes = {
     "/": "Accueil",
@@ -43,6 +44,7 @@ export default function Curve({children}) {
 
     return (
         <div className='page curve'>
+            <Entrance/>
             <div style={{opacity: dimensions.width == null ? 1 : 0}} className='background'/>
                 <motion.p className='route p-3 text-center text-white font-secondary text-4xl md:text-6xl 2xl:text-7xl uppercase' {...anim(text)}>
                     {routes[router.route]}
