@@ -12,21 +12,21 @@ export default function Menu() {
 
     useGSAP(() => {
         if (isMenuOpen) {
-            gsap.to(".menu", {
-                duration: .7,
+            gsap.to(".js-menu", {
+                duration: .5,
                 autoAlpha: 1,
                 display: "flex",
             });
         } else {
-            gsap.to(".menu", {
-                duration: .7,
+            gsap.to(".js-menu", {
+                duration: .5,
                 autoAlpha: 0,
             });
         }
     }, [isMenuOpen]);
 
     const hideMenu = () => {
-        gsap.set(".menu", {
+        gsap.set(".js-menu", {
             delay: 1,
             autoAlpha: 0,
             onComplete: () => {
@@ -36,7 +36,7 @@ export default function Menu() {
     }
 
     return (
-        <div className="menu hidden fixed z-50 top-0 h-screen bg-black w-full flex-col justify-between p-4 lg:p-6">
+        <div className="js-menu hidden fixed z-50 top-0 h-screen bg-black w-full flex-col justify-between p-4 md:p-6">
             <div className="flex justify-between w-full">
                 <span className="text-white md:text-lg font-primary">S. TESSARD</span>
                 <MenuCloseButton/>
@@ -56,7 +56,7 @@ export default function Menu() {
                     </div>
                 </div>
 
-                <img src="https://picsum.photos/1000/1000" alt="Logo" className="max-lg:hidden object-cover size-full max-w-sm"/>
+                <img src="https://picsum.photos/1000/1000" alt="Logo" className="max-lg:hidden aspect-[9/16] object-cover size-full max-w-sm"/>
 
             </div>
         </div>

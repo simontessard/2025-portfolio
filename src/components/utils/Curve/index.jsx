@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router';
 import { text, curve, translate } from './anim';
@@ -9,7 +9,6 @@ const routes = {
     "/about": "À Propos",
     "/projects": "Projets",
     "/projects/iniva": "Iniva",
-    "/test": "Test"
 }
 
 const anim = (variants) => {

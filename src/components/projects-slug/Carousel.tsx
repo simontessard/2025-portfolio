@@ -2,10 +2,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/navigation';
+import ImagesDesc from "@/components/projects-slug/ImagesDesc";
 
 export default function Carousel({ project }: { project: any }) {
     return (
         <div className="relative mb-10 md:mb-12">
+
+            <ImagesDesc title="Bleu at the center of everything"
+                        description="Through this initial sketch, Blue is symbolically the common thread, the unconditional guide,
+                accompanying this spiritual reflection in the midst of a very real, everyday journey.
+                It is the color that guides both the scenes photographed and the medium used in this peaceful
+                reflection."
+            />
 
             <Swiper
                 className="swiper-carousel-content"

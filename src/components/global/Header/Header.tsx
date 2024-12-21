@@ -22,8 +22,8 @@ export default function Header() {
     })
     return (
         <>
-            <header className="fixed z-50 top-0 flex justify-between w-full p-4 md:p-6">
-                <Link href="/" className="header-logo text-primary md:text-lg font-primary">
+            <header>
+                <Link href="/" className="header-logo fixed z-50 top-4 left-4 md:top-6 md:left-6 text-primary md:text-lg font-primary">
                     S. TESSARD
                 </Link>
                 <MenuOpenButton/>
