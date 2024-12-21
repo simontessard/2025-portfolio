@@ -14,6 +14,16 @@ pnpm dev
 bun dev
 ```
 
+## TODO
+- [ ] Fancybox Integration
+- [ ] Music player
+- [ ] Definitive color
+- [ ] Definitive content
+- [ ] Fix menu in production
+- [ ] Home layout mobile
+- [ ] Menu animations
+- [ ] Entrance animation integration
+    
 ### Bugs
 
 - Fixed a bug where Swiper wasn't rendering on page transition : https://github.com/nolimits4web/swiper/issues/7577
