@@ -7,6 +7,8 @@ export default function Entrance() {
     const setEntranceIsDone = useAppStore(state => state.setEntranceIsDone);
 
     useGSAP(() => {
+        const entranceElement = document.querySelector('.js-entrance');
+
         const tl = gsap.timeline({ paused: true });
 
         gsap.set('.js-entrance', {
@@ -46,7 +48,6 @@ export default function Entrance() {
             stagger: 0.1,
             ease: 'power4.inOut',
             onComplete: () => {
-                const entranceElement = document.querySelector('.js-entrance');
                 if (entranceElement) {
                     entranceElement.remove();
                 }
@@ -56,6 +57,10 @@ export default function Entrance() {
 
         if (!entranceIsDone) {
             tl.play();
+        } else {
+            if (entranceElement) {
+                entranceElement.remove();
+            }
         }
     })
     return (
