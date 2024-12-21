@@ -3,6 +3,7 @@ import { Navigation } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import ImagesDesc from "@/components/projects-slug/ImagesDesc";
+import Fancybox from "@/components/global/Fancybox";
 
 export default function Carousel({ project }: { project: any }) {
     return (
@@ -32,41 +33,54 @@ export default function Carousel({ project }: { project: any }) {
                 }}
                 slidesPerView={1.5}
             >
-                <SwiperSlide>
-                    <img
-                        className="aspect-square object-cover size-full"
-                        src={project.gallery[4]}
-                        alt={project.title}
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        className="aspect-square object-cover size-full"
-                        src={project.gallery[3]}
-                        alt={project.title}
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        className="aspect-square object-cover size-full"
-                        src={project.gallery[2]}
-                        alt={project.title}
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        className="aspect-square object-cover size-full"
-                        src={project.gallery[3]}
-                        alt={project.title}
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        className="aspect-square object-cover size-full"
-                        src={project.gallery[4]}
-                        alt={project.title}
-                    />
-                </SwiperSlide>
+                <Fancybox>
+                    <SwiperSlide>
+                        <a data-fancybox="gallery" href={project.gallery[4]}>
+                            <img
+                                className="aspect-square object-cover size-full"
+                                src={project.gallery[4]}
+                                alt={project.title}
+                            />
+                        </a>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <a data-fancybox="gallery" href={project.gallery[3]}>
+                            <img
+                                className="aspect-square object-cover size-full"
+                                src={project.gallery[3]}
+                                alt={project.title}
+                            />
+                        </a>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <a data-fancybox="gallery" href={project.gallery[2]}>
+                            <img
+                                className="aspect-square object-cover size-full"
+                                src={project.gallery[2]}
+                                alt={project.title}
+                            />
+                        </a>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <a data-fancybox="gallery" href={project.gallery[3]}>
+                            <img
+                                className="aspect-square object-cover size-full"
+                                src={project.gallery[3]}
+                                alt={project.title}
+                            />
+                        </a>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <a data-fancybox="gallery" href={project.gallery[4]}>
+                            <img
+                                className="aspect-square object-cover size-full"
+                                src={project.gallery[4]}
+                                alt={project.title}
+                            />
+                        </a>
+                    </SwiperSlide>
+                </Fancybox>
+
             </Swiper>
 
             <div className="flex gap-1.5 md:gap-2 mt-2 md:mt-4 justify-end">
