@@ -37,8 +37,10 @@ export default function MouseTrail({ children, className }) {
         currentImage.style.top = y + "px";
         gsap.to(currentImage, {
             display: "block",
-            duration: 0.3,
+            duration: 0.5,
             scale: 1,
+            ease: "sine.out",
+            delay: 0.05,
         })
         currentIndex++;
         nbOfImages++;
@@ -56,7 +58,8 @@ export default function MouseTrail({ children, className }) {
         const images = getCurrentImages();
         gsap.to(images[0], {
             display: "none",
-            duration: 0.3,
+            duration: 0.4,
+            ease: "sine.out",
             scale: 0,
         })
         nbOfImages--;
@@ -86,7 +89,8 @@ export default function MouseTrail({ children, className }) {
                 gsap.to(ref.current, {
                     scale: 0,
                     display: "none",
-                    duration: 0.3,
+                    duration: 0.4,
+                    ease: "sine.out",
                 });
             }
         });
@@ -100,14 +104,12 @@ export default function MouseTrail({ children, className }) {
     }, []);
 
     return (
-        <div onMouseMove={(e) => {manageMouseMove(e)}}
-            onMouseLeave={() => {hideAllImages()}}
+        <div onMouseMove={(e) => {manageMouseMove(e)}} onMouseLeave={() => {hideAllImages()}}
             className={`relative cursor-pointer ${className}`}>
 
-              {children}
+            {children}
 
-            {
-                [...Array(19).keys()].map((_, index) => {
+            { [...Array(19).keys()].map((_, index) => {
                     const ref = useRef(null);
                     refs.push(ref);
                     return (
@@ -115,12 +117,11 @@ export default function MouseTrail({ children, className }) {
                             key={index}
                             ref={ref}
                             alt="Image carré"
-                            className="scale-0 size-40 object-cover absolute hidden -translate-y-1/2 -translate-x-1/2"
+                            className="scale-0 pointer-events-none size-40 object-cover absolute hidden -translate-y-1/2 -translate-x-1/2"
                             src={`/images/${index}.jpg`}
                         />
                     );
-                })
-            }
+                }) }
         </div>
     );
 }
