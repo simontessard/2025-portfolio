@@ -46,8 +46,9 @@ export default function Entrance() {
             stagger: 0.1,
             ease: 'power4.inOut',
             onComplete: () => {
-                if (document.querySelector('.js-entrance')) {
-                    document.querySelector('.js-entrance').remove()
+                const entranceElement = document.querySelector('.js-entrance');
+                if (entranceElement) {
+                    entranceElement.remove();
                 }
                 setEntranceIsDone(true)
             }
