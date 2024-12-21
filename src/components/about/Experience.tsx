@@ -21,7 +21,7 @@ export default function Experience() {
                     <li key={index} className="pb-6 lg:pb-8">
                         <span className="block h-0.5 w-full bg-primary mb-6 lg:mb-8"></span>
                         <div className="flex justify-between">
-                            <p className="uppercase text-primary font-primary text-lg lg:text-2xl font-medium mb-2">
+                            <p className="uppercase text-primary font-primary md:text-lg lg:text-2xl font-medium mb-2">
                                 {exp.title}
                             </p>
                             <p className="uppercase text-primary font-primary text-sm lg:text-xl font-medium mb-2">

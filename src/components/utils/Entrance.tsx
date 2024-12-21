@@ -8,18 +8,12 @@ export default function Entrance() {
 
     useGSAP(() => {
         const entranceElement = document.querySelector('.js-entrance');
-
         const tl = gsap.timeline({ paused: true });
 
-        gsap.set('.js-entrance', {
-            autoAlpha: 0
-        })
+        gsap.set('.js-entrance', {autoAlpha: 0})
+        tl.set('.js-entrance', {autoAlpha: 1})
 
-        tl.set('.js-entrance', {
-            autoAlpha: 1
-        })
-
-        tl.to('.js-up', {
+        tl.to('.js-up--second', {
             yPercent: -100,
             duration: 1,
             stagger: 0.1,
@@ -27,13 +21,25 @@ export default function Entrance() {
             delay: 1
         })
 
-        tl.to('.js-up', {
+        tl.to('.js-up--first', {
+            yPercent: -100,
+            duration: 1,
+            ease: 'power4.out',
+        }, '<')
+
+        tl.to('.js-up--second', {
             yPercent: -200,
             duration: 1,
             stagger: 0.1,
             ease: 'power4.out',
             delay: 1
         })
+
+        tl.to('.js-up--first', {
+            yPercent: -200,
+            duration: 1,
+            ease: 'power4.out',
+        }, '<')
 
         tl.to('.js-entrance--text', {
             autoAlpha: 0,
@@ -66,13 +72,20 @@ export default function Entrance() {
     return (
         <div className="js-entrance fixed z-[101] flex justify-center items-center h-screen w-full bg-primary"
         style={{clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}}>
-            <div className="js-entrance--text relative text-white flex items-center gap-6 font-secondary text-2xl md:text-3xl uppercase">
-                <p className="font-primary leading-3">Bonjour</p>
-                <div className="relative overflow-hidden translate-y-1 px-1">
-                    <p className="js-up absolute">Simon</p>
-                    <p className="opacity-0">Dans mon monde</p>
-                    <p className="js-up absolute">Bienvenue</p>
-                    <p className="js-up absolute translate-y-full">Dans mon monde</p>
+            <div className="js-entrance--text relative text-white flex items-center gap-6 text-2xl md:text-3xl uppercase">
+
+                <div className="relative font-primary overflow-hidden px-1">
+                    <p className="js-up--first absolute">Performance</p>
+                    <p className="opacity-0">Performance</p>
+                    <p className="js-up--first absolute">Innovant</p>
+                    <p className="js-up--first translate-y-full absolute">Créativité</p>
+                </div>
+
+                <div className="relative font-secondary overflow-hidden translate-y-1 px-1">
+                    <p className="js-up--second absolute">Web</p>
+                    <p className="opacity-0">Fluide</p>
+                    <p className="js-up--second absolute">Fluide</p>
+                    <p className="js-up--second absolute translate-y-full">Design</p>
                 </div>
             </div>
         </div>
