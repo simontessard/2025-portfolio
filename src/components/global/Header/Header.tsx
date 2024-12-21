@@ -23,7 +23,7 @@ export default function Header() {
     return (
         <>
             <header>
-                <Link href="/" className="header-logo fixed z-50 top-4 left-4 md:top-6 md:left-6 text-primary md:text-lg font-primary">
+                <Link href="/" className="header-logo no-image fixed z-50 top-4 left-4 md:top-6 md:left-6 text-primary md:text-lg font-primary">
                     S. TESSARD
                 </Link>
                 <MenuOpenButton/>

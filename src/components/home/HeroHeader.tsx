@@ -6,16 +6,16 @@ import Link from "next/link";
 
 export default function HeroHeader() {
     return (
-        <section className="h-screen max-lg:flex-col-reverse flex p-4 lg:p-6">
-            <Link href="/projects" className="max-lg:h-1/2 size-full lg:w-2/5 2xl:w-1/2 lg:pt-20">
-                <MouseTrail className="size-full">
+        <section className="h-screen p-4 lg:p-6">
+            <MouseTrail className="max-lg:flex-col-reverse flex size-full">
+                <Link href="/projects" className="max-lg:h-1/2 size-full lg:w-2/5 2xl:w-1/2 lg:pt-20">
                     <Carousel/>
-                </MouseTrail>
-            </Link>
-            <div className="flex flex-col max-lg:pb-3 max-lg:h-1/2 max-lg:justify-end lg:self-end lg:w-3/5 2xl:w-1/2">
-                <Title/>
-                <Nav/>
-            </div>
+                </Link>
+                <div className="no-image flex flex-col max-lg:pb-3 max-lg:h-1/2 max-lg:justify-end lg:self-end lg:w-3/5 2xl:w-1/2">
+                    <Title/>
+                    <Nav/>
+                </div>
+            </MouseTrail>
         </section>
     )
 }

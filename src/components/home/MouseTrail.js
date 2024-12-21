@@ -11,6 +11,11 @@ export default function MouseTrail({ children, className }) {
     let idleTimeout = null;
 
     const manageMouseMove = (e) => {
+        if (e.target.closest(".no-image")) {
+            hideAllImages();
+            return;
+        }
+
         const { clientX, clientY, movementX, movementY } = e;
 
         resetIdleTimer();
@@ -105,7 +110,7 @@ export default function MouseTrail({ children, className }) {
 
     return (
         <div onMouseMove={(e) => {manageMouseMove(e)}} onMouseLeave={() => {hideAllImages()}}
-            className={`relative cursor-pointer ${className}`}>
+            className={`relative ${className}`}>
 
             {children}
 
