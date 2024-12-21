@@ -6,7 +6,7 @@ export default function MenuOpenButton() {
         setMenuIsOpen(true);
     }
     return (
-        <button onClick={openMenu} className="no-image fixed z-50 top-4 right-4 md:top-6 md:right-6 size-fit uppercase md:text-lg tracking-tight font-primary text-primary">
+        <button onClick={openMenu} className="no-image fixed z-50 top-4 right-3.5 md:top-6 md:right-6 size-fit uppercase md:text-lg tracking-tight font-primary text-primary">
             Menu
         </button>
     )
