@@ -1,4 +1,4 @@
-export default function TwoImages({ project }: { project: Project }) {
+export default function TwoImages({ project }: {project: any}) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-10">
             <img
