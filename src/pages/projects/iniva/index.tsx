@@ -5,7 +5,6 @@ import MainImage from "@/components/projects-slug/MainImage";
 import Carousel from "@/components/projects-slug/Carousel";
 import Heading from "@/components/projects-slug/Heading";
 import TwoImages from "@/components/projects-slug/TwoImages";
-import ImagesDesc from "@/components/projects-slug/ImagesDesc";
 
 export default function Project() {
     const project = projects[0];
@@ -16,13 +15,9 @@ export default function Project() {
 
             <div className="pt-32 pb-12 px-3.5 md:px-6 ">
 
-                {/* Content */}
                 <Heading project={project}/>
                 <MainImage project={project}/>
                 <Carousel project={project}/>
-                <ImagesDesc title="Analog vision"
-                            description="Bleu du Sud contains 29 film photographs spread over 48 pages, preserving this objective of a 100% physical medium"
-                />
                 <TwoImages project={project}/>
 
             </div>
