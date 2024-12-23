@@ -9,31 +9,32 @@ export default function Carousel({ project }: { project: any }) {
     return (
         <div className="relative mb-10 md:mb-12">
 
-            <ImagesDesc title="Bleu at the center of everything"
-                        description="Through this initial sketch, Blue is symbolically the common thread, the unconditional guide,
+            <ImagesDesc
+                title="Bleu at the center of everything"
+                description="Through this initial sketch, Blue is symbolically the common thread, the unconditional guide,
                 accompanying this spiritual reflection in the midst of a very real, everyday journey.
                 It is the color that guides both the scenes photographed and the medium used in this peaceful
                 reflection."
             />
 
-            <Swiper
-                className="swiper-carousel-content"
-                grabCursor={true}
-                modules={[Navigation]}
-                navigation={{
-                    prevEl: '.custom-prev-button',
-                    nextEl: '.custom-next-button',
-                }}
-                spaceBetween={15}
-                breakpoints={{
-                    768: {
-                        spaceBetween: 30,
-                        slidesPerView: 3.5,
-                    },
-                }}
-                slidesPerView={1.5}
-            >
-                <Fancybox>
+            <Fancybox>
+                <Swiper
+                    className="swiper-carousel-content"
+                    grabCursor={true}
+                    modules={[Navigation]}
+                    navigation={{
+                        prevEl: '.custom-prev-button',
+                        nextEl: '.custom-next-button',
+                    }}
+                    spaceBetween={15}
+                    breakpoints={{
+                        768: {
+                            spaceBetween: 30,
+                            slidesPerView: 3.5,
+                        },
+                    }}
+                    slidesPerView={1.5}
+                >
                     <SwiperSlide>
                         <a data-fancybox="gallery" href={project.gallery[4]}>
                             <img
@@ -79,9 +80,8 @@ export default function Carousel({ project }: { project: any }) {
                             />
                         </a>
                     </SwiperSlide>
-                </Fancybox>
-
-            </Swiper>
+                </Swiper>
+            </Fancybox>
 
             <div className="flex gap-1.5 md:gap-2 mt-2 md:mt-4 justify-end">
                 <button className="custom-prev-button enabled:md:hover:-translate-x-1 transition-transform duration-300 disabled:opacity-50">
