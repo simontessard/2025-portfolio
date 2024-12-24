@@ -21,6 +21,7 @@ export default function Menu() {
             gsap.to(".js-menu", {
                 duration: .4,
                 autoAlpha: 0,
+                display: "none"
             });
         }
     }, [isMenuOpen]);
@@ -29,18 +30,18 @@ export default function Menu() {
         gsap.set(".js-menu", {
             delay: 1,
             autoAlpha: 0,
-            onComplete: () => {
-                setMenuIsOpen(false);
-            }
+            onComplete: () => {setMenuIsOpen(false)}
         });
     }
 
     return (
         <div className="js-menu hidden fixed z-50 top-0 h-screen bg-black w-full flex-col justify-between p-3.5 md:p-6">
+
             <div className="flex justify-between w-full">
                 <span className="text-white md:text-lg font-primary">S. TESSARD</span>
                 <MenuCloseButton/>
             </div>
+
             <div className="flex justify-between">
 
                 <div className="flex flex-col justify-end">
