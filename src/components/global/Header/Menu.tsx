@@ -13,13 +13,13 @@ export default function Menu() {
     useGSAP(() => {
         if (isMenuOpen) {
             gsap.to(".js-menu", {
-                duration: .5,
+                duration: .4,
                 autoAlpha: 1,
                 display: "flex",
             });
         } else {
             gsap.to(".js-menu", {
-                duration: .5,
+                duration: .4,
                 autoAlpha: 0,
             });
         }

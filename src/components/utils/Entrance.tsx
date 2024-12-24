@@ -7,66 +7,71 @@ export default function Entrance() {
     const setEntranceIsDone = useAppStore(state => state.setEntranceIsDone);
 
     useGSAP(() => {
-        const entranceElement = document.querySelector('.js-entrance');
-        const tl = gsap.timeline({ paused: true });
+        if (!entranceIsDone) {
+            const entranceElement = document.querySelector('.js-entrance');
+            const tl = gsap.timeline({ paused: true });
 
-        gsap.set('.js-entrance', {autoAlpha: 0})
-        tl.set('.js-entrance', {autoAlpha: 1})
+            gsap.set('.js-entrance', {autoAlpha: 0})
+            tl.set('.js-entrance', {autoAlpha: 1})
 
-        tl.to('.js-up--second', {
-            yPercent: -100,
-            duration: 1,
-            stagger: 0.1,
-            ease: 'power4.out',
-            delay: 1
-        })
+            tl.to('.js-up--second', {
+                yPercent: -100,
+                duration: 1,
+                stagger: 0.1,
+                ease: 'power4.out',
+                delay: 1
+            })
 
-        tl.to('.js-up--first', {
-            yPercent: -100,
-            duration: 1,
-            ease: 'power4.out',
-        }, '<')
+            tl.to('.js-up--first', {
+                yPercent: -100,
+                duration: 1,
+                ease: 'power4.out',
+            }, '<')
 
-        tl.to('.js-up--second', {
-            yPercent: -200,
-            duration: 1,
-            stagger: 0.1,
-            ease: 'power4.out',
-            delay: 1
-        })
+            tl.to('.js-up--second', {
+                yPercent: -200,
+                duration: 1,
+                stagger: 0.1,
+                ease: 'power4.out',
+                delay: 1
+            })
 
-        tl.to('.js-up--first', {
-            yPercent: -200,
-            duration: 1,
-            ease: 'power4.out',
-        }, '<')
+            tl.to('.js-up--first', {
+                yPercent: -200,
+                duration: 1,
+                ease: 'power4.out',
+            }, '<')
 
-        tl.to('.js-entrance--text', {
-            autoAlpha: 0,
-            duration: .6,
-            ease: 'power4.out',
-            delay: .5
-        })
+            tl.to('.js-entrance--text', {
+                autoAlpha: 0,
+                duration: .6,
+                ease: 'power4.out',
+                delay: .5
+            })
 
-        tl.to('.js-entrance', {
-            clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-            duration: 1,
-            stagger: 0.1,
-            ease: 'power4.inOut',
-            onComplete: () => {
+            tl.to('.js-entrance', {
+                clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+                duration: 1,
+                stagger: 0.1,
+                ease: 'power4.inOut',
+                onComplete: () => {
+                    if (entranceElement) {
+                        entranceElement.remove();
+                    }
+                    setEntranceIsDone(true)
+                }
+            }, '-=.6')
+
+            if (!entranceIsDone) {
+                tl.play();
+            } else {
                 if (entranceElement) {
                     entranceElement.remove();
                 }
-                setEntranceIsDone(true)
             }
-        }, '-=.6')
-
-        if (!entranceIsDone) {
-            tl.play();
         } else {
-            if (entranceElement) {
-                entranceElement.remove();
-            }
+            const entranceElement = document.querySelector('.js-entrance');
+            entranceElement.classList.add("hidden");
         }
     })
     return (
