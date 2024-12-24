@@ -12,6 +12,7 @@ export default function Carousel() {
                 autoplay={{delay: 1000}}
                 loop={true}
                 speed={800}
+                allowTouchMove={false}
                 effect="fade"
                 className="!size-full"
                 >

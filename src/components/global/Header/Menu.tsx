@@ -30,6 +30,7 @@ export default function Menu() {
         gsap.set(".js-menu", {
             delay: 1,
             autoAlpha: 0,
+            display: "none",
             onComplete: () => {setMenuIsOpen(false)}
         });
     }
