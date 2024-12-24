@@ -71,7 +71,9 @@ export default function Entrance() {
             }
         } else {
             const entranceElement = document.querySelector('.js-entrance');
-            entranceElement.classList.add("hidden");
+            if (entranceElement) {
+                entranceElement.classList.add("hidden");
+            }
         }
     })
     return (
