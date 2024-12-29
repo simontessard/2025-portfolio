@@ -15,6 +15,7 @@ export default function Projects() {
                     <ProjectsGrid/>
                 </div>
             </section>
+
             <Footer/>
         </Curve>
     );
