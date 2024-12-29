@@ -31,7 +31,7 @@ export default function Carousel({ project }: { project: any }) {
                             slidesPerView: 3.5,
                         },
                     }}
-                    slidesPerView={1.5}
+                    slidesPerView={1.25}
                 >
                     <SwiperSlide>
                         <a data-fancybox="gallery" href={project.gallery[4]}>

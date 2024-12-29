@@ -10,7 +10,7 @@ export default function Projects() {
             <section className="bg-white">
                 <span id="top" className="opacity-0">top</span>
 
-                <div className="px-3.5 md:px-6 pt-32 pb-6">
+                <div className="px-3.5 md:px-6 pt-28 md:pt-32 pb-6">
                     <PageTitle title="Projets" className="mb-16 lg:mb-20 xl:mb-24"/>
                     <ProjectsGrid/>
                 </div>

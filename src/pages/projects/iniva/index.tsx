@@ -13,7 +13,7 @@ export default function Project() {
         <Curve>
             <span id="top" className="opacity-0">top</span>
 
-            <div className="pt-32 pb-12 px-3.5 md:px-6 ">
+            <div className="pt-28 md:pt-32 pb-12 px-3.5 md:px-6 ">
 
                 <Heading project={project}/>
                 <MainImage project={project}/>
