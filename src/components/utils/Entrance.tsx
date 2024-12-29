@@ -51,8 +51,7 @@ export default function Entrance() {
 
             tl.to('.js-entrance', {
                 clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-                duration: 1,
-                stagger: 0.1,
+                duration: .8,
                 ease: 'power4.inOut',
                 onComplete: () => {
                     if (entranceElement) {
