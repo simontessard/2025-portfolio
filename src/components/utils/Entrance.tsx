@@ -77,7 +77,7 @@ export default function Entrance() {
         }
     })
     return (
-        <div className="js-entrance fixed z-[101] flex justify-center items-center h-screen w-full bg-primary"
+        <div className="js-entrance fixed z-[101] flex justify-center items-center h-[100dvh] md:h-screen w-full bg-primary"
         style={{clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}}>
             <div className="js-entrance--text relative text-white flex items-center gap-3">
 

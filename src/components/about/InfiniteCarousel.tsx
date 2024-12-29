@@ -34,10 +34,10 @@ export default function InfiniteCarousel() {
                 <img src="/images/home/stairs.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4">
-                <img src="/images/home/stairs.jpg" alt="Random" className="object-cover size-full"/>
+                <img src="/images/home/iniva.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4">
-                <img src="/images/home/house.png" alt="Random" className="object-cover size-full"/>
+                <img src="/images/home/elephant.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4">
                 <img src="/images/home/house.png" alt="Random" className="object-cover size-full"/>
