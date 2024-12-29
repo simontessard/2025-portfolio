@@ -11,7 +11,11 @@ export function openMenuFunction () {
     .to(".js-menu-link", {
         duration: .5,
         opacity: 1,
-    });
+    })
+    .to('.js-menu-img', {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        ease: "power4.inOut",
+    }, "<");
 }
 
 export function closeMenuFunction () {
@@ -21,6 +25,10 @@ export function closeMenuFunction () {
         duration: .5,
         opacity: 0,
     })
+    .to('.js-menu-img', {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+        ease: "power4.inOut",
+    }, "<")
     .to(".js-menu", {
         duration: .4,
         autoAlpha: 0,

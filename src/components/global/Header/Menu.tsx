@@ -42,7 +42,8 @@ export default function Menu() {
                     </div>
                 </div>
 
-                <img src="https://picsum.photos/1000/1000" alt="Logo" className="max-lg:hidden aspect-[9/16] object-cover size-full max-w-sm"/>
+                <img src="https://picsum.photos/1000/1000" alt="Logo" style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" }}
+                     className="js-menu-img max-lg:hidden aspect-[9/16] object-cover size-full max-w-sm"/>
 
             </div>
         </div>
