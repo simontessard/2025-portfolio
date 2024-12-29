@@ -34,7 +34,7 @@ export default function Carousel({ project }: { project: any }) {
                     slidesPerView={1.25}
                 >
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[4]}>
+                        <a data-fancybox="gallery" href={project.gallery[4]} className="cursor-zoom-in">
                             <img
                                 className="aspect-square object-cover size-full"
                                 src={project.gallery[4]}
@@ -43,7 +43,7 @@ export default function Carousel({ project }: { project: any }) {
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[3]}>
+                        <a data-fancybox="gallery" href={project.gallery[3]} className="cursor-zoom-in">
                             <img
                                 className="aspect-square object-cover size-full"
                                 src={project.gallery[3]}
@@ -52,7 +52,7 @@ export default function Carousel({ project }: { project: any }) {
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[2]}>
+                        <a data-fancybox="gallery" href={project.gallery[2]} className="cursor-zoom-in">
                             <img
                                 className="aspect-square object-cover size-full"
                                 src={project.gallery[2]}
@@ -61,7 +61,7 @@ export default function Carousel({ project }: { project: any }) {
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[3]}>
+                        <a data-fancybox="gallery" href={project.gallery[3]} className="cursor-zoom-in">
                             <img
                                 className="aspect-square object-cover size-full"
                                 src={project.gallery[3]}
@@ -70,7 +70,7 @@ export default function Carousel({ project }: { project: any }) {
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[4]}>
+                        <a data-fancybox="gallery" href={project.gallery[4]} className="cursor-zoom-in">
                             <img
                                 className="aspect-square object-cover size-full"
                                 src={project.gallery[4]}
