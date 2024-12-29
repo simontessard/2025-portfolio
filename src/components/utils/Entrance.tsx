@@ -79,20 +79,20 @@ export default function Entrance() {
     return (
         <div className="js-entrance fixed z-[101] flex justify-center items-center h-screen w-full bg-primary"
         style={{clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}}>
-            <div className="js-entrance--text relative text-white flex items-center gap-3 text-2xl md:text-3xl uppercase">
+            <div className="js-entrance--text relative text-white flex items-center gap-3">
 
-                <div className="relative font-primary overflow-hidden p-1">
+                <div className="relative font-primary overflow-hidden text-2xl md:text-3xl uppercase p-1">
                     <p className="js-up--first absolute">Interface</p>
                     <p className="opacity-0">Interface</p>
                     <p className="js-up--first absolute">Creation</p>
                     <p className="js-up--first translate-y-full absolute">Interface</p>
                 </div>
 
-                <div className="relative font-secondary overflow-hidden h-8 md:leading-8 p-1">
-                    <p className="js-up--second absolute">Responsive</p>
+                <div className="relative font-secondary overflow-hidden text-[1.45rem] md:text-[1.75rem] uppercase h-7 md:h-8 md:leading-8 p-1">
+                    <p className="js-up--second absolute max-md:top-0">Responsive</p>
                     <p className="opacity-0">Responsive</p>
-                    <p className="js-up--second absolute">Contenu</p>
-                    <p className="js-up--second absolute translate-y-full">Creatif</p>
+                    <p className="js-up--second absolute max-md:-translate-y-1">Contenu</p>
+                    <p className="js-up--second absolute translate-y-8 md:translate-y-full">Creatif</p>
                 </div>
             </div>
         </div>

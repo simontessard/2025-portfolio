@@ -28,7 +28,7 @@ export default function Carousel({ project }: { project: any }) {
                     breakpoints={{
                         768: {
                             spaceBetween: 30,
-                            slidesPerView: 3.5,
+                            slidesPerView: 2.5,
                         },
                     }}
                     slidesPerView={1.25}

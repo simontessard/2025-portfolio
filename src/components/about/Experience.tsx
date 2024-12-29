@@ -7,7 +7,7 @@ export default function Experience() {
         },
         {
             title: "Développeur Full-stack",
-            company: "Cobalt Studio",
+            company: "Agence Cobalt Studio",
             date: "2023 - 2024"
         }
     ];
