@@ -13,7 +13,7 @@ const config: Config = {
         secondary: ["var(--font-editorial)"],
       },
       colors: {
-        primary: "#00509d",
+        primary: "#0156cf",
         secondary: "#005db4",
         background: "var(--background)",
         foreground: "var(--foreground)",
