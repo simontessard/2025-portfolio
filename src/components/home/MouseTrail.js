@@ -114,7 +114,7 @@ export default function MouseTrail({ children, className }) {
 
             {children}
 
-            { [...Array(19).keys()].map((_, index) => {
+            { [...Array(13).keys()].map((_, index) => {
                     const ref = useRef(null);
                     refs.push(ref);
                     return (
