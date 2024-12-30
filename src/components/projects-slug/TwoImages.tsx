@@ -5,13 +5,14 @@ export default function TwoImages({ project }: {project: any}) {
     return (
         <Fancybox>
 
-            <ImagesDesc title="Analog vision"
-                        description="Bleu du Sud contains 29 film photographs spread over 48 pages, preserving this objective of a 100% physical medium"
+            <ImagesDesc title="Une invitation à découvrir, librement et facilement"
+                        description="Le site se démarque par de nombreuses sections d'illustrations, de magnifiques carousels, une carte interactive et une navigation latérale agréable.
+                        Chaque détail a été réfléchi pour donner au visiteur une idée précise de ce qui l’attend sur place."
             />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-10">
 
-                <a data-fancybox="gallery" href={project.gallery[1]}>
+                <a data-fancybox="gallery" href={project.gallery[1]} className="cursor-zoom-in">
                     <img
                         className="object-cover size-full"
                         src={project.gallery[1]}
@@ -19,7 +20,7 @@ export default function TwoImages({ project }: {project: any}) {
                     />
                 </a>
 
-                <a data-fancybox="gallery" href={project.gallery[5]}>
+                <a data-fancybox="gallery" href={project.gallery[5]} className="cursor-zoom-in">
                     <img
                         className="object-cover size-full"
                         src={project.gallery[5]}

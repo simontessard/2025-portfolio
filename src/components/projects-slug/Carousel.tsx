@@ -10,9 +10,9 @@ export default function Carousel({ project }: { project: any }) {
         <div className="relative mb-10 md:mb-12">
 
             <ImagesDesc
-                title="L’Adaptation Mobile : Un Passage Obligé"
-                description="Une version mobile soignée enrichit l’expérience utilisateur avec des éléments immersifs, comme des carousels fluides et une carte interactive intuitive.
-                Tout est pensé pour une navigation simple et engageante, parfaitement adaptée aux usages modernes."
+                title="L’Adaptation Mobile : Passage Obligé"
+                description="La version mobile est optimisée, notamment avec des carousels ajustés pour petits écrans, des images responsives et une navigation fluide via le menu par exemple.
+                Chaque interaction est une invitation à découvrir, sans effort, les hôtels et activités proposés par Iniva."
             />
 
             <Fancybox>
