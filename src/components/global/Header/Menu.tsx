@@ -26,9 +26,9 @@ export default function Menu() {
             <div className="flex justify-between">
 
                 <div className="flex flex-col justify-end">
-                    <div className="js-menu-link opacity-0 flex flex-wrap items-center md:max-w-xl xl:max-w-4xl gap-y-2 xl:gap-y-4 gap-x-6 md:gap-x-7 xl:gap-x-8 self-end w-full mb-12 md:mb-20">
+                    <div className="js-menu-link opacity-0 flex max-md:flex-col flex-wrap md:items-center md:max-w-xl xl:max-w-4xl gap-y-2 xl:gap-y-4 gap-x-6 md:gap-x-7 xl:gap-x-8 self-end w-full mb-12 md:mb-20">
                         <MenuLink href="/" text="accueil" hideMenu={hideMenu}/>
-                        <span className="block size-3 md:size-4 xl:size-4 bg-white rounded-full"/>
+                        <span className="hidden md:block size-3 md:size-4 xl:size-4 bg-white rounded-full"/>
                         <MenuLink href="/projects" text="projets" hideMenu={hideMenu}/>
                         <MenuLink href="/about" text="à propos" hideMenu={hideMenu}/>
                     </div>
