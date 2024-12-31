@@ -28,6 +28,22 @@ export default function TwoImages({ project }: {project: any}) {
                     />
                 </a>
 
+                <a data-fancybox="gallery" href={project.gallery[0]} className="cursor-zoom-in">
+                    <img
+                        className="object-cover size-full"
+                        src={project.gallery[0]}
+                        alt={project.title}
+                    />
+                </a>
+
+                <a data-fancybox="gallery" href={project.gallery[1]} className="cursor-zoom-in">
+                    <img
+                        className="object-cover size-full"
+                        src={project.gallery[1]}
+                        alt={project.title}
+                    />
+                </a>
+
             </div>
         </Fancybox>
     )
