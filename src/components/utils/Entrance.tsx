@@ -16,7 +16,7 @@ export default function Entrance() {
 
             tl.to('.js-up--second', {
                 yPercent: -100,
-                duration: 1,
+                duration: .8,
                 stagger: 0.1,
                 ease: 'power4.out',
                 delay: 1
@@ -24,21 +24,21 @@ export default function Entrance() {
 
             tl.to('.js-up--first', {
                 yPercent: -100,
-                duration: 1,
+                duration: .8,
                 ease: 'power4.out',
             }, '<')
 
             tl.to('.js-up--second', {
                 yPercent: -200,
-                duration: 1,
+                duration: .8,
                 stagger: 0.1,
                 ease: 'power4.out',
-                delay: 1
+                delay: .7
             })
 
             tl.to('.js-up--first', {
                 yPercent: -200,
-                duration: 1,
+                duration: .8,
                 ease: 'power4.out',
             }, '<')
 
