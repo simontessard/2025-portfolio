@@ -3,37 +3,19 @@ import gsap from "gsap";
 export function openMenuFunction () {
     const tl = gsap.timeline();
 
-    tl.to(".js-menu", {
-        duration: .4,
-        autoAlpha: 1,
-        display: "flex",
-    })
-    .to(".js-menu-link", {
-        duration: .5,
-        opacity: 1,
-    })
-    .to('.js-menu-img', {
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        ease: "power4.inOut",
-    }, "<");
+    tl.to(".js-menu", {duration: .4, autoAlpha: 1, display: "flex"})
+    .to(".js-menu-links", {duration: .3, opacity: 1})
+    .to(".js-menu-contact", {duration: .3, opacity: 1},"<")
+    .to('.js-menu-img', {clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", ease: "power4.inOut"}, "<");
 }
 
 export function closeMenuFunction () {
     const tl = gsap.timeline();
 
-    tl.to(".js-menu-link", {
-        duration: .5,
-        opacity: 0,
-    })
-    .to('.js-menu-img', {
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-        ease: "power4.inOut",
-    }, "<")
-    .to(".js-menu", {
-        duration: .4,
-        autoAlpha: 0,
-        display: "none",
-    })
+    tl.to(".js-menu-links", {duration: .5, opacity: 0})
+    .to(".js-menu-contact", {duration: .5, opacity: 0}, "<")
+    .to('.js-menu-img', {clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)", ease: "power4.inOut"}, "<")
+    .to(".js-menu", {duration: .4, autoAlpha: 0, display: "none",})
 }
 
 export function hideMenu() {

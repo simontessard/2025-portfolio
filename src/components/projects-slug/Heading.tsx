@@ -19,7 +19,7 @@ export default function Heading({project} : {project: any}) {
 
                     <div className="flex max-xl:flex-col justify-between">
                         {/* Desc */}
-                        <p className="font-primary text-lg md:text-xl md:leading-8 md:max-w-4xl 2xl:max-w-4xl uppercase text-primary mb-8 md:mb-12">
+                        <p className="font-primary md:text-xl md:leading-8 md:max-w-4xl 2xl:max-w-4xl uppercase text-primary mb-8 md:mb-12">
                             {project.description}
                         </p>
 

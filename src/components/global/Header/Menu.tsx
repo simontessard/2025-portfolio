@@ -26,13 +26,13 @@ export default function Menu() {
             <div className="flex justify-between">
 
                 <div className="flex flex-col justify-end">
-                    <div className="js-menu-link opacity-0 flex max-md:flex-col flex-wrap md:items-center md:max-w-xl xl:max-w-4xl gap-y-2 xl:gap-y-4 gap-x-6 md:gap-x-7 xl:gap-x-8 self-end w-full mb-12 md:mb-20">
+                    <div className="js-menu-links opacity-0 flex max-md:flex-col flex-wrap md:items-center md:max-w-xl xl:max-w-4xl gap-y-2 xl:gap-y-4 gap-x-6 md:gap-x-7 xl:gap-x-8 self-end w-full mb-12 md:mb-20">
                         <MenuLink href="/" text="accueil" hideMenu={hideMenu}/>
                         <span className="hidden md:block size-3 md:size-4 xl:size-4 bg-white rounded-full"/>
                         <MenuLink href="/projects" text="projets" hideMenu={hideMenu}/>
                         <MenuLink href="/about" text="à propos" hideMenu={hideMenu}/>
                     </div>
-                    <div className="flex gap-6 md:gap-8 text-white font-primary font-medium uppercase w-full">
+                    <div className="js-menu-contact opacity-0 flex gap-6 md:gap-8 text-white font-primary font-medium uppercase w-full">
                         <Link scroll={false} href="https://www.linkedin.com/in/simon-tessard-138733198/" target="_blank">
                             LinkedIn
                         </Link>
