@@ -12,7 +12,7 @@ export default function Intro() {
                 <Paragraph
                     text="Je suis Simon TESSARD, un Développeur Web de 24 ans vivant à Rennes, qui vient de se lancer en indépendant."/>
                 <Paragraph
-                    text="à chaque projet, je concrétise mes conceptions en misant sur des finitions soignées et une esthétique réfléchie.
+                    text="à chaque projet, je concrétise mes conceptions en misant sur des finitions soignées avec une esthétique réfléchie.
                     Mon objectif est de sublimer votre travail et vos compétences à travers des créations qui racontent votre histoire et reflètent votre identité."/>
                 <Paragraph
                     text="Mes compétences englobent le Développement Web (Front-end et Back-end) et le Web Design, avec un savoir-faire particulier dans la réalisation de maquettes personnalisées,

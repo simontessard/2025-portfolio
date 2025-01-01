@@ -10,7 +10,7 @@ export default function FourImages({ project }: {project: any}) {
                         Chaque détail a été réfléchi pour donner au visiteur une idée précise de ce qui l’attend sur place."
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
 
                 <a data-fancybox="gallery" href={project.gallery[1]} className="cursor-zoom-in">
                     <img

@@ -23,7 +23,7 @@ export default function Menu() {
                 <MenuCloseButton/>
             </div>
 
-            <div className="flex justify-between">
+            <div className="flex max-lg:flex-col-reverse justify-between max-lg:pt-8 max-lg:gap-10 h-full">
 
                 <div className="flex flex-col justify-end">
                     <div className="js-menu-links opacity-0 flex max-md:flex-col flex-wrap md:items-center md:max-w-xl xl:max-w-4xl gap-y-2 xl:gap-y-4 gap-x-6 md:gap-x-7 xl:gap-x-8 self-end w-full mb-12 md:mb-20">
@@ -43,7 +43,7 @@ export default function Menu() {
                 </div>
 
                 <img src="https://picsum.photos/1000/1000" alt="Logo" style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" }}
-                     className="js-menu-img max-lg:hidden aspect-[9/16] object-cover size-full max-w-sm"/>
+                     className="js-menu-img lg:aspect-[9/16] object-cover size-full max-lg:w-2/3 lg:max-w-sm"/>
 
             </div>
         </div>

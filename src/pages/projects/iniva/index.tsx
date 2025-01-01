@@ -5,6 +5,7 @@ import MainImage from "@/components/projects-slug/MainImage";
 import Carousel from "@/components/projects-slug/Carousel";
 import Heading from "@/components/projects-slug/Heading";
 import FourImages from "@/components/projects-slug/FourImages";
+import TwoImages from "@/components/projects-slug/TwoImages";
 
 export default function Project() {
     const project = projects[0];
@@ -16,6 +17,7 @@ export default function Project() {
             <div className="pt-28 md:pt-32 pb-12 px-3.5 md:px-6 ">
                 <Heading project={project}/>
                 <MainImage project={project}/>
+                <TwoImages project={project}/>
                 <Carousel project={project}/>
                 <FourImages project={project}/>
             </div>
