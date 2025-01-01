@@ -5,6 +5,7 @@ import Link from "next/link";
 import {useGSAP} from "@gsap/react";
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
+import LocalTime from "@/components/global/Header/LocalTime";
 
 export default function Header() {
     gsap.registerPlugin(ScrollTrigger);
@@ -27,6 +28,7 @@ export default function Header() {
                     S. TESSARD
                 </Link>
                 <MenuOpenButton/>
+                <LocalTime/>
             </header>
             <Menu/>
         </>
