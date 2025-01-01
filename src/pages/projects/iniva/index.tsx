@@ -4,7 +4,7 @@ import Footer from "@/components/global/Footer";
 import MainImage from "@/components/projects-slug/MainImage";
 import Carousel from "@/components/projects-slug/Carousel";
 import Heading from "@/components/projects-slug/Heading";
-import TwoImages from "@/components/projects-slug/TwoImages";
+import FourImages from "@/components/projects-slug/FourImages";
 
 export default function Project() {
     const project = projects[0];
@@ -17,7 +17,7 @@ export default function Project() {
                 <Heading project={project}/>
                 <MainImage project={project}/>
                 <Carousel project={project}/>
-                <TwoImages project={project}/>
+                <FourImages project={project}/>
             </div>
 
             <Footer/>

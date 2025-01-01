@@ -1,7 +1,7 @@
 import Fancybox from "@/components/global/Fancybox";
 import ImagesDesc from "@/components/projects-slug/ImagesDesc";
 
-export default function TwoImages({ project }: {project: any}) {
+export default function FourImages({ project }: {project: any}) {
     return (
         <Fancybox>
 
@@ -20,26 +20,26 @@ export default function TwoImages({ project }: {project: any}) {
                     />
                 </a>
 
+                <a data-fancybox="gallery" href={project.gallery[7]} className="cursor-zoom-in">
+                    <img
+                        className="object-cover size-full"
+                        src={project.gallery[7]}
+                        alt={project.title}
+                    />
+                </a>
+
+                <a data-fancybox="gallery" href={project.gallery[6]} className="cursor-zoom-in">
+                    <img
+                        className="object-cover size-full"
+                        src={project.gallery[6]}
+                        alt={project.title}
+                    />
+                </a>
+
                 <a data-fancybox="gallery" href={project.gallery[5]} className="cursor-zoom-in">
                     <img
                         className="object-cover size-full"
                         src={project.gallery[5]}
-                        alt={project.title}
-                    />
-                </a>
-
-                <a data-fancybox="gallery" href={project.gallery[0]} className="cursor-zoom-in">
-                    <img
-                        className="object-cover size-full"
-                        src={project.gallery[0]}
-                        alt={project.title}
-                    />
-                </a>
-
-                <a data-fancybox="gallery" href={project.gallery[1]} className="cursor-zoom-in">
-                    <img
-                        className="object-cover size-full"
-                        src={project.gallery[1]}
                         alt={project.title}
                     />
                 </a>
