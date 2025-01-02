@@ -16,7 +16,7 @@ export default function Menu() {
     }, []);
 
     return (
-        <div className="js-menu hidden fixed z-50 top-0 h-[100dvh] md:h-screen bg-black w-full flex-col justify-between p-3.5 md:p-6">
+        <div className="js-menu hidden fixed z-50 top-0 h-[100vh] md:h-screen bg-black w-full flex-col justify-between p-3.5 md:p-6">
 
             <div className="flex justify-between w-full">
                 <span className="text-white md:text-lg font-primary">S. TESSARD</span>
