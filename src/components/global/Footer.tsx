@@ -32,7 +32,7 @@ export default function Footer() {
 
             </div>
 
-            <div className="flex gap-6 font-primary text-primary uppercase w-full">
+            <div className="flex gap-5 font-primary text-primary uppercase w-full">
                 <Link href="https://www.linkedin.com/in/simon-tessard-138733198/" target="_blank">
                     LinkedIn
                 </Link>

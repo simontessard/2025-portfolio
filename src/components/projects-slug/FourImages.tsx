@@ -10,7 +10,7 @@ export default function FourImages({ project }: {project: any}) {
                         Chaque détail a été réfléchi pour donner au visiteur une idée précise de ce qui l’attend sur place."
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16 md:mb-24">
 
                 <a data-fancybox="gallery" href={project.gallery[1]} className="cursor-zoom-in">
                     <img
@@ -20,10 +20,10 @@ export default function FourImages({ project }: {project: any}) {
                     />
                 </a>
 
-                <a data-fancybox="gallery" href={project.gallery[7]} className="cursor-zoom-in">
+                <a data-fancybox="gallery" href={project.gallery[9]} className="cursor-zoom-in">
                     <img
                         className="object-cover size-full"
-                        src={project.gallery[7]}
+                        src={project.gallery[9]}
                         alt={project.title}
                     />
                 </a>
@@ -36,10 +36,10 @@ export default function FourImages({ project }: {project: any}) {
                     />
                 </a>
 
-                <a data-fancybox="gallery" href={project.gallery[5]} className="cursor-zoom-in">
+                <a data-fancybox="gallery" href={project.gallery[8]} className="cursor-zoom-in">
                     <img
                         className="object-cover size-full"
-                        src={project.gallery[5]}
+                        src={project.gallery[8]}
                         alt={project.title}
                     />
                 </a>

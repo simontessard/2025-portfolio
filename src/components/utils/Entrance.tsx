@@ -20,7 +20,7 @@ export default function Entrance() {
                 stagger: 0.1,
                 ease: 'power4.out',
                 delay: 1,
-                onStart : () => {document.body.style.overflow = "hidden";}
+                onStart : () => {document.body.style.overflow = "hidden"}
             })
 
             tl.to('.js-up--first', {

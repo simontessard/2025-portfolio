@@ -18,8 +18,8 @@ export default function Project() {
                 <Heading project={project}/>
                 <MainImage project={project}/>
                 <TwoImages project={project}/>
-                <Carousel project={project}/>
                 <FourImages project={project}/>
+                <Carousel project={project}/>
             </div>
 
             <Footer/>
