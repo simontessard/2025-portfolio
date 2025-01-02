@@ -42,10 +42,10 @@ export default function MouseTrail({ children, className }) {
         currentImage.style.top = y + "px";
         gsap.to(currentImage, {
             display: "block",
-            duration: 0.5,
+            duration: .6,
             scale: 1,
             ease: "sine.out",
-            delay: 0.05,
+            delay: 0.15,
         })
         currentIndex++;
         nbOfImages++;
@@ -63,7 +63,7 @@ export default function MouseTrail({ children, className }) {
         const images = getCurrentImages();
         gsap.to(images[0], {
             display: "none",
-            duration: 0.4,
+            duration: .5,
             ease: "sine.out",
             scale: 0,
         })
@@ -94,7 +94,7 @@ export default function MouseTrail({ children, className }) {
                 gsap.to(ref.current, {
                     scale: 0,
                     display: "none",
-                    duration: 0.4,
+                    duration: .5,
                     ease: "sine.out",
                 });
             }
@@ -114,7 +114,7 @@ export default function MouseTrail({ children, className }) {
 
             {children}
 
-            { [...Array(13).keys()].map((_, index) => {
+            { [...Array(10).keys()].map((_, index) => {
                     const ref = useRef(null);
                     refs.push(ref);
                     return (
