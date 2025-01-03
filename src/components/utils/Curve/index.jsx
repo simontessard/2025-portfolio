@@ -46,7 +46,7 @@ export default function Curve({children}) {
         <div className='page curve'>
             <Entrance/>
             <div style={{opacity: dimensions.width == null ? 1 : 0}} className='background'/>
-                <motion.p className='route p-3 text-center text-white font-secondary text-4xl md:text-5xl 2xl:text-6xl uppercase' {...anim(text)}>
+                <motion.p className='route p-3 text-center text-white font-secondary text-4xl md:text-5xl uppercase' {...anim(text)}>
                     {routes[router.route]}
                 </motion.p>
                 {dimensions.width != null && <SVG {...dimensions}/>}
