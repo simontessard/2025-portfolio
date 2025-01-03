@@ -54,10 +54,10 @@ export default function GalleryDesktop({ project }: { project: any }) {
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[7]} className="cursor-zoom-in">
+                        <a data-fancybox="gallery" href={project.gallery[11]} className="cursor-zoom-in">
                             <img
                                 className="object-cover size-full"
-                                src={project.gallery[7]}
+                                src={project.gallery[11]}
                                 alt={project.title}
                             />
                         </a>
