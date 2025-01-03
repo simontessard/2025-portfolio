@@ -4,10 +4,15 @@ import Footer from "@/components/global/Footer";
 import Experience from "@/components/about/Experience";
 import Intro from "@/components/about/Intro";
 import InfiniteCarousel from "@/components/about/InfiniteCarousel";
+import Head from "next/head";
 
 export default function About() {
     return (
         <Curve>
+            <Head>
+                <title>À propos - Simon TESSARD</title>
+            </Head>
+
             <span id="top" className="opacity-0">top</span>
 
             <section className="bg-white pt-28 md:pt-32">

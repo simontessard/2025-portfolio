@@ -2,11 +2,16 @@ import Curve from "@/components/utils/Curve";
 import PageTitle from "@/components/global/PageTitle";
 import ProjectsGrid from "@/components/projects/ProjectsGrid";
 import Footer from "@/components/global/Footer";
+import Head from "next/head";
 
 export default function Projects() {
 
     return (
         <Curve>
+            <Head>
+                <title>Projets - Simon TESSARD</title>
+            </Head>
+
             <section className="bg-white">
                 <span id="top" className="opacity-0">top</span>
 
