@@ -5,23 +5,23 @@ import Fancybox from "@/components/global/Fancybox";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-export default function Carousel({ project }: { project: any }) {
+export default function GalleryDesktop({ project }: { project: any }) {
     return (
-        <div className="relative mb-6">
+        <div className="relative mb-12 md:mb-20">
 
-            <ImagesDesc
-                title="L’Adaptation Mobile : Passage Obligé"
-                description="La version mobile est optimisée, notamment avec des carousels ajustés pour petits écrans, des images responsives et une navigation fluide via le menu par exemple.
-                Chaque interaction est une invitation à découvrir, sans effort, les hôtels et activités proposés par Iniva."
+            <ImagesDesc title="Un site logique"
+                        description="Il se caractérise par une page d'accueil fournie, qui invite le visiteur à découvrir les pages
+                        détaillant un hôtel ou une activité. à travers différents clichés et vidéos, on y découvre facilement une
+                        représentation du Gabon qui donne envie."
             />
 
             <Fancybox>
                 <Swiper
-                    className="swiper-carousel-content"
+                    className="swiper-gallery-desktop"
                     grabCursor={true}
                     modules={[Navigation, Scrollbar]}
                     freeMode={true}
-                    scrollbar={{el: '.scrollbar-custom', draggable: true}}
+                    scrollbar={{el: '.scrollbar-custom-2', draggable: true, snapOnRelease: false}}
                     navigation={{
                         prevEl: '.custom-prev-button',
                         nextEl: '.custom-next-button',
@@ -30,45 +30,44 @@ export default function Carousel({ project }: { project: any }) {
                     breakpoints={{
                         768: {
                             spaceBetween: 30,
-                            slidesPerView: 2.5,
+                            slidesPerView: 1.5,
                         },
                     }}
                     slidesPerView={1.25}
                 >
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[4]} className="cursor-zoom-in">
+                        <a data-fancybox="gallery" href={project.gallery[7]} className="cursor-zoom-in">
                             <img
-                                className="aspect-square object-cover size-full"
-                                src={project.gallery[4]}
+                                className="object-cover size-full"
+                                src={project.gallery[7]}
                                 alt={project.title}
                             />
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[3]} className="cursor-zoom-in">
+                        <a data-fancybox="gallery" href={project.gallery[10]} className="cursor-zoom-in">
                             <img
-                                className="aspect-square object-cover size-full"
-                                src={project.gallery[3]}
+                                className="object-cover size-full"
+                                src={project.gallery[10]}
                                 alt={project.title}
                             />
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[2]} className="cursor-zoom-in">
+                        <a data-fancybox="gallery" href={project.gallery[7]} className="cursor-zoom-in">
                             <img
-                                className="aspect-square object-cover size-full"
-                                src={project.gallery[2]}
+                                className="object-cover size-full"
+                                src={project.gallery[7]}
                                 alt={project.title}
                             />
                         </a>
                     </SwiperSlide>
-
                 </Swiper>
             </Fancybox>
 
 
             <div className="flex items-end gap-5 md:gap-8 justify-between">
-                <div className="scrollbar-custom bg-primary/30 w-full h-1.5 md:h-2 cursor-grab mb-1"></div>
+                <div className="scrollbar-custom-2 bg-primary/30 w-full h-1.5 md:h-2 cursor-grab mb-1"></div>
                 <div className="flex gap-1.5 md:gap-2 mt-2 md:mt-4 w-fit">
                     <button
                         className="custom-prev-button enabled:md:hover:-translate-x-1 transition-transform duration-300 disabled:opacity-50">
