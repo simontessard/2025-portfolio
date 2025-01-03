@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 
 export default function Carousel({ project }: { project: any }) {
     return (
-        <div className="relative mb-10 md:mb-12">
+        <div className="relative mb-6">
 
             <ImagesDesc
                 title="L’Adaptation Mobile : Passage Obligé"

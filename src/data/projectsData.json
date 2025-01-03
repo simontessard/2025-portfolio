@@ -5,6 +5,7 @@
     "date": "2024",
     "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
     "cover": "/images/projects/iniva/iniva.jpg",
+    "logo" : "/images/projects/iniva/logo.png",
     "gallery" : [
       "/images/projects/iniva/iniva-main.jpg",
       "/images/projects/iniva/desktop-1.jpg",
