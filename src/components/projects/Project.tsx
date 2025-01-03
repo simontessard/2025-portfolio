@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Projet({ title, cover, logo, index } : { title: string, cover: string, index: string }) {
+export default function Projet({ title, cover, logo, index } : { title: string, cover: string, logo: string, index: string }) {
     return (
         <Link scroll={false} href={`/projects/${index}`} className="gsap-project group text-black">
             <div className="relative aspect-square mb-3">

@@ -15,7 +15,7 @@ export default function InfiniteCarousel() {
                 },
             }}
             freeMode={true}
-            speed={8000}
+            speed={7000}
             loop={true}
             preventInteractionOnTransition={true}
             autoplay={{delay: 1, disableOnInteraction: false, pauseOnMouseEnter: true, waitForTransition: true, stopOnLastSlide: false}}
@@ -34,13 +34,13 @@ export default function InfiniteCarousel() {
                 <img src="/images/home/stairs.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4">
-                <img src="/images/home/iniva.jpg" alt="Random" className="object-cover size-full"/>
+                <img src="/images/0.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4">
-                <img src="/images/home/elephant.jpg" alt="Random" className="object-cover size-full"/>
+                <img src="/images/5.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4">
-                <img src="/images/home/house.png" alt="Random" className="object-cover size-full"/>
+                <img src="/images/4.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
         </Swiper>
     )

@@ -32,7 +32,7 @@ export default function Heading({project} : {project: any}) {
                                     Intégration maquettes
                                 </p>
                                 <p className="font-primary uppercase text-primary max-md:text-sm">
-                                    Création back-office
+                                    Création back-office personnalisé
                                 </p>
                             </div>
 
