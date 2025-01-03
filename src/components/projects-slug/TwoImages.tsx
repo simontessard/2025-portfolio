@@ -13,18 +13,18 @@ export default function TwoImages({ project }: {project: any}) {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16 md:mb-24">
 
-                <a data-fancybox="gallery" href={project.gallery[7]} className="cursor-zoom-in">
-                    <img
-                        className="object-cover size-full"
-                        src={project.gallery[7]}
-                        alt={project.title}
-                    />
-                </a>
-
                 <a data-fancybox="gallery" href={project.gallery[10]} className="cursor-zoom-in">
                     <img
                         className="object-cover size-full"
                         src={project.gallery[10]}
+                        alt={project.title}
+                    />
+                </a>
+
+                <a data-fancybox="gallery" href={project.gallery[7]} className="cursor-zoom-in">
+                    <img
+                        className="object-cover size-full"
+                        src={project.gallery[7]}
                         alt={project.title}
                     />
                 </a>

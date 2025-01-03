@@ -1,5 +1,6 @@
 import Fancybox from "@/components/global/Fancybox";
 import ImagesDesc from "@/components/projects-slug/ImagesDesc";
+import Image from "next/image";
 
 export default function FourImages({ project }: {project: any}) {
     return (
@@ -29,7 +30,9 @@ export default function FourImages({ project }: {project: any}) {
                 </a>
 
                 <a data-fancybox="gallery" href={project.gallery[6]} className="cursor-zoom-in">
-                    <img
+                    <Image
+                        width={1920}
+                        height={1080}
                         className="object-cover size-full"
                         src={project.gallery[6]}
                         alt={project.title}
@@ -37,7 +40,9 @@ export default function FourImages({ project }: {project: any}) {
                 </a>
 
                 <a data-fancybox="gallery" href={project.gallery[8]} className="cursor-zoom-in">
-                    <img
+                    <Image
+                        width={1920}
+                        height={1080}
                         className="object-cover size-full"
                         src={project.gallery[8]}
                         alt={project.title}
