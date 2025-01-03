@@ -5,7 +5,7 @@ export default function Projet({ title, cover, logo, index } : { title: string, 
         <Link scroll={false} href={`/projects/${index}`} className="gsap-project group text-black">
             <div className="relative aspect-square mb-3">
                 <img className="absolute top-0 left-0 size-full object-cover" src={cover} alt={title}/>
-                <img className="absolute top-2 right-4 w-12 object-contain" src={logo} alt={title}/>
+                <img className="absolute top-3 right-5 w-12 object-contain" src={logo} alt={title}/>
             </div>
             <div className="flex flex-col">
                 <div className="flex items-center justify-between mb-0.5">

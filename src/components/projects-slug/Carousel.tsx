@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Scrollbar } from "swiper/modules";
 import ImagesDesc from "@/components/projects-slug/ImagesDesc";
 import Fancybox from "@/components/global/Fancybox";
 import 'swiper/css';
@@ -19,7 +19,9 @@ export default function Carousel({ project }: { project: any }) {
                 <Swiper
                     className="swiper-carousel-content"
                     grabCursor={true}
-                    modules={[Navigation]}
+                    modules={[Navigation, Scrollbar]}
+                    freeMode={true}
+                    scrollbar={{el: '.scrollbar-custom', draggable: true}}
                     navigation={{
                         prevEl: '.custom-prev-button',
                         nextEl: '.custom-next-button',
@@ -60,28 +62,35 @@ export default function Carousel({ project }: { project: any }) {
                             />
                         </a>
                     </SwiperSlide>
+
                 </Swiper>
             </Fancybox>
 
-            <div className="flex gap-1.5 md:gap-2 mt-2 md:mt-4 justify-end">
-                <button className="custom-prev-button enabled:md:hover:-translate-x-1 transition-transform duration-300 disabled:opacity-50">
-                    <svg className="size-9 md:size-10 text-primary -rotate-90"
-                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
-                        <path fillRule="evenodd" clipRule="evenodd"
-                              d="M12.252 41L41 12.252 69.749 41l-4.832 4.832-20.5-20.5v43.002h-6.834V25.331l-20.5 20.5L12.252 41z"
-                              fill="currentColor"
-                        />
-                    </svg>
-                </button>
-                <button className="custom-next-button enabled:md:hover:translate-x-1 transition-transform duration-300 disabled:opacity-50">
-                    <svg className="size-9 md:size-10 text-primary rotate-90"
-                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
-                        <path fillRule="evenodd" clipRule="evenodd"
-                              d="M12.252 41L41 12.252 69.749 41l-4.832 4.832-20.5-20.5v43.002h-6.834V25.331l-20.5 20.5L12.252 41z"
-                              fill="currentColor"
-                        />
-                    </svg>
-                </button>
+
+            <div className="flex items-end gap-5 md:gap-8 justify-between">
+                <div className="scrollbar-custom bg-primary/30 w-full h-1.5 md:h-2 cursor-grab mb-1"></div>
+                <div className="flex gap-1.5 md:gap-2 mt-2 md:mt-4 w-fit">
+                    <button
+                        className="custom-prev-button enabled:md:hover:-translate-x-1 transition-transform duration-300 disabled:opacity-50">
+                        <svg className="size-9 md:size-10 text-primary -rotate-90"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
+                            <path fillRule="evenodd" clipRule="evenodd"
+                                  d="M12.252 41L41 12.252 69.749 41l-4.832 4.832-20.5-20.5v43.002h-6.834V25.331l-20.5 20.5L12.252 41z"
+                                  fill="currentColor"
+                            />
+                        </svg>
+                    </button>
+                    <button
+                        className="custom-next-button enabled:md:hover:translate-x-1 transition-transform duration-300 disabled:opacity-50">
+                        <svg className="size-9 md:size-10 text-primary rotate-90"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
+                            <path fillRule="evenodd" clipRule="evenodd"
+                                  d="M12.252 41L41 12.252 69.749 41l-4.832 4.832-20.5-20.5v43.002h-6.834V25.331l-20.5 20.5L12.252 41z"
+                                  fill="currentColor"
+                            />
+                        </svg>
+                    </button>
+                </div>
             </div>
 
         </div>
