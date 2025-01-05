@@ -36,19 +36,19 @@ export default function GalleryDesktop({ project }: { project: any }) {
                     slidesPerView={1.25}
                 >
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[7]} className="cursor-zoom-in">
+                        <a data-fancybox="gallery" href={project.gallery[10]} className="cursor-zoom-in">
                             <img
                                 className="object-cover size-full"
-                                src={project.gallery[7]}
+                                src={project.gallery[10]}
                                 alt={project.title}
                             />
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[10]} className="cursor-zoom-in">
+                        <a data-fancybox="gallery" href={project.gallery[7]} className="cursor-zoom-in">
                             <img
                                 className="object-cover size-full"
-                                src={project.gallery[10]}
+                                src={project.gallery[7]}
                                 alt={project.title}
                             />
                         </a>
@@ -67,7 +67,7 @@ export default function GalleryDesktop({ project }: { project: any }) {
 
 
             <div className="flex items-end gap-5 md:gap-8 justify-between">
-                <div className="scrollbar-custom-2 bg-primary/30 w-full h-1.5 md:h-2 cursor-grab mb-1"></div>
+                <div className="scrollbar-custom-2 cursor-grab bg-primary/30 w-full h-1.5 md:h-2 mb-1"></div>
                 <div className="flex gap-1.5 md:gap-2 mt-2 md:mt-4 w-fit">
                     <button
                         className="custom-prev-button enabled:md:hover:-translate-x-1 transition-transform duration-300 disabled:opacity-50">
