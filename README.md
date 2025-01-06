@@ -18,6 +18,7 @@ pnpm dev
 - [ ] More projects
 - [ ] Custom cursor
 
+- [x] Menu display broken on 13"
 - [x] More details on experience part
 - [x] Fancybox Integration
 - [x] Music player (replaced by hour)
