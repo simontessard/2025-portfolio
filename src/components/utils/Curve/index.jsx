@@ -74,7 +74,9 @@ const SVG = ({height, width}) => {
     `
 
     return (
-        <motion.svg className="svg" {...anim(translate)}>
+        <motion.svg className="svg" {...anim(translate)}
+                    onAnimationStart={() => document.body.style.overflow = "hidden"}
+                    onAnimationComplete={() => document.body.style.overflow = "unset"}>
             <motion.path {...anim(curve(initialPath, targetPath))}/>
         </motion.svg>
     )
