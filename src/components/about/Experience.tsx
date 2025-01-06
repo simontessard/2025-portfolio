@@ -3,7 +3,7 @@ export default function Experience() {
         {
             title: "Développeur Full-stack",
             company: "Freelance",
-            desc: "J'ai récemment lancé mon activité en freelance, où je conçois et développe des sites vitrines sur mesure, adaptés aux besoins et à l'identité de chaque client.",
+            desc: "J'ai récemment lancé mon activité en freelance, où je développe des sites vitrines sur mesure.",
             date: "2024 - Aujourd'hui"
         },
         {
