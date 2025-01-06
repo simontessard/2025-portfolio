@@ -1,6 +1,6 @@
 export default function Title() {
     return (
-        <div className="lg:pl-6 pb-8 lg:pb-20">
+        <div className="no-image lg:pl-6 pb-8 lg:pb-20">
             <h1 className="text-primary">
                 <span className="text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl tracking-tight font-primary font-medium uppercase">
                     Front

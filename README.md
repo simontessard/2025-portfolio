@@ -16,6 +16,7 @@ pnpm dev
 - [ ] Hover menu/close button
 - [ ] Height of page transition on mobile
 - [ ] More projects
+- [ ] Custom cursor
 
 - [x] More details on experience part
 - [x] Fancybox Integration

@@ -115,18 +115,18 @@ export default function MouseTrail({ children, className }) {
             {children}
 
             { [...Array(10).keys()].map((_, index) => {
-                    const ref = useRef(null);
-                    refs.push(ref);
-                    return (
-                        <img
-                            key={index}
-                            ref={ref}
-                            alt="Image carré"
-                            className="scale-0 pointer-events-none size-40 object-cover absolute hidden -translate-y-1/2 -translate-x-1/2"
-                            src={`/images/${index}.jpg`}
-                        />
-                    );
-                }) }
+                const ref = useRef(null);
+                refs.push(ref);
+                return (
+                    <img
+                        key={index}
+                        ref={ref}
+                        alt="Image carré"
+                        className="scale-0 pointer-events-none size-28 2xl:size-32 object-cover absolute hidden -translate-y-1/2 -translate-x-1/2"
+                        src={`/images/${index}.jpg`}
+                    />
+                );
+            })}
         </div>
     );
 }
