@@ -20,10 +20,18 @@
         z-index: 99;
         fill : #0156cf;
 }
+
+@media (max-width: 768px) {
+        .curve .svg, .background {
+                height: calc(100dvh + 400px);
+        }
+}
+
 .curve .background{
         background-color: #0156cf;
         transition: opacity 0s linear 0.1s;
 }
+
 .curve .route{
         position: fixed;
         left: 50%;

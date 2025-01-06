@@ -9,16 +9,10 @@ export default function Intro() {
             </h2>
 
             <div className="w-full lg:w-1/2 font-primary">
-                <Paragraph
-                    text="Je suis Simon TESSARD, un Développeur Web de 24 ans vivant à Rennes, qui vient de se lancer en indépendant."/>
-                <Paragraph
-                    text="à chaque projet, je concrétise mes conceptions en misant sur des finitions soignées avec des animations réfléchies.
-                    Mon objectif est de sublimer votre travail et vos compétences à travers des créations qui racontent votre histoire et reflètent votre identité."/>
-                <Paragraph
-                    text="Mes compétences englobent le Développement Web (Front-end et Back-end) et le Web Design, ainsi je peux créer votre site web de bout en bout."/>
-                <Paragraph
-                    text="Disponible pour des missions de Freelance, n'hésitez pas à me contacter pour discuter de
-                    votre projet, ou pour toute autre demande."/>
+                <Paragraph text="Je suis Simon TESSARD, un développeur web de 24 ans vivant à Rennes, qui vient de se lancer en indépendant."/>
+                <Paragraph text="à chaque projet, je concrétise mes conceptions web en misant sur des finitions soignées avec des animations réfléchies. Mon objectif est de sublimer votre travail et vos compétences à travers des créations qui racontent votre histoire et reflètent votre identité."/>
+                <Paragraph text="Mes compétences englobent donc le développement Web (Front-end et Back-end) et le Web Design, ainsi je peux créer votre site web de bout en bout."/>
+                <Paragraph text="Disponible pour des missions de Freelance, n'hésitez pas à me contacter pour discuter de votre projet, ou pour toute autre demande."/>
             </div>
         </div>
     )

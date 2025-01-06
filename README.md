@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+This is a [Next.js](https://nextjs.org) project.
 
 ## Getting Started
 
@@ -10,28 +10,30 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 ## TODO
-- [ ] Fancybox Integration
-- [ ] Music player
-- [ ] Definitive color
-- [ ] Definitive content
-- [ ] Fix menu in production
-- [ ] Home layout mobile
-- [ ] Menu animations
-- [ ] Entrance animation integration
 - [ ] Hover menu/close button
-- [ ] More info on projet heading
+- [ ] Height of page transition on mobile
+- [ ] More projects
 
-## Future Features
+- [x] More details on experience part
+- [x] Fancybox Integration
+- [x] Music player (replaced by hour)
+- [x] Definitive color
+- [x] Definitive content
+- [x] Fix menu in production
+- [x] Home layout mobile
+- [x] Menu animations
+- [x] Entrance animation integration
+- [x] More info on projet heading
+
+## Upcoming Features
 - [ ] Blog
 - [ ] Color change on project detail
 - [ ] Internationalization
     
 ### Bugs
 
-- Fixed a bug where Swiper wasn't rendering on page transition : https://github.com/nolimits4web/swiper/issues/7577
+- [x] Swiper was not rendered on page transition : https://github.com/nolimits4web/swiper/issues/7577
 

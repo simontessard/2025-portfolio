@@ -3,11 +3,14 @@ export default function Experience() {
         {
             title: "Développeur Full-stack",
             company: "Freelance",
+            desc: "J'ai récemment lancé mon activité en freelance, où je conçois et développe des sites vitrines sur mesure, adaptés aux besoins et à l'identité de chaque client.",
             date: "2024 - Aujourd'hui"
         },
         {
             title: "Développeur Full-stack",
             company: "Agence Cobalt Studio",
+            desc: "En tant qu'alternant, j'ai participé activement à la conception et au développement de plus de 10 projets web diversifiés, couvrant un large éventail de domaines. " +
+                "Ces expériences m'ont permis d'acquérir des compétences ainsi qu'une capacité d'adaptation aux besoins spécifiques de chaque projet.",
             date: "2023 - 2024"
         }
     ];
@@ -31,6 +34,11 @@ export default function Experience() {
                         <p className="text-primary text-sm md:text-xl uppercase font-secondary">
                             {exp.company}
                         </p>
+                        {exp.desc &&
+                            <p className="text-primary font-light font-primary max-md:text-sm max-w-xl uppercase mt-3 md:mt-5">
+                                {exp.desc}
+                            </p>
+                        }
                     </li>
                 ))}
                 <span className="block h-0.5 w-full bg-primary mb-6 lg:mb-8"></span>
