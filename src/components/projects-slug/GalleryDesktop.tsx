@@ -17,7 +17,7 @@ export default function GalleryDesktop({ project }: { project: any }) {
 
             <Fancybox>
                 <Swiper
-                    className="swiper-gallery-desktop"
+                    className="swiper-gallery-desktop md:h-[80dvh]"
                     grabCursor={true}
                     modules={[Navigation, Scrollbar]}
                     freeMode={true}

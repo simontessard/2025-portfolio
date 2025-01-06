@@ -23,9 +23,9 @@ export default function Menu() {
                 <MenuCloseButton/>
             </div>
 
-            <div className="flex max-lg:flex-col-reverse justify-between max-lg:pt-8 max-lg:gap-10 max-lg:h-full">
+            <div className="flex max-lg:flex-col-reverse justify-between max-lg:pt-8 max-lg:gap-10 h-full">
 
-                <div className="shrink-0 flex flex-col justify-end">
+                <div className="mt-auto">
                     <div className="js-menu-links -translate-y-1 opacity-0 flex max-lg:flex-col flex-wrap lg:items-center lg:max-w-xl xl:max-w-4xl gap-y-2 xl:gap-y-4 gap-x-6 md:gap-x-7 xl:gap-x-8 self-end w-full mb-12 md:mb-20">
                         <MenuLink href="/" text="accueil" hideMenu={hideMenu}/>
                         <span className="hidden lg:block size-3 md:size-4 xl:size-4 bg-white rounded-full"/>
