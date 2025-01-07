@@ -1,6 +1,6 @@
 interface ImagesDescProps {
-    title: string;
-    description: string;
+    title?: string;
+    description?: string;
 }
 
 export default function ImagesDesc( {title, description}: ImagesDescProps ) {

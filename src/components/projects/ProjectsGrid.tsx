@@ -7,7 +7,7 @@ import {useGSAP} from "@gsap/react";
 export default function ProjectsGrid() {
 
     useGSAP( () => {
-        {/*
+
          const projects: HTMLElement[] = gsap.utils.toArray('.gsap-project');
 
         projects.forEach((project, index) => {
@@ -26,7 +26,6 @@ export default function ProjectsGrid() {
                 });
             })
         });
-        */}
     })
 
     return (
