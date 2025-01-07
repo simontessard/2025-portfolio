@@ -28,7 +28,7 @@ export default function Heading({project} : {project: any}) {
                                 <p className="font-secondary md:text-xl text-primary uppercase italic mb-2 md:mb-2.5 xl:mb-4">
                                     Services
                                 </p>
-                                {project.services.map((service, index) => (
+                                {project.services.map((service : any, index: number) => (
                                     <p key={index}
                                        className="font-primary uppercase text-primary max-md:text-sm mb-1 md:mb-1.5">
                                         {service}

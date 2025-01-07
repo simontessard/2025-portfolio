@@ -37,7 +37,7 @@ export default function InfiniteCarousel() {
                 <img src="/images/5.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4 xl:!w-1/5">
-                <img src="/images/projects/iniva/large/desktop-2.jpg" alt="Random" className="object-cover size-full"/>
+                <img src="/images/projects/iniva/square/desktop-1.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4 xl:!w-1/5">
                 <img src="/images/4.jpg" alt="Random" className="object-cover size-full"/>
