@@ -5,15 +5,11 @@ import Fancybox from "@/components/global/Fancybox";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-export default function GalleryMobile({ project }: { project: any }) {
+export default function GalleryMobile({ gallery, title, desc }: { gallery: any, title? : string, desc? : string }) {
     return (
         <div className="relative mb-6">
 
-            <ImagesDesc
-                title="L’Adaptation Mobile : Passage Obligé"
-                description="La version mobile est optimisée, notamment avec des carousels ajustés pour petits écrans, des images responsives et une navigation fluide via le menu par exemple.
-                Chaque interaction est une invitation à découvrir, sans effort, les hôtels et activités proposés par Iniva."
-            />
+            <ImagesDesc title={title} description={desc}/>
 
             <Fancybox>
                 <Swiper
@@ -35,42 +31,17 @@ export default function GalleryMobile({ project }: { project: any }) {
                     }}
                     slidesPerView={1.25}
                 >
-                    <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery.square[0]} className="cursor-zoom-in">
-                            <img
-                                className="aspect-square object-cover size-full"
-                                src={project.gallery.square[0]}
-                                alt={project.title}
-                            />
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery.square[2]} className="cursor-zoom-in">
-                            <img
-                                className="aspect-square object-cover size-full"
-                                src={project.gallery.square[2]}
-                                alt={project.title}
-                            />
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery.square[1]} className="cursor-zoom-in">
-                            <img
-                                className="aspect-square object-cover size-full"
-                                src={project.gallery.square[1]}
-                                alt={project.title}
-                            />
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery.square[3]} className="cursor-zoom-in">
-                            <img
-                                className="aspect-square object-cover size-full"
-                                src={project.gallery.square[3]}
-                                alt={project.title}
-                            />
-                        </a>
-                    </SwiperSlide>
+                    {gallery.map((image: string, index: number) => (
+                        <SwiperSlide key={index}>
+                            <a data-fancybox="gallery" href={image} className="cursor-zoom-in">
+                                <img
+                                    className="aspect-square object-cover size-full"
+                                    src={image}
+                                    alt=""
+                                />
+                            </a>
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
             </Fancybox>
 

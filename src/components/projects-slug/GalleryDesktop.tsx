@@ -5,15 +5,11 @@ import Fancybox from "@/components/global/Fancybox";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-export default function GalleryDesktop({ project }: { project: any }) {
+export default function GalleryDesktop({ gallery, title, desc }: { gallery: any, title? : string, desc? : string }) {
     return (
         <div className="relative mb-12 md:mb-20">
 
-            <ImagesDesc title="Un site logique"
-                        description="Il se caractérise par une page d'accueil fournie, qui invite le visiteur à découvrir les pages
-                        détaillant un hôtel ou une activité. à travers différents clichés et vidéos, on y découvre facilement une
-                        représentation du Gabon qui donne envie."
-            />
+            <ImagesDesc title={title} description={desc}/>
 
             <Fancybox>
                 <Swiper
@@ -35,33 +31,17 @@ export default function GalleryDesktop({ project }: { project: any }) {
                     }}
                     slidesPerView={1.25}
                 >
-                    <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery.large[3]} className="cursor-zoom-in">
-                            <img
-                                className="object-cover size-full"
-                                src={project.gallery.large[3]}
-                                alt={project.title}
-                            />
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery.large[5]} className="cursor-zoom-in">
-                            <img
-                                className="object-cover size-full"
-                                src={project.gallery.large[5]}
-                                alt={project.title}
-                            />
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery.large[4]} className="cursor-zoom-in">
-                            <img
-                                className="object-cover size-full"
-                                src={project.gallery.large[4]}
-                                alt={project.title}
-                            />
-                        </a>
-                    </SwiperSlide>
+                    {gallery.map((image: string, index: number) => (
+                        <SwiperSlide key={index}>
+                            <a data-fancybox="gallery" href={image} className="cursor-zoom-in">
+                                <img
+                                    className="object-cover size-full"
+                                    src={image}
+                                    alt=""
+                                />
+                            </a>
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
             </Fancybox>
 

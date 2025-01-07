@@ -9,8 +9,8 @@ export default function Experience() {
         {
             title: "Développeur Full-stack",
             company: "Agence Cobalt Studio",
-            desc: "En tant qu'alternant, j'ai participé activement à la conception et au développement de plus de 10 projets web diversifiés, couvrant un large éventail de domaines. " +
-                "Ces expériences m'ont permis d'acquérir des compétences ainsi qu'une capacité d'adaptation aux besoins spécifiques de chaque projet.",
+            desc: "En tant qu'alternant, j'ai participé activement au développement de +10 projets web diversifiés, couvrant un large éventail de domaines. " +
+                "J'ai ainsi une capacité d'adaptation aux besoins spécifiques de chaque projet.",
             date: "2023 - 2024"
         }
     ];

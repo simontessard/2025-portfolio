@@ -10,6 +10,7 @@ const routes = {
     "/about": "À Propos",
     "/projects": "Projets",
     "/projects/iniva": "Iniva Tourism",
+    "/projects/daouad": "Daouad",
 }
 
 const anim = (variants) => {

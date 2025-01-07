@@ -32,7 +32,7 @@ export default function ProjectsGrid() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-y-14 md:gap-x-12">
             {projects.map((project, index) => (
-                <Projet key={index} {...project} index={'iniva'}/>
+                <Projet key={index} {...project}/>
             ))}
         </div>
     )
