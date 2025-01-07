@@ -1,6 +1,6 @@
 import Curve from "@/components/utils/Curve";
 import PageTitle from "@/components/global/PageTitle";
-import Footer from "@/components/global/Footer";
+import Footer from "@/components/global/Footer/Footer";
 import Experience from "@/components/about/Experience";
 import Intro from "@/components/about/Intro";
 import InfiniteCarousel from "@/components/about/InfiniteCarousel";

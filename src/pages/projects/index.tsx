@@ -1,7 +1,7 @@
 import Curve from "@/components/utils/Curve";
 import PageTitle from "@/components/global/PageTitle";
 import ProjectsGrid from "@/components/projects/ProjectsGrid";
-import Footer from "@/components/global/Footer";
+import Footer from "@/components/global/Footer/Footer";
 import Head from "next/head";
 
 export default function Projects() {

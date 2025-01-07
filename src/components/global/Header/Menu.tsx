@@ -4,6 +4,7 @@ import {MenuCloseButton} from "@/components/global/Header/MenuOpenButton";
 import MenuLink from "@/components/global/Header/MenuLink";
 import Link from "next/link";
 import {useGSAP} from "@gsap/react";
+import HomeLink from "@/components/global/Header/HomeLink";
 
 export default function Menu() {
 
@@ -18,7 +19,7 @@ export default function Menu() {
         <div className="js-menu hidden fixed z-50 top-0 h-[100dvh] md:h-screen bg-black w-full flex-col justify-between p-4 md:p-6">
 
             <div className="flex justify-between w-full">
-                <span className="text-white md:text-lg font-primary">S. TESSARD</span>
+                <HomeLink/>
                 <MenuCloseButton/>
             </div>
 

@@ -1,7 +1,7 @@
 export default function Experience() {
     const experience = [
         {
-            title: "Développeur Full-stack",
+            title: "Développeur",
             company: "Freelance",
             desc: "J'ai récemment lancé mon activité en freelance, où je développe des sites vitrines sur mesure.",
             date: "2024 - Aujourd'hui"
@@ -35,7 +35,7 @@ export default function Experience() {
                             {exp.company}
                         </p>
                         {exp.desc &&
-                            <p className="text-primary font-light font-primary max-md:text-sm max-w-xl uppercase mt-3 md:mt-5">
+                            <p className="text-primary font-light font-primary max-md:text-sm max-w-2xl uppercase mt-3 md:mt-5">
                                 {exp.desc}
                             </p>
                         }
