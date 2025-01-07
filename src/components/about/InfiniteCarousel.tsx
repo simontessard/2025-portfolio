@@ -22,13 +22,10 @@ export default function InfiniteCarousel() {
             className="swiper-container-free-mode mb-20 md:mb-24 xl:mb-32"
         >
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4 xl:!w-1/5">
-                <img src="/images/projects/daouad/square/desktop-3.jpg" alt="Random" className="object-cover size-full"/>
+                <img src="/images/projects/iniva/square/desktop-1.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4 xl:!w-1/5">
-                <img src="/images/home/house.png" alt="Random" className="object-cover size-full"/>
-            </SwiperSlide>
-            <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4 xl:!w-1/5">
-                <img src="/images/home/iniva.jpg" alt="Random" className="object-cover size-full"/>
+                <img src="/images/projects/aj/square/desktop-1.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4 xl:!w-1/5">
                 <img src="/images/projects/iniva/square/phone-5.jpg" alt="Random" className="object-cover size-full"/>
@@ -37,10 +34,13 @@ export default function InfiniteCarousel() {
                 <img src="/images/projects/daouad/square/phone-1.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4 xl:!w-1/5">
-                <img src="/images/projects/iniva/square/desktop-1.jpg" alt="Random" className="object-cover size-full"/>
+                <img src="/images/projects/cdc/square/desktop-1.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
             <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4 xl:!w-1/5">
-                <img src="/images/4.jpg" alt="Random" className="object-cover size-full"/>
+                <img src="/images/projects/iniva/square/phone-1.jpg" alt="Random" className="object-cover size-full"/>
+            </SwiperSlide>
+            <SwiperSlide className="!aspect-square !w-1/3 md:!w-1/4 xl:!w-1/5">
+                <img src="/images/projects/daouad/square/desktop-3.jpg" alt="Random" className="object-cover size-full"/>
             </SwiperSlide>
         </Swiper>
     )

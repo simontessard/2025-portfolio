@@ -7,7 +7,7 @@ import 'swiper/css/effect-fade';
 export default function Carousel() {
     const slides = [
         { src: "/images/home/carousel-hotels.png", alt: "Carousels des hôtels" },
-        { src: "/images/home/iniva.jpg", alt: "Iniva" },
+        { src: "/images/projects/cdc/square/desktop-1.jpg", alt: "Iniva" },
         { src: "/images/projects/daouad/square/desktop-3.jpg", alt: "Images mobiles" },
     ];
 
