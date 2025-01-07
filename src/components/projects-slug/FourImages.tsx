@@ -13,38 +13,38 @@ export default function FourImages({ project }: {project: any}) {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16 md:mb-24">
 
-                <a data-fancybox="gallery" href={project.gallery[1]} className="cursor-zoom-in">
+                <a data-fancybox="gallery" href={project.gallery.large[1]} className="cursor-zoom-in">
                     <img
                         className="object-cover size-full"
-                        src={project.gallery[1]}
+                        src={project.gallery.large[1]}
                         alt={project.title}
                     />
                 </a>
 
-                <a data-fancybox="gallery" href={project.gallery[9]} className="cursor-zoom-in">
+                <a data-fancybox="gallery" href={project.gallery.large[6]} className="cursor-zoom-in">
                     <img
                         className="object-cover size-full"
-                        src={project.gallery[9]}
+                        src={project.gallery.large[6]}
                         alt={project.title}
                     />
                 </a>
 
-                <a data-fancybox="gallery" href={project.gallery[6]} className="cursor-zoom-in">
+                <a data-fancybox="gallery" href={project.gallery.large[7]} className="cursor-zoom-in">
                     <Image
                         width={1920}
                         height={1080}
                         className="object-cover size-full"
-                        src={project.gallery[6]}
+                        src={project.gallery.large[7]}
                         alt={project.title}
                     />
                 </a>
 
-                <a data-fancybox="gallery" href={project.gallery[8]} className="cursor-zoom-in">
+                <a data-fancybox="gallery" href={project.gallery.large[8]} className="cursor-zoom-in">
                     <Image
                         width={1920}
                         height={1080}
                         className="object-cover size-full"
-                        src={project.gallery[8]}
+                        src={project.gallery.large[8]}
                         alt={project.title}
                     />
                 </a>

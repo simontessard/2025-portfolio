@@ -36,37 +36,37 @@ export default function GalleryMobile({ project }: { project: any }) {
                     slidesPerView={1.25}
                 >
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[4]} className="cursor-zoom-in">
+                        <a data-fancybox="gallery" href={project.gallery.square[0]} className="cursor-zoom-in">
                             <img
                                 className="aspect-square object-cover size-full"
-                                src={project.gallery[4]}
+                                src={project.gallery.square[0]}
                                 alt={project.title}
                             />
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[3]} className="cursor-zoom-in">
+                        <a data-fancybox="gallery" href={project.gallery.square[2]} className="cursor-zoom-in">
                             <img
                                 className="aspect-square object-cover size-full"
-                                src={project.gallery[3]}
+                                src={project.gallery.square[2]}
                                 alt={project.title}
                             />
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[2]} className="cursor-zoom-in">
+                        <a data-fancybox="gallery" href={project.gallery.square[1]} className="cursor-zoom-in">
                             <img
                                 className="aspect-square object-cover size-full"
-                                src={project.gallery[2]}
+                                src={project.gallery.square[1]}
                                 alt={project.title}
                             />
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[12]} className="cursor-zoom-in">
+                        <a data-fancybox="gallery" href={project.gallery.square[3]} className="cursor-zoom-in">
                             <img
                                 className="aspect-square object-cover size-full"
-                                src={project.gallery[12]}
+                                src={project.gallery.square[3]}
                                 alt={project.title}
                             />
                         </a>

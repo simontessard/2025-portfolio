@@ -36,28 +36,28 @@ export default function GalleryDesktop({ project }: { project: any }) {
                     slidesPerView={1.25}
                 >
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[10]} className="cursor-zoom-in">
+                        <a data-fancybox="gallery" href={project.gallery.large[3]} className="cursor-zoom-in">
                             <img
                                 className="object-cover size-full"
-                                src={project.gallery[10]}
+                                src={project.gallery.large[3]}
                                 alt={project.title}
                             />
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[7]} className="cursor-zoom-in">
+                        <a data-fancybox="gallery" href={project.gallery.large[5]} className="cursor-zoom-in">
                             <img
                                 className="object-cover size-full"
-                                src={project.gallery[7]}
+                                src={project.gallery.large[5]}
                                 alt={project.title}
                             />
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a data-fancybox="gallery" href={project.gallery[11]} className="cursor-zoom-in">
+                        <a data-fancybox="gallery" href={project.gallery.large[4]} className="cursor-zoom-in">
                             <img
                                 className="object-cover size-full"
-                                src={project.gallery[11]}
+                                src={project.gallery.large[4]}
                                 alt={project.title}
                             />
                         </a>

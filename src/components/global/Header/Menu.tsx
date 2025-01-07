@@ -31,7 +31,7 @@ export default function Menu() {
                         <MenuLink href="/projects" text="projets"/>
                         <MenuLink href="/about" text="à propos"/>
                     </div>
-                    <div className="js-menu-contact -translate-y-1 opacity-0 flex gap-5 text-white font-primary font-medium uppercase w-full">
+                    <div className="js-menu-contact -translate-y-1 opacity-0 flex gap-5 xl:gap-6 text-white font-primary font-medium uppercase w-full">
                         <Link scroll={false} href="https://www.linkedin.com/in/simon-tessard-138733198/" target="_blank">
                             LinkedIn
                         </Link>
