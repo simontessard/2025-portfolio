@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Projet({ title, cover, logo, path } : { title: string, cover: string, logo: string, path: string }) {
+export default function Projet({ title, cover, logo, path, field } : { title: string, cover: string, logo: string, path: string, field : string }) {
     return (
         <Link scroll={false} href={`/projects/${path}`} className="gsap-project group text-black">
             <div className="relative aspect-square mb-3">
@@ -18,7 +18,9 @@ export default function Projet({ title, cover, logo, path } : { title: string, c
                         <path fillRule="evenodd" clipRule="evenodd" d="M12.252 41L41 12.252 69.749 41l-4.832 4.832-20.5-20.5v43.002h-6.834V25.331l-20.5 20.5L12.252 41z" fill="currentColor"/>
                     </svg>
                 </div>
-                <h3 className="font-secondary uppercase italic text-primary">Site web</h3>
+                <h3 className="font-secondary uppercase italic text-primary">
+                    {field}
+                </h3>
             </div>
 
         </Link>
