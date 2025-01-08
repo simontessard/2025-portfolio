@@ -6,9 +6,9 @@ import 'swiper/css/effect-fade';
 
 export default function Carousel() {
     const slides = [
-        { src: "/images/home/carousel-hotels.png", alt: "Iniva Tourism section carousel des hôtels du site web" },
+        { src: "/images/projects/iniva/square/desktop-quality.jpg", alt: "Iniva Tourism section carousel des hôtels du site web" },
         { src: "/images/projects/socbois/square/desktop-1.jpg", alt: "Iniva Tourism section carousel des hôtels du site web" },
-        { src: "/images/projects/daouad/square/desktop-3.jpg", alt: "Daouad.fr section carte du site" },
+        { src: "/images/projects/daouad/square/desktop-quality.jpg", alt: "Daouad.fr section carte du site" },
         { src: "/images/projects/cdc/square/desktop-quality.jpg", alt: "ChefDeChantier.fr section Hero du site web" },
     ];
 
