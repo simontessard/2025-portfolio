@@ -11,6 +11,9 @@ const routes = {
     "/projects": "Projets",
     "/projects/iniva": "Iniva Tourism",
     "/projects/daouad": "Daouad",
+    "/projects/chefdechantier": "ChefDeChantier.fr",
+    "/projects/avec-joie": "Avec Joie",
+    "/projects/socbois": "Socbois",
 }
 
 const anim = (variants) => {
