@@ -10,7 +10,7 @@ export default function HeroHeader() {
         <section className="h-[100dvh] md:h-screen p-3.5 lg:p-6 overflow-hidden">
             <div className="max-xl:flex-col-reverse flex size-full">
                 <NavMobile/>
-                <Link href="/projects" className="max-xl:h-1/2 size-full xl:w-1/2 xl:pt-20">
+                <Link href="/work" className="max-xl:h-1/2 size-full xl:w-1/2 xl:pt-20">
                     <Carousel/>
                 </Link>
                 <div className="flex flex-col max-xl:pb-2 max-xl:h-1/2 max-xl:justify-end xl:self-end xl:w-3/5 2xl:w-1/2">

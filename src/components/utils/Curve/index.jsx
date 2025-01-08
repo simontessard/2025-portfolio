@@ -8,7 +8,7 @@ import Entrance from "../Entrance";
 const routes = {
     "/": "Accueil",
     "/about": "À Propos",
-    "/projects": "Projets",
+    "/projects": "Mon travail",
     "/projects/iniva": "Iniva Tourism",
     "/projects/daouad": "Daouad",
     "/projects/chefdechantier": "ChefDeChantier.fr",

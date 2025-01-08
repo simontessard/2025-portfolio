@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Projet({ title, cover, logo, path, field } : { title: string, cover: string, logo: string, path: string, field : string }) {
     return (
-        <Link scroll={false} href={`/projects/${path}`} className="gsap-project group text-black">
+        <Link scroll={false} href={`/work/${path}`} className="gsap-project group text-black">
             <div className="relative aspect-square mb-3">
                 <img className="absolute top-0 left-0 size-full object-cover" src={cover} alt={title}/>
                 {logo &&

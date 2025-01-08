@@ -17,7 +17,7 @@ export default function Footer() {
                         <div className="flex max-md:flex-col flex-wrap md:items-center gap-y-3 md:gap-y-4 xl:gap-y-8 gap-x-6 md:gap-x-7 w-full mb-3">
                             <FooterLink href="/" text="Accueil"/>
                             <span className="hidden md:block size-3 md:size-3.5 xl:size-4 bg-primary rounded-full"/>
-                            <FooterLink href="/projects" text="Projets"/>
+                            <FooterLink href="/work" text="Mon travail"/>
                         </div>
 
                         <FooterLink href="/about" text="À propos"/>
