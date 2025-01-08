@@ -8,12 +8,12 @@ import Entrance from "../Entrance";
 const routes = {
     "/": "Accueil",
     "/about": "À Propos",
-    "/projects": "Mon travail",
-    "/projects/iniva": "Iniva Tourism",
-    "/projects/daouad": "Daouad",
-    "/projects/chefdechantier": "ChefDeChantier.fr",
-    "/projects/avec-joie": "Avec Joie",
-    "/projects/socbois": "Socbois",
+    "/work": "Mon travail",
+    "/work/iniva": "Iniva Tourism",
+    "/work/daouad": "Daouad",
+    "/work/chefdechantier": "ChefDeChantier.fr",
+    "/work/avec-joie": "Avec Joie",
+    "/work/socbois": "Socbois",
 }
 
 const anim = (variants) => {
