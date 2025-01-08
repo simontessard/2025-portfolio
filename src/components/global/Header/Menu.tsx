@@ -43,7 +43,7 @@ export default function Menu() {
                 </div>
 
                 <img src="/images/simon.png" alt="Logo" style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" }}
-                     className="js-menu-img lg:aspect-[9/16] object-cover w-2/3 md:w-1/3 lg:w-full h-1/2 sm:h-80 md:h-96 lg:h-[400px] xl:h-[500px] 2xl:h-2/3 md:mt-auto lg:max-w-md"/>
+                     className="js-menu-img lg:aspect-[9/16] object-cover w-2/3 md:w-1/3 lg:w-full h-1/2 sm:h-80 md:h-96 lg:h-[400px] xl:h-[500px] 2xl:h-[550px] md:mt-auto lg:max-w-md"/>
 
             </div>
         </div>
