@@ -69,7 +69,7 @@
     "services": ["Intégrations maquettes", "Création back-office personnalisé"],
     "gallery": {
       "large": [
-        "/images/projects/daouad/large/daouad-main-1.jpg",
+        "/images/projects/cdc/square/desktop-1.jpg",
         "/images/projects/iniva/large/desktop-8.jpg"
       ],
       "square": [
@@ -95,7 +95,7 @@
     "services": ["Intégrations maquettes", "Création back-office personnalisé"],
     "gallery": {
       "large": [
-        "/images/projects/daouad/large/daouad-main-1.jpg",
+        "/images/projects/aj/square/desktop-1.jpg",
         "/images/projects/iniva/large/desktop-8.jpg"
       ],
       "square": [
@@ -112,7 +112,7 @@
     "path": "socbois",
     "title": "Socbois",
     "date": "2024",
-    "url" : "https://avecjoie-bio.fr/",
+    "url" : "https://socbois.fr/",
     "client" : "Cobalt Studio",
     "field" : "Artisan bois",
     "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
@@ -121,16 +121,14 @@
     "services": ["Intégrations maquettes", "Création back-office personnalisé"],
     "gallery": {
       "large": [
-        "/images/projects/daouad/large/daouad-main-1.jpg",
-        "/images/projects/iniva/large/desktop-8.jpg"
+        "/images/projects/socbois/square/desktop-1.jpg"
       ],
       "square": [
-        "/images/projects/daouad/square/desktop-1.jpg",
-        "/images/projects/daouad/square/desktop-2.jpg",
-        "/images/projects/daouad/square/desktop-3.jpg",
-        "/images/projects/daouad/square/phone-1.jpg",
-        "/images/projects/daouad/square/phone-2.jpg",
-        "/images/projects/daouad/square/phone-3.jpg"
+        "/images/projects/socbois/square/desktop-1.jpg",
+        "/images/projects/socbois/square/desktop-2.jpg",
+        "/images/projects/socbois/square/desktop-3.jpg",
+        "/images/projects/socbois/square/desktop-4.jpg",
+        "/images/projects/socbois/square/desktop-5.jpg"
       ]
     }
   }

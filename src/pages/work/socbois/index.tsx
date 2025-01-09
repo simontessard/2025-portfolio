@@ -12,20 +12,20 @@ export default function Project() {
     const project = projects[4];
 
     const mainImg = project.gallery.large[0];
-    const desktopImg = [project.gallery.square[2], project.gallery.square[0], project.gallery.square[1]]
-    const phoneImg = [project.gallery.square[3], project.gallery.square[4], project.gallery.square[5]]
+    const phoneImg = [project.gallery.square[1], project.gallery.square[4], project.gallery.square[2], project.gallery.square[3]]
 
     return (
         <Curve>
             <Head>
-                <title>Daouad - Simon TESSARD</title>
+                <title>Socbois - Simon TESSARD</title>
             </Head>
 
             <span id="top" className="opacity-0">top</span>
 
-            <div className="pt-28 md:pt-32 pb-12 px-3.5 md:px-6 ">
+            <div className="pt-24 md:pt-32 pb-12 px-3.5 md:px-6 ">
                 <Heading project={project}/>
                 <MainImage img={mainImg}/>
+                <GalleryMobile gallery={phoneImg}/>
             </div>
 
             <Footer/>

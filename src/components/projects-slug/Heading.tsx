@@ -23,7 +23,7 @@ export default function Heading({project} : {project: any}) {
                             {project.description}
                         </p>
 
-                        <div className="flex xl:justify-center gap-8 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-24 2xl:w-3/5">
+                        <div className="flex max-md:flex-col xl:justify-center gap-6 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-24 2xl:w-3/5">
 
                             <div className="flex flex-col">
                                 <p className="font-secondary md:text-xl text-primary uppercase italic mb-2 md:mb-2.5 xl:mb-4">
