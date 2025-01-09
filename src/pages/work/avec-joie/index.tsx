@@ -12,8 +12,7 @@ export default function Project() {
     const project = projects[3];
 
     const mainImg = project.gallery.large[0];
-    const desktopImg = [project.gallery.square[2], project.gallery.square[0], project.gallery.square[1]]
-    const phoneImg = [project.gallery.square[3], project.gallery.square[4], project.gallery.square[5]]
+    const desktopImg = [project.gallery.square[2], project.gallery.square[1], project.gallery.square[3]]
 
     return (
         <Curve>
@@ -26,6 +25,7 @@ export default function Project() {
             <div className="pt-24 md:pt-32 pb-12 px-3.5 md:px-6 ">
                 <Heading project={project}/>
                 <MainImage img={mainImg}/>
+                <GalleryDesktop gallery={desktopImg}/>
             </div>
 
             <Footer/>

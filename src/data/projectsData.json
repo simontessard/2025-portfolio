@@ -94,16 +94,13 @@
     "services": ["Intégrations maquettes", "Création back-office personnalisé"],
     "gallery": {
       "large": [
-        "/images/projects/aj/square/desktop-1.jpg",
-        "/images/projects/iniva/large/desktop-8.jpg"
+        "/images/projects/aj/large/desktop-quality.jpeg"
       ],
       "square": [
-        "/images/projects/daouad/square/desktop-1.jpg",
-        "/images/projects/daouad/square/desktop-2.jpg",
-        "/images/projects/daouad/square/desktop-3.jpg",
-        "/images/projects/daouad/square/phone-1.jpg",
-        "/images/projects/daouad/square/phone-2.jpg",
-        "/images/projects/daouad/square/phone-3.jpg"
+        "/images/projects/aj/square/desktop-1.jpg",
+        "/images/projects/aj/square/desktop-2.jpg",
+        "/images/projects/aj/square/desktop-3.jpg",
+        "/images/projects/aj/square/desktop-4.jpg"
       ]
     }
   },
