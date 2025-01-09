@@ -9,7 +9,7 @@ export default function Heading({project} : {project: any}) {
 
                     {/* Title */}
                     <div className="flex gap-2 items-start mb-8 md:mb-12">
-                        <h1 className="font-primary text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl uppercase tracking-tight text-primary font-medium">
+                        <h1 className="font-primary text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl uppercase tracking-tight text-primary font-medium">
                             {project.title}
                         </h1>
                         <p className="font-secondary italic md:text-xl text-primary mt-1 xl:mt-2.5">

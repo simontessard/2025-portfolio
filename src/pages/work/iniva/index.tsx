@@ -14,6 +14,7 @@ export default function Project() {
     const mainImg = project.gallery.large[0];
 
     const desktopImg = [project.gallery.large[4], project.gallery.large[3], project.gallery.large[5]]
+    const galleryFour = [project.gallery.large[6], project.gallery.large[3], project.gallery.large[5], project.gallery.large[8]]
     const phoneImg = [project.gallery.square[2], project.gallery.square[0], project.gallery.square[1], project.gallery.square[3]]
 
     return (
@@ -33,7 +34,10 @@ export default function Project() {
                         détaillant un hôtel ou une activité. à travers différents clichés et vidéos, on y découvre facilement une
                         représentation du Gabon qui donne envie."/>
 
-                <FourImages project={project}/>
+                <FourImages gallery={galleryFour}
+                            title="Une invitation à découvrir, librement et facilement"
+                            desc="Le site se démarque par de nombreuses sections d'illustrations, de magnifiques carousels, une carte interactive et une navigation latérale agréable.
+                        Chaque détail a été réfléchi pour donner au visiteur une idée précise de ce qui l’attend sur place."/>
 
                 <GalleryMobile gallery={phoneImg} title="L’Adaptation Mobile : Passage Obligé"
                                desc="La version mobile est optimisée, notamment avec des carousels ajustés pour petits écrans, des images responsives et une navigation fluide via le menu par exemple.
