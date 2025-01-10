@@ -29,7 +29,7 @@ export default function InfiniteCarousel() {
             loop={true}
             preventInteractionOnTransition={true}
             autoplay={{delay: 1, disableOnInteraction: false, pauseOnMouseEnter: true, waitForTransition: true, stopOnLastSlide: false}}
-            className="swiper-container-free-mode mb-20 md:mb-24 xl:mb-32"
+            className="swiper-container-free-mode mb-16 md:mb-24 xl:mb-32"
         >
             {images.map((src, index) => (
                 <SwiperSlide key={index} className="!aspect-square !w-2/5 md:!w-1/4 xl:!w-1/5">

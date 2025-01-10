@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 
 export default function GalleryDesktop({ gallery, title, desc }: { gallery: any, title? : string, desc? : string }) {
     return (
-        <div className="relative mb-12 md:mb-20">
+        <div className="relative mb-16 md:mb-20">
 
             <ImagesDesc title={title} description={desc}/>
 
@@ -45,9 +45,8 @@ export default function GalleryDesktop({ gallery, title, desc }: { gallery: any,
                 </Swiper>
             </Fancybox>
 
-
             <div className="flex items-end gap-5 md:gap-8 justify-between">
-                <div className="scrollbar-custom-2 cursor-grab bg-primary/30 w-full h-1.5 md:h-2 mb-1"></div>
+                <div className="scrollbar-custom-2 cursor-grab bg-primary/30 w-full h-2 md:h-1.5 md:hover:h-2 transition-transform mb-1"></div>
                 <div className="flex gap-1.5 md:gap-2 mt-2 md:mt-4 w-fit">
                     <button
                         className="custom-prev-button enabled:md:hover:-translate-x-1 transition-transform duration-300 disabled:opacity-50">

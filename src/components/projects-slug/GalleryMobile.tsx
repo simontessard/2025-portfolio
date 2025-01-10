@@ -47,7 +47,7 @@ export default function GalleryMobile({ gallery, title, desc }: { gallery: any, 
 
 
             <div className="flex items-end gap-5 md:gap-8 justify-between">
-                <div className="scrollbar-custom cursor-grab bg-primary/30 w-full h-1.5 md:h-2 mb-1"></div>
+                <div className="scrollbar-custom cursor-grab bg-primary/30 w-full h-2 md:h-1.5 md:hover:h-2 transition-transform mb-1"></div>
                 <div className="flex gap-1.5 md:gap-2 mt-2 md:mt-4 w-fit">
                     <button
                         className="custom-prev-button enabled:md:hover:-translate-x-1 transition-transform duration-300 disabled:opacity-50">

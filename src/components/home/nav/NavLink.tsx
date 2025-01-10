@@ -4,7 +4,7 @@ export default function NavLink({ href, text }: { href: string, text: string }) 
     return (
         <li>
             <Link href={href} className="group flex items-center gap-1 md:gap-2 font-primary text-primary uppercase
-            text-lg md:text-2xl xl:text-3xl xl:leading-3 font-medium">
+            text-xl md:text-2xl xl:text-3xl xl:leading-3 font-medium">
                 {text}
                 <svg
                     className="rotate-90 size-5 xl:size-7 md:group-hover:-translate-x-1.5 transition-transform duration-300"

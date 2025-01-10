@@ -15,8 +15,8 @@ export default function Experience() {
         }
     ];
     return (
-        <div className="flex max-lg:flex-col lg:items-start justify-between w-full mb-24 md:mb-32 lg:pr-8 xl:pr-20 2xl:pr-52">
-            <h2 className="uppercase font-primary text-4xl lg:text-5xl xl:text-6xl text-primary font-medium max-lg:mb-14">
+        <div className="flex max-lg:flex-col lg:items-start justify-between w-full mb-20 md:mb-32 lg:pr-8 xl:pr-20 2xl:pr-52">
+            <h2 className="uppercase font-primary text-4xl lg:text-5xl xl:text-6xl text-primary font-medium max-lg:mb-8">
                 Expériences
             </h2>
             <ul className="w-full lg:w-1/2">
