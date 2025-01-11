@@ -25,6 +25,7 @@ export function hideMenu() {
         delay: 1,
         autoAlpha: 0,
         display: "none",
+        onComplete: () => {closeMenuFunction()}
     });
     document.body.style.overflow = "unset";
 }

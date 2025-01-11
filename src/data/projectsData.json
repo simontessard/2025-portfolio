@@ -59,18 +59,17 @@
   {
     "path": "chefdechantier",
     "title": "Chef de chantier",
-    "date": "2024",
+    "date": "2023",
     "url" : "https://chefdechantier.fr/",
     "client" : "Cobalt Studio",
     "field" : "Maître d'oeuvre, Rénovation",
-    "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
+    "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à l'entreprise Chefdechantier, une entreprise qui vous accompagne dans la rénovation de votre projet. En parallèle un tunnel de récupération de devis avait été mis en place pour estimer les rénovations clients.",
     "cover": "/images/projects/cdc/square/desktop-quality.jpg",
     "logo" : "",
     "services": ["Intégrations maquettes", "Création back-office personnalisé"],
     "gallery": {
       "large": [
-        "/images/projects/cdc/square/desktop-1.jpg",
-        "/images/projects/iniva/large/desktop-8.jpg"
+        "/images/projects/cdc/square/desktop-quality.jpg"
       ],
       "square": [
         "/images/projects/cdc/square/desktop-1.jpg",
@@ -88,7 +87,7 @@
     "url" : "https://avecjoie-bio.fr/",
     "client" : "Cobalt Studio",
     "field" : "Agro-Alimentaire",
-    "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
+    "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine One Page destiné à Avec-Joie, une collection de nouveaux produits alimentaires.",
     "cover": "/images/projects/aj/square/desktop-1.jpg",
     "logo" : "",
     "services": ["Intégrations maquettes", "Création back-office personnalisé"],
@@ -111,7 +110,7 @@
     "url" : "https://socbois.fr/",
     "client" : "Cobalt Studio",
     "field" : "Artisan bois",
-    "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
+    "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Socbois, un fabricant de solutions constructives bois situé à Laillé.",
     "cover": "/images/projects/socbois/square/desktop-1.jpg",
     "logo" : "",
     "services": ["Intégrations maquettes", "Création back-office personnalisé"],

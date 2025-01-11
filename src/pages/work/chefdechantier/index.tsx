@@ -17,7 +17,7 @@ export default function Project() {
     return (
         <Curve>
             <Head>
-                <title>ChefDeChantier - Simon TESSARD</title>
+                <title>Chefdechantier - Simon TESSARD</title>
             </Head>
 
             <span id="top" className="opacity-0">top</span>
