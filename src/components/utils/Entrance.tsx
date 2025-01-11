@@ -83,14 +83,14 @@ export default function Entrance() {
 
             <div className="js-entrance--text relative text-white flex items-end gap-3">
 
-                <div className="relative font-primary overflow-hidden text-right text-2xl md:text-3xl uppercase">
+                <div className="relative font-primary overflow-hidden text-right text-2xl md:text-3xl xl:text-4xl uppercase">
                     <p className="js-up--first absolute right-0">Créations</p>
                     <p className="opacity-0">Interfaces</p>
                     <p className="js-up--first absolute right-0">Designs</p>
                     <p className="js-up--first translate-y-full absolute">Interfaces</p>
                 </div>
 
-                <div className="overflow-hidden flex flex-col font-secondary text-lg md:text-xl uppercase h-7 md:h-8 w-32 md:leading-8 p-1 max-md:mb-0.5">
+                <div className="overflow-hidden flex flex-col font-secondary text-lg md:text-xl xl:text-2xl uppercase h-7 md:h-8 w-32 md:leading-8 p-1 max-md:mb-0.5">
                     <p className="js-up--second">uniques</p>
                     <p className="js-up--second">soignés</p>
                     <p className="js-up--second">modernes</p>
