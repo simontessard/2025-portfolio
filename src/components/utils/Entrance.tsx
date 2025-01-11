@@ -90,7 +90,7 @@ export default function Entrance() {
                     <p className="js-up--first translate-y-full absolute">Interfaces</p>
                 </div>
 
-                <div className="overflow-hidden flex flex-col font-secondary text-lg md:text-xl xl:text-2xl uppercase h-7 md:h-8 w-32 md:leading-8 p-1 max-md:mb-0.5">
+                <div className="overflow-hidden flex flex-col font-secondary text-lg md:text-xl xl:text-2xl uppercase h-7 md:h-8 xl:h-[2.10rem] w-32 md:leading-8 p-1 max-md:mb-0.5">
                     <p className="js-up--second">uniques</p>
                     <p className="js-up--second">soignés</p>
                     <p className="js-up--second">modernes</p>

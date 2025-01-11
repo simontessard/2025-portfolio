@@ -13,7 +13,7 @@ export default function MenuOpenButton() {
 
 export function MenuCloseButton() {
     return (
-        <button onClick={closeMenuFunction} className="js-button-close opacity-0 relative group overflow-hidden size-fit uppercase md:text-lg md:leading-4 tracking-tight font-primary text-white">
+        <button onClick={closeMenuFunction} className="relative group overflow-hidden size-fit uppercase md:text-lg md:leading-4 tracking-tight font-primary text-white">
              Fermer
              <span className="absolute top-0 bottom-0 left-0 my-auto bg-white block h-0.5 w-full"/>
         </button>
