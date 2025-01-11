@@ -1,7 +1,6 @@
 import Fancybox from "@/components/global/Fancybox";
 import ImagesDesc from "@/components/projects-slug/ImagesDesc";
 import Image from "next/image";
-import {SwiperSlide} from "swiper/react";
 
 export default function FourImages({ gallery, title, desc }: { gallery: any, title? : string, desc? : string }) {
     return (
@@ -13,10 +12,12 @@ export default function FourImages({ gallery, title, desc }: { gallery: any, tit
 
                 {gallery.map((image: string, index: number) => (
                     <a key={index} data-fancybox="gallery" href={image} className="cursor-zoom-in">
-                        <img
+                        <Image
                             className="object-cover size-full"
                             src={image}
                             alt=""
+                            width={1920}
+                            height={1080}
                         />
                     </a>
                 ))}

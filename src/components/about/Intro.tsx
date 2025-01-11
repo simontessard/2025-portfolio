@@ -2,7 +2,7 @@ import Paragraph from "@/components/about/Paragraph";
 
 export default function Intro() {
     return (
-        <div className="flex max-lg:flex-col justify-between w-full mb-16 md:mb-40 lg:pr-8 xl:pr-20 2xl:pr-52">
+        <div className="flex max-lg:flex-col justify-between w-full mb-16 md:mb-28 lg:mb-20 lg:pr-8 xl:pr-20 2xl:pr-52">
 
             <h2 className="uppercase font-primary text-4xl lg:text-5xl xl:text-6xl text-primary font-medium max-lg:mb-8">
                 à propos
