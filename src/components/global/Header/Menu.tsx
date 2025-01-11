@@ -5,6 +5,7 @@ import MenuLink from "@/components/global/Header/MenuLink";
 import Link from "next/link";
 import {useGSAP} from "@gsap/react";
 import HomeLink from "@/components/global/Header/HomeLink";
+import Image from "next/image";
 
 export default function Menu() {
 
@@ -42,7 +43,7 @@ export default function Menu() {
                     </div>
                 </div>
 
-                <img src="/images/simon.png" alt="Logo" style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" }}
+                <Image width={1000} height={1000} src="/images/simon.png" alt="Logo" style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" }}
                      className="js-menu-img lg:aspect-[9/16] object-cover w-60 md:w-1/3 lg:w-full h-80 md:h-96 lg:h-[400px] xl:h-[500px] 2xl:h-[550px] md:mt-auto lg:max-w-md"/>
 
             </div>

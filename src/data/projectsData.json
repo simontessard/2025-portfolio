@@ -37,13 +37,13 @@
     "url" : "https://daouad.fr",
     "client" : "Cobalt Studio",
     "field" : "Cabinet d'architectes",
-    "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
+    "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Daouad, un cabinet d'architectes. Le projet mets au premier plan leurs différents projets ainsi qu'une carte qui permets de situer précisement ceux-ci.",
     "cover": "/images/projects/daouad/square/desktop-3.jpg",
     "logo" : "",
     "services": ["Intégrations maquettes", "Création back-office personnalisé"],
     "gallery": {
       "large": [
-        "/images/projects/daouad/large/daouad-main-1.jpg",
+        "/images/projects/daouad/large/desktop-main-1.jpg",
         "/images/projects/iniva/large/desktop-8.jpg"
       ],
       "square": [
