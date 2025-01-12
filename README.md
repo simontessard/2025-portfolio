@@ -8,16 +8,13 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
 ```
 
 ## TODO
-- [ ] Hover menu/close button
 - [ ] Height of page transition on mobile
-- [ ] More projects
-- [ ] Custom cursor
 
+- [x] More projects
+- [x] Hover menu/close button
 - [x] Menu display broken on 13"
 - [x] More details on experience part
 - [x] Fancybox Integration
@@ -34,8 +31,8 @@ pnpm dev
 - [ ] Blog
 - [ ] Color change on project detail
 - [ ] Internationalization
+- [ ] Custom cursor
     
 ### Bugs
-
 - [x] Swiper was not rendered on page transition : https://github.com/nolimits4web/swiper/issues/7577
 
