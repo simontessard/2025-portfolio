@@ -6,6 +6,7 @@ import Link from "next/link";
 import {useGSAP} from "@gsap/react";
 import HomeLink from "@/components/global/Header/HomeLink";
 import Image from "next/image";
+import LinkHover from "@/components/global/LinkHover";
 
 export default function Menu() {
 
@@ -34,12 +35,8 @@ export default function Menu() {
                         <MenuLink href="/about" text="à propos"/>
                     </div>
                     <div className="js-menu-contact -translate-y-1 opacity-0 flex gap-5 xl:gap-6 text-white font-primary font-medium uppercase w-full">
-                        <Link scroll={false} href="https://www.linkedin.com/in/simon-tessard-138733198/" target="_blank">
-                            LinkedIn
-                        </Link>
-                        <Link scroll={false} href="mailto:pro@simontessard.fr" target="_blank">
-                            Email
-                        </Link>
+                        <LinkHover text="LinkedIn" href="https://www.linkedin.com/in/simon-tessard-138733198/"/>
+                        <LinkHover text="Email" href="mailto:pro@simontessard.fr"/>
                     </div>
                 </div>
 

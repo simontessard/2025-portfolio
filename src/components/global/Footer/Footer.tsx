@@ -3,6 +3,7 @@ import Link from "next/link";
 import {useLenis} from "lenis/react";
 import {usePathname} from "next/navigation";
 import FooterLink from "@/components/global/Footer/FooterLink";
+import LinkHover from "@/components/global/LinkHover";
 
 export default function Footer() {
     const lenis = useLenis(({ scroll }) => {})
@@ -34,12 +35,8 @@ export default function Footer() {
             </div>
 
             <div className="flex gap-5 font-primary text-primary uppercase w-full">
-                <Link href="https://www.linkedin.com/in/simon-tessard-138733198/" target="_blank">
-                    LinkedIn
-                </Link>
-                <Link href="mailto:pro@simontessard.fr" target="_blank">
-                    Email
-                </Link>
+                <LinkHover text="LinkedIn" href="https://www.linkedin.com/in/simon-tessard-138733198/"/>
+                <LinkHover text="Email" href="mailto:pro@simontessard.fr"/>
             </div>
 
         </footer>
