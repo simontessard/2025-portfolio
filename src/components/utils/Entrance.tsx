@@ -15,13 +15,13 @@ export default function Entrance() {
             tl.set('.js-entrance', {autoAlpha: 1})
 
             // Disparition premiers mots
-            tl.to(['.js-up--first-1word', '.js-up--second-1word'], {opacity: 0, yPercent: -100, duration: 1.5, delay: 1.2, ease: 'power4.out',
+            tl.to(['.js-up--first-1word', '.js-up--second-1word'], {opacity: 0, yPercent: -100, duration: 1, delay: 1.2, ease: 'power4.out',
                 onStart : () => {document.body.style.overflow = "hidden"}
             }, '<')
             tl.to(['.js-up--first-2word', '.js-up--first-3word', '.js-up--second-2word', '.js-up--second-3word'], {yPercent: -100, duration: 1.2, delay: .2, ease: 'power4.out'}, "<")
 
             // Disparition seconds mots
-            tl.to(['.js-up--first-2word', '.js-up--second-2word'], {opacity: 0, yPercent: -200, duration: 1.5, delay: 1, ease: 'power4.out'})
+            tl.to(['.js-up--first-2word', '.js-up--second-2word'], {opacity: 0, yPercent: -200, duration: 1, delay: 1, ease: 'power4.out'})
             tl.to(['.js-up--first-3word', '.js-up--second-3word'], {yPercent: -200, duration: 1.2, delay: .2, ease: 'power4.out'}, "<")
 
             // Disparition troisième mots
