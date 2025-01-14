@@ -11,7 +11,9 @@ yarn dev
 ```
 
 ## TODO
-- [ ] Height of page transition on mobile
+- [ ] Height of page transition on mobile ?
+- [ ] CTA from proper project replacing "Visiter le site" ?
+- [ ] Section "Outils" in page About
 
 - [x] More projects
 - [x] Hover menu/close button

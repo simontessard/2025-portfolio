@@ -14,41 +14,21 @@ export default function Entrance() {
             gsap.set('.js-entrance', {autoAlpha: 0})
             tl.set('.js-entrance', {autoAlpha: 1})
 
-            tl.to('.js-up--second', {
-                yPercent: -100,
-                duration: .8,
-                stagger: 0.1,
-                ease: 'power4.out',
-                delay: 1,
+            // Disparition premiers mots
+            tl.to(['.js-up--first-1word', '.js-up--second-1word'], {opacity: 0, yPercent: -100, duration: 1.5, delay: 1.2, ease: 'power4.out',
                 onStart : () => {document.body.style.overflow = "hidden"}
-            })
-
-            tl.to('.js-up--first', {
-                yPercent: -100,
-                duration: .8,
-                ease: 'power4.out',
             }, '<')
+            tl.to(['.js-up--first-2word', '.js-up--first-3word', '.js-up--second-2word', '.js-up--second-3word'], {yPercent: -100, duration: 1.2, delay: .2, ease: 'power4.out'}, "<")
 
-            tl.to('.js-up--second', {
-                yPercent: -200,
-                duration: .8,
-                stagger: 0.1,
-                ease: 'power4.out',
-                delay: .7
-            })
+            // Disparition seconds mots
+            tl.to(['.js-up--first-2word', '.js-up--second-2word'], {opacity: 0, yPercent: -200, duration: 1.5, delay: 1, ease: 'power4.out'})
+            tl.to(['.js-up--first-3word', '.js-up--second-3word'], {yPercent: -200, duration: 1.2, delay: .2, ease: 'power4.out'}, "<")
 
-            tl.to('.js-up--first', {
-                yPercent: -200,
-                duration: .8,
-                ease: 'power4.out',
-            }, '<')
+            // Disparition troisième mots
+            tl.to(['.js-up--first-3word', '.js-up--second-3word'], {opacity: 0, yPercent: -200, duration: .8, ease: 'power4.out'})
 
-            tl.to('.js-entrance--text', {
-                autoAlpha: 0,
-                duration: .6,
-                ease: 'power4.out',
-                delay: .5
-            })
+            // Disparition du contenu
+            tl.to('.js-entrance--text', {autoAlpha: 0, duration: .6, ease: 'power4.out'})
 
             tl.to('.js-entrance', {
                 clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
@@ -61,7 +41,7 @@ export default function Entrance() {
                     document.body.style.overflow = "unset";
                     setEntranceIsDone(true)
                 }
-            }, '-=.6')
+            }, '-=1.5')
 
             if (!entranceIsDone) {
                 tl.play();
@@ -83,17 +63,17 @@ export default function Entrance() {
 
             <div className="js-entrance--text relative text-white flex items-end gap-3">
 
-                <div className="relative font-primary overflow-hidden text-right text-2xl md:text-3xl xl:text-4xl uppercase">
-                    <p className="js-up--first absolute right-0">Créations</p>
+                <div className="relative overflow-hidden font-primary text-right text-2xl md:text-3xl xl:text-4xl uppercase">
+                    <p className="js-up--first-1word absolute right-0">Créations</p>
                     <p className="opacity-0">Interfaces</p>
-                    <p className="js-up--first absolute right-0">Designs</p>
-                    <p className="js-up--first translate-y-full absolute">Interfaces</p>
+                    <p className="js-up--first-2word absolute right-0">Designs</p>
+                    <p className="js-up--first-3word translate-y-full absolute">Interfaces</p>
                 </div>
 
                 <div className="overflow-hidden flex flex-col font-secondary text-lg md:text-xl xl:text-2xl uppercase h-7 md:h-8 xl:h-[2.10rem] w-32 md:leading-8 p-1 max-md:mb-0.5">
-                    <p className="js-up--second">uniques</p>
-                    <p className="js-up--second">soignés</p>
-                    <p className="js-up--second">modernes</p>
+                    <p className="js-up--second-1word">uniques</p>
+                    <p className="js-up--second-2word">soignés</p>
+                    <p className="js-up--second-3word">modernes</p>
                 </div>
 
             </div>
