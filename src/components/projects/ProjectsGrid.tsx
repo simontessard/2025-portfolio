@@ -33,7 +33,7 @@ const FilteredProjectsGrid = () => {
         });
     }, [selectedYear]);
 
-    const handleYearClick = (year) => {
+    const handleYearClick = (year : any) => {
         // Animation de sortie
         const projects = gsap.utils.toArray('.gsap-project');
 
