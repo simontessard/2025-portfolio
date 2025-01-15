@@ -16,7 +16,7 @@ export default function Projects() {
                 <span id="top" className="opacity-0">top</span>
 
                 <div className="px-3.5 md:px-6 pt-24 md:pt-32 pb-6">
-                    <PageTitle title="Mon travail" className="mb-16 lg:mb-20"/>
+                    <PageTitle title="Mon travail" className="md:mb-2"/>
                     <ProjectsGrid/>
                 </div>
             </section>
