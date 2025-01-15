@@ -19,8 +19,8 @@ export default function GalleryDesktop({ gallery, title, desc }: { gallery: any,
                     freeMode={true}
                     scrollbar={{el: '.scrollbar-custom-2', draggable: true, snapOnRelease: false}}
                     navigation={{
-                        prevEl: '.custom-prev-button',
-                        nextEl: '.custom-next-button',
+                        prevEl: '.gallery-desktop-prev-button',
+                        nextEl: '.gallery-desktop-next-button',
                     }}
                     spaceBetween={15}
                     breakpoints={{
@@ -49,7 +49,7 @@ export default function GalleryDesktop({ gallery, title, desc }: { gallery: any,
                 <div className="scrollbar-custom-2 cursor-grab bg-primary/30 w-full h-2 md:h-1.5 md:hover:h-2 transition-transform mb-1"></div>
                 <div className="flex gap-1.5 md:gap-2 mt-2 md:mt-4 w-fit">
                     <button
-                        className="custom-prev-button enabled:md:hover:-translate-x-1 transition-transform duration-300 disabled:opacity-50">
+                        className="gallery-desktop-prev-button enabled:md:hover:-translate-x-1 transition-transform duration-300 disabled:opacity-50">
                         <svg className="size-9 md:size-10 text-primary -rotate-90"
                              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
                             <path fillRule="evenodd" clipRule="evenodd"
@@ -59,7 +59,7 @@ export default function GalleryDesktop({ gallery, title, desc }: { gallery: any,
                         </svg>
                     </button>
                     <button
-                        className="custom-next-button enabled:md:hover:translate-x-1 transition-transform duration-300 disabled:opacity-50">
+                        className="gallery-desktop-next-button enabled:md:hover:translate-x-1 transition-transform duration-300 disabled:opacity-50">
                         <svg className="size-9 md:size-10 text-primary rotate-90"
                              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
                             <path fillRule="evenodd" clipRule="evenodd"

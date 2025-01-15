@@ -10,6 +10,7 @@ export default function MainImage({ img } : {img: any}) {
                      alt=""
                      width={1920}
                      height={1080}
+                     loading="eager"
                 />
             </a>
         </Fancybox>
