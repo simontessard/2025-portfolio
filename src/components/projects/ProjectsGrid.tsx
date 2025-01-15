@@ -31,7 +31,26 @@ const FilteredProjectsGrid = () => {
                 });
             });
         });
-    });
+    }, [selectedYear]);
+
+    const handleYearClick = (year) => {
+        // Animation de sortie
+        const projects = gsap.utils.toArray('.gsap-project');
+
+        gsap.to(projects, {
+            duration: .5,
+            autoAlpha: 0,
+            ease: "power1",
+            onComplete: () => {
+                setSelectedYear(year);
+                gsap.to(projects, {
+                    duration: .5,
+                    autoAlpha: 1,
+                    ease: "power1",
+                });
+            }
+        });
+    };
 
     const filteredProjects = selectedYear === "Tout"
         ? projects
@@ -45,7 +64,7 @@ const FilteredProjectsGrid = () => {
                 {dates.map((year) => (
                     <button
                         key={year}
-                        onClick={() => setSelectedYear(year)}
+                        onClick={() => handleYearClick(year)}
                         className={`py-2 uppercase font-primary md:text-xl transition-colors ${
                             selectedYear === year
                                 ? "text-primary"
