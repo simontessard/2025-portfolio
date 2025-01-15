@@ -13,7 +13,7 @@ const FilteredProjectsGrid = () => {
     useGSAP(() => {
         const projects = gsap.utils.toArray('.gsap-project');
 
-        projects.forEach((project, index) => {
+        projects.forEach((project : any, index : number) => {
             const allProjectsButNotActual: typeof projects = [];
             allProjectsButNotActual.push(...projects.filter((p, i) => i !== index));
 
