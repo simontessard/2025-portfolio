@@ -35,9 +35,11 @@ export default function Tools() {
     ];
     return (
         <div className="flex max-lg:flex-col lg:items-start justify-between w-full mb-20 md:mb-32 lg:pr-8 xl:pr-20 2xl:pr-52">
-            <h2 className="uppercase font-primary text-4xl lg:text-5xl xl:text-6xl text-primary font-medium max-lg:mb-8">
+
+            <h2 className="md:sticky md:top-6 uppercase font-primary text-4xl lg:text-5xl xl:text-6xl text-primary font-medium max-lg:mb-8">
                 Outils
             </h2>
+
             <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4 w-full lg:w-1/2">
                 {tools.map((exp, index) => (
                     <li key={index} className="flex flex-col gap-1 bg-primary/5 justify-center items-center aspect-square">
@@ -50,6 +52,7 @@ export default function Tools() {
                     </li>
                 ))}
             </ul>
+
         </div>
     );
 }
