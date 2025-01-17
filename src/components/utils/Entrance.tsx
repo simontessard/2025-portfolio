@@ -61,7 +61,7 @@ export default function Entrance() {
         <div className="js-entrance fixed z-[101] flex justify-center items-center h-[100dvh] md:h-screen w-full bg-primary"
         style={{clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}}>
 
-            <div className="js-entrance--text relative text-white flex items-end gap-3">
+            <div className="js-entrance--text relative text-white flex items-end gap-1.5 md:gap-3">
 
                 <div className="relative overflow-hidden font-primary text-right text-2xl md:text-3xl xl:text-4xl uppercase">
                     <p className="js-up--first-1word absolute right-0">Créations</p>
