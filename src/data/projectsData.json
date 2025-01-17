@@ -69,7 +69,10 @@
     "services": ["Intégrations maquettes", "Création back-office personnalisé"],
     "gallery": {
       "large": [
-        "/images/projects/cdc/square/desktop-quality.jpg"
+        "/images/projects/cdc/square/desktop-quality.jpg",
+        "/images/projects/cdc/large/desktop-1.jpg",
+        "/images/projects/cdc/large/desktop-2.jpg",
+        "/images/projects/cdc/large/desktop-3.jpg"
       ],
       "square": [
         "/images/projects/cdc/square/desktop-1.jpg",
