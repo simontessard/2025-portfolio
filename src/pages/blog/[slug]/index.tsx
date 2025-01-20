@@ -29,16 +29,21 @@ export const getStaticPaths: GetStaticPaths = async () => {
     return { paths, fallback: false };
 };
 
+const typedArticlesContent: Record<string, string> = articlesContent;
+
 export const getStaticProps: GetStaticProps = async ({ params }) => {
     const { articles } = blogData;
     const article = articles.find((a) => a.slug === params?.slug);
-    const content = articlesContent[params?.slug as string];
 
-    if (!article || !content) {
-        return { notFound: true };
+    if (typeof params?.slug === "string") {
+        const content = typedArticlesContent[params.slug];
+
+        if (article && content) {
+            return { props: { article, content } };
+        }
     }
 
-    return { props: { article, content } };
+    return { notFound: true };
 };
 
 export default function ArticlePage({ article, content }: ArticlePageProps) {
