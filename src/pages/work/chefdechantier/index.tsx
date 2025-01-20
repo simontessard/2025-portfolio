@@ -2,7 +2,6 @@ import projects from "@/data/projectsData.json";
 import Curve from "@/components/utils/Curve";
 import Footer from "@/components/global/Footer/Footer";
 import MainImage from "@/components/projects-slug/MainImage";
-import GalleryMobile from "@/components/projects-slug/GalleryMobile";
 import Heading from "@/components/projects-slug/Heading";
 import FourImages from "@/components/projects-slug/FourImages";
 import Head from 'next/head'

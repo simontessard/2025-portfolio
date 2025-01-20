@@ -2,10 +2,15 @@ import BlogGrid from "@/components/blog/BlogGrid";
 import PageTitle from "@/components/global/PageTitle";
 import Curve from "@/components/utils/Curve";
 import Footer from "@/components/global/Footer/Footer";
+import Head from "next/head";
 
 export default function BlogPage() {
     return (
         <Curve>
+            <Head>
+                <title>Blog - Simon TESSARD</title>
+            </Head>
+
             <span id="top" className="opacity-0">top</span>
 
             <section className="px-3.5 md:px-6 pt-24 md:pt-32 pb-6">

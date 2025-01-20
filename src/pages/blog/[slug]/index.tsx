@@ -4,6 +4,7 @@ import blogData from '@/data/blogData.json';
 import articlesContent from '@/data/articlesContent.json';
 import Footer from "@/components/global/Footer/Footer";
 import Curve from "@/components/utils/Curve";
+import Head from "next/head";
 
 interface ArticlePageProps {
     article: {
@@ -53,6 +54,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export default function ArticlePage({ article, content }: ArticlePageProps) {
     return (
         <Curve>
+            <Head>
+                <title>{article.title} - Simon TESSARD</title>
+            </Head>
+
             <span id="top" className="opacity-0">top</span>
 
             <section className="min-h-screen">
@@ -65,7 +70,7 @@ export default function ArticlePage({ article, content }: ArticlePageProps) {
                             <span className="text-primary/70">{article.readTime}</span>
                         </div>
 
-                        <h1 className="font-primary text-4xl md:text-5xl text-primary mb-6">
+                        <h1 className="font-primary text-4xl md:text-5xl text-black mb-6">
                             {article.title}
                         </h1>
 

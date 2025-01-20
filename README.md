@@ -9,10 +9,14 @@ npm run dev
 # or
 yarn dev
 ```
+## WORKING ON
+- [x] Blog
+- [x] Blog content
 
 ## TODO
 - [ ] Height of page transition on mobile ?
 - [ ] CTA from proper project replacing "Visiter le site" ?
+- [ ] Page 404
 
 - [x] Section "Outils" in page About
 - [x] More projects
@@ -30,7 +34,7 @@ yarn dev
 - [x] More info on projet heading
 
 ## Upcoming Features
-- [ ] Blog
+
 - [ ] Color change on project detail
 - [ ] Internationalization
 - [ ] Custom cursor

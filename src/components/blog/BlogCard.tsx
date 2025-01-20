@@ -7,7 +7,7 @@ interface BlogCardProps {
 const BlogCard = ({ article }: BlogCardProps) => {
     return (
         <Link href={`/blog/${article.slug}`}
-            className="group block bg-primary/5 hover:bg-primary/10 transition-colors duration-500 p-5 md:p-6"
+            className="group block bg-primary/5 hover:bg-primary/10 transition-colors duration-500 p-5 md:p-6 2xl:p-8"
         >
             <div className="flex flex-col h-full justify-between gap-4 md:gap-5 2xl:gap-6">
                 <div className="flex gap-2 items-center">
