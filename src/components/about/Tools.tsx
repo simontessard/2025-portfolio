@@ -25,6 +25,10 @@ export default function Tools() {
             desc: "Animation",
         },
         {
+            title: "Tailwind",
+            desc: "CSS",
+        },
+        {
             title: "ThreeJS",
             desc: "3D",
         },

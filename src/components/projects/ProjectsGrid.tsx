@@ -34,6 +34,8 @@ const FilteredProjectsGrid = () => {
     }, [selectedYear]);
 
     const handleYearClick = (year : any) => {
+        if (year === selectedYear) return;
+
         // Animation de sortie
         const projects = gsap.utils.toArray('.gsap-project');
 

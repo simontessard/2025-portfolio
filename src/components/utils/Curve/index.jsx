@@ -9,6 +9,8 @@ const routes = {
     "/": "Accueil",
     "/about": "À Propos",
     "/work": "Mon travail",
+    "/blog": "Blog",
+    "/blog/wordpress-vs-nextjs-cms-headless": "Wordpress vs Next.js",
     "/work/iniva": "Iniva Tourism",
     "/work/daouad": "Daouad",
     "/work/chefdechantier": "ChefDeChantier.fr",
@@ -47,7 +49,7 @@ export default function Curve({children}) {
     }, [])
 
     return (
-        <div className='page curve'>
+        <main className='page curve'>
             <Entrance/>
             <div style={{opacity: dimensions.width == null ? 1 : 0}} className='background'/>
                 <motion.p className='route p-3 text-center text-white font-secondary text-3xl md:text-4xl uppercase' {...anim(text)}>
@@ -55,7 +57,7 @@ export default function Curve({children}) {
                 </motion.p>
                 {dimensions.width != null && <SVG {...dimensions}/>}
             {children}
-        </div>
+        </main>
     )
 }
 

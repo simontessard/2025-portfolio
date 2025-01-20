@@ -26,7 +26,7 @@ export default function Project() {
             <div className="pt-24 md:pt-32 pb-12 px-3.5 md:px-6 ">
                 <Heading project={project}/>
                 <MainImage img={mainImg}/>
-                <GalleryDesktop gallery={galleryDesktop} title="Création d'un tunnel" desc="Le but de ce tunnel, connecté via un sous-domaine, est de récupérer de façon automatisé et précise les demandes de devis. L'entreprise et le client recoivent un mail généré de toutes les informations remplies dans les différentes étapes du formulaire."/>
+                <GalleryDesktop gallery={galleryDesktop} title="Création d'un tunnel" desc="Le but de ce tunnel, connecté via un sous-domaine, est de récupérer de façon automatisée et précise les demandes de devis. L'entreprise et le client recoivent un mail généré de toutes les informations remplies dans les différentes étapes du formulaire."/>
                 <FourImages gallery={galleryFour}/>
             </div>
 
