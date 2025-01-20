@@ -6,7 +6,7 @@
       "description": "Analyse comparative des avantages et inconvénients de WordPress face à l'architecture plus moderne NextJS + CMS Headless.",
       "date": "10 janvier 2025",
       "readTime": "2 min",
-      "category": "Développement Web",
+      "categories": ["Développement Web", "Architecture", "CMS"],
       "slug": "wordpress-vs-nextjs-cms-headless"
     },
     {
@@ -15,7 +15,7 @@
       "description": "Guide pratique pour créer des animations fluides et impressionnantes avec GSAP, avec des exemples concrets et des bonnes pratiques.",
       "date": "15 décembre 2024",
       "readTime": "4 min",
-      "category": "Animation",
+      "categories": ["Animation", "JavaScript", "Performance"],
       "slug": "gsap-modern-animations"
     },
     {
@@ -24,7 +24,7 @@
       "description": "Guide pratique pour intégrer des éléments 3D impressionnants dans vos sites web avec Three.js.",
       "date": "2 octobre 2024",
       "readTime": "5 min",
-      "category": "3D",
+      "categories": ["3D", "JavaScript", "WebGL"],
       "slug": "threejs-web-3d"
     },
     {
@@ -33,7 +33,7 @@
       "description": "Comment Tailwind CSS révolutionne notre façon d'écrire du CSS et accélère le développement front-end.",
       "date": "24 septembre 2024",
       "readTime": "3 min",
-      "category": "CSS",
+      "categories": ["CSS", "Design", "Performance"],
       "slug": "tailwind-modern-css"
     }
   ]

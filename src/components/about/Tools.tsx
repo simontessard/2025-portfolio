@@ -47,12 +47,12 @@ export default function Tools() {
             <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4 w-full lg:w-1/2">
                 {tools.map((exp, index) => (
                     <li key={index} className="flex flex-col gap-1 bg-primary/5 justify-center items-center aspect-square">
-                            <p className="uppercase text-primary font-primary md:text-lg lg:text-xl font-medium">
-                                {exp.title}
-                            </p>
-                            <p className="uppercase text-primary italic font-secondary text-sm lg:text-base font-medium">
-                                {exp.desc}
-                            </p>
+                        <p className="uppercase text-primary font-primary md:text-lg lg:text-xl font-medium">
+                            {exp.title}
+                        </p>
+                        <p className="uppercase text-primary italic font-secondary text-sm lg:text-base font-medium">
+                            {exp.desc}
+                        </p>
                     </li>
                 ))}
             </ul>

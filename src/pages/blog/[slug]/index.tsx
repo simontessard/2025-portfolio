@@ -26,10 +26,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
         params: { slug: article.slug }
     }));
 
-    return {
-        paths,
-        fallback: false
-    };
+    return { paths, fallback: false };
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
@@ -38,17 +35,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     const content = articlesContent[params?.slug as string];
 
     if (!article || !content) {
-        return {
-            notFound: true
-        };
+        return { notFound: true };
     }
 
-    return {
-        props: {
-            article,
-            content
-        }
-    };
+    return { props: { article, content } };
 };
 
 export default function ArticlePage({ article, content }: ArticlePageProps) {
@@ -62,9 +52,9 @@ export default function ArticlePage({ article, content }: ArticlePageProps) {
 
             <section className="min-h-screen">
 
-                <article className="px-4 pt-20 md:pt-40 pb-16 md:pb-24 max-w-3xl mx-auto prose prose-invert">
+                <article className="px-4 pt-20 md:pt-40 pb-16 md:pb-24 max-w-3xl md:max-w-4xl 2xl:max-w-5xl mx-auto prose prose-invert">
                     <div className="mb-10 md:mb-14">
-                        <div className="flex gap-2 items-center mb-4">
+                        <div className="flex gap-2 items-center font-primary mb-4">
                             <span className="text-primary/70">{article.date}</span>
                             <span className="text-primary/70">•</span>
                             <span className="text-primary/70">{article.readTime}</span>
@@ -74,15 +64,16 @@ export default function ArticlePage({ article, content }: ArticlePageProps) {
                             {article.title}
                         </h1>
 
-                        <span className="text-sm text-primary/60 py-2 px-4 bg-primary/10 rounded">
+                        <span className="text-sm md:text-lg font-secondary text-primary italic uppercase">
                             {article.category}
                         </span>
                     </div>
 
-                    <div className="prose prose-h2:uppercase" dangerouslySetInnerHTML={{__html: content}}/>
+                    <div className="prose prose-h2:uppercase !max-w-none" dangerouslySetInnerHTML={{__html: content}}/>
                 </article>
 
                 <Footer/>
+                
             </section>
         </Curve>
     );

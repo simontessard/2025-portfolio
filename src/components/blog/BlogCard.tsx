@@ -7,26 +7,31 @@ interface BlogCardProps {
 const BlogCard = ({ article }: BlogCardProps) => {
     return (
         <Link href={`/blog/${article.slug}`}
-            className="group block bg-primary/5 hover:bg-primary/10 transition-colors duration-500 p-5 md:p-6 2xl:p-8"
+            className="group flex flex-col bg-primary/5 md:hover:bg-primary/10 transition-colors duration-500"
         >
-            <div className="flex flex-col h-full justify-between gap-4 md:gap-5 2xl:gap-6">
-                <div className="flex gap-2 items-center">
-                    <span className="text-primary/70 max-md:text-sm">{article.date}</span>
-                    <span className="text-primary/70 max-md:text-sm">•</span>
-                    <span className="text-primary/70 max-md:text-sm">{article.readTime}</span>
+            <img src="https://www.picsum.photos/800/800" alt="Article" className="w-full h-48 md:h-56 2xl:h-64 object-cover"/>
+
+            <div className="flex flex-col h-full justify-between gap-4 md:gap-5 2xl:gap-6 p-5 md:pt-6">
+
+                <div className="flex gap-2 items-center font-primary text-primary uppercase max-lg:text-sm">
+                    <span>{article.date}</span>
+                    <span>•</span>
+                    <span>{article.readTime}</span>
                 </div>
 
-                <h3 className="font-primary uppercase text-xl 2xl:text-2xl text-primary">
+                <h3 className="font-primary uppercase text-xl md:text-2xl 2xl:text-3xl  text-primary">
                     {article.title}
                 </h3>
 
-                <p className="text-primary/80 line-clamp-2">
-                    {article.description}
-                </p>
+                <div className="mt-auto flex flex-wrap gap-4 md:gap-5">
+                    {article.categories.map((category, index) => (
+                        <span key={index} className="text-primary font-secondary italic uppercase"
+                        >
+                            {category}
+                        </span>
+                    ))}
+                </div>
 
-                <span className="text-sm text-primary/60 py-1 md:py-2 px-3 md:px-3.5 bg-primary/10 w-fit rounded">
-                    {article.category}
-                </span>
             </div>
         </Link>
     );
