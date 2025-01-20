@@ -73,7 +73,7 @@ export default function ArticlePage({ article, content }: ArticlePageProps) {
                 </article>
 
                 <Footer/>
-                
+
             </section>
         </Curve>
     );

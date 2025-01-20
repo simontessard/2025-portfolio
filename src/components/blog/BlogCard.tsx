@@ -24,9 +24,8 @@ const BlogCard = ({ article }: BlogCardProps) => {
                 </h3>
 
                 <div className="mt-auto flex flex-wrap gap-4 md:gap-5">
-                    {article.categories.map((category, index) => (
-                        <span key={index} className="text-primary font-secondary italic uppercase"
-                        >
+                    {article.categories.map((category: any, index : number) => (
+                        <span key={index} className="text-primary font-secondary italic uppercase">
                             {category}
                         </span>
                     ))}
