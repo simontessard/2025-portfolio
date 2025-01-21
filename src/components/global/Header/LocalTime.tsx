@@ -32,6 +32,6 @@ export default function LocalTime() {
     }, []);
 
     return <p className="local-time max-md:hidden fixed size-fit top-4 md:top-6 mx-auto inset-x-0 uppercase font-primary text-primary text-sm md:text-lg">
-        Heure locale : {time}
+        Heure : {time}
     </p>
 }
