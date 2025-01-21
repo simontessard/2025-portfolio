@@ -2,6 +2,7 @@
   "articles": [
     {
       "id": "wordpress-vs-nextjs",
+      "cover": "/images/blog/nextjs-vs-wordpress.webp",
       "title": "WordPress vs NextJS + CMS Headless : Quel stack choisir en 2024 ?",
       "description": "Analyse comparative des avantages et inconvénients de WordPress face à l'architecture plus moderne NextJS + CMS Headless.",
       "date": "10 janvier 2025",
@@ -10,31 +11,54 @@
       "slug": "wordpress-vs-nextjs-cms-headless"
     },
     {
-      "id": "gsap-modern-animations",
-      "title": "GSAP : Créer des animations web modernes et performantes",
-      "description": "Guide pratique pour créer des animations fluides et impressionnantes avec GSAP, avec des exemples concrets et des bonnes pratiques.",
+      "id": "gsap-impact",
+      "cover": "/images/blog/gsap.jpeg",
+      "title": "GSAP : Comment cette librairie révolutionne l'animation web",
+      "description": "Découvrez pourquoi GSAP est devenue la référence incontournable pour les animations web modernes et son impact sur l'expérience utilisateur.",
       "date": "15 décembre 2024",
       "readTime": "4 min",
-      "categories": ["Animation", "JavaScript", "Performance"],
-      "slug": "gsap-modern-animations"
+      "categories": ["Animation", "JavaScript", "UX Design"],
+      "slug": "gsap-impact-web-animation"
     },
     {
-      "id": "threejs-web-3d",
-      "title": "Three.js : Ajouter de la 3D à vos sites web",
-      "description": "Guide pratique pour intégrer des éléments 3D impressionnants dans vos sites web avec Three.js.",
+      "id": "threejs-revolution",
+      "cover": "/images/blog/threejs.webp",
+      "title": "Three.js : La révolution de la 3D sur le web",
+      "description": "Comment Three.js transforme l'expérience web en démocratisant la 3D et ouvre de nouvelles possibilités créatives.",
       "date": "2 octobre 2024",
       "readTime": "5 min",
-      "categories": ["3D", "JavaScript", "WebGL"],
-      "slug": "threejs-web-3d"
+      "categories": ["3D", "Innovation", "WebGL"],
+      "slug": "threejs-revolution-web"
     },
     {
-      "id": "tailwind-modern-css",
-      "title": "Tailwind CSS : L'approche moderne du CSS",
-      "description": "Comment Tailwind CSS révolutionne notre façon d'écrire du CSS et accélère le développement front-end.",
+      "id": "tailwind-impact",
+      "cover": "/images/blog/tailwind.webp",
+      "title": "Tailwind CSS : Pourquoi cette approche change la donne",
+      "description": "L'impact de Tailwind CSS sur l'écosystème front-end et pourquoi les développeurs l'adoptent massivement.",
       "date": "24 septembre 2024",
       "readTime": "3 min",
-      "categories": ["CSS", "Design", "Performance"],
-      "slug": "tailwind-modern-css"
+      "categories": ["CSS", "Tendances", "Productivité"],
+      "slug": "tailwind-impact-frontend"
+    },
+    {
+      "id": "ai-web-dev",
+      "cover": "/images/blog/ia.webp",
+      "title": "L'IA dans le développement web : Entre mythe et réalité",
+      "description": "Comment l'intelligence artificielle transforme réellement le métier de développeur web en 2024.",
+      "date": "5 janvier 2025",
+      "readTime": "4 min",
+      "categories": ["IA", "Innovation", "Développement"],
+      "slug": "intelligence-artificielle-developpement-web"
+    },
+    {
+      "id": "web-components",
+      "cover": "/images/blog/angular.jpg",
+      "title": "Web Components : Le futur du développement modulaire ?",
+      "description": "Analyse de l'adoption des Web Components et leur potentiel impact sur l'avenir du développement front-end.",
+      "date": "20 décembre 2024",
+      "readTime": "3 min",
+      "categories": ["JavaScript", "Architecture", "Standards Web"],
+      "slug": "web-components-avenir-frontend"
     }
   ]
 }

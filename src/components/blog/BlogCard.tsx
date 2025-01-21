@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from "next/image";
 
 interface BlogCardProps {
     article: any;
@@ -9,7 +10,7 @@ const BlogCard = ({ article }: BlogCardProps) => {
         <Link href={`/blog/${article.slug}`}
             className="group flex flex-col bg-primary/5 md:hover:bg-primary/10 transition-colors duration-500"
         >
-            <img src="https://www.picsum.photos/800/800" alt="Article" className="w-full h-48 md:h-56 2xl:h-64 object-cover"/>
+            <Image src={article.cover} width={1000} height={600} loading="eager" alt="Article" className="w-full h-48 md:h-56 2xl:h-64 object-cover"/>
 
             <div className="flex flex-col h-full justify-between gap-4 md:gap-5 2xl:gap-6 p-5 md:pt-6">
 
