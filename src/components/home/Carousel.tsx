@@ -3,6 +3,7 @@ import { EffectFade, Autoplay } from "swiper/modules";
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';
+import Image from "next/image";
 
 export default function Carousel() {
     const slides = [
@@ -25,7 +26,7 @@ export default function Carousel() {
         >
             {slides.map((slide : any, index : number) => (
                 <SwiperSlide key={index}>
-                    <img src={slide.src} alt={slide.alt} className="object-cover size-full" />
+                    <Image width={1500} height={1500} loading="eager" src={slide.src} alt={slide.alt} className="object-cover size-full" />
                 </SwiperSlide>
             ))}
         </Swiper>

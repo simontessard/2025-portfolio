@@ -15,7 +15,7 @@ export default function BlogCard({ article }: BlogCardProps){
             <div className="flex flex-col mt-2 md:mt-3">
 
                 <div className="flex justify-between gap-2 mb-2">
-                    <h3 className="font-primary uppercase text-xl md:text-xl 2xl:text-2xl  text-primary">
+                    <h3 className="font-primary uppercase text-xl md:text-xl 2xl:text-2xl text-primary">
                         {article.title}
                     </h3>
                     <svg className="shrink-0 rotate-90 text-primary size-7 lg:size-8 md:group-hover:-translate-x-1.5 transition-transform duration-300"
