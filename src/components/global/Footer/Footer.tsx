@@ -42,9 +42,12 @@ export default function Footer() {
 
             </div>
 
-            <div className="flex gap-5 font-primary text-primary uppercase w-full">
-                <LinkHover text="LinkedIn" href="https://www.linkedin.com/in/simon-tessard-138733198/"/>
-                <LinkHover text="Email" href="mailto:pro@simontessard.fr"/>
+            <div className="flex items-end justify-between font-primary text-primary w-full">
+                <div className="flex gap-5 uppercase">
+                    <LinkHover text="LinkedIn" href="https://www.linkedin.com/in/simon-tessard-138733198/"/>
+                    <LinkHover text="Email" href="mailto:pro@simontessard.fr"/>
+                </div>
+                <span className="text-xs font-primary">© 2025</span>
             </div>
 
         </footer>

@@ -27,7 +27,7 @@ const BlogCard = ({ article }: BlogCardProps) => {
                     </svg>
                 </div>
 
-                <div className="flex gap-2 items-center font-secondary italic text-primary uppercase text-sm">
+                <div className="flex gap-2 items-center font-secondary italic text-primary uppercase text-xs md:text-sm">
                     <span>{article.date}</span>
                     <span>•</span>
                     <span>{article.readTime}</span>

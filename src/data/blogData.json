@@ -45,7 +45,7 @@
       "cover": "/images/blog/ia.webp",
       "title": "L'IA dans le développement web : Entre mythe et réalité",
       "description": "Comment l'intelligence artificielle transforme réellement le métier de développeur web en 2024.",
-      "date": "5 janvier 2025",
+      "date": "6 juin 2024",
       "readTime": "4 min",
       "categories": ["IA", "Innovation", "Développement"],
       "slug": "intelligence-artificielle-developpement-web"
@@ -55,7 +55,7 @@
       "cover": "/images/blog/angular.jpg",
       "title": "Web Components : Le futur du développement modulaire ?",
       "description": "Analyse de l'adoption des Web Components et leur potentiel impact sur l'avenir du développement front-end.",
-      "date": "20 décembre 2024",
+      "date": "22 avril 2024",
       "readTime": "3 min",
       "categories": ["JavaScript", "Architecture", "Standards Web"],
       "slug": "web-components-avenir-frontend"
