@@ -5,7 +5,7 @@ interface BlogCardProps {
     article: any;
 }
 
-const BlogCard = ({ article }: BlogCardProps) => {
+export default function BlogCard({ article }: BlogCardProps){
     return (
         <Link href={`/blog/${article.slug}`} className="group flex flex-col">
 
@@ -18,8 +18,7 @@ const BlogCard = ({ article }: BlogCardProps) => {
                     <h3 className="font-primary uppercase text-xl md:text-xl 2xl:text-2xl  text-primary">
                         {article.title}
                     </h3>
-                    <svg
-                        className="shrink-0 rotate-90 text-primary size-7 lg:size-8 md:group-hover:-translate-x-1.5 transition-transform duration-300"
+                    <svg className="shrink-0 rotate-90 text-primary size-7 lg:size-8 md:group-hover:-translate-x-1.5 transition-transform duration-300"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
                         <path fillRule="evenodd" clipRule="evenodd"
                               d="M12.252 41L41 12.252 69.749 41l-4.832 4.832-20.5-20.5v43.002h-6.834V25.331l-20.5 20.5L12.252 41z"
@@ -38,5 +37,3 @@ const BlogCard = ({ article }: BlogCardProps) => {
         </Link>
     );
 };
-
-export default BlogCard;

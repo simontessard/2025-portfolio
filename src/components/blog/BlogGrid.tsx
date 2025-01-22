@@ -1,7 +1,7 @@
 import BlogCard from './BlogCard';
 import blogData from '@/data/blogData.json';
 
-const BlogGrid = () => {
+export default function BlogGrid() {
     const { articles } = blogData;
 
     return (
@@ -12,5 +12,3 @@ const BlogGrid = () => {
         </div>
     );
 };
-
-export default BlogGrid;
