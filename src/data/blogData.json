@@ -2,7 +2,7 @@
   "articles": [
     {
       "id": "wordpress-vs-nextjs",
-      "cover": "/images/blog/nextjs-vs-wordpress.webp",
+      "cover": "/images/blog/next-vs-wordpress.png",
       "title": "WordPress vs NextJS + CMS Headless : Quel stack choisir en 2024 ?",
       "description": "Analyse comparative des avantages et inconvénients de WordPress face à l'architecture plus moderne NextJS + CMS Headless.",
       "date": "10 janvier 2025",
@@ -11,11 +11,21 @@
       "slug": "wordpress-vs-nextjs-cms-headless"
     },
     {
+      "id": "feedback-experience-1",
+      "cover": "/images/projects/iniva/hotel.jpg",
+      "title": "Retour d'expérience #1 : Projet Iniva",
+      "description": "Découvrez pourquoi GSAP est devenue la référence incontournable pour les animations web modernes et son impact sur l'expérience utilisateur.",
+      "date": "10 décembre 2024",
+      "readTime": "5 min",
+      "categories": ["Développement", "Site vitrine"],
+      "slug": "feedback-experience-projet-iniva"
+    },
+    {
       "id": "gsap-impact",
-      "cover": "/images/blog/gsap.jpeg",
+      "cover": "/images/blog/gsap-cover.jpg",
       "title": "GSAP : Comment cette librairie révolutionne l'animation web",
       "description": "Découvrez pourquoi GSAP est devenue la référence incontournable pour les animations web modernes et son impact sur l'expérience utilisateur.",
-      "date": "15 décembre 2024",
+      "date": "4 décembre 2024",
       "readTime": "4 min",
       "categories": ["Animation", "JavaScript", "UX Design"],
       "slug": "gsap-impact-web-animation"
@@ -32,7 +42,7 @@
     },
     {
       "id": "tailwind-impact",
-      "cover": "/images/blog/tailwind.webp",
+      "cover": "/images/blog/tailwindcss.jpeg",
       "title": "Tailwind CSS : Pourquoi cette approche change la donne",
       "description": "L'impact de Tailwind CSS sur l'écosystème front-end et pourquoi les développeurs l'adoptent massivement.",
       "date": "24 septembre 2024",

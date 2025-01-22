@@ -10,7 +10,7 @@ export default function BlogCard({ article }: BlogCardProps){
         <Link href={`/blog/${article.slug}`} className="group flex flex-col">
 
             <Image src={article.cover} width={1000} height={600} loading="eager" alt="Article"
-                   className="w-full h-48 md:h-64 2xl:h-72 aspect-square object-cover"/>
+                   className="w-full h-48 md:h-64 2xl:h-80 aspect-square object-cover"/>
 
             <div className="flex flex-col mt-2 md:mt-3">
 
