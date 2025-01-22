@@ -1,13 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Projet({ title, cover, logo, path, field } : { title: string, cover: string, logo: string, path: string, field : string }) {
     return (
         <Link scroll={false} href={`/work/${path}`} className="gsap-project group text-black">
             <div className="relative aspect-square mb-3">
-                <img className="absolute top-0 left-0 size-full object-cover" src={cover} alt={title}/>
-                {logo &&
-                    <img className="absolute top-3 right-5 w-12 object-contain" src={logo} alt={title}/>
-                }
+                <Image width={1200} height={1200} loading="eager" className="absolute top-0 left-0 size-full object-cover" src={cover} alt={title}/>
             </div>
             <div className="flex flex-col">
                 <div className="flex items-center justify-between mb-0.5">

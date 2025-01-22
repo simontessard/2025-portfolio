@@ -13,12 +13,12 @@
     {
       "id": "feedback-experience-1",
       "cover": "/images/projects/iniva/hotel.jpg",
-      "title": "Retour d'expérience #1 : Projet Iniva",
+      "title": "Retour d'expérience #1 : Iniva Tourism",
       "description": "Découvrez pourquoi GSAP est devenue la référence incontournable pour les animations web modernes et son impact sur l'expérience utilisateur.",
       "date": "10 décembre 2024",
       "readTime": "5 min",
       "categories": ["Développement", "Site vitrine"],
-      "slug": "feedback-experience-projet-iniva"
+      "slug": "feedback-iniva-tourism"
     },
     {
       "id": "gsap-impact",

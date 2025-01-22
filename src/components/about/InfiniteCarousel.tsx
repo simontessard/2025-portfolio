@@ -2,6 +2,7 @@
 import {Autoplay} from "swiper/modules";
 import {Swiper, SwiperSlide} from "swiper/react";
 import 'swiper/css';
+import Image from "next/image";
 
 export default function InfiniteCarousel() {
     const images = [
@@ -33,7 +34,7 @@ export default function InfiniteCarousel() {
         >
             {images.map((src, index) => (
                 <SwiperSlide key={index} className="!aspect-square !w-2/5 md:!w-1/4 xl:!w-1/5">
-                    <img src={src} alt={`Slide ${index + 1}`} className="object-cover size-full" />
+                    <Image width={800} height={800} loading="eager" src={src} alt={`Slide ${index + 1}`} className="object-cover size-full" />
                 </SwiperSlide>
             ))}
         </Swiper>
