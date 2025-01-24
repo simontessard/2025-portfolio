@@ -6,6 +6,7 @@ import {Fira_Sans} from "next/font/google";
 import {AnimatePresence} from "framer-motion";
 import Scroll from "@/components/utils/Scroll";
 import localFont from 'next/font/local'
+import CustomCursor from "@/components/utils/CustomCursor";
 
 const poppins = Fira_Sans({
     subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
   return (
       <div className={`${poppins.variable} ${fraunces.variable} ${montreal.variable} ${editorial.variable}`}>
+          <CustomCursor/>
           <Scroll>
               <Header/>
               <AnimatePresence mode='wait' onExitComplete={OnExitComplete}>
