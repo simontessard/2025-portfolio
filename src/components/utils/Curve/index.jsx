@@ -15,8 +15,6 @@ const routes = {
     "/blog/gsap-impact-web-animation": "GSAP",
     "/blog/threejs-revolution-web": "ThreeJS : la révolution",
     "/blog/tailwind-impact-frontend": "L'impact Tailwind",
-    "/blog/intelligence-artificielle-developpement-web": "IA : mythes et réalités",
-    "/blog/web-components-avenir-frontend": "Web components",
     "/work/iniva": "Iniva Tourism",
     "/work/daouad": "Daouad",
     "/work/chefdechantier": "ChefDeChantier.fr",
