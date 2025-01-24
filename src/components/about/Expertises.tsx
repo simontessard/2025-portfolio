@@ -1,5 +1,5 @@
 export default function Expertises() {
-    const expertises = ["Site vitrine", "Web design", "Recueil besoins", "Conseil technique", "Audit", "Référencement",
+    const expertises = ["Site vitrine", "Web design", "Recueil besoins", "Conseil technique", "Référencement", "Audit",
         "Maintenance", "et plus"];
     return (
         <div className="flex max-lg:flex-col lg:items-start justify-between w-full mb-16 md:mb-20 lg:mb-28 xl:mb-36 2xl:mb-40 lg:pr-8 xl:pr-20 2xl:pr-52">

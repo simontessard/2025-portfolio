@@ -74,7 +74,7 @@ export default function ArticlePage({ article, content }: ArticlePageProps) {
                         </span>
                     </div>
 
-                    <div className="prose prose-h2:uppercase !max-w-none" dangerouslySetInnerHTML={{__html: content}}/>
+                    <div className="prose prose-h2:uppercase marker:text-black !max-w-none" dangerouslySetInnerHTML={{__html: content}}/>
                 </article>
 
                 <Footer/>

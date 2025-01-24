@@ -2,7 +2,7 @@
   "articles": [
     {
       "id": "wordpress-vs-nextjs",
-      "cover": "/images/blog/next-vs-wordpress.png",
+      "cover": "/images/blog/blog-next-js-wordpress.png",
       "title": "WordPress vs NextJS + CMS Headless : Quel stack choisir en 2024 ?",
       "description": "Analyse comparative des avantages et inconvénients de WordPress face à l'architecture plus moderne NextJS + CMS Headless.",
       "date": "10 janvier 2025",

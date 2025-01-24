@@ -7,7 +7,7 @@ interface BlogCardProps {
 
 export default function BlogCard({ article }: BlogCardProps){
     return (
-        <Link href={`/blog/${article.slug}`} className="group flex flex-col">
+        <Link scroll={false} href={`/blog/${article.slug}`} className="group flex flex-col">
 
             <Image src={article.cover} width={1000} height={600} loading="eager" alt="Article"
                    className="w-full h-48 md:h-64 2xl:h-80 aspect-square object-cover"/>
