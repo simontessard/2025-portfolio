@@ -62,7 +62,7 @@ const FilteredProjectsGrid = () => {
         <div className="space-y-3.5 md:space-y-5">
 
             {/* Filtres */}
-            <div className="flex gap-6 md:gap-5">
+            <div className="flex gap-6">
                 {dates.map((year) => (
                     <button
                         key={year}

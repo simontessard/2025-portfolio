@@ -6,7 +6,7 @@
       "title": "WordPress vs NextJS + CMS Headless : Quel stack choisir en 2024 ?",
       "description": "Analyse comparative des avantages et inconvénients de WordPress face à l'architecture plus moderne NextJS + CMS Headless.",
       "date": "10 janvier 2025",
-      "readTime": "2 min",
+      "readTime": "3 min",
       "categories": ["Développement Web", "Architecture", "CMS"],
       "slug": "wordpress-vs-nextjs-cms-headless"
     },
@@ -16,7 +16,7 @@
       "title": "Retour d'expérience #1 : Iniva Tourism",
       "description": "Découvrez pourquoi GSAP est devenue la référence incontournable pour les animations web modernes et son impact sur l'expérience utilisateur.",
       "date": "10 décembre 2024",
-      "readTime": "5 min",
+      "readTime": "2 min",
       "categories": ["Développement", "Site vitrine"],
       "slug": "feedback-iniva-tourism"
     },
@@ -26,7 +26,7 @@
       "title": "GSAP : Comment cette librairie révolutionne l'animation web",
       "description": "Découvrez pourquoi GSAP est devenue la référence incontournable pour les animations web modernes et son impact sur l'expérience utilisateur.",
       "date": "4 décembre 2024",
-      "readTime": "4 min",
+      "readTime": "3 min",
       "categories": ["Animation", "JavaScript", "UX Design"],
       "slug": "gsap-impact-web-animation"
     },
@@ -36,7 +36,7 @@
       "title": "Three.js : La révolution de la 3D sur le web",
       "description": "Comment Three.js transforme l'expérience web en démocratisant la 3D et ouvre de nouvelles possibilités créatives.",
       "date": "2 octobre 2024",
-      "readTime": "5 min",
+      "readTime": "3 min",
       "categories": ["3D", "Innovation", "WebGL"],
       "slug": "threejs-revolution-web"
     },
@@ -46,7 +46,7 @@
       "title": "Tailwind CSS : Pourquoi cette approche change la donne",
       "description": "L'impact de Tailwind CSS sur l'écosystème front-end et pourquoi les développeurs l'adoptent massivement.",
       "date": "24 septembre 2024",
-      "readTime": "3 min",
+      "readTime": "2 min",
       "categories": ["CSS", "Tendances", "Productivité"],
       "slug": "tailwind-impact-frontend"
     }
