@@ -14,9 +14,11 @@ export default function HeroHeader() {
                     <Carousel/>
                 </Link>
                 <div className="flex flex-col max-xl:pb-2 max-xl:h-1/2 max-xl:justify-end xl:self-end xl:w-3/5 2xl:w-1/2">
-                    <Title/>
-                    <div className="no-image xl:pl-6 flex items-end justify-between md:pt-4 xl:pt-8">
+                    <div className="xl:pl-6 pb-0 lg:pb-6 xl:pb-16">
+                        <Title/>
                         <Contact/>
+                    </div>
+                    <div className="xl:pl-6 flex items-end justify-end xl:pt-8">
                         <Nav/>
                     </div>
                 </div>

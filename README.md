@@ -19,6 +19,7 @@ yarn dev
 - [ ] Custom cursor
 - [ ] Add a "back" button on article page
 - [ ] Add an order by date on blog page
+- [ ] Do a memo with tools in about page
 
 - [x] Blog
 - [x] Page 404
