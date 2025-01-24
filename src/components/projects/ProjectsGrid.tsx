@@ -59,15 +59,15 @@ const FilteredProjectsGrid = () => {
         : projects.filter(project => project.date === selectedYear);
 
     return (
-        <div className="space-y-8">
+        <div className="space-y-3.5 md:space-y-5">
 
             {/* Filtres */}
-            <div className="flex gap-5 mb-14">
+            <div className="flex gap-6 md:gap-5">
                 {dates.map((year) => (
                     <button
                         key={year}
                         onClick={() => handleYearClick(year)}
-                        className={`py-2 uppercase font-primary md:text-xl transition-colors ${
+                        className={`py-2 uppercase font-primary text-lg md:text-xl transition-colors ${
                             selectedYear === year
                                 ? "text-primary"
                                 : "text-primary/50"

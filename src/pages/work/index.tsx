@@ -10,13 +10,18 @@ export default function Projects() {
         <Curve>
             <Head>
                 <title>Mon travail - Simon TESSARD</title>
+                <meta name="description" content="Découvrez mes derniers projets, réalisations et collaborations."/>
+                <meta name="keywords" content="projets, réalisations, collaborations, portfolio, développement web, technologies, frontend, backend, nextjs, javascript"/>
             </Head>
 
             <section className="bg-white">
                 <span id="top" className="opacity-0">top</span>
 
                 <div className="px-3.5 md:px-6 pt-24 md:pt-32 pb-6">
-                    <PageTitle title="Mon travail" className="md:mb-2"/>
+                    <PageTitle title="Mon travail" secondWords="(5 projets)" className="mb-1 md:mb-2"/>
+                    <p className="font-primary md:text-lg md:leading-8 md:max-w-4xl xl:max-w-2xl 2xl:max-w-3xl uppercase text-primary mb-10 md:mb-14">
+                        Découvrez mes derniers projets, réalisations et collaborations.
+                    </p>
                     <ProjectsGrid/>
                 </div>
             </section>
