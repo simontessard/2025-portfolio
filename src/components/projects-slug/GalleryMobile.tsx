@@ -4,6 +4,7 @@ import ImagesDesc from "@/components/projects-slug/ImagesDesc";
 import Fancybox from "@/components/global/Fancybox";
 import 'swiper/css';
 import 'swiper/css/navigation';
+import Image from "next/image";
 
 export default function GalleryMobile({ gallery, title, desc }: { gallery: any, title? : string, desc? : string }) {
     return (
@@ -34,8 +35,11 @@ export default function GalleryMobile({ gallery, title, desc }: { gallery: any, 
                     {gallery.map((image: string, index: number) => (
                         <SwiperSlide key={index}>
                             <a data-fancybox="gallery" href={image} className="cursor-zoom-in">
-                                <img
+                                <Image
                                     className="aspect-square object-cover size-full"
+                                    width={1400}
+                                    height={1300}
+                                    loading="eager"
                                     src={image}
                                     alt=""
                                 />
