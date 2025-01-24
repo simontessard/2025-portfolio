@@ -14,10 +14,11 @@ export default function FourImages({ gallery, title, desc }: { gallery: any, tit
                     <a key={index} data-fancybox="gallery" href={image} className="cursor-zoom-in">
                         <Image
                             className="object-cover size-full"
+                            loading="eager"
                             src={image}
                             alt=""
-                            width={1920}
-                            height={1080}
+                            width={1520}
+                            height={900}
                         />
                     </a>
                 ))}

@@ -10,13 +10,16 @@ npm run dev
 yarn dev
 ```
 ## WORKING ON
-- [x] Blog
 - [x] Blog content
 
 ## TODO
 - [ ] Height of page transition on mobile ?
 - [ ] CTA from proper project replacing "Visiter le site" ?
+- [ ] Custom cursor
+- [ ] Add a "back" button on article page
+- [ ] Add an order by date on blog page
 
+- [x] Blog
 - [x] Page 404
 - [x] Section "Outils" in page About
 - [x] More projects
@@ -37,7 +40,6 @@ yarn dev
 
 - [ ] Color change on project detail
 - [ ] Internationalization
-- [ ] Custom cursor
     
 ### Bugs
 - [x] Swiper was not rendered on page transition : https://github.com/nolimits4web/swiper/issues/7577
