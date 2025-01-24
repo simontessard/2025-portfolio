@@ -10,12 +10,12 @@ export default function BlogCard({ article }: BlogCardProps){
         <Link scroll={false} href={`/blog/${article.slug}`} className="group flex flex-col">
 
             <Image src={article.cover} width={1000} height={600} loading="eager" alt="Article"
-                   className="w-full h-48 md:h-64 2xl:h-80 aspect-square object-cover"/>
+                   className="w-full h-48 md:h-64 lg:h-80 2xl:h-96 aspect-square object-cover"/>
 
             <div className="flex flex-col mt-2 md:mt-3">
 
-                <div className="flex justify-between gap-2 mb-2">
-                    <h3 className="font-primary uppercase text-xl md:text-xl 2xl:text-2xl text-primary">
+                <div className="flex justify-between gap-2 mb-2 2xl:mb-2.5">
+                    <h3 className="font-primary uppercase text-xl md:text-xl 2xl:text-3xl text-primary">
                         {article.title}
                     </h3>
                     <svg className="shrink-0 rotate-90 text-primary size-7 lg:size-8 md:group-hover:-translate-x-1.5 transition-transform duration-300"
