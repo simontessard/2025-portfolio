@@ -1,6 +1,8 @@
 import gsap from "gsap";
 
 export function openMenuFunction () {
+    document.body.setAttribute("data-lenis-prevent", "true");
+
     const tl = gsap.timeline();
 
     tl.to(".js-menu", {duration: .4, autoAlpha: 1, display: "flex", onStart : () => {document.body.style.overflow = "hidden"}})
@@ -10,6 +12,8 @@ export function openMenuFunction () {
 }
 
 export function closeMenuFunction () {
+    document.body.removeAttribute("data-lenis-prevent");
+
     const tl = gsap.timeline();
 
     tl.to(".js-menu-link", {duration: .5, opacity: 0, stagger: 0.015, y: 15})
