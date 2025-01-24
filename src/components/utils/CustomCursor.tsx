@@ -10,36 +10,23 @@ export default function CustomCursor() {
     const [isHovering, setIsHovering] = useState(false);
 
     useEffect(() => {
-        // Hide native cursor globally
-        document.body.style.cursor = 'none';
-
         const handleMouseMove = (e: MouseEvent) => {
             setPosition({ x: e.clientX, y: e.clientY });
         };
 
-        const handleMouseOver = (e: Event) => {
-            setIsHovering(true);
-        };
-
-        const handleMouseOut = (e: Event) => {
-            setIsHovering(false);
+        const handleHover = (e: MouseEvent) => {
+            const target = e.target as HTMLElement;
+            setIsHovering(
+                target.closest('a, button, [onclick], [role="button"], [data-cursor-hover]') !== null
+            );
         };
 
         window.addEventListener('mousemove', handleMouseMove);
-
-        // Add event listeners to all clickable elements
-        const clickableElements = document.querySelectorAll('a, button, [onclick], [role="button"]');
-        clickableElements.forEach(el => {
-            el.addEventListener('mouseover', handleMouseOver);
-            el.addEventListener('mouseout', handleMouseOut);
-        });
+        window.addEventListener('mouseover', handleHover);
 
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
-            clickableElements.forEach(el => {
-                el.removeEventListener('mouseover', handleMouseOver);
-                el.removeEventListener('mouseout', handleMouseOut);
-            });
+            window.removeEventListener('mouseover', handleHover);
         };
     }, [pathname]);
 
