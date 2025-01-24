@@ -11,6 +11,7 @@ yarn dev
 ```
 ## WORKING ON
 - [x] Blog content
+- [] Meta tags all pages
 
 ## TODO
 - [ ] Height of page transition on mobile ?
@@ -42,5 +43,6 @@ yarn dev
 - [ ] Internationalization
     
 ### Bugs
+- [] Navigation on 404 causes entrance animation to be triggered
 - [x] Swiper was not rendered on page transition : https://github.com/nolimits4web/swiper/issues/7577
 
