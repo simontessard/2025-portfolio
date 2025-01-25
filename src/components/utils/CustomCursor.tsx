@@ -90,7 +90,7 @@ export default function CustomCursor() {
                 </symbol>
             </svg>
             <div className="fixed pointer-events-none z-[9999]"
-                style={{left: `${position.x}px`, top: `${position.y}px`, transform: 'translate(-50%, -50%)'}}>
+                style={{left: `${position.x}px`, top: `${position.y}px`, transform: 'translate(-15%, -10%)'}}>
                 {renderCursor()}
             </div>
         </>
