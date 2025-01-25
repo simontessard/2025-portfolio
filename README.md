@@ -10,17 +10,17 @@ npm run dev
 yarn dev
 ```
 ## WORKING ON
-- [x] Blog content
-- [] Meta tags all pages
+- [ ] Meta tags all pages
 
 ## TODO
 - [ ] Height of page transition on mobile ?
 - [ ] CTA from proper project replacing "Visiter le site" ?
-- [ ] Custom cursor
 - [ ] Add a "back" button on article page
 - [ ] Add an order by date on blog page
 - [ ] Do a memo with tools in about page
 
+- [x] Custom cursor
+- [x] Blog content
 - [x] Blog
 - [x] Page 404
 - [x] Section "Outils" in page About
@@ -44,6 +44,7 @@ yarn dev
 - [ ] Internationalization
     
 ### Bugs
-- [] Navigation on 404 causes entrance animation to be triggered
+- [ ] Native cursor showing randomly
+- [ ] Navigation on 404 causes entrance animation to be triggered
 - [x] Swiper was not rendered on page transition : https://github.com/nolimits4web/swiper/issues/7577
 
