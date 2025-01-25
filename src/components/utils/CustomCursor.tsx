@@ -7,8 +7,21 @@ export default function CustomCursor() {
     const pathname = usePathname();
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [cursorState, setCursorState] = useState<'default' | 'hover' | 'click' | 'grab'>('default');
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
+        // Vérifier si l'appareil est mobile
+        const checkMobile = () => {
+            setIsMobile(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+        };
+
+        // Vérifier initialement et ajouter un écouteur de redimensionnement
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+
+        // Ne pas ajouter les écouteurs d'événements sur mobile
+        if (isMobile) return;
+
         const handleMouseMove = (e: MouseEvent) => {
             setPosition({ x: e.clientX, y: e.clientY });
         };
@@ -38,12 +51,15 @@ export default function CustomCursor() {
         window.addEventListener('mouseup', handleMouseUp);
 
         return () => {
+            window.removeEventListener('resize', checkMobile);
             window.removeEventListener('mousemove', handleMouseMove);
             window.removeEventListener('mouseover', handleHover);
             window.removeEventListener('mousedown', handleMouseDown);
             window.removeEventListener('mouseup', handleMouseUp);
         };
-    }, [pathname]);
+    }, [pathname, isMobile]);
+
+    if (isMobile) return null;
 
     const renderCursor = () => {
         switch (cursorState) {
