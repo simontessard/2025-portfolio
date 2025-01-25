@@ -42,7 +42,7 @@
     },
     {
       "id": "tailwind-impact",
-      "cover": "/images/blog/tailwind.webp",
+      "cover": "/images/blog/tailwindcss.webp",
       "title": "Tailwind CSS : Pourquoi cette approche change la donne",
       "description": "L'impact de Tailwind CSS sur l'écosystème front-end et pourquoi les développeurs l'adoptent massivement.",
       "date": "24 septembre 2024",
