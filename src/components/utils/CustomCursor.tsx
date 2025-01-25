@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 export default function CustomCursor() {
     const pathname = usePathname();
     const [position, setPosition] = useState({ x: 0, y: 0 });
-    const [cursorState, setCursorState] = useState<'default' | 'hover' | 'click' | 'grab'>('default');
+    const [cursorState, setCursorState] = useState<'default' | 'hover' | 'grab'>('default');
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -37,24 +37,18 @@ export default function CustomCursor() {
             }
         };
 
-        const handleMouseDown = () => {
-            setCursorState('click');
-        };
-
         const handleMouseUp = () => {
             setCursorState('default');
         };
 
         window.addEventListener('mousemove', handleMouseMove);
         window.addEventListener('mouseover', handleHover);
-        window.addEventListener('mousedown', handleMouseDown);
         window.addEventListener('mouseup', handleMouseUp);
 
         return () => {
             window.removeEventListener('resize', checkMobile);
             window.removeEventListener('mousemove', handleMouseMove);
             window.removeEventListener('mouseover', handleHover);
-            window.removeEventListener('mousedown', handleMouseDown);
             window.removeEventListener('mouseup', handleMouseUp);
         };
     }, [pathname, isMobile]);
@@ -67,12 +61,6 @@ export default function CustomCursor() {
                 return (
                     <svg className="size-8" viewBox="0 0 52 52" width="24" height="24">
                         <use href="#i-cursor-click"/>
-                    </svg>
-                );
-            case 'click':
-                return (
-                    <svg className="size-9" viewBox="0 0 52 52" width="24" height="24">
-                        <use href="#i-cursor-click" />
                     </svg>
                 );
             case 'grab':
