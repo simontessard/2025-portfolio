@@ -26,7 +26,7 @@ export default function Carousel() {
         >
             {slides.map((slide : any, index : number) => (
                 <SwiperSlide key={index}>
-                    <Image width={1500} height={1500} loading="eager" src={slide.src} alt={slide.alt} className="object-cover size-full" />
+                    <Image width={1500} height={1500} priority loading="eager" src={slide.src} alt={slide.alt} className="object-cover size-full" />
                 </SwiperSlide>
             ))}
         </Swiper>

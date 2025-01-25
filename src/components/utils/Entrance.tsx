@@ -11,13 +11,14 @@ export default function Entrance() {
             const entranceElement = document.querySelector('.js-entrance');
             const tl = gsap.timeline({ paused: true });
 
+            document.body.style.overflow = "hidden";
+            document.body.setAttribute("data-lenis-prevent", "true");
+
             gsap.set('.js-entrance', {autoAlpha: 0})
             tl.set('.js-entrance', {autoAlpha: 1})
 
             // Disparition premiers mots
-            tl.to(['.js-up--first-1word', '.js-up--second-1word'], {opacity: 0, yPercent: -100, duration: 1, delay: .9, ease: 'power4.out',
-                onStart : () => {document.body.style.overflow = "hidden"}
-            }, '<')
+            tl.to(['.js-up--first-1word', '.js-up--second-1word'], {opacity: 0, yPercent: -100, duration: 1, delay: .9, ease: 'power4.out'}, '<')
             tl.to(['.js-up--first-2word', '.js-up--first-3word', '.js-up--first-4word', '.js-up--second-2word', '.js-up--second-3word' , '.js-up--second-4word'], {yPercent: -100, duration: 1.2, delay: .2, ease: 'power4.out'}, "<")
 
             // Disparition seconds mots
@@ -43,6 +44,7 @@ export default function Entrance() {
                         entranceElement.remove();
                     }
                     document.body.style.overflow = "unset";
+                    document.body.removeAttribute("data-lenis-prevent");
                     setEntranceIsDone(true)
                 }
             }, '-=1.5')
