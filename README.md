@@ -16,8 +16,8 @@ yarn dev
 - [ ] Height of page transition on mobile ?
 - [ ] CTA from proper project replacing "Visiter le site" ?
 - [ ] Add a "back" button on article page
+- [ ] Custom cursor for drag on carousel
 - [ ] Add an order by date on blog page
-- [ ] Do a memo with tools in about page
 
 - [x] Custom cursor
 - [x] Blog content
@@ -39,8 +39,8 @@ yarn dev
 - [x] More info on projet heading
 
 ## Upcoming Features
-
 - [ ] Color change on project detail
+- [ ] Do a memo with tools in about page
 - [ ] Internationalization
     
 ### Bugs
