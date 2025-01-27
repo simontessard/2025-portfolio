@@ -6,6 +6,7 @@ import Heading from "@/components/projects-slug/Heading";
 import FourImages from "@/components/projects-slug/FourImages";
 import Head from 'next/head'
 import GalleryDesktop from "@/components/projects-slug/GalleryDesktop";
+import NavigationButton from "@/components/global/NavigationButton";
 
 export default function Project() {
     const project = projects[2];
@@ -22,12 +23,14 @@ export default function Project() {
 
             <span id="top" className="opacity-0">top</span>
 
-            <div className="pt-24 md:pt-32 pb-12 px-3.5 md:px-6 ">
+            <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-3.5 md:px-6 ">
                 <Heading project={project}/>
                 <MainImage img={mainImg}/>
                 <GalleryDesktop gallery={galleryDesktop} title="Création d'un tunnel" desc="Le but de ce tunnel, connecté via un sous-domaine, est de récupérer de façon automatisée et précise les demandes de devis. L'entreprise et le client recoivent un mail généré de toutes les informations remplies dans les différentes étapes du formulaire."/>
                 <FourImages gallery={galleryFour}/>
             </div>
+
+            <NavigationButton href="/work" text="Retour aux projets"/>
 
             <Footer/>
         </Curve>

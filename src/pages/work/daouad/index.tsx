@@ -6,6 +6,7 @@ import GalleryMobile from "@/components/projects-slug/GalleryMobile";
 import Heading from "@/components/projects-slug/Heading";
 import Head from 'next/head'
 import GalleryDesktop from "@/components/projects-slug/GalleryDesktop";
+import NavigationButton from "@/components/global/NavigationButton";
 
 export default function Project() {
     const project = projects[1];
@@ -22,12 +23,14 @@ export default function Project() {
 
             <span id="top" className="opacity-0">top</span>
 
-            <div className="pt-24 md:pt-32 pb-12 px-3.5 md:px-6 ">
+            <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-3.5 md:px-6 ">
                 <Heading project={project}/>
                 <MainImage img={mainImg}/>
                 <GalleryDesktop gallery={desktopImg}/>
                 <GalleryMobile gallery={phoneImg}/>
             </div>
+
+            <NavigationButton href="/work" text="Retour aux projets"/>
 
             <Footer/>
         </Curve>

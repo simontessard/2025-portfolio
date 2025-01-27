@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Curve from "@/components/utils/Curve";
+import NavigationButton from "@/components/global/NavigationButton";
 
 export default function Custom404() {
 
@@ -21,10 +22,7 @@ export default function Custom404() {
                         La page que vous recherchez semble avoir disparu dans le néant numérique.
                     </p>
 
-                    <Link href="/" className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 hover:bg-primary/20
-                        text-primary uppercase transition-colors duration-300">
-                        Retour à l'accueil
-                    </Link>
+                    <NavigationButton href="/" text="Retour à l'accueil"/>
 
                 </div>
             </div>
