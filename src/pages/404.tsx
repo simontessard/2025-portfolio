@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Curve from "@/components/utils/Curve";
 import NavigationButton from "@/components/global/NavigationButton";
 

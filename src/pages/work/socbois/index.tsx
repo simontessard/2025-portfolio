@@ -5,7 +5,6 @@ import MainImage from "@/components/projects-slug/MainImage";
 import GalleryMobile from "@/components/projects-slug/GalleryMobile";
 import Heading from "@/components/projects-slug/Heading";
 import Head from 'next/head'
-import Link from "next/link";
 import NavigationButton from "@/components/global/NavigationButton";
 
 export default function Project() {
