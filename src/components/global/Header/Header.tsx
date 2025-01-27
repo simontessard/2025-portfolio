@@ -25,7 +25,7 @@ export default function Header() {
         <>
             <header>
                 <Link href="/" className="header-logo fixed z-50 top-4 left-3.5 md:top-6 md:left-6 text-primary md:text-lg font-primary">
-                    S. TESSARD
+                    SIMON T.
                 </Link>
                 <MenuOpenButton/>
                 <LocalTime/>

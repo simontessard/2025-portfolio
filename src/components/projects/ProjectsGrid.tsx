@@ -59,7 +59,7 @@ const FilteredProjectsGrid = () => {
         : projects.filter(project => project.date === selectedYear);
 
     return (
-        <div className="space-y-2.5 md:space-y-5">
+        <div className="space-y-2.5 md:space-y-4">
 
             {/* Filtres */}
             <div className="flex gap-6">
