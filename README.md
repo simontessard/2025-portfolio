@@ -44,7 +44,7 @@ yarn dev
 - [ ] Internationalization
     
 ### Bugs
-- [ ] Native cursor showing randomly
 - [ ] Navigation on 404 causes entrance animation to be triggered
+- [x] Native cursor showing randomly
 - [x] Swiper was not rendered on page transition : https://github.com/nolimits4web/swiper/issues/7577
 

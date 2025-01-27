@@ -47,10 +47,13 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export default function ArticlePage({ article, content }: ArticlePageProps) {
+    const pageTitle = `${article.title} - Simon TESSARD`;
+
     return (
         <Curve>
             <Head>
-                <title>{article.title} - Simon TESSARD</title>
+                <title>{pageTitle}</title>
+                <meta name="description" content={article.description} />
             </Head>
 
             <span id="top" className="opacity-0">top</span>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Projet from "@/components/projects/Project";
 import projects from "@/data/projectsData.json";
 import { gsap } from "gsap";
@@ -59,15 +59,14 @@ const FilteredProjectsGrid = () => {
         : projects.filter(project => project.date === selectedYear);
 
     return (
-        <div className="space-y-3.5 md:space-y-5">
+        <div className="space-y-2.5 md:space-y-5">
 
             {/* Filtres */}
             <div className="flex gap-6">
                 {dates.map((year) => (
                     <button
-                        key={year}
-                        onClick={() => handleYearClick(year)}
-                        className={`py-2 uppercase font-primary text-lg md:text-xl transition-colors ${
+                        key={year} onClick={() => handleYearClick(year)}
+                        className={`cursor-none py-2 uppercase font-primary text-lg md:text-xl transition-colors ${
                             selectedYear === year
                                 ? "text-primary"
                                 : "text-primary/50"
@@ -84,6 +83,7 @@ const FilteredProjectsGrid = () => {
                     <Projet key={index} {...project} />
                 ))}
             </div>
+
         </div>
     );
 };

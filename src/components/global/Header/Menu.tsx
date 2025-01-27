@@ -49,7 +49,7 @@ export default function Menu() {
                 <div className="js-menu-img relative overflow-hidden bg-blue-500 lg:aspect-[9/16] w-52 md:w-1/3 lg:w-full h-64 md:h-96 lg:h-[400px] xl:h-[500px] 2xl:h-[550px] md:mt-auto lg:max-w-md"
                      style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" }}>
                     <Image width={1000} height={1000} src="/images/simon.png" alt="Logo"
-                           className="absolute top-0 object-cover size-full scale-110"/>
+                           className="absolute top-0 object-cover size-full scale-105"/>
                 </div>
 
             </div>

@@ -29,10 +29,6 @@ export default function Tools() {
             desc: "CSS",
         },
         {
-            title: "ThreeJS",
-            desc: "3D",
-        },
-        {
             title: "Figma",
             desc: "Design",
         },
