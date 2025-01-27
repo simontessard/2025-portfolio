@@ -18,19 +18,19 @@ export default function Entrance() {
             tl.set('.js-entrance', {autoAlpha: 1})
 
             // Disparition premiers mots
-            tl.to(['.js-up--first-1word', '.js-up--second-1word'], {opacity: 0, yPercent: -100, duration: 1, delay: .9, ease: 'power4.out'}, '<')
-            tl.to(['.js-up--first-2word', '.js-up--first-3word', '.js-up--first-4word', '.js-up--second-2word', '.js-up--second-3word' , '.js-up--second-4word'], {yPercent: -100, duration: 1.2, delay: .2, ease: 'power4.out'}, "<")
+            tl.to(['.js-up--first-1word', '.js-up--second-1word'], {opacity: 0, yPercent: -100, duration: .9, delay: .8, ease: 'power4.out'}, '<')
+            tl.to(['.js-up--first-2word', '.js-up--first-3word', '.js-up--first-4word', '.js-up--second-2word', '.js-up--second-3word' , '.js-up--second-4word'], {yPercent: -100, duration: 1, delay: .2, ease: 'power4.out'}, "<")
 
             // Disparition seconds mots
-            tl.to(['.js-up--first-2word', '.js-up--second-2word'], {opacity: 0, yPercent: -200, duration: 1, delay: .6, ease: 'power4.out'})
-            tl.to(['.js-up--first-3word', '.js-up--second-3word'], {yPercent: -200, duration: 1.2, delay: .2, ease: 'power4.out'}, "<")
+            tl.to(['.js-up--first-2word', '.js-up--second-2word'], {opacity: 0, yPercent: -200, duration: .9, delay: .2, ease: 'power4.out'})
+            tl.to(['.js-up--first-3word', '.js-up--second-3word'], {yPercent: -200, duration: 1, delay: .2, ease: 'power4.out'}, "<")
 
             // Disparition troisième mots
-            tl.to(['.js-up--first-3word', '.js-up--second-3word'], {opacity: 0, yPercent: -300, duration: 1, delay: .6, ease: 'power4.out'})
-            tl.to(['.js-up--first-4word', '.js-up--second-4word'], {yPercent: -300, duration: 1.2, delay: .2, ease: 'power4.out'}, "<")
+            tl.to(['.js-up--first-3word', '.js-up--second-3word'], {opacity: 0, yPercent: -300, duration: .9, delay: .2, ease: 'power4.out'})
+            tl.to(['.js-up--first-4word', '.js-up--second-4word'], {yPercent: -300, duration: 1, delay: .2, ease: 'power4.out'}, "<")
 
             // Disparition quatrième mots
-            tl.to(['.js-up--first-4word', '.js-up--second-4word'], {opacity: 0, yPercent: -400, duration: 1, delay: .6, ease: 'power4.out'})
+            tl.to(['.js-up--first-4word', '.js-up--second-4word'], {opacity: 0, yPercent: -400, duration: .9, delay: .2, ease: 'power4.out'})
 
             // Disparition du contenu
             tl.to('.js-entrance--text', {autoAlpha: 0, duration: .6, ease: 'power4.out'})
