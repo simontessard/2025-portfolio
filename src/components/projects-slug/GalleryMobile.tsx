@@ -14,8 +14,7 @@ export default function GalleryMobile({ gallery, title, desc }: { gallery: any, 
 
             <Fancybox>
                 <Swiper
-                    className="swiper-carousel-content"
-                    grabCursor={true}
+                    className="swiper-carousel-content grab-me cursor-none"
                     modules={[Navigation, Scrollbar]}
                     freeMode={true}
                     scrollbar={{el: '.scrollbar-custom', draggable: true, snapOnRelease: false}}

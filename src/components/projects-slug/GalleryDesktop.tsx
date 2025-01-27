@@ -14,8 +14,7 @@ export default function GalleryDesktop({ gallery, title, desc }: { gallery: any,
 
             <Fancybox>
                 <Swiper
-                    className="swiper-gallery-desktop md:h-[80dvh]"
-                    grabCursor={true}
+                    className="swiper-gallery-desktop grab-me cursor-none md:h-[80dvh]"
                     modules={[Navigation, Scrollbar]}
                     freeMode={true}
                     scrollbar={{el: '.scrollbar-custom-2', draggable: true, snapOnRelease: false}}
