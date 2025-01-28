@@ -21,13 +21,13 @@ export default function Project() {
 
             <span id="top" className="opacity-0">top</span>
 
-            <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-3.5 md:px-6">
+            <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-4 md:px-6">
                 <Heading project={project} color="#402915"/>
                 <MainImage img={mainImg}/>
-                <GalleryMobile gallery={phoneImg} title="Un projet « One page »" desc="Cette vitrine propose sur une seule page des sections importantes à mettre en avant, tels que les domaines d'expertises et un formulaire de contact."/>
+                <GalleryMobile gallery={phoneImg} title="Un projet « One page »" color="#402915"
+                               desc="Cette vitrine propose sur une seule page des sections importantes à mettre en avant, tels que les domaines d'expertises et un formulaire de contact."/>
+                <NavigationButton href="/work" text="Retour aux projets"/>
             </div>
-
-            <NavigationButton href="/work" text="Retour aux projets"/>
 
             <Footer/>
         </Curve>

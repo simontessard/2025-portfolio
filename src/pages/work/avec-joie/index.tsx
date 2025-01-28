@@ -21,13 +21,12 @@ export default function Project() {
 
             <span id="top" className="opacity-0">top</span>
 
-            <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-3.5 md:px-6 ">
-                <Heading project={project}/>
+            <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-4 md:px-6 ">
+                <Heading project={project} color="#9f2a16"/>
                 <MainImage img={mainImg}/>
-                <GalleryDesktop gallery={desktopImg}/>
+                <GalleryDesktop gallery={desktopImg} color="#9f2a16"/>
+                <NavigationButton href="/work" text="Retour aux projets"/>
             </div>
-
-            <NavigationButton href="/work" text="Retour aux projets"/>
 
             <Footer/>
         </Curve>

@@ -22,6 +22,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
         <>
             <div className="flex flex-col w-full">
                 <div className="mb-10 xl:mb-0">
+
                     {/* Title */}
                     <div className="flex gap-2 md:gap-2.5 xl:gap-3 items-start mb-8 md:mb-12">
                         <h1 style={textStyle} className="font-primary text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl uppercase tracking-tight font-medium">
@@ -33,6 +34,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
                     </div>
 
                     <div className="flex max-xl:flex-col justify-between">
+
                         {/* Desc */}
                         <p style={textStyle} className="font-primary md:text-lg md:leading-8 md:max-w-4xl xl:max-w-2xl 2xl:max-w-3xl uppercase mb-8 md:mb-12">
                             {project.description}
@@ -70,6 +72,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
                                     {project.client}
                                 </p>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -86,6 +89,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
                               fill="currentColor"/>
                     </svg>
                 </Link>
+
             </div>
 
             <span style={{ backgroundColor: color }} className="block h-0.5 w-full mt-7 md:mt-10 mb-8 md:mb-14"></span>

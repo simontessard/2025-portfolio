@@ -9,7 +9,7 @@ export default function Footer() {
     const lenis = useLenis(({ scroll }) => {})
 
     return (
-        <footer className="flex flex-col border-t-2 border-t-primary pt-6 pb-4 mx-3.5 md:mx-6 mt-8 md:mt-16 xl:mt-20">
+        <footer className="flex flex-col border-t-2 border-t-primary pt-6 pb-4 mx-4 md:mx-6 mt-8 md:mt-16 xl:mt-20">
 
             <div className="flex flex-col gap-6 md:gap-4 mb-6 md:mb-10">
                 <div className="flex items-start justify-between w-full">

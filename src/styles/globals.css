@@ -10,10 +10,6 @@
     transition-timing-function : linear !important;
 }
 
-.swiper-scrollbar-drag {
-    @apply bg-primary rounded-none;
-}
-
 .curve .svg, .background{
         position: fixed;
         height: calc(100dvh + 600px);

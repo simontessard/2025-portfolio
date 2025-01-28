@@ -6,7 +6,7 @@ export default function FourImages({ gallery, title, desc }: { gallery: any, tit
     return (
         <Fancybox>
 
-            <ImagesDesc title={title} description={desc} />
+            <ImagesDesc title={title} description={desc} color="#742e25"/>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16 md:mb-24">
 

@@ -7,7 +7,7 @@ import NavMobile from "@/components/home/nav/NavMobile";
 
 export default function HeroHeader() {
     return (
-        <section className="h-[100dvh] md:h-screen p-3.5 lg:p-6 overflow-hidden">
+        <section className="h-[100dvh] md:h-screen p-4 lg:p-6 overflow-hidden">
             <div className="max-xl:flex-col-reverse flex size-full xl:pt-20">
                 <NavMobile/>
                 <Link href="/work" className="max-xl:h-1/2 size-full xl:w-1/2">

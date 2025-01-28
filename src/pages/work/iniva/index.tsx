@@ -26,11 +26,11 @@ export default function Project() {
 
             <span id="top" className="opacity-0">top</span>
 
-            <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-3.5 md:px-6 ">
+            <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-4 md:px-6 ">
                 <Heading project={project} color="#742e25"/>
                 <MainImage img={mainImg}/>
 
-                <GalleryDesktop gallery={desktopImg} title="Un site logique"
+                <GalleryDesktop gallery={desktopImg} title="Un site logique" color="#742e25"
                                 desc="Il se caractérise par une page d'accueil fournie, qui invite le visiteur à découvrir les pages
                         détaillant un hôtel ou une activité. à travers différents clichés et vidéos, on y découvre facilement une
                         représentation du Gabon qui donne envie."/>
@@ -40,12 +40,12 @@ export default function Project() {
                             desc="Le site se démarque par de nombreuses sections d'illustrations, de magnifiques carousels, une carte interactive et une navigation latérale agréable.
                         Chaque détail a été réfléchi pour donner au visiteur une idée précise de ce qui l’attend sur place."/>
 
-                <GalleryMobile gallery={phoneImg} title="L’Adaptation Mobile : Passage Obligé"
+                <GalleryMobile gallery={phoneImg} title="L’Adaptation Mobile : Passage Obligé" color="#742e25"
                                desc="La version mobile est optimisée, notamment avec des carousels ajustés pour petits écrans, des images responsives et une navigation fluide via le menu par exemple.
                 Chaque interaction est une invitation à découvrir, sans effort, les hôtels et activités proposés par Iniva."/>
-            </div>
 
-            <NavigationButton href="/work" text="Retour aux projets"/>
+                <NavigationButton href="/work" text="Retour aux projets"/>
+            </div>
 
             <Footer/>
         </Curve>

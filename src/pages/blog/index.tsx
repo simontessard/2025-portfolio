@@ -15,7 +15,7 @@ export default function BlogPage() {
 
             <span id="top" className="opacity-0">top</span>
 
-            <section className="px-3.5 md:px-6 pt-24 md:pt-32 pb-6">
+            <section className="px-4 md:px-6 pt-24 md:pt-32 pb-6">
 
                 <PageTitle title="Blog" className="mb-3 md:mb-4"/>
                 <p className="font-primary md:text-lg md:leading-8 md:max-w-4xl xl:max-w-2xl 2xl:max-w-3xl uppercase text-primary mb-14 md:mb-20">
