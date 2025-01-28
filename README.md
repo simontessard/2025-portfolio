@@ -11,10 +11,11 @@ yarn dev
 ```
 # WORKING ON
 - [ ] Meta tags all pages
+- [ ] Add an order by date on blog page
 
 # TODO
 - [ ] Height of page transition on mobile ?
-- [ ] Add an order by date on blog page
+- [ ] Changes screenshoots mockups ?
 
 - [x] Custom cursor
 - [x] Blog
@@ -28,9 +29,9 @@ yarn dev
 - [x] Definitive color
 - [x] Menu animations
 - [x] Entrance animation integration
+- [x] Color change on project detail
 
 # Upcoming Features
-- [ ] Color change on project detail
 - [ ] Do a memo with tools in about page
 - [ ] Internationalization
 
