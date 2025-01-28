@@ -8,7 +8,7 @@ export default function FourImages({ gallery, title, desc }: { gallery: any, tit
 
             <ImagesDesc title={title} description={desc} color="#742e25"/>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16 md:mb-24">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-16 md:mb-24">
 
                 {gallery.map((image: string, index: number) => (
                     <a key={index} data-fancybox="gallery" href={image} className="cursor-zoom-in">

@@ -40,6 +40,8 @@ export default function Curve({children}) {
         height: null
     })
 
+    const isValidRoute = routes.hasOwnProperty(asPath);
+
     useEffect( () => {
         function resize(){
             setDimensions({
@@ -56,7 +58,7 @@ export default function Curve({children}) {
 
     return (
         <main className='page curve'>
-            <Entrance/>
+            {isValidRoute && <Entrance/>}
             <div style={{opacity: dimensions.width == null ? 1 : 0}} className='background'/>
                 <motion.p className='route p-3 text-center text-white font-secondary text-3xl md:text-4xl uppercase' {...anim(text)}>
                     {routes[asPath]}

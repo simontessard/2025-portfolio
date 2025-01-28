@@ -12,11 +12,10 @@ yarn dev
 # WORKING ON
 - [ ] Meta tags all pages
 - [ ] Add an order by date on blog page
+- [ ] Changes screenshoots mockups ?
 
 # TODO
 - [ ] Height of page transition on mobile ?
-- [ ] Changes screenshoots mockups ?
-
 - [x] Custom cursor
 - [x] Blog
 - [x] Page 404
@@ -36,11 +35,10 @@ yarn dev
 - [ ] Internationalization
 
 ## Ideas
-- [ ] CTA from proper project replacing "Visiter le site" ?
 - [ ] Add a "back" button on article page
     
 ### Bugs
-- [ ] Navigation on 404 causes entrance animation to be triggered
+- [x] Navigation on 404 causes entrance animation to be triggered
 - [x] Native cursor showing randomly
 - [x] Swiper was not rendered on page transition : https://github.com/nolimits4web/swiper/issues/7577
 

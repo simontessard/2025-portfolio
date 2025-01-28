@@ -1,7 +1,16 @@
 import Curve from "@/components/utils/Curve";
 import NavigationButton from "@/components/global/NavigationButton";
+import {usePathname} from "next/navigation";
+import {useEffect} from "react";
+import useAppStore from "@/store/store";
 
 export default function Custom404() {
+    const pathname = usePathname();
+    const setEntranceIsDone = useAppStore((state) => state.setEntranceIsDone);
+
+    useEffect(() => {
+        setEntranceIsDone(true);
+    }, [pathname]);
 
     return (
         <Curve>
