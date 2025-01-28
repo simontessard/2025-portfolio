@@ -60,11 +60,12 @@ export default function Footer({ color = "#0156cf" }: FooterProps) {
 
             <div style={{ color }} className="flex items-end justify-between font-primary w-full">
                 <div className="flex gap-5 uppercase">
-                    <LinkHover text="LinkedIn" href="https://www.linkedin.com/in/simon-tessard-138733198/" color={color}/>
-                    <LinkHover text="Email" href="mailto:pro@simontessard.fr" color={color}/>
+                    <LinkHover text="LinkedIn" href="https://www.linkedin.com/in/simon-tessard-138733198/"/>
+                    <LinkHover text="Email" href="mailto:pro@simontessard.fr"/>
                 </div>
                 <span className="text-xs font-primary">© 2025</span>
             </div>
+
         </footer>
     )
 }
