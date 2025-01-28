@@ -7,6 +7,8 @@ import FourImages from "@/components/projects-slug/FourImages";
 import Head from 'next/head'
 import GalleryDesktop from "@/components/projects-slug/GalleryDesktop";
 import NavigationButton from "@/components/global/NavigationButton";
+import useAppStore from "@/store/store";
+import {useEffect} from "react";
 
 export default function Project() {
     const project = projects[2];
@@ -14,6 +16,13 @@ export default function Project() {
     const mainImg = project.gallery.large[0];
     const galleryDesktop = [project.gallery.large[1], project.gallery.large[3], project.gallery.large[2]]
     const galleryFour = [project.gallery.square[2], project.gallery.square[1], project.gallery.square[4], project.gallery.square[3]]
+
+    const setColor = useAppStore((state) => state.setColor);
+
+    useEffect(() => {
+        setColor('#123378');
+        return () => setColor('#0156cf');
+    }, []);
 
     return (
         <Curve>
@@ -28,10 +37,10 @@ export default function Project() {
                 <MainImage img={mainImg}/>
                 <GalleryDesktop color="#123378" gallery={galleryDesktop} title="Création d'un tunnel" desc="Le but de ce tunnel, connecté via un sous-domaine, est de récupérer de façon automatisée et précise les demandes de devis. L'entreprise et le client recoivent un mail généré de toutes les informations remplies dans les différentes étapes du formulaire."/>
                 <FourImages gallery={galleryFour}/>
-                <NavigationButton href="/work" text="Retour aux projets"/>
+                <NavigationButton href="/work" text="Retour aux projets" color="#123378"/>
             </div>
 
-            <Footer/>
+            <Footer color="#123378"/>
         </Curve>
     );
 }

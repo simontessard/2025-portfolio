@@ -8,6 +8,8 @@ import FourImages from "@/components/projects-slug/FourImages";
 import Head from 'next/head'
 import GalleryDesktop from "@/components/projects-slug/GalleryDesktop";
 import NavigationButton from "@/components/global/NavigationButton";
+import {useEffect} from "react";
+import useAppStore from "@/store/store";
 
 export default function Project() {
     const project = projects[0];
@@ -17,6 +19,13 @@ export default function Project() {
     const desktopImg = [project.gallery.large[4], project.gallery.large[3], project.gallery.large[5]]
     const galleryFour = [project.gallery.large[6], project.gallery.large[3], project.gallery.large[5], project.gallery.large[8]]
     const phoneImg = [project.gallery.square[2], project.gallery.square[0], project.gallery.square[1], project.gallery.square[3]]
+
+    const setColor = useAppStore((state) => state.setColor);
+
+    useEffect(() => {
+        setColor('#742e25');
+        return () => setColor('#0156cf');
+    }, []);
 
     return (
         <Curve>
@@ -44,10 +53,10 @@ export default function Project() {
                                desc="La version mobile est optimisée, notamment avec des carousels ajustés pour petits écrans, des images responsives et une navigation fluide via le menu par exemple.
                 Chaque interaction est une invitation à découvrir, sans effort, les hôtels et activités proposés par Iniva."/>
 
-                <NavigationButton href="/work" text="Retour aux projets"/>
+                <NavigationButton href="/work" text="Retour aux projets" color="#742e25"/>
             </div>
 
-            <Footer/>
+            <Footer color="#742e25"/>
         </Curve>
     );
 }

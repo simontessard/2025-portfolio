@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import {useGSAP} from "@gsap/react";
-import {gsap} from "gsap";
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
+import useAppStore from "@/store/store";
 
 export default function LocalTime() {
     const [time, setTime] = useState("");
+    const color = useAppStore((state) => state.color);
 
     useGSAP(() => {
         gsap.to('.local-time', {
@@ -28,10 +30,12 @@ export default function LocalTime() {
             setTime(parisTime);
         }, 1000);
 
-        return () => clearInterval(interval); // Nettoyage à la fin du composant
+        return () => clearInterval(interval);
     }, []);
 
-    return <p className="local-time max-md:hidden fixed size-fit top-4 md:top-6 mx-auto inset-x-0 uppercase font-primary text-primary text-sm md:text-lg">
-        Heure : {time}
-    </p>
+    return (
+        <p style={{ color }} className="local-time max-md:hidden fixed size-fit top-4 md:top-6 mx-auto inset-x-0 uppercase font-primary text-sm md:text-lg">
+            Heure : {time}
+        </p>
+    )
 }
