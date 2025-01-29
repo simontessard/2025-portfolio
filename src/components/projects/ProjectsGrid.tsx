@@ -17,7 +17,6 @@ const FilteredProjectsGrid = () => {
     const [selectedYear, setSelectedYear] = useState("Tout");
     const t = useTranslations();
 
-    // On récupère les projets en accédant au bon niveau
     const projects = Object.values(t.raw('projects')) as Project[];
 
     const dates = ["Tout", "2025", "2024", "2023"];

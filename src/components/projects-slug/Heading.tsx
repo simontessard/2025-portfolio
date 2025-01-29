@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {useTranslations} from "next-intl";
 
 interface Project {
     title: string;
@@ -16,6 +17,7 @@ interface HeadingProps {
 }
 
 export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
+    const t = useTranslations('common');
     const textStyle = { color };
 
     return (
@@ -43,7 +45,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
                         <div className="flex max-md:flex-col xl:justify-center gap-4 sm:gap-6 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-24 2xl:w-3/5">
                             <div className="flex flex-col">
                                 <p style={textStyle} className="font-secondary md:text-xl uppercase italic mb-1.5 sm:mb-2 md:mb-2.5 xl:mb-4">
-                                    Secteur
+                                    {t('sector')}
                                 </p>
                                 <p style={textStyle} className="font-primary uppercase max-md:text-sm mb-1 md:mb-1.5">
                                     {project.field}
@@ -79,7 +81,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
 
                 <Link href={project.url} target="_blank"
                       className="group size-fit flex items-center gap-2 font-primary uppercase text-lg md:text-xl font-medium">
-                    <span style={textStyle}>Visiter le site</span>
+                    <span style={textStyle}>{t('visitWebsite')}</span>
                     <svg style={textStyle}
                          className="shrink-0 rotate-45 size-6 md:size-[1.65rem] md:group-hover:-translate-y-0.5 md:group-hover:translate-x-0.5 duration-300"
                          xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +94,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
 
             </div>
 
-            <span style={{ backgroundColor: color }} className="block h-0.5 w-full mt-7 md:mt-10 mb-8 md:mb-14"></span>
+            <span style={{backgroundColor: color }} className="block h-0.5 w-full mt-7 md:mt-10 mb-8 md:mb-14"></span>
         </>
     )
 }

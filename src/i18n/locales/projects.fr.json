@@ -1,4 +1,8 @@
 {
+  "title": {
+    "main": "Mon travail",
+    "second": "(5 projets)"
+  },
   "projects": {
     "iniva": {
       "path": "iniva",
@@ -190,6 +194,8 @@
     }
   },
   "common" : {
+    "visitWebsite": "Visiter le site",
+    "sector": "Secteur",
     "backToProjects": "Retour aux projets"
   }
 }

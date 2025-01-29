@@ -10,8 +10,8 @@ import CustomCursor from "@/components/utils/CustomCursor";
 import {useLocaleStore} from "@/store/useLocaleStore";
 import {NextIntlClientProvider} from "next-intl";
 
-import frProjectsMessages from '@/i18n/locales/projectsData.fr.json';
-import enProjectsMessages from '@/i18n/locales/projectsData.en.json';
+import frProjectsMessages from '@/i18n/locales/projects.fr.json';
+import enProjectsMessages from '@/i18n/locales/projects.en.json';
 import frBlogMessages from '@/i18n/locales/blog.fr.json';
 import enBlogMessages from '@/i18n/locales/blog.en.json';
 import frAboutMessages from '@/i18n/locales/about.fr.json';
