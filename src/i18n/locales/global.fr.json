@@ -7,6 +7,8 @@
   },
   "others" : {
     "time" : "Heure",
-    "close" : "Fermer"
+    "close" : "Fermer",
+    "homeText1" : "+ Créatif",
+    "homeText2" : "Développeur"
   }
 }
