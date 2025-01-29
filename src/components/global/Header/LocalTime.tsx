@@ -3,10 +3,12 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import useAppStore from "@/store/store";
 import LanguageSwitch from "@/components/global/LanguageSwitch";
+import {useTranslations} from "next-intl";
 
 export default function LocalTime() {
     const [time, setTime] = useState("");
     const color = useAppStore((state) => state.color);
+    const t = useTranslations('others');
 
     useGSAP(() => {
         gsap.to('.local-time', {
@@ -39,7 +41,7 @@ export default function LocalTime() {
             <LanguageSwitch/>
             <p style={{color}}
                className="uppercase font-primary text-sm md:text-lg">
-                Heure : {time}
+                {t('time')} : {time}
             </p>
         </div>
 

@@ -4,5 +4,9 @@
     "work": "Mon travail",
     "about": "À propos",
     "blog": "Blog"
+  },
+  "others" : {
+    "time" : "Heure",
+    "close" : "Fermer"
   }
 }

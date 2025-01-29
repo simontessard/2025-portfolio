@@ -13,7 +13,7 @@ export default function LanguageSwitch() {
     return (
         <button
             onClick={toggleLocale}
-            className="flex items-center gap-1 md:hover:opacity-70 transition-opacity"
+            className="cursor-none flex items-center gap-1 md:hover:opacity-70 transition-opacity"
             style={{ color }}
         >
             <Globe size={16} />

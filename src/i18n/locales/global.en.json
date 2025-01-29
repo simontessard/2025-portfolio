@@ -4,5 +4,9 @@
     "work": "Work",
     "about": "About",
     "blog": "Blog"
+  },
+  "others" : {
+    "time" : "Time",
+    "close" : "Close"
   }
 }

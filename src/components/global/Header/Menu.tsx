@@ -28,10 +28,13 @@ export default function Menu() {
 
                 <div className="mt-auto">
 
-                    <div className="flex max-lg:flex-col flex-wrap lg:items-center lg:max-w-xl xl:max-w-4xl gap-y-2 xl:gap-y-4 gap-x-6 md:gap-x-7 xl:gap-x-8 self-end w-full mb-12 md:mb-20">
+                    <div className="flex max-lg:flex-col flex-wrap lg:items-center lg:max-w-xl xl:max-w-4xl gap-y-2 xl:gap-y-4 gap-x-6 md:gap-x-7 xl:gap-x-8 self-end w-full mb-2 md:mb-4">
                         <MenuLink href="/" text="home"/>
                         <span className="js-menu-link -translate-y-1 opacity-0 hidden lg:block size-3 md:size-4 xl:size-4 bg-white rounded-full"/>
                         <MenuLink href="/work" text="work"/>
+                    </div>
+
+                    <div className="flex max-lg:flex-col flex-wrap lg:items-center lg:max-w-xl xl:max-w-4xl gap-y-2 xl:gap-y-4 gap-x-6 md:gap-x-7 xl:gap-x-8 self-end w-full mb-12 md:mb-20">
                         <MenuLink href="/about" text="about"/>
                         <span className="js-menu-link -translate-y-1 opacity-0 hidden lg:block size-3 md:size-4 xl:size-4 bg-white rounded-full"/>
                         <MenuLink href="/blog" text="blog"/>
@@ -45,8 +48,9 @@ export default function Menu() {
 
                 </div>
 
-                <div className="js-menu-img relative overflow-hidden bg-blue-500 lg:aspect-[9/16] w-52 md:w-1/3 lg:w-full h-64 md:h-96 lg:h-[400px] xl:h-[500px] 2xl:h-[550px] md:mt-auto lg:max-w-md"
-                     style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" }}>
+                <div
+                    className="js-menu-img relative overflow-hidden bg-blue-500 lg:aspect-[9/16] w-52 md:w-1/3 lg:w-full h-64 md:h-96 lg:h-[400px] xl:h-[500px] 2xl:h-[550px] md:mt-auto lg:max-w-md"
+                    style={{clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)"}}>
                     <Image width={1000} height={1000} src="/images/simon.png" alt="Logo"
                            className="absolute top-0 object-cover size-full scale-105"/>
                 </div>
