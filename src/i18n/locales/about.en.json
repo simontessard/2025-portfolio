@@ -1,0 +1,55 @@
+{
+  "about": {
+    "meta": {
+      "title": "About",
+      "description": "Discover my journey, expertise, and vision for web development",
+      "keywords": "web development, front-end, technical expertise, Simon TESSARD"
+    },
+    "title": {
+      "main": "Bringing",
+      "second": "your ideas to life"
+    },
+    "intro": {
+      "title": "about",
+      "paragraphs": {
+        "first": "I am Simon TESSARD, a 24-year-old web developer based in Rennes, who has recently launched his independent business.",
+        "second": "My goal for each project is to elevate your work and skills through a creation that tells your story and reflects your identity. I achieve this by focusing on meticulous finishing touches, combined with fluid animations.",
+        "third": "My skills encompass Web Development (Front-end and Back-end) and Web Design, allowing me to create your website from start to finish.",
+        "fourth": "Available for freelance missions, feel free to contact me to discuss your project or any other inquiries."
+      }
+    },
+    "expertises": {
+      "title": "Expertise",
+      "list": [
+        "Showcase website",
+        "Web design",
+        "Need assessment",
+        "Technical consulting",
+        "SEO",
+        "Audit",
+        "Maintenance",
+        "and more"
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "list": [
+        {
+          "year": "2024",
+          "role": "Frontend Developer",
+          "company": "Cobalt Studio",
+          "description": "Creating showcase sites and web applications for various clients"
+        },
+        {
+          "year": "2023",
+          "role": "Frontend Developer",
+          "company": "Freelance",
+          "description": "Various web and mobile development projects"
+        }
+      ]
+    },
+    "tools": {
+      "title": "Tools"
+    }
+  }
+}

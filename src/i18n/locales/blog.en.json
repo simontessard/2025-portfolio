@@ -1,0 +1,63 @@
+{
+  "blog": {
+    "meta": {
+      "title": "Blog",
+      "description": "Discover my articles and experience feedback about web development...",
+      "keywords": "web development, technologies, frontend..."
+    },
+    "title": "Blog",
+    "description": "Discover my articles about web development...",
+    "articles": [
+      {
+        "id": "wordpress-vs-nextjs",
+        "cover": "/images/blog/blog-next-js-wordpress.png",
+        "title": "WordPress vs NextJS + Headless CMS: Which Stack to Choose in 2024?",
+        "description": "Comparative analysis of WordPress advantages and disadvantages against the more modern NextJS + Headless CMS architecture.",
+        "date": "January 10, 2025",
+        "readTime": "3 min",
+        "categories": ["Web Development", "Architecture", "CMS"],
+        "slug": "wordpress-vs-nextjs-cms-headless"
+      },
+      {
+        "id": "feedback-experience-1",
+        "cover": "/images/projects/iniva/hotel.jpg",
+        "title": "Experience Feedback #1: Iniva Tourism",
+        "description": "Discover why GSAP has become the essential reference for modern web animations and its impact on user experience.",
+        "date": "December 10, 2024",
+        "readTime": "2 min",
+        "categories": ["Development", "Showcase Website"],
+        "slug": "feedback-iniva-tourism"
+      },
+      {
+        "id": "gsap-impact",
+        "cover": "/images/blog/gsap-cover.jpg",
+        "title": "GSAP: How This Library is Revolutionizing Web Animation",
+        "description": "Discover why GSAP has become the essential reference for modern web animations and its impact on user experience.",
+        "date": "December 4, 2024",
+        "readTime": "3 min",
+        "categories": ["Animation", "JavaScript", "UX Design"],
+        "slug": "gsap-impact-web-animation"
+      },
+      {
+        "id": "threejs-revolution",
+        "cover": "/images/blog/threejs.jpg",
+        "title": "Three.js: The 3D Revolution on the Web",
+        "description": "How Three.js is transforming web experience by democratizing 3D and opening new creative possibilities.",
+        "date": "October 2, 2024",
+        "readTime": "3 min",
+        "categories": ["3D", "Innovation", "WebGL"],
+        "slug": "threejs-revolution-web"
+      },
+      {
+        "id": "tailwind-impact",
+        "cover": "/images/blog/tailwindcss.webp",
+        "title": "Tailwind CSS: Why This Approach is a Game Changer",
+        "description": "The impact of Tailwind CSS on the front-end ecosystem and why developers are massively adopting it.",
+        "date": "September 24, 2024",
+        "readTime": "2 min",
+        "categories": ["CSS", "Trends", "Productivity"],
+        "slug": "tailwind-impact-frontend"
+      }
+    ]
+  }
+}

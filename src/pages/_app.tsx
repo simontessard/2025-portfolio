@@ -7,6 +7,37 @@ import {AnimatePresence} from "framer-motion";
 import Scroll from "@/components/utils/Scroll";
 import localFont from 'next/font/local'
 import CustomCursor from "@/components/utils/CustomCursor";
+import {useLocaleStore} from "@/store/useLocaleStore";
+import {NextIntlClientProvider} from "next-intl";
+
+import frProjectsMessages from '@/i18n/locales/projectsData.fr.json';
+import enProjectsMessages from '@/i18n/locales/projectsData.en.json';
+import frBlogMessages from '@/i18n/locales/blog.fr.json';
+import enBlogMessages from '@/i18n/locales/blog.en.json';
+import frAboutMessages from '@/i18n/locales/about.fr.json';
+import enAboutMessages from '@/i18n/locales/about.en.json';
+import frGlobalMessages from '@/i18n/locales/global.fr.json';
+import enGlobalMessages from '@/i18n/locales/global.en.json';
+
+
+type AbstractMessages = {
+    [key: string]: string | AbstractMessages;
+};
+
+const messages = {
+    fr: {
+        ...frProjectsMessages,
+        ...frGlobalMessages,
+        ...frBlogMessages,
+        ...frAboutMessages
+    } as unknown as AbstractMessages,
+    en: {
+        ...enProjectsMessages,
+        ...enGlobalMessages,
+        ...enBlogMessages,
+        ...enAboutMessages
+    } as unknown as AbstractMessages,
+};
 
 const poppins = Fira_Sans({
     subsets: ["latin"],
@@ -24,19 +55,26 @@ const montreal = localFont({ src: './../../public/fonts/pp-neue-montreal/ppneuem
 const editorial = localFont({ src: './../../public/fonts/pp-edito.otf', variable: '--font-editorial' })
 
 export default function App({ Component, pageProps, router }: AppProps) {
+  const locale = useLocaleStore((state) => state.locale);
+
   const OnExitComplete = () => {
         window.scrollTo({ top: 0 });
   };
 
   return (
-      <div className={`${poppins.variable} ${fraunces.variable} ${montreal.variable} ${editorial.variable}`}>
-          <CustomCursor/>
-          <Scroll>
-              <Header/>
-              <AnimatePresence mode='wait' onExitComplete={OnExitComplete}>
-                  <Component key={router.route} {...pageProps} />
-              </AnimatePresence>
-          </Scroll>
-      </div>
+      <NextIntlClientProvider
+          locale={locale}
+          messages={messages[locale as keyof typeof messages]}
+      >
+          <div className={`${poppins.variable} ${fraunces.variable} ${montreal.variable} ${editorial.variable}`}>
+              <CustomCursor/>
+              <Scroll>
+                  <Header/>
+                  <AnimatePresence mode='wait' onExitComplete={OnExitComplete}>
+                      <Component key={router.route} {...pageProps} />
+                  </AnimatePresence>
+              </Scroll>
+          </div>
+      </NextIntlClientProvider>
   )
 }

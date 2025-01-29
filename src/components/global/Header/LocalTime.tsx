@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import useAppStore from "@/store/store";
+import LanguageSwitch from "@/components/global/LanguageSwitch";
 
 export default function LocalTime() {
     const [time, setTime] = useState("");
@@ -34,8 +35,13 @@ export default function LocalTime() {
     }, []);
 
     return (
-        <p style={{ color }} className="local-time max-md:hidden fixed size-fit top-4 md:top-6 mx-auto inset-x-0 uppercase font-primary text-sm md:text-lg">
-            Heure : {time}
-        </p>
+        <div className="local-time max-md:hidden size-fit fixed top-4 md:top-6 mx-auto inset-x-0 flex items-center gap-3">
+            <LanguageSwitch/>
+            <p style={{color}}
+               className="uppercase font-primary text-sm md:text-lg">
+                Heure : {time}
+            </p>
+        </div>
+
     )
 }

@@ -1,4 +1,3 @@
-import projects from "@/data/projectsData.json";
 import Curve from "@/components/utils/Curve";
 import Footer from "@/components/global/Footer/Footer";
 import MainImage from "@/components/projects-slug/MainImage";
@@ -10,15 +9,18 @@ import GalleryDesktop from "@/components/projects-slug/GalleryDesktop";
 import NavigationButton from "@/components/global/NavigationButton";
 import {useEffect} from "react";
 import useAppStore from "@/store/store";
+import { useTranslations } from 'next-intl';
 
 export default function Project() {
-    const project = projects[0];
+    const t = useTranslations();
+    const projectsData = t.raw('projects');
+    const project = projectsData.iniva;
+    const projectData = t.raw('projects.iniva');
 
     const mainImg = project.gallery.large[0];
-
-    const desktopImg = [project.gallery.large[4], project.gallery.large[3], project.gallery.large[5]]
-    const galleryFour = [project.gallery.large[6], project.gallery.large[3], project.gallery.large[5], project.gallery.large[8]]
-    const phoneImg = [project.gallery.square[2], project.gallery.square[0], project.gallery.square[1], project.gallery.square[3]]
+    const desktopImg = [project.gallery.large[4], project.gallery.large[3], project.gallery.large[5]];
+    const galleryFour = [project.gallery.large[6], project.gallery.large[3], project.gallery.large[5], project.gallery.large[8]];
+    const phoneImg = [project.gallery.square[2], project.gallery.square[0], project.gallery.square[1], project.gallery.square[3]];
 
     const setColor = useAppStore((state) => state.setColor);
 
@@ -30,7 +32,7 @@ export default function Project() {
     return (
         <Curve>
             <Head>
-                <title>Iniva - Simon TESSARD</title>
+                <title>{project.title} - Simon TESSARD</title>
             </Head>
 
             <span id="top" className="opacity-0">top</span>
@@ -39,21 +41,32 @@ export default function Project() {
                 <Heading project={project} color="#742e25"/>
                 <MainImage img={mainImg}/>
 
-                <GalleryDesktop gallery={desktopImg} title="Un site logique" color="#742e25"
-                                desc="Il se caractérise par une page d'accueil fournie, qui invite le visiteur à découvrir les pages
-                        détaillant un hôtel ou une activité. à travers différents clichés et vidéos, on y découvre facilement une
-                        représentation du Gabon qui donne envie."/>
+                <GalleryDesktop
+                    gallery={desktopImg}
+                    title={projectData.sections.logical.title}
+                    color="#742e25"
+                    desc={projectData.sections.logical.description}
+                />
 
-                <FourImages gallery={galleryFour}
-                            title="Une invitation à découvrir, librement et facilement"
-                            desc="Le site se démarque par de nombreuses sections d'illustrations, de magnifiques carousels, une carte interactive et une navigation latérale agréable.
-                        Chaque détail a été réfléchi pour donner au visiteur une idée précise de ce qui l’attend sur place."/>
+                <FourImages
+                    gallery={galleryFour}
+                    title={projectData.sections.discover.title}
+                    desc={projectData.sections.discover.description}
+                />
 
-                <GalleryMobile gallery={phoneImg} title="L’Adaptation Mobile : Passage Obligé" color="#742e25"
-                               desc="La version mobile est optimisée, notamment avec des carousels ajustés pour petits écrans, des images responsives et une navigation fluide via le menu par exemple.
-                Chaque interaction est une invitation à découvrir, sans effort, les hôtels et activités proposés par Iniva."/>
+                <GalleryMobile
+                    gallery={phoneImg}
+                    title={projectData.sections.mobile.title}
+                    color="#742e25"
+                    desc={projectData.sections.mobile.description}
+                />
 
-                <NavigationButton href="/work" text="Retour aux projets" color="#742e25"/>
+                <NavigationButton
+                    href="/work"
+                    text={t('common.backToProjects')}
+                    color="#742e25"
+                />
+
             </div>
 
             <Footer color="#742e25"/>

@@ -1,4 +1,3 @@
-import projects from "@/data/projectsData.json";
 import Curve from "@/components/utils/Curve";
 import Footer from "@/components/global/Footer/Footer";
 import MainImage from "@/components/projects-slug/MainImage";
@@ -9,13 +8,24 @@ import GalleryDesktop from "@/components/projects-slug/GalleryDesktop";
 import NavigationButton from "@/components/global/NavigationButton";
 import useAppStore from "@/store/store";
 import {useEffect} from "react";
+import { useTranslations } from 'next-intl';
 
 export default function Project() {
-    const project = projects[2];
+    const t = useTranslations();
+    const projectData = t.raw('projects.chefdechantier');
 
-    const mainImg = project.gallery.large[0];
-    const galleryDesktop = [project.gallery.large[1], project.gallery.large[3], project.gallery.large[2]]
-    const galleryFour = [project.gallery.square[2], project.gallery.square[1], project.gallery.square[4], project.gallery.square[3]]
+    const mainImg = projectData.gallery.large[0];
+    const galleryDesktop = [
+        projectData.gallery.large[1],
+        projectData.gallery.large[3],
+        projectData.gallery.large[2]
+    ];
+    const galleryFour = [
+        projectData.gallery.square[2],
+        projectData.gallery.square[1],
+        projectData.gallery.square[4],
+        projectData.gallery.square[3]
+    ];
 
     const setColor = useAppStore((state) => state.setColor);
 
@@ -27,17 +37,30 @@ export default function Project() {
     return (
         <Curve>
             <Head>
-                <title>Chefdechantier - Simon TESSARD</title>
+                <title>{projectData.title} - Simon TESSARD</title>
             </Head>
 
             <span id="top" className="opacity-0">top</span>
 
             <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-4 md:px-6">
-                <Heading project={project} color="#123378"/>
+                <Heading project={projectData} color="#123378"/>
                 <MainImage img={mainImg}/>
-                <GalleryDesktop color="#123378" gallery={galleryDesktop} title="Création d'un tunnel" desc="Le but de ce tunnel, connecté via un sous-domaine, est de récupérer de façon automatisée et précise les demandes de devis. L'entreprise et le client recoivent un mail généré de toutes les informations remplies dans les différentes étapes du formulaire."/>
-                <FourImages gallery={galleryFour}/>
-                <NavigationButton href="/work" text="Retour aux projets" color="#123378"/>
+                <GalleryDesktop
+                    color="#123378"
+                    gallery={galleryDesktop}
+                    title={projectData.sections.tunnel.title}
+                    desc={projectData.sections.tunnel.description}
+                />
+                <FourImages
+                    gallery={galleryFour}
+                    title={projectData.sections.gallery.title}
+                    desc={projectData.sections.gallery.description}
+                />
+                <NavigationButton
+                    href="/work"
+                    text={t('common.backToProjects')}
+                    color="#123378"
+                />
             </div>
 
             <Footer color="#123378"/>

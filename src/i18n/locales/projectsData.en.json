@@ -1,0 +1,196 @@
+{
+  "projects": {
+    "iniva": {
+      "path": "iniva",
+      "title": "Iniva Tourism",
+      "date": "2025",
+      "url": "https://inivatourism.com/",
+      "client": "Cobalt Studio",
+      "field": "Hospitality, Tourism",
+      "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Iniva Tourism, a hotel suite located in Gabon. The project highlights the different hotels and various cultural activities near them.",
+      "cover": "/images/projects/iniva/square/desktop-1.jpg",
+      "services": ["Design integrations", "Custom back-office creation"],
+      "sections": {
+        "logical": {
+          "title": "A Logical Website",
+          "description": "It is characterized by a comprehensive homepage that invites visitors to explore pages detailing hotels or activities. Through various photos and videos, one can easily discover an enticing representation of Gabon."
+        },
+        "discover": {
+          "title": "An Invitation to Discover, Freely and Easily",
+          "description": "The site stands out with numerous illustration sections, beautiful carousels, an interactive map, and a pleasant side navigation. Every detail has been carefully considered to give visitors a precise idea of what awaits them."
+        },
+        "mobile": {
+          "title": "Mobile Adaptation: A Necessary Step",
+          "description": "The mobile version is optimized, with carousels adjusted for small screens, responsive images, and smooth navigation through the menu. Each interaction is an invitation to effortlessly discover the hotels and activities offered by Iniva."
+        }
+      },
+      "gallery": {
+        "large": [
+          "/images/projects/iniva/large/iniva-main.png",
+          "/images/projects/iniva/large/desktop-1.jpg",
+          "/images/projects/iniva/large/desktop-map.jpg",
+          "/images/projects/iniva/large/desktop-2.jpg",
+          "/images/projects/iniva/large/desktop-3.jpg",
+          "/images/projects/iniva/large/desktop-4.jpg",
+          "/images/projects/iniva/large/desktop-5.jpg",
+          "/images/projects/iniva/large/desktop-6.jpg",
+          "/images/projects/iniva/large/desktop-8.jpg"
+        ],
+        "square": [
+          "/images/projects/iniva/square/phone-4.jpg",
+          "/images/projects/iniva/square/phone-5.jpg",
+          "/images/projects/iniva/square/phone-1.jpg",
+          "/images/projects/iniva/square/phone-6.jpg"
+        ]
+      }
+    },
+    "daouad": {
+      "path": "daouad",
+      "title": "Daouad",
+      "date": "2024",
+      "url": "https://daouad.fr",
+      "client": "Cobalt Studio",
+      "field": "Architecture Firm",
+      "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Daouad, an architectural firm. The project highlights their various projects and includes a map to precisely locate them.",
+      "cover": "/images/projects/daouad/square/desktop-3.jpg",
+      "services": ["Design integrations", "Custom back-office creation"],
+      "sections": {
+        "desktop": {
+          "title": "A Logical Website",
+          "description": "It is characterized by a comprehensive homepage that invites visitors to explore pages detailing projects. Through various photos and videos, one can easily discover an enticing representation of the work.",
+          "description": "Through different shots and videos, one can easily discover a representation that makes one want to explore."
+        },
+        "discover": {
+          "title": "An Invitation to Discover, Freely and Easily",
+          "description": "The site stands out with numerous illustration sections, beautiful carousels, an interactive map, and a pleasant side navigation. Every detail has been carefully considered to give visitors a precise idea of what awaits them."
+        },
+        "mobile": {
+          "title": "Mobile Adaptation: A Necessary Step",
+          "description": "The mobile version is optimized, with carousels adjusted for small screens, responsive images, and smooth navigation through the menu. Each interaction is an invitation to effortlessly discover the projects offered by Daouad."
+        }
+      },
+      "gallery": {
+        "large": [
+          "/images/projects/daouad/large/desktop-main-1.jpg",
+          "/images/projects/iniva/large/desktop-8.jpg"
+        ],
+        "square": [
+          "/images/projects/daouad/square/desktop-1.jpg",
+          "/images/projects/daouad/square/desktop-2.jpg",
+          "/images/projects/daouad/square/desktop-3.jpg",
+          "/images/projects/daouad/square/phone-1.jpg",
+          "/images/projects/daouad/square/phone-2.jpg",
+          "/images/projects/daouad/square/phone-3.jpg"
+        ]
+      }
+    },
+    "chefdechantier": {
+      "path": "chefdechantier",
+      "title": "Chef De Chantier",
+      "date": "2023",
+      "url": "https://chefdechantier.fr/",
+      "client": "Cobalt Studio",
+      "field": "Project Management, Renovation",
+      "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Chefdechantier, a company that supports you in renovating your project. In parallel, a quote recovery tunnel was set up to estimate client renovations.",
+      "cover": "/images/projects/cdc/square/desktop-quality.jpg",
+      "services": ["Design integrations", "Custom back-office creation"],
+      "sections": {
+        "desktop": {
+          "title": "A Logical Website",
+          "description": "It is characterized by a comprehensive homepage that invites visitors to explore pages detailing projects. Through various photos and videos, one can easily discover an enticing representation of the work."
+        },
+        "tunnel": {
+          "title": "An Invitation to Discover, Freely and Easily",
+          "description": "The site stands out with numerous illustration sections, beautiful carousels, an interactive map, and a pleasant side navigation. Every detail has been carefully considered to give visitors a precise idea of what awaits them."
+        },
+        "gallery": {
+          "title": "Mobile Adaptation: A Necessary Step",
+          "description": "The mobile version is optimized, with carousels adjusted for small screens, responsive images, and smooth navigation through the menu. Each interaction is an invitation to effortlessly discover the projects offered."
+        }
+      },
+      "gallery": {
+        "large": [
+          "/images/projects/cdc/square/desktop-quality.jpg",
+          "/images/projects/cdc/large/desktop-1.jpg",
+          "/images/projects/cdc/large/desktop-2.jpg",
+          "/images/projects/cdc/large/desktop-3.jpg"
+        ],
+        "square": [
+          "/images/projects/cdc/square/desktop-1.jpg",
+          "/images/projects/cdc/square/desktop-2.jpg",
+          "/images/projects/cdc/square/desktop-3.jpg",
+          "/images/projects/cdc/square/desktop-4.jpg",
+          "/images/projects/cdc/square/desktop-5.jpg"
+        ]
+      }
+    },
+    "avec-joie": {
+      "path": "avec-joie",
+      "title": "Avec Joie",
+      "date": "2024",
+      "url": "https://avecjoie-bio.fr/",
+      "client": "Cobalt Studio",
+      "field": "Agro-Food",
+      "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a one-page showcase website for Avec-Joie, a collection of new food products.",
+      "cover": "/images/projects/aj/square/desktop-1.jpg",
+      "services": ["Design integrations", "Custom back-office creation"],
+      "sections": {
+        "desktop": {
+          "title": "A Logical Website",
+          "description": "It is characterized by a comprehensive homepage that invites visitors to explore pages detailing products. Through various photos and videos, one can easily discover an enticing representation of the offerings."
+        },
+        "tunnel": {
+          "title": "An Invitation to Discover, Freely and Easily",
+          "description": "The site stands out with numerous illustration sections, beautiful carousels, an interactive map, and a pleasant side navigation. Every detail has been carefully considered to give visitors a precise idea of what awaits them."
+        },
+        "gallery": {
+          "title": "Mobile Adaptation: A Necessary Step",
+          "description": "The mobile version is optimized, with carousels adjusted for small screens, responsive images, and smooth navigation through the menu. Each interaction is an invitation to effortlessly discover the products offered by Avec-Joie."
+        }
+      },
+      "gallery": {
+        "large": [
+          "/images/projects/aj/large/desktop-quality.jpeg"
+        ],
+        "square": [
+          "/images/projects/aj/square/desktop-1.jpg",
+          "/images/projects/aj/square/desktop-2.jpg",
+          "/images/projects/aj/square/desktop-3.jpg",
+          "/images/projects/aj/square/desktop-4.jpg"
+        ]
+      }
+    },
+    "socbois": {
+      "path": "socbois",
+      "title": "Socbois",
+      "date": "2024",
+      "url": "https://socbois.fr/",
+      "client": "Cobalt Studio",
+      "field": "Wood Craftsmanship",
+      "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Socbois, a manufacturer of wood construction solutions located in Laillé.",
+      "cover": "/images/projects/socbois/square/desktop-1.jpg",
+      "services": ["Design integrations", "Custom back-office creation"],
+      "sections": {
+        "onepage": {
+          "title": "A Logical Website",
+          "description": "It is characterized by a comprehensive homepage that invites visitors to explore pages detailing projects. Through various photos and videos, one can easily discover an enticing representation of the work."
+        }
+      },
+      "gallery": {
+        "large": [
+          "/images/projects/socbois/square/desktop-1.jpg"
+        ],
+        "square": [
+          "/images/projects/socbois/square/desktop-1.jpg",
+          "/images/projects/socbois/square/desktop-2.jpg",
+          "/images/projects/socbois/square/desktop-3.jpg",
+          "/images/projects/socbois/square/desktop-4.jpg",
+          "/images/projects/socbois/square/desktop-5.jpg"
+        ]
+      }
+    }
+  },
+  "common": {
+    "backToProjects": "Back to projects"
+  }
+}

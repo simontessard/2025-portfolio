@@ -1,11 +1,14 @@
 import Link from "next/link";
+import {useTranslations} from "next-intl";
 
 export default function NavLink({ href, text }: { href: string, text: string }) {
+    const t = useTranslations('menu');
+
     return (
         <li>
             <Link href={href} className="group flex items-center gap-1 md:gap-2 font-primary text-primary uppercase
             text-lg md:text-2xl xl:text-3xl xl:leading-3 font-medium">
-                {text}
+                {t(text)}
                 <svg
                     className="rotate-90 size-4 md:size-5 xl:size-7 md:group-hover:-translate-x-1.5 transition-transform duration-300"
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
