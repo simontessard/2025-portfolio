@@ -63,7 +63,7 @@ export default function ArticlePage({ article, content }: ArticlePageProps) {
             <section className="min-h-screen">
 
                 <article className="px-4 mx-auto max-w-3xl md:max-w-4xl 2xl:max-w-5xl pt-20 md:pt-24 2xl:pt-28 pb-16 md:pb-24">
-                    <div className="prose prose-invert !max-w-none mb-10 md:mb-14">
+                    <div className="prose prose-invert !max-w-none mb-8 md:mb-14">
                         <div className="flex gap-2 items-center font-primary mb-4">
                             <span className="text-primary/70">{article.date}</span>
                             <span className="text-primary/70">•</span>
@@ -79,7 +79,7 @@ export default function ArticlePage({ article, content }: ArticlePageProps) {
                         </span>
                     </div>
 
-                    <Image src={article.cover} alt={article.title} priority width={1920} height={1080} className="h-[30lvh] md:h-[45lvh] object-cover mb-10 md:mb-14"/>
+                    <Image src={article.cover} alt={article.title} priority width={1920} height={1080} className="h-72 md:h-[45lvh] object-cover mb-10 md:mb-14"/>
 
                     <div className="prose prose-h2:uppercase marker:text-black !max-w-none" dangerouslySetInnerHTML={{__html: content}}/>
 

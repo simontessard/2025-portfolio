@@ -9,7 +9,7 @@ export function openMenuFunction () {
     .to(".js-menu-link", {duration: .3, opacity: 1, stagger: 0.015, y: 0})
     .to(".js-menu-contact", {duration: .3, opacity: 1, y:0},"-=.2")
     .to('.js-menu-img', {clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", ease: "power4.inOut"}, "<")
-    .to('.js-menu-img img', {scale: 1, ease: "power2.inOut"}, "-=.4");
+    .to('.js-menu-img img', {scale: 1, ease: "power2.inOut", duration: .7}, "<");
 }
 
 export function closeMenuFunction () {
