@@ -10,7 +10,7 @@ export default function Carousel() {
         { src: "/images/projects/iniva/large/mockup.png", alt: "Iniva Tourism section carousel des hôtels du site web" },
         { src: "/images/projects/socbois/square/desktop-1.jpg", alt: "Iniva Tourism section carousel des hôtels du site web" },
         { src: "/images/projects/daouad/square/desktop-quality.jpg", alt: "Daouad.fr section carte du site" },
-        { src: "/images/projects/cdc/square/desktop-quality.jpg", alt: "ChefDeChantier.fr section Hero du site web" },
+        { src: "/images/projects/iniva/large/mockup-2.png", alt: "ChefDeChantier.fr section Hero du site web" },
     ];
 
     return (

@@ -11,10 +11,11 @@ yarn dev
 ```
 # WORKING ON
 - [ ] Meta tags all pages
-- [ ] Add an order by date on blog page
 - [ ] Changes screenshoots mockups ?
+- [ ] Internationalization
 
 # TODO
+- [ ] Add an order by date on blog page
 - [ ] Height of page transition on mobile ?
 - [x] Custom cursor
 - [x] Blog
@@ -32,7 +33,6 @@ yarn dev
 
 # Upcoming Features
 - [ ] Do a memo with tools in about page
-- [ ] Internationalization
 
 ## Ideas
 - [ ] Add a "back" button on article page
