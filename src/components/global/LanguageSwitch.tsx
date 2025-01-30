@@ -13,12 +13,21 @@ export default function LanguageSwitch() {
     const { locale, setLocale } = useLocaleStore();
     const color = useAppStore((state) => state.color);
 
+    // Filtrer les langues pour n'afficher que celles qui ne sont pas actuellement sélectionnées
+    const availableLanguages = Object.values(LANGUAGES).filter(
+        (lang) => lang.locale !== locale
+    );
+
     return (
         <div
             onMouseEnter={() => setIsOpen(!isOpen)}
             onMouseLeave={() => setIsOpen(!isOpen)}
-            className="relative">
-            <button style={{ color }} className="cursor-none flex items-center font-semibold gap-1 md:hover:opacity-70 transition-opacity">
+            className="relative"
+        >
+            <button
+                style={{ color }}
+                className="cursor-none flex items-center font-semibold gap-1 md:hover:opacity-70 transition-opacity"
+            >
                 <span>{LANGUAGES[locale as keyof typeof LANGUAGES].name}</span>
                 <ChevronDown
                     size={17}
@@ -27,17 +36,17 @@ export default function LanguageSwitch() {
             </button>
 
             {isOpen && (
-                <div className="absolute top-full pt-2 bg-white shadow-lg min-w-[80px]"
+                <div
+                    className="absolute top-full pt-2 bg-white shadow-lg min-w-[80px]"
                     style={{ borderColor: color }}
                 >
-                    {Object.values(LANGUAGES).map((lang) => (
+                    {availableLanguages.map((lang) => (
                         <button
                             key={lang.locale}
                             onClick={() => {
                                 setLocale(lang.locale);
                                 setIsOpen(false);
                             }}
-                            style={{ color: locale === lang.locale ? color : 'inherit' }}
                             className="cursor-none w-full px-4 py-2.5 text-left hover:bg-gray-50 transition-colors"
                         >
                             {lang.name}
