@@ -37,9 +37,9 @@ export default function LocalTime() {
     }, []);
 
     return (
-        <div className="local-time max-md:hidden size-fit fixed top-4 md:top-6 mx-auto inset-x-0 flex items-center gap-3 md:gap-5">
+        <div className="local-time max-md:hidden size-fit fixed top-4 md:top-6 mx-auto inset-x-0 flex items-center gap-1">
             <p style={{color}}
-               className="uppercase font-primary text-sm md:text-lg">
+               className="w-40 uppercase font-primary text-sm md:text-lg">
                 {t('time')} : {time}
             </p>
             <LanguageSwitch/>

@@ -14,22 +14,20 @@ export default function LanguageSwitch() {
     const color = useAppStore((state) => state.color);
 
     return (
-        <div className="relative">
-            <button
-                onClick={() => setIsOpen(!isOpen)}
-                style={{ color }}
-                className="cursor-none flex items-center font-semibold gap-1 md:hover:opacity-70 transition-opacity"
-            >
+        <div
+            onMouseEnter={() => setIsOpen(!isOpen)}
+            onMouseLeave={() => setIsOpen(!isOpen)}
+            className="relative">
+            <button style={{ color }} className="cursor-none flex items-center font-semibold gap-1 md:hover:opacity-70 transition-opacity">
                 <span>{LANGUAGES[locale as keyof typeof LANGUAGES].name}</span>
                 <ChevronDown
                     size={16}
-                    className={`transform transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                    className={`transform transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
                 />
             </button>
 
             {isOpen && (
-                <div
-                    className="absolute top-full mt-2 bg-white shadow-lg rounded-lg py-1 min-w-[80px]"
+                <div className="absolute top-full pt-2 bg-white shadow-lg py-1 min-w-[80px]"
                     style={{ borderColor: color }}
                 >
                     {Object.values(LANGUAGES).map((lang) => (

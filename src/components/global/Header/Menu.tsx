@@ -11,7 +11,7 @@ export default function Menu() {
 
     useGSAP(() => {
         gsap.set(".js-menu", {
-            autoAlpha: 0,
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
             display: "none",
         });
     }, []);
