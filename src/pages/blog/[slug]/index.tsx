@@ -15,12 +15,10 @@ export default function ArticlePage() {
     const { slug } = router.query;
     const { locale } = router;
 
-    // Récupère les métadonnées depuis les traductions
     const t = useTranslations('blog');
     const articles = t.raw('articles');
     const article = articles.find((a: any) => a.slug === slug);
 
-    // Récupère le contenu HTML depuis les fichiers d'articles
     const articlesContent = locale === 'fr' ? frArticles : enArticles;
     const content = articlesContent[slug as ArticleSlug];
 
