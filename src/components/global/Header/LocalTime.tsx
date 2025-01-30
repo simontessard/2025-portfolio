@@ -37,11 +37,23 @@ export default function LocalTime() {
     }, []);
 
     return (
-        <div className="local-time max-md:hidden size-fit fixed top-4 md:top-6 mx-auto inset-x-0 flex items-center gap-1">
+        <div className="local-time max-md:hidden size-fit fixed top-4 md:top-6 mx-auto inset-x-0 flex items-center">
+
+            {/* Location */}
             <p style={{color}}
-               className="w-40 uppercase font-primary text-sm md:text-lg">
-                {t('time')} : {time}
+               className="uppercase font-primary text-sm md:text-lg">
+                {t('location')}
             </p>
+
+            {/* Ball */}
+            <span style={{ backgroundColor: color }} className="block size-1.5 rounded-full mx-2.5"/>
+
+            {/* Time */}
+            <p style={{color}}
+               className="w-24 uppercase font-primary text-sm md:text-lg">
+                {time}
+            </p>
+
             <LanguageSwitch/>
         </div>
 
