@@ -136,7 +136,7 @@
       "client": "Cobalt Studio",
       "field": "Agro-Food",
       "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a one-page showcase website for Avec-Joie, a collection of new food products.",
-      "cover": "/images/projects/aj/square/desktop-1.jpg",
+      "cover": "/images/projects/aj/large/mockup.png",
       "services": ["Design integrations", "Custom back-office creation"],
       "sections": {
         "desktop": {

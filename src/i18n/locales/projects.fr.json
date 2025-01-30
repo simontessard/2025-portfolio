@@ -135,7 +135,7 @@
       "client": "Cobalt Studio",
       "field": "Agro-Alimentaire",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine One Page destiné à Avec-Joie, une collection de nouveaux produits alimentaires.",
-      "cover": "/images/projects/aj/square/desktop-1.jpg",
+      "cover": "/images/projects/aj/large/mockup.png",
       "services": ["Intégrations maquettes", "Création back-office personnalisé"],
       "sections": {
         "desktop": {
