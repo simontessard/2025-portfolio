@@ -7,6 +7,7 @@ export default function BackHome() {
 
     return (
         <Link
+            scroll={false}
             href="/"
             style={{ color }}
             className="header-logo fixed z-50 top-4 left-4 md:top-6 md:left-6 md:text-lg font-primary"

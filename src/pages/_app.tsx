@@ -16,6 +16,8 @@ import frBlogMessages from '@/i18n/locales/blog.fr.json';
 import enBlogMessages from '@/i18n/locales/blog.en.json';
 import frAboutMessages from '@/i18n/locales/about.fr.json';
 import enAboutMessages from '@/i18n/locales/about.en.json';
+import frArticlesMessages from '@/i18n/locales/articles.fr.json';
+
 import frGlobalMessages from '@/i18n/locales/global.fr.json';
 import enGlobalMessages from '@/i18n/locales/global.en.json';
 
@@ -28,12 +30,14 @@ const messages = {
     fr: {
         ...frProjectsMessages,
         ...frGlobalMessages,
+        ...frArticlesMessages,
         ...frBlogMessages,
         ...frAboutMessages
     } as unknown as AbstractMessages,
     en: {
         ...enProjectsMessages,
         ...enGlobalMessages,
+        ...frArticlesMessages,
         ...enBlogMessages,
         ...enAboutMessages
     } as unknown as AbstractMessages,

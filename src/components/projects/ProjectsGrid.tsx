@@ -69,7 +69,7 @@ const FilteredProjectsGrid = () => {
         : projects.filter(project => project.date === selectedYear);
 
     return (
-        <div className="space-y-2.5 md:space-y-4">
+        <div className="space-y-2 md:space-y-3.5">
             {/* Filtres */}
             <div className="flex gap-6">
                 {dates.map((year) => (
@@ -99,6 +99,7 @@ const FilteredProjectsGrid = () => {
                     />
                 ))}
             </div>
+
         </div>
     );
 };
