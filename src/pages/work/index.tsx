@@ -28,7 +28,7 @@ export default function Projects() {
                     <PageTitle
                         title={content.title.main}
                         secondWords={content.title.second}
-                        className="mb-3 md:mb-4"
+                        className="mb-6 md:mb-12"
                     />
                     <ProjectsGrid/>
                 </div>
