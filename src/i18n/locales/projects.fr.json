@@ -56,7 +56,7 @@
       "client": "Cobalt Studio",
       "field": "Cabinet d'architectes",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Daouad, un cabinet d'architectes. Le projet mets au premier plan leurs différents projets ainsi qu'une carte qui permets de situer précisement ceux-ci.",
-      "cover": "/images/projects/daouad/square/desktop-3.jpg",
+      "cover": "/images/projects/daouad/large/mockup.png",
       "services": ["Intégrations maquettes", "Création back-office personnalisé"],
       "sections": {
         "desktop": {
@@ -95,7 +95,7 @@
       "client": "Cobalt Studio",
       "field": "Maître d'oeuvre, Rénovation",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à l'entreprise Chefdechantier, une entreprise qui vous accompagne dans la rénovation de votre projet. En parallèle un tunnel de récupération de devis avait été mis en place pour estimer les rénovations clients.",
-      "cover": "/images/projects/cdc/square/desktop-quality.jpg",
+      "cover": "/images/projects/cdc/large/mockup.png",
       "services": ["Intégrations maquettes", "Création back-office personnalisé"],
       "sections": {
         "desktop": {
@@ -171,7 +171,7 @@
       "client": "Cobalt Studio",
       "field": "Artisan bois",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Socbois, un fabricant de solutions constructives bois situé à Laillé.",
-      "cover": "/images/projects/socbois/square/desktop-1.jpg",
+      "cover": "/images/projects/socbois/large/mockup.png",
       "services": ["Intégrations maquettes", "Création back-office personnalisé"],
       "sections": {
         "onepage": {
