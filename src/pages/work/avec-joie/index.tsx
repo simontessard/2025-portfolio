@@ -13,7 +13,8 @@ export default function Project() {
     const t = useTranslations();
     const projectData = t.raw('projects.avec-joie');
 
-    const mainImg = projectData.gallery.large[0];
+    const mainImg = [projectData.gallery.large[0], projectData.gallery.large[1], projectData.gallery.large[2]];
+
     const desktopImg = [
         projectData.gallery.square[2],
         projectData.gallery.square[1],
@@ -37,7 +38,7 @@ export default function Project() {
 
             <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-4 md:px-6 ">
                 <Heading project={projectData} color="#9f2a16"/>
-                <MainImage img={mainImg}/>
+                <MainImage gallery={mainImg}/>
                 <GalleryDesktop
                     gallery={desktopImg}
                     color="#9f2a16"

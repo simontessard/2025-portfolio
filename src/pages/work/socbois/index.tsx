@@ -13,7 +13,8 @@ export default function Project() {
     const t = useTranslations();
     const projectData = t.raw('projects.socbois');
 
-    const mainImg = projectData.gallery.large[0];
+    const mainImg = [projectData.gallery.large[0], projectData.gallery.large[1], projectData.gallery.large[2]];
+
     const phoneImg = [
         projectData.gallery.square[1],
         projectData.gallery.square[4],
@@ -38,7 +39,7 @@ export default function Project() {
 
             <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-4 md:px-6">
                 <Heading project={projectData} color="#402915"/>
-                <MainImage img={mainImg}/>
+                <MainImage gallery={mainImg}/>
                 <GalleryMobile
                     gallery={phoneImg}
                     title={projectData.sections.onepage.title}

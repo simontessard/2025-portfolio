@@ -17,7 +17,7 @@ export default function Project() {
     const project = projectsData.iniva;
     const projectData = t.raw('projects.iniva');
 
-    const mainImg = project.gallery.large[0];
+    const mainImg = [project.gallery.large[0], project.gallery.large[1], project.gallery.large[3]];
     const desktopImg = [project.gallery.large[4], project.gallery.large[3], project.gallery.large[5]];
     const galleryFour = [project.gallery.large[6], project.gallery.large[3], project.gallery.large[5], project.gallery.large[8]];
     const phoneImg = [project.gallery.square[2], project.gallery.square[0], project.gallery.square[1], project.gallery.square[3]];
@@ -39,7 +39,7 @@ export default function Project() {
 
             <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-4 md:px-6 ">
                 <Heading project={project} color="#742e25"/>
-                <MainImage img={mainImg}/>
+                <MainImage gallery={mainImg}/>
 
                 <GalleryDesktop
                     gallery={desktopImg}

@@ -40,7 +40,7 @@ export default function LanguageSwitch() {
                                 setIsOpen(false);
                             }}
                             style={{ color: locale === lang.locale ? color : 'inherit' }}
-                            className="w-full px-4 py-2 text-left hover:bg-gray-50 transition-colors"
+                            className="cursor-none w-full px-4 py-2 text-left hover:bg-gray-50 transition-colors"
                         >
                             {lang.name}
                         </button>

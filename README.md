@@ -13,9 +13,10 @@ yarn dev
 - [ ] Meta tags all pages
 - [ ] Changes screenshoots mockups ?
 - [ ] Internationalization
-- [ ] Faire un encadré "Disponible - Freelance" : https://yamateos.fr/projects/oxymore
 
 # TODO
+- [ ] Faire un encadré "Disponible - Freelance" : https://yamateos.fr/projects/oxymore
+- [ ] https://www.awwwards.com/inspiration/other-projects-yamateos
 - [ ] Add an order by date on blog page
 - [ ] Height of page transition on mobile ?
 - [x] Custom cursor

@@ -74,6 +74,7 @@
       },
       "gallery": {
         "large": [
+          "/images/projects/daouad/large/mockup.png",
           "/images/projects/daouad/large/desktop-main-1.jpg",
           "/images/projects/iniva/large/desktop-8.jpg"
         ],
@@ -153,6 +154,8 @@
       },
       "gallery": {
         "large": [
+          "/images/projects/aj/large/desktop-quality.jpeg",
+          "/images/projects/aj/large/desktop-quality.jpeg",
           "/images/projects/aj/large/desktop-quality.jpeg"
         ],
         "square": [
@@ -181,7 +184,9 @@
       },
       "gallery": {
         "large": [
-          "/images/projects/socbois/square/desktop-1.jpg"
+          "/images/projects/socbois/square/desktop-1.jpg",
+          "/images/projects/socbois/large/mockup.png",
+          "/images/projects/socbois/square/desktop-2.jpg"
         ],
         "square": [
           "/images/projects/socbois/square/desktop-1.jpg",

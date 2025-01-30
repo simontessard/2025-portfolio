@@ -14,7 +14,8 @@ export default function Project() {
     const t = useTranslations();
     const projectData = t.raw('projects.daouad');
 
-    const mainImg = projectData.gallery.large[0];
+    const mainImg = [projectData.gallery.large[0], projectData.gallery.large[1], projectData.gallery.large[1]];
+
     const desktopImg = [
         projectData.gallery.square[2],
         projectData.gallery.square[0],
@@ -43,7 +44,7 @@ export default function Project() {
 
             <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-4 md:px-6 ">
                 <Heading project={projectData} color="#3a6961"/>
-                <MainImage img={mainImg}/>
+                <MainImage gallery={mainImg}/>
                 <GalleryDesktop
                     gallery={desktopImg}
                     color="#3a6961"
