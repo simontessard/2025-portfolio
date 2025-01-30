@@ -13,6 +13,7 @@ yarn dev
 - [ ] Meta tags all pages
 - [ ] Changes screenshoots mockups ?
 - [ ] Internationalization
+- [ ] Faire un encadré "Disponible - Freelance" : https://yamateos.fr/projects/oxymore
 
 # TODO
 - [ ] Add an order by date on blog page
