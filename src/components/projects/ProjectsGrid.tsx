@@ -41,7 +41,7 @@ const FilteredProjectsGrid = () => {
     });
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-2 gap-16 md:gap-y-14 md:gap-x-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-2 gap-16 md:gap-y-14 2xl:gap-y-20 md:gap-x-12 2xl:gap-x-16">
             {projects.map((project) => (
                 <Projet
                     key={project.path}

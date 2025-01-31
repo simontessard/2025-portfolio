@@ -37,7 +37,7 @@ export default function LanguageSwitch() {
 
             {isOpen && (
                 <div
-                    className="absolute top-full pt-2 bg-white shadow-lg min-w-[80px]"
+                    className="absolute top-full bg-white min-w-[80px]"
                     style={{ borderColor: color }}
                 >
                     {availableLanguages.map((lang) => (
@@ -47,7 +47,7 @@ export default function LanguageSwitch() {
                                 setLocale(lang.locale);
                                 setIsOpen(false);
                             }}
-                            className="cursor-none w-full px-4 py-2.5 text-left hover:bg-gray-50 transition-colors"
+                            className="cursor-none w-full pr-4 text-left md:hover:opacity-75 transition-opacity"
                         >
                             {lang.name}
                         </button>

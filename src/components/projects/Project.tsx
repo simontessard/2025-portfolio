@@ -20,8 +20,8 @@ export default function Projet({ title, cover, path, field }: ProjectProps) {
         >
             <div className="relative aspect-square mb-3">
                 <Image
-                    width={1200}
-                    height={1200}
+                    width={1600}
+                    height={1600}
                     loading="eager"
                     className="absolute top-0 left-0 size-full object-cover"
                     src={cover}
