@@ -28,7 +28,6 @@ export default function LocalTime() {
                 timeZone: "Europe/Paris",
                 hour: "2-digit",
                 minute: "2-digit",
-                second: "2-digit",
             });
             setTime(parisTime);
         }, 1000);
@@ -37,22 +36,24 @@ export default function LocalTime() {
     }, []);
 
     return (
-        <div className="local-time max-md:hidden size-fit fixed top-4 md:top-6 mx-auto inset-x-0 flex items-center">
+        <div className="local-time max-md:hidden size-fit fixed top-4 md:top-6 mx-auto inset-x-0 flex items-center gap-5">
 
-            {/* Location */}
-            <p style={{color}}
-               className="uppercase font-primary text-sm md:text-lg">
-                {t('location')}
-            </p>
+            <div className="flex items-center gap-2">
+                {/* Location */}
+                <p style={{color}}
+                   className="uppercase font-primary text-sm md:text-lg">
+                    {t('location')}
+                </p>
 
-            {/* Ball */}
-            <span style={{ backgroundColor: color }} className="block size-1.5 rounded-full mx-2.5"/>
+                {/* Ball */}
+                <span style={{ backgroundColor: color }} className="block size-1.5 rounded-full"/>
 
-            {/* Time */}
-            <p style={{color}}
-               className="w-24 uppercase font-primary text-sm md:text-lg">
-                {time}
-            </p>
+                {/* Time */}
+                <p style={{color}}
+                   className="uppercase font-primary text-sm md:text-lg">
+                    {time}
+                </p>
+            </div>
 
             <LanguageSwitch/>
         </div>
