@@ -10,5 +10,16 @@
     "close" : "Fermer",
     "homeText1" : "+ Créatif",
     "homeText2" : "Développeur"
+  },
+  "routes": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "work": "Mon travail",
+    "blog": "Blog",
+    "blog-wordpress": "WordPress vs NextJS",
+    "blog-iniva": "Retour #1 : Iniva Tourism",
+    "blog-gsap": "GSAP",
+    "blog-three": "ThreeJS : la révolution",
+    "blog-tailwind": "L'impact Tailwind"
   }
 }

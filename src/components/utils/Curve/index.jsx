@@ -4,23 +4,30 @@ import { motion } from 'framer-motion'
 import { useRouter } from 'next/router';
 import { text, curve, translate } from './anim';
 import Entrance from "../Entrance";
+import {useTranslations} from "next-intl";
 
-const routes = {
-    "/": "Accueil",
-    "/about": "À Propos",
-    "/work": "Mon travail",
-    "/blog": "Blog",
-    "/blog/wordpress-vs-nextjs-cms-headless": "Wordpress vs NextJS",
-    "/blog/feedback-iniva-tourism": "Retour #1 : Iniva Tourism",
-    "/blog/gsap-impact-web-animation": "GSAP",
-    "/blog/threejs-revolution-web": "ThreeJS : la révolution",
-    "/blog/tailwind-impact-frontend": "L'impact Tailwind",
-    "/work/iniva": "Iniva Tourism",
-    "/work/daouad": "Daouad",
-    "/work/chefdechantier": "ChefDeChantier.fr",
-    "/work/avec-joie": "Avec Joie",
-    "/work/socbois": "Socbois",
+const routePaths = {
+    home: "/",
+    about: "/about",
+    work: "/work",
+    blog: "/blog",
+    // Articles de blog
+    "blog-wordpress": "/blog/wordpress-vs-nextjs-cms-headless",
+    "blog-iniva": "/blog/feedback-iniva-tourism",
+    "blog-gsap": "/blog/gsap-impact-web-animation",
+    "blog-three": "/blog/threejs-revolution-web",
+    "blog-tailwind": "/blog/tailwind-impact-frontend",
+    // Projets
+    "project-iniva": "/work/iniva",
+    "project-daouad": "/work/daouad",
+    "project-chef": "/work/chefdechantier",
+    "project-joie": "/work/avec-joie",
+    "project-socbois": "/work/socbois",
 }
+
+const pathToKey = Object.fromEntries(
+    Object.entries(routePaths).map(([key, value]) => [value, key])
+);
 
 const anim = (variants) => {
     return {
@@ -35,12 +42,26 @@ export default function Curve({children}) {
     const router = useRouter();
     const { asPath } = router;
 
+    const t = useTranslations('routes');
+
+    const getRouteTitle = (path) => {
+        const key = pathToKey[path];
+        if (!key) return '';
+
+        // Les noms propres ne sont pas traduits
+        if (key.startsWith('project-')) {
+            return path.split('/').pop() || '';
+        }
+
+        return t(key);
+    }
+
     const [dimensions, setDimensions] = useState({
         width: null,
         height: null
     })
 
-    const isValidRoute = routes.hasOwnProperty(asPath);
+    const isValidRoute = Object.values(routePaths).includes(asPath);
 
     useEffect( () => {
         function resize(){
@@ -61,7 +82,7 @@ export default function Curve({children}) {
             {isValidRoute && <Entrance/>}
             <div style={{opacity: dimensions.width == null ? 1 : 0}} className='background'/>
                 <motion.p className='route p-3 text-center text-white font-primary text-3xl md:text-4xl uppercase' {...anim(text)}>
-                    {routes[asPath]}
+                    {getRouteTitle(asPath)}
                 </motion.p>
                 {dimensions.width != null && <SVG {...dimensions}/>}
             {children}

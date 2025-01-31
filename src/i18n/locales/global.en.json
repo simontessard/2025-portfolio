@@ -10,5 +10,16 @@
     "close" : "Close",
     "homeText1" : "+ Creative",
     "homeText2" : "Developer"
+  },
+  "routes": {
+    "home": "Home",
+    "about": "About",
+    "work": "My Work",
+    "blog": "Blog",
+    "blog-wordpress": "WordPress vs NextJS",
+    "blog-iniva": "Feedback #1: Iniva Tourism",
+    "blog-gsap": "GSAP",
+    "blog-three": "ThreeJS: The Revolution",
+    "blog-tailwind": "The Tailwind Impact"
   }
 }
