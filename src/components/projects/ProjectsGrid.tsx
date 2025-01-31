@@ -14,9 +14,7 @@ type Project = {
 }
 
 const FilteredProjectsGrid = () => {
-    const [selectedYear, setSelectedYear] = useState("Tout");
     const t = useTranslations();
-
     const projects = Object.values(t.raw('projects')) as Project[];
 
     useGSAP(() => {
@@ -40,10 +38,10 @@ const FilteredProjectsGrid = () => {
                 });
             });
         });
-    }, [selectedYear]);
+    });
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-16 md:gap-y-14 md:gap-x-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-2 gap-16 md:gap-y-14 md:gap-x-12">
             {projects.map((project) => (
                 <Projet
                     key={project.path}

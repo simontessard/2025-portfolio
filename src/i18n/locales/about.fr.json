@@ -35,16 +35,16 @@
       "title": "Expériences",
       "list": [
         {
-          "year": "2024",
-          "role": "Développeur Front-end",
-          "company": "Cobalt Studio",
-          "description": "Création de sites vitrines et applications web pour divers clients"
+          "year": "2024 - Aujourd'hui",
+          "role": "Développeur Full-stack",
+          "company": "Freelance",
+          "description": "Création de sites vitrines et applications web pour divers clients."
         },
         {
-          "year": "2023",
+          "year": "2023 - 2024",
           "role": "Développeur Front-end",
-          "company": "Freelance",
-          "description": "Projets variés en développement web et mobile"
+          "company": "Cobalt Studio",
+          "description": "+10 Projets variés en développement web, dans divers domaines."
         }
       ]
     },
