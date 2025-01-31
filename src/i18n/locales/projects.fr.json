@@ -154,9 +154,9 @@
       },
       "gallery": {
         "large": [
+          "/images/projects/aj/large/mockup.png",
           "/images/projects/aj/large/desktop-quality.jpeg",
-          "/images/projects/aj/large/desktop-quality.jpeg",
-          "/images/projects/aj/large/desktop-quality.jpeg"
+          "/images/projects/aj/square/desktop-2.jpg"
         ],
         "square": [
           "/images/projects/aj/square/desktop-1.jpg",
