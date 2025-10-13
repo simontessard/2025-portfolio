@@ -1,7 +1,7 @@
 {
   "title": {
     "main": "My work",
-    "second": "(3 projects)"
+    "second": "(2 projects)"
   },
   "projects": {
     "iniva": {
@@ -10,7 +10,7 @@
       "date": "2025",
       "url": "https://inivatourism.com/",
       "context": "Freelance",
-      "field": "Hospitality, Tourism",
+      "technos": "Wordpress, Gsap, Tailwind, Javascript",
       "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Iniva Tourism, a hotel suite located in Gabon. The project highlights the different hotels and various cultural activities near them.",
       "cover": "/images/projects/iniva/large/mockup-2.png",
       "services": ["Design integrations", "Custom back-office creation"],
@@ -54,7 +54,7 @@
       "date": "2023",
       "url": "https://chefdechantier.fr/",
       "context": "Freelance",
-      "field": "Project Management, Renovation",
+      "technos": "VueJS, Pinia, Tailwind, GSAP",
       "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Chefdechantier, a company that supports you in renovating your project. In parallel, a quote recovery tunnel was set up to estimate client renovations.",
       "cover": "/images/projects/cdc/large/mockup.png",
       "services": ["Design integrations", "Custom back-office creation"],
@@ -91,7 +91,6 @@
   },
   "common": {
     "visitWebsite": "Visit website",
-    "sector": "Area",
     "backToProjects": "Go back"
   }
 }

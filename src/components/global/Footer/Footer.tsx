@@ -58,7 +58,7 @@ export default function Footer({ color = "#0156cf" }: FooterProps) {
                     <LinkHover text="LinkedIn" href="https://www.linkedin.com/in/simon-tessard-138733198/"/>
                     <LinkHover text="Email" href="mailto:pro@simontessard.fr"/>
                 </div>
-                <span className="text-xs font-primary">© 2025</span>
+                <span className="text-xs font-primary">Simon TESSARD © 2025</span>
             </div>
 
         </footer>

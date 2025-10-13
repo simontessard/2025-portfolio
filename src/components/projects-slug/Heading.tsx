@@ -6,7 +6,7 @@ interface Project {
     title: string;
     date: string;
     description: string;
-    field: string;
+    technos: string;
     services: string[];
     context: string;
     url: string;
@@ -28,6 +28,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
                     href="/work"
                     text={t('backToProjects')}
                     color={color}
+                    className="mb-4 md:mb-6 xl:mb-8"
                 />
                 <div className="mb-10 xl:mb-0">
 
@@ -51,10 +52,10 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
                         <div className="flex max-md:flex-col xl:justify-center gap-4 sm:gap-6 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-24 2xl:w-3/5">
                             <div className="flex flex-col">
                                 <p style={textStyle} className="font-secondary md:text-lg uppercase italic mb-1.5 sm:mb-2 md:mb-2.5 xl:mb-3">
-                                    {t('sector')}
+                                    Technologies
                                 </p>
                                 <p style={textStyle} className="font-primary uppercase max-md:text-sm mb-1 md:mb-1.5">
-                                    {project.field}
+                                    {project.technos}
                                 </p>
                             </div>
 

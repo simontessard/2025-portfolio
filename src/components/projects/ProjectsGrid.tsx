@@ -1,5 +1,4 @@
 "use client";
-import { useState } from 'react';
 import Projet from "@/components/projects/Project";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -9,7 +8,7 @@ type Project = {
     title: string;
     cover: string;
     path: string;
-    field: string;
+    technos: string;
     date: string;
 }
 
@@ -48,7 +47,7 @@ const FilteredProjectsGrid = () => {
                     title={project.title}
                     cover={project.cover}
                     path={project.path}
-                    field={project.field}
+                    technos={project.technos}
                 />
             ))}
         </div>

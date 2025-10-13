@@ -30,7 +30,7 @@ export default function Custom404() {
                         La page que vous recherchez semble avoir disparu dans le néant numérique.
                     </p>
 
-                    <NavigationButton href="/" text="Retour à l'accueil"/>
+                    <NavigationButton href="/" text="Retour à l'accueil" className="mx-auto"/>
 
                 </div>
             </div>

@@ -6,10 +6,10 @@ type ProjectProps = {
     title: string;
     cover: string;
     path: string;
-    field: string;
+    technos: string;
 }
 
-export default function Projet({ title, cover, path, field }: ProjectProps) {
+export default function Projet({ title, cover, path, technos }: ProjectProps) {
     const t = useTranslations('common');
 
     return (
@@ -47,7 +47,7 @@ export default function Projet({ title, cover, path, field }: ProjectProps) {
                     </svg>
                 </div>
                 <h3 className="font-secondary uppercase italic text-primary">
-                    {field}
+                    {technos}
                 </h3>
             </div>
         </Link>

@@ -1,7 +1,7 @@
 {
   "title": {
     "main": "Mon travail",
-    "second": "(3 projets)"
+    "second": "(2 projets)"
   },
   "projects": {
     "iniva": {
@@ -10,7 +10,7 @@
       "date": "2025",
       "url": "https://inivatourism.com/",
       "context": "Freelance",
-      "field": "Hôtellerie, Tourisme",
+      "technos": "Wordpress, Gsap, Tailwind, Javascript",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
       "cover": "/images/projects/iniva/large/mockup-2.png",
       "services": ["Intégrations maquettes", "Création back-office personnalisé"],
@@ -54,7 +54,7 @@
       "date": "2023",
       "url": "https://chefdechantier.fr/",
       "context": "Freelance",
-      "field": "Maître d'oeuvre, Rénovation",
+      "technos": "VueJS, Pinia, Tailwind, GSAP",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à l'entreprise Chefdechantier, une entreprise qui vous accompagne dans la rénovation de votre projet. En parallèle un tunnel de récupération de devis avait été mis en place pour estimer les rénovations clients.",
       "cover": "/images/projects/cdc/large/mockup.png",
       "services": ["Intégrations maquettes", "Création back-office personnalisé"],
@@ -91,7 +91,6 @@
   },
   "common" : {
     "visitWebsite": "Visiter le site",
-    "sector": "Secteur",
     "backToProjects": "Retour"
   }
 }
