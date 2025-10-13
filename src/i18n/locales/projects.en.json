@@ -1,7 +1,7 @@
 {
   "title": {
     "main": "My work",
-    "second": "(4 projects)"
+    "second": "(3 projects)"
   },
   "projects": {
     "iniva": {
@@ -48,47 +48,6 @@
         ]
       }
     },
-    "daouad": {
-      "path": "daouad",
-      "title": "Daouad",
-      "date": "2024",
-      "url": "https://daouad.fr",
-      "context": "Freelance",
-      "field": "Architecture Firm",
-      "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Daouad, an architectural firm. The project highlights their various projects and includes a map to precisely locate them.",
-      "cover": "/images/projects/daouad/large/mockup.png",
-      "services": ["Design integrations", "Custom back-office creation"],
-      "sections": {
-        "desktop": {
-          "title": "A Logical Website",
-          "description": "It is characterized by a comprehensive homepage that invites visitors to explore pages detailing projects. Through various photos and videos, one can easily discover an enticing representation of the work.",
-          "description": "Through different shots and videos, one can easily discover a representation that makes one want to explore."
-        },
-        "discover": {
-          "title": "An Invitation to Discover, Freely and Easily",
-          "description": "The site stands out with numerous illustration sections, beautiful carousels, an interactive map, and a pleasant side navigation. Every detail has been carefully considered to give visitors a precise idea of what awaits them."
-        },
-        "mobile": {
-          "title": "Mobile Adaptation: A Necessary Step",
-          "description": "The mobile version is optimized, with carousels adjusted for small screens, responsive images, and smooth navigation through the menu. Each interaction is an invitation to effortlessly discover the projects offered by Daouad."
-        }
-      },
-      "gallery": {
-        "large": [
-          "/images/projects/daouad/large/mockup.png",
-          "/images/projects/daouad/large/desktop-main-1.jpg",
-          "/images/projects/iniva/large/desktop-8.jpg"
-        ],
-        "square": [
-          "/images/projects/daouad/square/desktop-1.jpg",
-          "/images/projects/daouad/square/desktop-2.jpg",
-          "/images/projects/daouad/square/desktop-3.jpg",
-          "/images/projects/daouad/square/phone-1.jpg",
-          "/images/projects/daouad/square/phone-2.jpg",
-          "/images/projects/daouad/square/phone-3.jpg"
-        ]
-      }
-    },
     "chefdechantier": {
       "path": "chefdechantier",
       "title": "Chef De Chantier",
@@ -126,37 +85,6 @@
           "/images/projects/cdc/square/desktop-3.jpg",
           "/images/projects/cdc/square/desktop-4.jpg",
           "/images/projects/cdc/square/desktop-5.jpg"
-        ]
-      }
-    },
-    "socbois": {
-      "path": "socbois",
-      "title": "Socbois",
-      "date": "2024",
-      "url": "https://socbois.fr/",
-      "context": "Freelance",
-      "field": "Wood Craftsmanship",
-      "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Socbois, a manufacturer of wood construction solutions located in Laillé.",
-      "cover": "/images/projects/socbois/large/mockup.png",
-      "services": ["Design integrations", "Custom back-office creation"],
-      "sections": {
-        "onepage": {
-          "title": "A Logical Website",
-          "description": "It is characterized by a comprehensive homepage that invites visitors to explore pages detailing projects. Through various photos and videos, one can easily discover an enticing representation of the work."
-        }
-      },
-      "gallery": {
-        "large": [
-          "/images/projects/socbois/square/desktop-1.jpg",
-          "/images/projects/socbois/large/mockup.png",
-          "/images/projects/socbois/square/desktop-2.jpg"
-        ],
-        "square": [
-          "/images/projects/socbois/square/desktop-1.jpg",
-          "/images/projects/socbois/square/desktop-2.jpg",
-          "/images/projects/socbois/square/desktop-3.jpg",
-          "/images/projects/socbois/square/desktop-4.jpg",
-          "/images/projects/socbois/square/desktop-5.jpg"
         ]
       }
     }

@@ -1,7 +1,7 @@
 {
   "title": {
     "main": "Mon travail",
-    "second": "(4 projets)"
+    "second": "(3 projets)"
   },
   "projects": {
     "iniva": {
@@ -48,46 +48,6 @@
         ]
       }
     },
-    "daouad": {
-      "path": "daouad",
-      "title": "Daouad",
-      "date": "2024",
-      "url": "https://daouad.fr",
-      "context": "Freelance",
-      "field": "Cabinet d'architectes",
-      "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Daouad, un cabinet d'architectes. Le projet mets au premier plan leurs différents projets ainsi qu'une carte qui permets de situer précisement ceux-ci.",
-      "cover": "/images/projects/daouad/large/mockup.png",
-      "services": ["Intégrations maquettes", "Création back-office personnalisé"],
-      "sections": {
-        "desktop": {
-          "title": "Un site logique",
-          "description": "Il se caractérise par une page d'accueil fournie, qui invite le visiteur à découvrir les pages détaillant un hôtel ou une activité. à travers différents clichés et vidéos, on y découvre facilement une représentation du Gabon qui donne envie."
-        },
-        "discover": {
-          "title": "Une invitation à découvrir, librement et facilement",
-          "description": "Le site se démarque par de nombreuses sections d'illustrations, de magnifiques carousels, une carte interactive et une navigation latérale agréable. Chaque détail a été réfléchi pour donner au visiteur une idée précise de ce qui l'attend sur place."
-        },
-        "mobile": {
-          "title": "L'Adaptation Mobile : Passage Obligé",
-          "description": "La version mobile est optimisée, notamment avec des carousels ajustés pour petits écrans, des images responsives et une navigation fluide via le menu par exemple. Chaque interaction est une invitation à découvrir, sans effort, les hôtels et activités proposés par Iniva."
-        }
-      },
-      "gallery": {
-        "large": [
-          "/images/projects/daouad/large/mockup.png",
-          "/images/projects/daouad/large/desktop-main-1.jpg",
-          "/images/projects/iniva/large/desktop-8.jpg"
-        ],
-        "square": [
-          "/images/projects/daouad/square/desktop-1.jpg",
-          "/images/projects/daouad/square/desktop-2.jpg",
-          "/images/projects/daouad/square/desktop-3.jpg",
-          "/images/projects/daouad/square/phone-1.jpg",
-          "/images/projects/daouad/square/phone-2.jpg",
-          "/images/projects/daouad/square/phone-3.jpg"
-        ]
-      }
-    },
     "chefdechantier": {
       "path": "chefdechantier",
       "title": "Chef de chantier",
@@ -125,37 +85,6 @@
           "/images/projects/cdc/square/desktop-3.jpg",
           "/images/projects/cdc/square/desktop-4.jpg",
           "/images/projects/cdc/square/desktop-5.jpg"
-        ]
-      }
-    },
-    "socbois": {
-      "path": "socbois",
-      "title": "Socbois",
-      "date": "2024",
-      "url": "https://socbois.fr/",
-      "context": "Freelance",
-      "field": "Artisan bois",
-      "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Socbois, un fabricant de solutions constructives bois situé à Laillé.",
-      "cover": "/images/projects/socbois/large/mockup.png",
-      "services": ["Intégrations maquettes", "Création back-office personnalisé"],
-      "sections": {
-        "onepage": {
-          "title": "Un site logique",
-          "description": "Il se caractérise par une page d'accueil fournie, qui invite le visiteur à découvrir les pages détaillant un hôtel ou une activité. à travers différents clichés et vidéos, on y découvre facilement une représentation du Gabon qui donne envie."
-        }
-      },
-      "gallery": {
-        "large": [
-          "/images/projects/socbois/square/desktop-1.jpg",
-          "/images/projects/socbois/large/mockup.png",
-          "/images/projects/socbois/square/desktop-2.jpg"
-        ],
-        "square": [
-          "/images/projects/socbois/square/desktop-1.jpg",
-          "/images/projects/socbois/square/desktop-2.jpg",
-          "/images/projects/socbois/square/desktop-3.jpg",
-          "/images/projects/socbois/square/desktop-4.jpg",
-          "/images/projects/socbois/square/desktop-5.jpg"
         ]
       }
     }

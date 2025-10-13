@@ -12,9 +12,7 @@ const routePaths = {
     work: "/work",
     // Projets
     "project-iniva": "/work/iniva",
-    "project-daouad": "/work/daouad",
-    "project-chef": "/work/chefdechantier",
-    "project-socbois": "/work/socbois",
+    "project-chef": "/work/chefdechantier"
 }
 
 const pathToKey = Object.fromEntries(

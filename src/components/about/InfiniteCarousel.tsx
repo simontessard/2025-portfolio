@@ -8,10 +8,8 @@ export default function InfiniteCarousel() {
     const images = [
         "/images/projects/iniva/square/desktop-1.jpg",
         "/images/projects/iniva/square/phone-5.jpg",
-        "/images/projects/daouad/square/phone-1.jpg",
         "/images/projects/cdc/square/desktop-1.jpg",
         "/images/projects/iniva/square/phone-1.jpg",
-        "/images/projects/daouad/square/desktop-3.jpg"
     ];
 
     return (
