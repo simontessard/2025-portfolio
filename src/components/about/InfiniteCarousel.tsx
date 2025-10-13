@@ -6,9 +6,12 @@ import Image from "next/image";
 
 export default function InfiniteCarousel() {
     const images = [
+        "/images/projects/tt/square/project-tt-pro.jpg",
         "/images/projects/iniva/square/desktop-1.jpg",
         "/images/projects/iniva/square/phone-5.jpg",
         "/images/projects/cdc/square/desktop-1.jpg",
+        "/images/projects/tt/square/project-tt-pro.jpg",
+        "/images/projects/tt/square/project-tt.jpg",
         "/images/projects/iniva/square/phone-1.jpg",
     ];
 

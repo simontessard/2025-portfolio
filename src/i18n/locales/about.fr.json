@@ -7,15 +7,13 @@
     },
     "title": {
       "main": "Donner vie",
-      "second": "à vos idées"
+      "second": "aux idées"
     },
     "intro": {
       "title": "à propos",
       "paragraphs": {
         "first": "Je suis Simon TESSARD, un développeur web de 25 ans vivant à Rennes.",
-        "second": "Mon objectif, à chaque projet, est de sublimer votre travail et vos compétences à travers une création qui raconte votre histoire et reflète votre identité. Je le concrétise en misant sur des finitions appliquées, couplées avec des animations fluides.",
-        "third": "Mes compétences englobent donc le développement Web (Front-end et Back-end) et le Web Design, ainsi je peux créer votre site web de bout en bout.",
-        "fourth": "Disponible pour des missions de Freelance, n'hésitez pas à me contacter pour discuter de votre projet, ou pour toute autre demande."
+        "second": "Mes compétences englobent donc le développement Web (Front-end et Back-end) et le Web Design, ainsi je peux créer votre site web de bout en bout."
       }
     },
     "expertises": {

@@ -12,7 +12,8 @@ const routePaths = {
     work: "/work",
     // Projets
     "project-iniva": "/work/iniva",
-    "project-chef": "/work/chefdechantier"
+    "project-chef": "/work/chefdechantier",
+    "project-tt": "/work/training-therapie"
 }
 
 const pathToKey = Object.fromEntries(

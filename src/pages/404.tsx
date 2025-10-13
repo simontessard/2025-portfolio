@@ -31,7 +31,6 @@ export default function Custom404() {
                     </p>
 
                     <NavigationButton href="/" text="Retour à l'accueil" className="mx-auto"/>
-
                 </div>
             </div>
         </Curve>

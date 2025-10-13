@@ -48,12 +48,42 @@
         ]
       }
     },
+    "tt": {
+      "path": "training-therapie",
+      "title": "Double Site : Training Thérapie",
+      "date": "2025",
+      "url": "https://inivatourism.com/",
+      "context": "Freelance",
+      "technos": "Wordpress, Gsap, Tailwind, Javascript",
+      "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
+      "cover": "/images/projects/tt/square/project-tt.jpg",
+      "services": ["Design integrations", "Custom back-office creation"],
+      "gallery": {
+        "large": [
+          "/images/projects/iniva/large/iniva-main.png",
+          "/images/projects/iniva/large/desktop-1.jpg",
+          "/images/projects/iniva/large/desktop-map.jpg",
+          "/images/projects/iniva/large/desktop-2.jpg",
+          "/images/projects/iniva/large/desktop-3.jpg",
+          "/images/projects/iniva/large/desktop-4.jpg",
+          "/images/projects/iniva/large/desktop-5.jpg",
+          "/images/projects/iniva/large/desktop-6.jpg",
+          "/images/projects/iniva/large/desktop-8.jpg"
+        ],
+        "square": [
+          "/images/projects/iniva/square/phone-4.jpg",
+          "/images/projects/iniva/square/phone-5.jpg",
+          "/images/projects/iniva/square/phone-1.jpg",
+          "/images/projects/iniva/square/phone-6.jpg"
+        ]
+      }
+    },
     "chefdechantier": {
       "path": "chefdechantier",
-      "title": "Chef de chantier",
+      "title": "Tunnel de devis : Chef de chantier",
       "date": "2023",
       "url": "https://chefdechantier.fr/",
-      "context": "Freelance",
+      "context": "Alternance",
       "technos": "VueJS, Pinia, Tailwind, GSAP",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à l'entreprise Chefdechantier, une entreprise qui vous accompagne dans la rénovation de votre projet. En parallèle un tunnel de récupération de devis avait été mis en place pour estimer les rénovations clients.",
       "cover": "/images/projects/cdc/large/mockup.png",
@@ -74,17 +104,9 @@
       },
       "gallery": {
         "large": [
-          "/images/projects/cdc/square/desktop-quality.jpg",
           "/images/projects/cdc/large/desktop-1.jpg",
           "/images/projects/cdc/large/desktop-2.jpg",
           "/images/projects/cdc/large/desktop-3.jpg"
-        ],
-        "square": [
-          "/images/projects/cdc/square/desktop-1.jpg",
-          "/images/projects/cdc/square/desktop-2.jpg",
-          "/images/projects/cdc/square/desktop-3.jpg",
-          "/images/projects/cdc/square/desktop-4.jpg",
-          "/images/projects/cdc/square/desktop-5.jpg"
         ]
       }
     }

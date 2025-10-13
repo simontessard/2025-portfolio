@@ -7,15 +7,13 @@
     },
     "title": {
       "main": "Bring",
-      "second": "your ideas to life"
+      "second": "ideas to life"
     },
     "intro": {
       "title": "about",
       "paragraphs": {
         "first": "I am Simon TESSARD, a 25-year-old web developer based in Rennes.",
-        "second": "My goal for each project is to elevate your work and skills through a creation that tells your story and reflects your identity. I achieve this by focusing on meticulous finishing touches, combined with fluid animations.",
-        "third": "My skills encompass Web Development (Front-end and Back-end) and Web Design, allowing me to create your website from start to finish.",
-        "fourth": "Available for freelance missions, feel free to contact me to discuss your project or any other inquiries."
+        "second": "My skills encompass Web Development (Front-end and Back-end) and Web Design, allowing me to create your website from start to finish."
       }
     },
     "expertises": {

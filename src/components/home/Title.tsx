@@ -1,11 +1,10 @@
 import {useTranslations} from "next-intl";
-import Available from "@/components/home/Available";
 
 export default function Title() {
     const t = useTranslations('others');
 
     return (
-        <div className="pb-4 md:pb-8 2xl:pb-10">
+        <div>
             <h1 className="text-primary">
                 <span className="text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl tracking-tight font-primary font-medium uppercase">
                     Front
@@ -17,8 +16,6 @@ export default function Title() {
                 <span className="inline-block mb-1 xl:mb-2 text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl font-primary tracking-tight font-medium uppercase">
                     {t('homeText2')}
                 </span>
-                <br/>
-                <Available/>
             </h1>
         </div>
     )

@@ -21,8 +21,6 @@ export default function Intro() {
         paragraphs: [
             t('paragraphs.first'),
             t('paragraphs.second'),
-            t('paragraphs.third'),
-            t('paragraphs.fourth')
         ]
     };
 

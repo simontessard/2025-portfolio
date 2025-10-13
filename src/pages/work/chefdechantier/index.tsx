@@ -21,12 +21,6 @@ export default function Project() {
         projectData.gallery.large[3],
         projectData.gallery.large[2]
     ];
-    const galleryFour = [
-        projectData.gallery.square[2],
-        projectData.gallery.square[1],
-        projectData.gallery.square[4],
-        projectData.gallery.square[3]
-    ];
 
     const setColor = useAppStore((state) => state.setColor);
 
@@ -51,11 +45,6 @@ export default function Project() {
                     gallery={galleryDesktop}
                     title={projectData.sections.tunnel.title}
                     desc={projectData.sections.tunnel.description}
-                />
-                <FourImages
-                    gallery={galleryFour}
-                    title={projectData.sections.gallery.title}
-                    desc={projectData.sections.gallery.description}
                 />
             </div>
 

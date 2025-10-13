@@ -9,15 +9,17 @@ export default function Carousel() {
     const slides = [
         { src: "/images/projects/cdc/large/mockup.png", alt: "ChefDeChantier.fr section projets" },
         { src: "/images/projects/iniva/large/mockup-2.png", alt: "Iniva Tourism section découverte" },
+        { src: "/images/projects/tt/square/project-tt-pro.jpg", alt: "TT Pro" },
+        { src: "/images/projects/tt/square/project-tt.jpg", alt: "TT" },
     ];
 
     return (
         <Swiper
             modules={[EffectFade, Autoplay]}
             slidesPerView={1}
-            autoplay={{ delay: 1200 }}
+            autoplay={{ delay: 1700 }}
             loop={true}
-            speed={1000}
+            speed={1300}
             allowTouchMove={false}
             effect="fade"
             className="!size-full"

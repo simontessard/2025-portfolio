@@ -18,7 +18,7 @@ export default function Projet({ title, cover, path, technos }: ProjectProps) {
             href={`/work/${path}`}
             className="gsap-project group text-black"
         >
-            <div className="relative aspect-square mb-3">
+            <div className="relative aspect-square mb-2 md:mb-3">
                 <Image
                     width={1600}
                     height={1600}
@@ -30,7 +30,7 @@ export default function Projet({ title, cover, path, technos }: ProjectProps) {
             </div>
             <div className="flex flex-col">
                 <div className="flex items-center justify-between mb-0.5">
-                    <h2 className="text-primary tracking-tight font-primary text-2xl uppercase">
+                    <h2 className="text-primary tracking-tight font-primary text-xl 2xl:text-2xl uppercase">
                         {title}
                     </h2>
                     <svg

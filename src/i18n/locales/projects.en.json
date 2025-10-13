@@ -48,12 +48,56 @@
         ]
       }
     },
+    "tt": {
+      "path": "training-therapie",
+      "title": "Training Thérapie",
+      "date": "2025",
+      "url": "https://inivatourism.com/",
+      "context": "Freelance",
+      "technos": "Wordpress, Gsap, Tailwind, Javascript",
+      "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Iniva Tourism, a hotel suite located in Gabon. The project highlights the different hotels and various cultural activities near them.",
+      "cover": "/images/projects/tt/square/project-tt.jpg",
+      "services": ["Design integrations", "Custom back-office creation"],
+      "sections": {
+        "logical": {
+          "title": "A Logical Website",
+          "description": "It is characterized by a comprehensive homepage that invites visitors to explore pages detailing hotels or activities. Through various photos and videos, one can easily discover an enticing representation of Gabon."
+        },
+        "discover": {
+          "title": "An Invitation to Discover, Freely and Easily",
+          "description": "The site stands out with numerous illustration sections, beautiful carousels, an interactive map, and a pleasant side navigation. Every detail has been carefully considered to give visitors a precise idea of what awaits them."
+        },
+        "mobile": {
+          "title": "Mobile Adaptation: A Necessary Step",
+          "description": "The mobile version is optimized, with carousels adjusted for small screens, responsive images, and smooth navigation through the menu. Each interaction is an invitation to effortlessly discover the hotels and activities offered by Iniva."
+        }
+      },
+      "gallery": {
+        "large": [
+          "/images/projects/iniva/large/iniva-main.png",
+          "/images/projects/iniva/large/desktop-1.jpg",
+          "/images/projects/iniva/large/desktop-map.jpg",
+          "/images/projects/iniva/large/desktop-2.jpg",
+          "/images/projects/iniva/large/desktop-3.jpg",
+          "/images/projects/iniva/large/desktop-4.jpg",
+          "/images/projects/iniva/large/desktop-5.jpg",
+          "/images/projects/iniva/large/desktop-6.jpg",
+          "/images/projects/iniva/large/desktop-8.jpg"
+        ],
+        "square": [
+          "/images/projects/iniva/square/phone-4.jpg",
+          "/images/projects/iniva/square/phone-5.jpg",
+          "/images/projects/iniva/square/phone-1.jpg",
+          "/images/projects/iniva/square/phone-6.jpg"
+        ]
+      }
+    },
     "chefdechantier": {
       "path": "chefdechantier",
       "title": "Chef De Chantier",
       "date": "2023",
       "url": "https://chefdechantier.fr/",
-      "context": "Freelance",
+      "context": "Alternance",
       "technos": "VueJS, Pinia, Tailwind, GSAP",
       "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Chefdechantier, a company that supports you in renovating your project. In parallel, a quote recovery tunnel was set up to estimate client renovations.",
       "cover": "/images/projects/cdc/large/mockup.png",
@@ -74,17 +118,9 @@
       },
       "gallery": {
         "large": [
-          "/images/projects/cdc/square/desktop-quality.jpg",
           "/images/projects/cdc/large/desktop-1.jpg",
           "/images/projects/cdc/large/desktop-2.jpg",
           "/images/projects/cdc/large/desktop-3.jpg"
-        ],
-        "square": [
-          "/images/projects/cdc/square/desktop-1.jpg",
-          "/images/projects/cdc/square/desktop-2.jpg",
-          "/images/projects/cdc/square/desktop-3.jpg",
-          "/images/projects/cdc/square/desktop-4.jpg",
-          "/images/projects/cdc/square/desktop-5.jpg"
         ]
       }
     }
