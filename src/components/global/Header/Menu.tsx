@@ -36,8 +36,6 @@ export default function Menu() {
 
                     <div className="flex max-lg:flex-col flex-wrap lg:items-center lg:max-w-xl xl:max-w-4xl gap-y-2 xl:gap-y-4 gap-x-6 md:gap-x-7 xl:gap-x-8 self-end w-full mb-12 md:mb-20">
                         <MenuLink href="/about" text="about"/>
-                        <span className="js-menu-link -translate-y-1 opacity-0 hidden lg:block size-3 md:size-4 xl:size-4 bg-white rounded-full"/>
-                        <MenuLink href="/blog" text="blog"/>
                     </div>
 
                     <div

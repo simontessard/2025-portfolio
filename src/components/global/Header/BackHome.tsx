@@ -12,7 +12,7 @@ export default function BackHome() {
             style={{ color }}
             className="header-logo fixed z-50 top-4 left-4 md:top-6 md:left-6 md:text-lg font-primary"
         >
-            SIMON T.
+            SIMON TESSARD
         </Link>
     )
 }

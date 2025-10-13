@@ -16,7 +16,7 @@ export default function HomeLink() {
     return (
         <Link onClick={handleClick} href="/"
               className={`text-white md:text-lg font-primary`}>
-              SIMON T.
+              SIMON TESSARD
         </Link>
     )
 }

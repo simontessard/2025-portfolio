@@ -129,44 +129,6 @@
         ]
       }
     },
-    "avec-joie": {
-      "path": "avec-joie",
-      "title": "Avec Joie",
-      "date": "2024",
-      "url": "https://avecjoie-bio.fr/",
-      "client": "Cobalt Studio",
-      "field": "Agro-Food",
-      "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a one-page showcase website for Avec-Joie, a collection of new food products.",
-      "cover": "/images/projects/aj/large/mockup.png",
-      "services": ["Design integrations", "Custom back-office creation"],
-      "sections": {
-        "desktop": {
-          "title": "A Logical Website",
-          "description": "It is characterized by a comprehensive homepage that invites visitors to explore pages detailing products. Through various photos and videos, one can easily discover an enticing representation of the offerings."
-        },
-        "tunnel": {
-          "title": "An Invitation to Discover, Freely and Easily",
-          "description": "The site stands out with numerous illustration sections, beautiful carousels, an interactive map, and a pleasant side navigation. Every detail has been carefully considered to give visitors a precise idea of what awaits them."
-        },
-        "gallery": {
-          "title": "Mobile Adaptation: A Necessary Step",
-          "description": "The mobile version is optimized, with carousels adjusted for small screens, responsive images, and smooth navigation through the menu. Each interaction is an invitation to effortlessly discover the products offered by Avec-Joie."
-        }
-      },
-      "gallery": {
-        "large": [
-          "/images/projects/aj/large/mockup.png",
-          "/images/projects/aj/large/desktop-quality.jpeg",
-          "/images/projects/aj/square/desktop-2.jpg"
-        ],
-        "square": [
-          "/images/projects/aj/square/desktop-1.jpg",
-          "/images/projects/aj/square/desktop-2.jpg",
-          "/images/projects/aj/square/desktop-3.jpg",
-          "/images/projects/aj/square/desktop-4.jpg"
-        ]
-      }
-    },
     "socbois": {
       "path": "socbois",
       "title": "Socbois",

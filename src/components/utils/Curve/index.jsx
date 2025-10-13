@@ -10,18 +10,10 @@ const routePaths = {
     home: "/",
     about: "/about",
     work: "/work",
-    blog: "/blog",
-    // Articles de blog
-    "blog-wordpress": "/blog/wordpress-vs-nextjs-cms-headless",
-    "blog-iniva": "/blog/feedback-iniva-tourism",
-    "blog-gsap": "/blog/gsap-impact-web-animation",
-    "blog-three": "/blog/threejs-revolution-web",
-    "blog-tailwind": "/blog/tailwind-impact-frontend",
     // Projets
     "project-iniva": "/work/iniva",
     "project-daouad": "/work/daouad",
     "project-chef": "/work/chefdechantier",
-    "project-joie": "/work/avec-joie",
     "project-socbois": "/work/socbois",
 }
 

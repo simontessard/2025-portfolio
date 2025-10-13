@@ -2,24 +2,17 @@
   "menu": {
     "home": "Home",
     "work": "Work",
-    "about": "About",
-    "blog": "Blog"
+    "about": "About"
   },
   "others" : {
     "location" : "France",
     "close" : "Close",
-    "homeText1" : "+ Creative",
+    "homeText1" : "- End",
     "homeText2" : "Developer"
   },
   "routes": {
     "home": "Home",
     "about": "About",
-    "work": "My Work",
-    "blog": "Blog",
-    "blog-wordpress": "WordPress vs NextJS",
-    "blog-iniva": "Feedback #1: Iniva Tourism",
-    "blog-gsap": "GSAP",
-    "blog-three": "ThreeJS: The Revolution",
-    "blog-tailwind": "The Tailwind Impact"
+    "work": "My Work"
   }
 }

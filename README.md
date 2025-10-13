@@ -17,10 +17,8 @@ yarn dev
 # TODO
 - [ ] Faire un encadré "Disponible - Freelance" : https://yamateos.fr/projects/oxymore
 - [ ] https://www.awwwards.com/inspiration/other-projects-yamateos
-- [ ] Add an order by date on blog page
 - [ ] Height of page transition on mobile ?
 - [x] Custom cursor
-- [x] Blog
 - [x] Page 404
 - [x] Section "Outils" in page About
 - [x] More projects
