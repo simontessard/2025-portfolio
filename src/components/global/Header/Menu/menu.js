@@ -8,8 +8,8 @@ export function openMenuFunction () {
     tl.to(".js-menu", {duration: .8, ease: "power4.inOut", clipPath : "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", display: "flex", onStart : () => {document.body.style.overflow = "hidden"}})
     .to(".js-menu-link", {duration: .3, opacity: 1, stagger: 0.015, y: 0})
     .to(".js-menu-contact", {duration: .3, opacity: 1, y:0},"-=.2")
-    .to('.js-menu-img', {clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", ease: "power4.inOut"}, "<")
-    .to('.js-menu-img img', {scale: 1, ease: "power2.inOut", duration: .7}, "<");
+    .to('.js-menu-img', {clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", ease: "power4.inOut"}, "-=.5")
+    .to('.js-menu-img img', {scale: 1, ease: "power2.inOut", duration: .8}, "<");
 }
 
 export function closeMenuFunction () {

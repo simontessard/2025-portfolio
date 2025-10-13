@@ -1,7 +1,7 @@
 {
   "title": {
     "main": "Mon travail",
-    "second": "(3 projets)"
+    "second": "(4 projets)"
   },
   "projects": {
     "iniva": {
@@ -10,7 +10,7 @@
       "date": "2025",
       "url": "https://inivatourism.com/",
       "context": "Freelance",
-      "technos": "Wordpress, Gsap, Tailwind, Javascript",
+      "technos": "Gsap, Tailwind, Javascript",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
       "cover": "/images/projects/iniva/large/mockup-2.png",
       "services": ["Intégrations maquettes", "Création back-office personnalisé"],
@@ -86,9 +86,39 @@
       "date": "2025",
       "url": "https://inivatourism.com/",
       "context": "Freelance",
-      "technos": "Wordpress, Gsap, Tailwind, Javascript",
+      "technos": "GSAP, Tailwind, Javascript",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
       "cover": "/images/projects/tt/square/project-tt.jpg",
+      "services": ["Design integrations", "Custom back-office creation"],
+      "gallery": {
+        "large": [
+          "/images/projects/iniva/large/iniva-main.png",
+          "/images/projects/iniva/large/desktop-1.jpg",
+          "/images/projects/iniva/large/desktop-map.jpg",
+          "/images/projects/iniva/large/desktop-2.jpg",
+          "/images/projects/iniva/large/desktop-3.jpg",
+          "/images/projects/iniva/large/desktop-4.jpg",
+          "/images/projects/iniva/large/desktop-5.jpg",
+          "/images/projects/iniva/large/desktop-6.jpg",
+          "/images/projects/iniva/large/desktop-8.jpg"
+        ],
+        "square": [
+          "/images/projects/iniva/square/phone-4.jpg",
+          "/images/projects/iniva/square/phone-5.jpg",
+          "/images/projects/iniva/square/phone-1.jpg",
+          "/images/projects/iniva/square/phone-6.jpg"
+        ]
+      }
+    },
+    "maxim": {
+      "path": "maxime-le-bec",
+      "title": "Portfolio : Maxime Le Bec",
+      "date": "2025",
+      "url": "https://inivatourism.com/",
+      "context": "Freelance",
+      "technos": "ThreeJS, GSAP, Tailwind, Javascript",
+      "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
+      "cover": "/images/projects/maxim/logo.png",
       "services": ["Design integrations", "Custom back-office creation"],
       "gallery": {
         "large": [

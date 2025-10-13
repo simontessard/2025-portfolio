@@ -6,7 +6,6 @@ import Heading from "@/components/projects-slug/Heading";
 import FourImages from "@/components/projects-slug/FourImages";
 import Head from 'next/head'
 import GalleryDesktop from "@/components/projects-slug/GalleryDesktop";
-import NavigationButton from "@/components/global/NavigationButton";
 import {useEffect} from "react";
 import useAppStore from "@/store/store";
 import { useTranslations } from 'next-intl';
