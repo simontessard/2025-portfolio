@@ -73,16 +73,16 @@ export default function Entrance() {
 
                 <div className="overflow-hidden flex flex-col relative font-primary text-right text-2xl md:text-3xl xl:text-4xl h-7 md:h-8 xl:h-9 uppercase">
                     <p className="js-up--first-1word">Simon</p>
-                    <p className="js-up--first-2word">Créations</p>
-                    <p className="js-up--first-3word">Designs</p>
-                    <p className="js-up--first-4word">Interfaces</p>
+                    <p className="js-up--first-2word">Artisan</p>
+                    <p className="js-up--first-3word">Oeil</p>
+                    <p className="js-up--first-4word">Pixel</p>
                 </div>
 
                 <div className="overflow-hidden flex flex-col pt-1.5 md:pt-2 xl:pt-2.5 font-secondary text-lg md:text-xl xl:text-2xl uppercase h-7 md:h-8 xl:h-[2.10rem] w-32 md:leading-8 p-1 max-md:mb-0.5">
                     <p className="js-up--second-1word">TESSARD</p>
-                    <p className="js-up--second-2word">uniques</p>
-                    <p className="js-up--second-3word">soignés</p>
-                    <p className="js-up--second-4word">modernes</p>
+                    <p className="js-up--second-2word">visuel</p>
+                    <p className="js-up--second-3word">affûté</p>
+                    <p className="js-up--second-4word">Perfect</p>
                 </div>
 
             </div>
