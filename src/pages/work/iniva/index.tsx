@@ -37,7 +37,7 @@ export default function Project() {
 
             <span id="top" className="opacity-0">top</span>
 
-            <div className="pt-24 md:pt-32 pb-12 md:pb-16 px-4 md:px-6 ">
+            <div className="pt-24 md:pt-32 px-4 md:px-6 ">
                 <Heading project={project} color="#742e25"/>
                 <MainImage gallery={mainImg}/>
 
@@ -59,12 +59,6 @@ export default function Project() {
                     title={projectData.sections.mobile.title}
                     color="#742e25"
                     desc={projectData.sections.mobile.description}
-                />
-
-                <NavigationButton
-                    href="/work"
-                    text={t('common.backToProjects')}
-                    color="#742e25"
                 />
 
             </div>

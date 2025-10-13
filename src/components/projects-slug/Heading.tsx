@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {useTranslations} from "next-intl";
+import NavigationButton from "@/components/global/NavigationButton";
 
 interface Project {
     title: string;
@@ -7,7 +8,7 @@ interface Project {
     description: string;
     field: string;
     services: string[];
-    client: string;
+    context: string;
     url: string;
 }
 
@@ -23,6 +24,11 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
     return (
         <>
             <div className="flex flex-col w-full">
+                <NavigationButton
+                    href="/work"
+                    text={t('backToProjects')}
+                    color={color}
+                />
                 <div className="mb-10 xl:mb-0">
 
                     {/* Title */}
@@ -44,7 +50,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
 
                         <div className="flex max-md:flex-col xl:justify-center gap-4 sm:gap-6 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-24 2xl:w-3/5">
                             <div className="flex flex-col">
-                                <p style={textStyle} className="font-secondary md:text-xl uppercase italic mb-1.5 sm:mb-2 md:mb-2.5 xl:mb-4">
+                                <p style={textStyle} className="font-secondary md:text-lg uppercase italic mb-1.5 sm:mb-2 md:mb-2.5 xl:mb-3">
                                     {t('sector')}
                                 </p>
                                 <p style={textStyle} className="font-primary uppercase max-md:text-sm mb-1 md:mb-1.5">
@@ -54,7 +60,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
 
                             {/* Services */}
                             <div className="max-md:w-1/2 flex flex-col">
-                                <p style={textStyle} className="font-secondary md:text-xl uppercase italic mb-1.5 sm:mb-2 md:mb-2.5 xl:mb-4">
+                                <p style={textStyle} className="font-secondary md:text-lg uppercase italic mb-1.5 sm:mb-2 md:mb-2.5 xl:mb-3">
                                     Services
                                 </p>
                                 {project.services.map((service: string, index: number) => (
@@ -67,11 +73,11 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
 
                             {/* Client */}
                             <div className="flex flex-col">
-                                <p style={textStyle} className="font-secondary md:text-xl uppercase italic mb-1.5 sm:mb-2 md:mb-2.5 xl:mb-4">
-                                    Client
+                                <p style={textStyle} className="font-secondary md:text-lg uppercase italic mb-1.5 sm:mb-2 md:mb-2.5 xl:mb-3">
+                                    Contexte
                                 </p>
                                 <p style={textStyle} className="font-primary uppercase max-md:text-sm">
-                                    {project.client}
+                                    {project.context}
                                 </p>
                             </div>
 

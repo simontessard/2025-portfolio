@@ -12,12 +12,14 @@ yarn dev
 # WORKING ON
 - [ ] Meta tags all pages
 - [ ] Changes screenshoots mockups ?
-- [ ] Internationalization
 
 # TODO
 - [ ] Faire un encadré "Disponible - Freelance" : https://yamateos.fr/projects/oxymore
 - [ ] https://www.awwwards.com/inspiration/other-projects-yamateos
 - [ ] Height of page transition on mobile ?
+- [ ] Credits of original portfolio
+- [ ] Change projects
+- [x] Internationalization
 - [x] Custom cursor
 - [x] Page 404
 - [x] Section "Outils" in page About
@@ -35,7 +37,6 @@ yarn dev
 - [ ] Do a memo with tools in about page
 
 ## Ideas
-- [ ] Add a "back" button on article page
     
 ### Bugs
 - [x] Navigation on 404 causes entrance animation to be triggered

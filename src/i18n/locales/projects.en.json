@@ -1,7 +1,7 @@
 {
   "title": {
     "main": "My work",
-    "second": "(5 projects)"
+    "second": "(4 projects)"
   },
   "projects": {
     "iniva": {
@@ -9,7 +9,7 @@
       "title": "Iniva Tourism",
       "date": "2025",
       "url": "https://inivatourism.com/",
-      "client": "Cobalt Studio",
+      "context": "Freelance",
       "field": "Hospitality, Tourism",
       "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Iniva Tourism, a hotel suite located in Gabon. The project highlights the different hotels and various cultural activities near them.",
       "cover": "/images/projects/iniva/large/mockup-2.png",
@@ -53,7 +53,7 @@
       "title": "Daouad",
       "date": "2024",
       "url": "https://daouad.fr",
-      "client": "Cobalt Studio",
+      "context": "Freelance",
       "field": "Architecture Firm",
       "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Daouad, an architectural firm. The project highlights their various projects and includes a map to precisely locate them.",
       "cover": "/images/projects/daouad/large/mockup.png",
@@ -94,7 +94,7 @@
       "title": "Chef De Chantier",
       "date": "2023",
       "url": "https://chefdechantier.fr/",
-      "client": "Cobalt Studio",
+      "context": "Freelance",
       "field": "Project Management, Renovation",
       "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Chefdechantier, a company that supports you in renovating your project. In parallel, a quote recovery tunnel was set up to estimate client renovations.",
       "cover": "/images/projects/cdc/large/mockup.png",
@@ -134,7 +134,7 @@
       "title": "Socbois",
       "date": "2024",
       "url": "https://socbois.fr/",
-      "client": "Cobalt Studio",
+      "context": "Freelance",
       "field": "Wood Craftsmanship",
       "description": "This project was completed for the web agency Cobalt Studio, based in Rennes. It is a showcase website for Socbois, a manufacturer of wood construction solutions located in Laillé.",
       "cover": "/images/projects/socbois/large/mockup.png",
@@ -164,6 +164,6 @@
   "common": {
     "visitWebsite": "Visit website",
     "sector": "Area",
-    "backToProjects": "Back to projects"
+    "backToProjects": "Go back"
   }
 }

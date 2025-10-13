@@ -1,7 +1,7 @@
 {
   "title": {
     "main": "Mon travail",
-    "second": "(5 projets)"
+    "second": "(4 projets)"
   },
   "projects": {
     "iniva": {
@@ -9,7 +9,7 @@
       "title": "Iniva Tourism",
       "date": "2025",
       "url": "https://inivatourism.com/",
-      "client": "Cobalt Studio",
+      "context": "Freelance",
       "field": "Hôtellerie, Tourisme",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
       "cover": "/images/projects/iniva/large/mockup-2.png",
@@ -53,7 +53,7 @@
       "title": "Daouad",
       "date": "2024",
       "url": "https://daouad.fr",
-      "client": "Cobalt Studio",
+      "context": "Freelance",
       "field": "Cabinet d'architectes",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Daouad, un cabinet d'architectes. Le projet mets au premier plan leurs différents projets ainsi qu'une carte qui permets de situer précisement ceux-ci.",
       "cover": "/images/projects/daouad/large/mockup.png",
@@ -93,7 +93,7 @@
       "title": "Chef de chantier",
       "date": "2023",
       "url": "https://chefdechantier.fr/",
-      "client": "Cobalt Studio",
+      "context": "Freelance",
       "field": "Maître d'oeuvre, Rénovation",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à l'entreprise Chefdechantier, une entreprise qui vous accompagne dans la rénovation de votre projet. En parallèle un tunnel de récupération de devis avait été mis en place pour estimer les rénovations clients.",
       "cover": "/images/projects/cdc/large/mockup.png",
@@ -133,7 +133,7 @@
       "title": "Socbois",
       "date": "2024",
       "url": "https://socbois.fr/",
-      "client": "Cobalt Studio",
+      "context": "Freelance",
       "field": "Artisan bois",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Socbois, un fabricant de solutions constructives bois situé à Laillé.",
       "cover": "/images/projects/socbois/large/mockup.png",
@@ -163,6 +163,6 @@
   "common" : {
     "visitWebsite": "Visiter le site",
     "sector": "Secteur",
-    "backToProjects": "Retour aux projets"
+    "backToProjects": "Retour"
   }
 }
