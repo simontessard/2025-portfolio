@@ -1,14 +1,12 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Header from "@/components/global/Header/Header";
-import {Merriweather} from "next/font/google";
-import {Fira_Sans} from "next/font/google";
 import {AnimatePresence} from "framer-motion";
 import Scroll from "@/components/utils/Scroll";
-import localFont from 'next/font/local'
 import CustomCursor from "@/components/utils/CustomCursor";
 import {useLocaleStore} from "@/store/useLocaleStore";
 import {NextIntlClientProvider} from "next-intl";
+import { poppins, fraunces, montreal, editorial } from "@/styles/fonts";
 
 import frProjectsMessages from '@/i18n/locales/projects.fr.json';
 import enProjectsMessages from '@/i18n/locales/projects.en.json';
@@ -17,7 +15,6 @@ import enAboutMessages from '@/i18n/locales/about.en.json';
 
 import frGlobalMessages from '@/i18n/locales/global.fr.json';
 import enGlobalMessages from '@/i18n/locales/global.en.json';
-
 
 type AbstractMessages = {
     [key: string]: string | AbstractMessages;
@@ -36,21 +33,6 @@ const messages = {
     } as unknown as AbstractMessages,
 };
 
-const poppins = Fira_Sans({
-    subsets: ["latin"],
-    weight: ["400", "500", "700"],
-    variable: "--font-poppins",
-});
-
-const fraunces = Merriweather({
-    subsets: ["latin"],
-    weight: ["300","400", "700"],
-    variable: "--font-fraunces",
-});
-
-const montreal = localFont({ src: './../../public/fonts/pp-neue-montreal/ppneuemontreal-medium.otf', variable: '--font-montreal' })
-const editorial = localFont({ src: './../../public/fonts/pp-edito.otf', variable: '--font-editorial' })
-
 export default function App({ Component, pageProps, router }: AppProps) {
   const locale = useLocaleStore((state) => state.locale);
 
@@ -59,10 +41,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
   };
 
   return (
-      <NextIntlClientProvider
-          locale={locale}
-          messages={messages[locale as keyof typeof messages]}
-      >
+      <NextIntlClientProvider locale={locale} messages={messages[locale as keyof typeof messages]}>
           <div className={`${poppins.variable} ${fraunces.variable} ${montreal.variable} ${editorial.variable}`}>
               <CustomCursor/>
               <Scroll>
