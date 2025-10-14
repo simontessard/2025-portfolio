@@ -2,17 +2,6 @@ import Paragraph from "@/components/about/Paragraph";
 import LinkHover from "@/components/global/LinkHover";
 import { useTranslations } from 'next-intl';
 
-const LINKS = {
-    email: {
-        text: "Email",
-        href: "mailto:pro@simontessard.fr"
-    },
-    linkedin: {
-        text: "LinkedIn",
-        href: "https://www.linkedin.com/in/simon-tessard-138733198/"
-    }
-};
-
 export default function Intro() {
     const t = useTranslations('about.intro');
 
@@ -35,19 +24,7 @@ export default function Intro() {
                 {content.paragraphs.map((text, index) => (
                     <Paragraph key={index} text={text}/>
                 ))}
-
-                <div className="ml-auto flex gap-5 md:gap-6 text-primary md:text-lg uppercase">
-                    <LinkHover
-                        text={LINKS.email.text}
-                        href={LINKS.email.href}
-                    />
-                    <LinkHover
-                        text={LINKS.linkedin.text}
-                        href={LINKS.linkedin.href}
-                    />
-                </div>
             </div>
-
         </div>
     )
 }

@@ -6,6 +6,7 @@ export default function Contact() {
             <LinkHover text="LinkedIn" href="https://www.linkedin.com/in/simon-tessard-138733198/"/>
             <LinkHover text="Email" href="mailto:pro@simontessard.fr"/>
             <LinkHover text="Tel" href="tel:0783263684"/>
+            <LinkHover text="Github" href="https://github.com/simontessard"/>
         </div>
     )
 }
