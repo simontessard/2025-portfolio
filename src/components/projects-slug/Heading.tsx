@@ -18,7 +18,7 @@ interface HeadingProps {
 }
 
 export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
-    const t = useTranslations('common');
+    const t = useTranslations('work.common');
     const textStyle = { color };
 
     return (

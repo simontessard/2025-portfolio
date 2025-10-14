@@ -1,8 +1,4 @@
 {
-  "title": {
-    "main": "My work",
-    "second": "(4 projects)"
-  },
   "projects": {
     "iniva": {
       "path": "iniva",
@@ -27,25 +23,6 @@
           "title": "Mobile Adaptation: A Necessary Step",
           "description": "The mobile version is optimized, with carousels adjusted for small screens, responsive images, and smooth navigation through the menu. Each interaction is an invitation to effortlessly discover the hotels and activities offered by Iniva."
         }
-      },
-      "gallery": {
-        "large": [
-          "/images/projects/iniva/large/iniva-main.png",
-          "/images/projects/iniva/large/desktop-1.jpg",
-          "/images/projects/iniva/large/desktop-map.jpg",
-          "/images/projects/iniva/large/desktop-2.jpg",
-          "/images/projects/iniva/large/desktop-3.jpg",
-          "/images/projects/iniva/large/desktop-4.jpg",
-          "/images/projects/iniva/large/desktop-5.jpg",
-          "/images/projects/iniva/large/desktop-6.jpg",
-          "/images/projects/iniva/large/desktop-8.jpg"
-        ],
-        "square": [
-          "/images/projects/iniva/square/phone-4.jpg",
-          "/images/projects/iniva/square/phone-5.jpg",
-          "/images/projects/iniva/square/phone-1.jpg",
-          "/images/projects/iniva/square/phone-6.jpg"
-        ]
       }
     },
     "tt": {
@@ -71,25 +48,6 @@
           "title": "Mobile Adaptation: A Necessary Step",
           "description": "The mobile version is optimized, with carousels adjusted for small screens, responsive images, and smooth navigation through the menu. Each interaction is an invitation to effortlessly discover the hotels and activities offered by Iniva."
         }
-      },
-      "gallery": {
-        "large": [
-          "/images/projects/iniva/large/iniva-main.png",
-          "/images/projects/iniva/large/desktop-1.jpg",
-          "/images/projects/iniva/large/desktop-map.jpg",
-          "/images/projects/iniva/large/desktop-2.jpg",
-          "/images/projects/iniva/large/desktop-3.jpg",
-          "/images/projects/iniva/large/desktop-4.jpg",
-          "/images/projects/iniva/large/desktop-5.jpg",
-          "/images/projects/iniva/large/desktop-6.jpg",
-          "/images/projects/iniva/large/desktop-8.jpg"
-        ],
-        "square": [
-          "/images/projects/iniva/square/phone-4.jpg",
-          "/images/projects/iniva/square/phone-5.jpg",
-          "/images/projects/iniva/square/phone-1.jpg",
-          "/images/projects/iniva/square/phone-6.jpg"
-        ]
       }
     },
     "chefdechantier": {
@@ -115,13 +73,6 @@
           "title": "Mobile Adaptation: A Necessary Step",
           "description": "The mobile version is optimized, with carousels adjusted for small screens, responsive images, and smooth navigation through the menu. Each interaction is an invitation to effortlessly discover the projects offered."
         }
-      },
-      "gallery": {
-        "large": [
-          "/images/projects/cdc/large/desktop-1.jpg",
-          "/images/projects/cdc/large/desktop-2.jpg",
-          "/images/projects/cdc/large/desktop-3.jpg"
-        ]
       }
     },
     "maxim": {
@@ -133,30 +84,7 @@
       "technos": "Gsap, Tailwind, Javascript",
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
       "cover": "/images/projects/maxim/logo.png",
-      "services": ["Design integrations", "Custom back-office creation"],
-      "gallery": {
-        "large": [
-          "/images/projects/iniva/large/iniva-main.png",
-          "/images/projects/iniva/large/desktop-1.jpg",
-          "/images/projects/iniva/large/desktop-map.jpg",
-          "/images/projects/iniva/large/desktop-2.jpg",
-          "/images/projects/iniva/large/desktop-3.jpg",
-          "/images/projects/iniva/large/desktop-4.jpg",
-          "/images/projects/iniva/large/desktop-5.jpg",
-          "/images/projects/iniva/large/desktop-6.jpg",
-          "/images/projects/iniva/large/desktop-8.jpg"
-        ],
-        "square": [
-          "/images/projects/iniva/square/phone-4.jpg",
-          "/images/projects/iniva/square/phone-5.jpg",
-          "/images/projects/iniva/square/phone-1.jpg",
-          "/images/projects/iniva/square/phone-6.jpg"
-        ]
-      }
+      "services": ["Design integrations", "Custom back-office creation"]
     }
-  },
-  "common": {
-    "visitWebsite": "Visit website",
-    "backToProjects": "Go back"
   }
 }

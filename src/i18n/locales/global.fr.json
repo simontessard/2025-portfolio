@@ -10,6 +10,16 @@
     "homeText1" : "- End",
     "homeText2" : "Développeur"
   },
+  "work" : {
+    "title": {
+      "main": "Mon travail",
+      "second": "(4 projets)"
+    },
+    "common" : {
+      "visitWebsite": "Visiter le site",
+      "backToProjects": "Retour"
+    }
+  },
   "routes": {
     "home": "Accueil",
     "about": "À Propos",

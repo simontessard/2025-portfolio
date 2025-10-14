@@ -1,12 +1,8 @@
 import Curve from "@/components/utils/Curve";
 import Footer from "@/components/global/Footer/Footer";
 import MainImage from "@/components/projects-slug/MainImage";
-import GalleryMobile from "@/components/projects-slug/GalleryMobile";
 import Heading from "@/components/projects-slug/Heading";
-import FourImages from "@/components/projects-slug/FourImages";
 import Head from 'next/head'
-import GalleryDesktop from "@/components/projects-slug/GalleryDesktop";
-import NavigationButton from "@/components/global/NavigationButton";
 import {useEffect} from "react";
 import useAppStore from "@/store/store";
 import { useTranslations } from 'next-intl';
@@ -17,7 +13,11 @@ export default function Project() {
     const project = projectsData.tt;
     const projectData = t.raw('projects.tt');
 
-    const mainImg = [project.gallery.large[0], project.gallery.large[1], project.gallery.large[3]];
+    const mainImg = [
+        "/images/projects/iniva/large/iniva-main.png",
+        "/images/projects/iniva/large/desktop-1.jpg",
+        "/images/projects/iniva/large/desktop-2.jpg"
+    ];
 
     const setColor = useAppStore((state) => state.setColor);
 

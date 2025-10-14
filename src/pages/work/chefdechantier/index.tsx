@@ -14,12 +14,16 @@ export default function Project() {
     const t = useTranslations();
     const projectData = t.raw('projects.chefdechantier');
 
-    const mainImg = [projectData.gallery.large[0], projectData.gallery.large[1], projectData.gallery.large[2]];
+    const mainImg = [
+        "/images/projects/cdc/large/desktop-1.jpg",
+        "/images/projects/cdc/large/desktop-2.jpg",
+        "/images/projects/cdc/large/desktop-3.jpg"
+    ];
 
     const galleryDesktop = [
-        projectData.gallery.large[1],
-        projectData.gallery.large[3],
-        projectData.gallery.large[2]
+        "/images/projects/cdc/large/desktop-2.jpg",
+        "/images/projects/cdc/large/desktop-1.jpg",
+        "/images/projects/cdc/large/desktop-3.jpg"
     ];
 
     const setColor = useAppStore((state) => state.setColor);

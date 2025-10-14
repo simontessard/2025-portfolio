@@ -10,8 +10,8 @@ export default function Projects() {
 
     const content = {
         title: {
-            main: t('title.main'),
-            second: t('title.second')
+            main: t('work.title.main'),
+            second: t('work.title.second')
         }
     };
 

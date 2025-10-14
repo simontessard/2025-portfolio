@@ -16,10 +16,31 @@ export default function Project() {
     const project = projectsData.iniva;
     const projectData = t.raw('projects.iniva');
 
-    const mainImg = [project.gallery.large[0], project.gallery.large[1], project.gallery.large[3]];
-    const desktopImg = [project.gallery.large[4], project.gallery.large[3], project.gallery.large[5]];
-    const galleryFour = [project.gallery.large[6], project.gallery.large[3], project.gallery.large[5], project.gallery.large[8]];
-    const phoneImg = [project.gallery.square[2], project.gallery.square[0], project.gallery.square[1], project.gallery.square[3]];
+    const mainImg = [
+        "/images/projects/iniva/large/iniva-main.png",
+        "/images/projects/iniva/large/desktop-1.jpg",
+        "/images/projects/iniva/large/desktop-2.jpg"
+    ];
+
+    const desktopImg = [
+        "/images/projects/iniva/large/desktop-3.jpg",
+        "/images/projects/iniva/large/desktop-2.jpg",
+        "/images/projects/iniva/large/desktop-4.jpg"
+    ];
+
+    const galleryFour = [
+        "/images/projects/iniva/large/desktop-5.jpg",
+        "/images/projects/iniva/large/desktop-2.jpg",
+        "/images/projects/iniva/large/desktop-4.jpg",
+        "/images/projects/iniva/large/desktop-8.jpg"
+    ];
+
+    const phoneImg = [
+        "/images/projects/iniva/square/phone-1.jpg",
+        "/images/projects/iniva/square/phone-4.jpg",
+        "/images/projects/iniva/square/phone-5.jpg",
+        "/images/projects/iniva/square/phone-6.jpg"
+    ];
 
     const setColor = useAppStore((state) => state.setColor);
 
