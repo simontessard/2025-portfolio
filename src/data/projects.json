@@ -6,7 +6,7 @@
       "date": "2025",
       "url": "https://inivatourism.com/",
       "context": "Freelance",
-      "technos": ["Gsap", "Tailwind", "Javascript"],
+      "technos": ["Gsap", "Tailwind", "Javascript", "Figma"],
       "description": "Ce projet a été réalisé pour l'agence web Cobalt Studio, basée à Rennes. Il s'agit d'un site vitrine destiné à Iniva Tourism, une suite d'hôtels située au Gabon. Le projet mets en premier plan les différents hôtels ainsi que des activités culturelles variées proches de ceux-ci.",
       "cover": "/images/projects/iniva/large/mockup-2.png",
       "services": ["Intégrations maquettes", "Création back-office personnalisé"],
@@ -22,6 +22,27 @@
         "mobile": {
           "title": "L'Adaptation Mobile : Passage Obligé",
           "description": "La version mobile est optimisée, notamment avec des carousels ajustés pour petits écrans, des images responsives et une navigation fluide via le menu par exemple. Chaque interaction est une invitation à découvrir, sans effort, les hôtels et activités proposés par Iniva."
+        }
+      }
+    },
+    "maxim": {
+      "path": "maxim",
+      "title": "Portfolio : Maxime Le bec",
+      "date": "2025",
+      "url": "https://www.maximelebec.fr/",
+      "context": "Freelance",
+      "technos": ["Gsap", "Tailwind", "Javascript", "Figma"],
+      "description": "Réalisation du portfolio de Maxime Le Bec, graphiste et directeur artistique freelance. Le site met en avant son univers visuel à travers des animations immersives et des transitions fluides.",
+      "cover": "/images/projects/maxim/logo.png",
+      "services": ["Intégrations maquettes", "Création back-office personnalisé"],
+      "sections": {
+        "experience": {
+          "title": "Une expérience immersive et dynamique",
+          "description": "Le site s’ouvre sur un hero header 3D en Three.js accompagné d’une musique d’ambiance et d’un loader animé. L’ensemble crée une introduction sensorielle qui plonge immédiatement le visiteur dans l’univers graphique de Maxime."
+        },
+        "interaction": {
+          "title": "Fluidité, animation et cohérence visuelle",
+          "description": "Transitions de pages, effets de scroll, animations GSAP et micro-interactions rythment la navigation. Chaque détail a été pensé pour valoriser le travail du graphiste tout en assurant une expérience fluide et agréable sur tous les supports."
         }
       }
     }
