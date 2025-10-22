@@ -1,8 +1,8 @@
 "use client";
 import {Autoplay} from "swiper/modules";
 import {Swiper, SwiperSlide} from "swiper/react";
-import 'swiper/css';
 import Image from "next/image";
+import 'swiper/css';
 
 export default function InfiniteCarousel() {
     const images = [

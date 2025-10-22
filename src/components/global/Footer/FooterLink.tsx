@@ -1,6 +1,5 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import {useTranslations} from "next-intl";
 
 interface FooterLinkProps {
     href: string;
@@ -10,13 +9,12 @@ interface FooterLinkProps {
 
 export default function FooterLink({ href, text, color = "#0156cf" }: FooterLinkProps) {
     const pathname = usePathname();
-    const t = useTranslations('menu');
 
     return (
         <Link scroll={false} href={href} style={{ color }}
             className={`relative group size-fit overflow-hidden tracking-tight font-primary uppercase text-3xl md:text-4xl xl:pt-1 xl:text-5xl 2xl:text-6xl`}>
 
-            {t(text)}
+            {text}
 
             {pathname === href && (
                 <span

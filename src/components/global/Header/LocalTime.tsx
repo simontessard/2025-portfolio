@@ -2,13 +2,10 @@ import { useState, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import useAppStore from "@/store/store";
-import LanguageSwitch from "@/components/global/LanguageSwitch";
-import {useTranslations} from "next-intl";
 
 export default function LocalTime() {
     const [time, setTime] = useState("");
     const color = useAppStore((state) => state.color);
-    const t = useTranslations('others');
 
     useGSAP(() => {
         gsap.to('.local-time', {
@@ -39,23 +36,19 @@ export default function LocalTime() {
         <div className="local-time max-md:hidden size-fit fixed top-4 md:top-6 mx-auto inset-x-0 flex items-center gap-5">
 
             <div className="flex items-center gap-2">
-                {/* Location */}
                 <p style={{color}}
                    className="uppercase font-primary text-sm md:text-lg">
-                    {t('location')}
+                    Rennes, France
                 </p>
 
-                {/* Ball */}
                 <span style={{ backgroundColor: color }} className="block size-1.5 rounded-full"/>
 
-                {/* Time */}
                 <p style={{color}}
                    className="uppercase font-primary text-sm md:text-lg">
                     {time}
                 </p>
             </div>
 
-            <LanguageSwitch/>
         </div>
 
     )

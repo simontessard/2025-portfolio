@@ -6,7 +6,6 @@ import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
 import LocalTime from "@/components/global/Header/LocalTime";
 import BackHome from "@/components/global/Header/BackHome";
-import LanguageSwitch from "@/components/global/LanguageSwitch";
 
 export default function Header() {
     gsap.registerPlugin(ScrollTrigger);

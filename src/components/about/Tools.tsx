@@ -1,8 +1,4 @@
-import {useTranslations} from "next-intl";
-
 export default function Tools() {
-    const t = useTranslations('about.tools');
-
     const tools = [
         {
             title: "Wordpress",
@@ -39,9 +35,8 @@ export default function Tools() {
     ];
     return (
         <div className="flex max-lg:flex-col lg:items-start justify-between w-full mb-16 md:mb-20 lg:mb-28 xl:mb-36 lg:pr-8 xl:pr-20 2xl:pr-52">
-
             <h2 className="md:sticky md:top-6 uppercase font-primary text-4xl lg:text-5xl xl:text-6xl text-primary font-medium max-lg:mb-8">
-                {t('title')}
+                Outils
             </h2>
 
             <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4 w-full lg:w-1/2">
@@ -57,7 +52,6 @@ export default function Tools() {
                     </li>
                 ))}
             </ul>
-
         </div>
     );
 }

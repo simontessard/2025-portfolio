@@ -4,8 +4,8 @@ export default function Nav() {
     return (
         <nav className="max-lg:hidden xl:translate-y-1">
             <ul className="flex gap-5 md:gap-8 justify-center">
-                <NavLink href="/work" text="work"/>
-                <NavLink href="/about" text="about"/>
+                <NavLink href="/work" text="Mon travail"/>
+                <NavLink href="/about" text="à propos"/>
             </ul>
         </nav>
     )

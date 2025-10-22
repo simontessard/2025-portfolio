@@ -8,31 +8,6 @@ import {useLocaleStore} from "@/store/useLocaleStore";
 import {NextIntlClientProvider} from "next-intl";
 import { poppins, fraunces, montreal, editorial } from "@/styles/fonts";
 
-import frProjectsMessages from '@/i18n/locales/projects.fr.json';
-import enProjectsMessages from '@/i18n/locales/projects.en.json';
-import frAboutMessages from '@/i18n/locales/about.fr.json';
-import enAboutMessages from '@/i18n/locales/about.en.json';
-
-import frGlobalMessages from '@/i18n/locales/global.fr.json';
-import enGlobalMessages from '@/i18n/locales/global.en.json';
-
-type AbstractMessages = {
-    [key: string]: string | AbstractMessages;
-};
-
-const messages = {
-    fr: {
-        ...frProjectsMessages,
-        ...frGlobalMessages,
-        ...frAboutMessages
-    } as unknown as AbstractMessages,
-    en: {
-        ...enProjectsMessages,
-        ...enGlobalMessages,
-        ...enAboutMessages
-    } as unknown as AbstractMessages,
-};
-
 export default function App({ Component, pageProps, router }: AppProps) {
   const locale = useLocaleStore((state) => state.locale);
 
@@ -41,7 +16,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
   };
 
   return (
-      <NextIntlClientProvider locale={locale} messages={messages[locale as keyof typeof messages]}>
+      <NextIntlClientProvider locale={locale}>
           <div className={`${poppins.variable} ${fraunces.variable} ${montreal.variable} ${editorial.variable}`}>
               <CustomCursor/>
               <Scroll>

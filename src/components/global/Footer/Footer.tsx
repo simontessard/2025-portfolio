@@ -19,16 +19,16 @@ export default function Footer({ color = "#0156cf" }: FooterProps) {
                 <div className="flex items-start justify-between w-full">
                     <div className="flex flex-col">
                         <div className="flex max-md:flex-col flex-wrap md:items-center gap-y-3 md:gap-y-4 xl:gap-y-8 gap-x-6 md:gap-x-7 w-full mb-3">
-                            <FooterLink href="/" text="home" color={color}/>
+                            <FooterLink href="/" text="Accueil" color={color}/>
                             <span
                                 style={{ backgroundColor: color }}
                                 className="hidden md:block size-3 md:size-3.5 xl:size-4 rounded-full"
                             />
-                            <FooterLink href="/work" text="work" color={color}/>
+                            <FooterLink href="/work" text="Mon travail" color={color}/>
                         </div>
 
                         <div className="flex max-md:flex-col flex-wrap md:items-center gap-y-3 md:gap-y-4 xl:gap-y-8 gap-x-6 md:gap-x-7 w-full">
-                            <FooterLink href="/about" text="about" color={color}/>
+                            <FooterLink href="/about" text="à propos" color={color}/>
                         </div>
                     </div>
 
@@ -40,8 +40,7 @@ export default function Footer({ color = "#0156cf" }: FooterProps) {
                             style={{ color }}
                             className="shrink-0 size-12 md:size-16 xl:size-20 2xl:size-24"
                             xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 82 82"
-                        >
+                            viewBox="0 0 82 82">
                             <path
                                 fillRule="evenodd"
                                 clipRule="evenodd"

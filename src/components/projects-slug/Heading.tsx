@@ -1,5 +1,4 @@
 import Link from "next/link";
-import {useTranslations} from "next-intl";
 import NavigationButton from "@/components/global/NavigationButton";
 
 interface Project {
@@ -18,7 +17,6 @@ interface HeadingProps {
 }
 
 export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
-    const t = useTranslations('work.common');
     const textStyle = { color };
 
     return (
@@ -26,7 +24,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
             <div className="flex flex-col w-full">
                 <NavigationButton
                     href="/work"
-                    text={t('backToProjects')}
+                    text="Retour"
                     color={color}
                     className="mb-4 md:mb-6 xl:mb-8"
                 />
@@ -88,7 +86,9 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
 
                 <Link href={project.url} target="_blank"
                       className="group size-fit flex items-center gap-2 font-primary uppercase text-lg md:text-xl font-medium">
-                    <span style={textStyle}>{t('visitWebsite')}</span>
+                    <span style={textStyle}>
+                        Voir le projet
+                    </span>
                     <svg style={textStyle}
                          className="shrink-0 rotate-45 size-6 md:size-[1.65rem] md:group-hover:-translate-y-0.5 md:group-hover:translate-x-0.5 duration-300"
                          xmlns="http://www.w3.org/2000/svg"

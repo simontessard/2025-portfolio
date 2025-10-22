@@ -1,6 +1,5 @@
 import { openMenuFunction, closeMenuFunction } from './Menu/menu';
 import useAppStore from '@/store/store';
-import {useTranslations} from "next-intl";
 
 export default function MenuOpenButton() {
     const color = useAppStore((state) => state.color);
@@ -23,11 +22,9 @@ export default function MenuOpenButton() {
 }
 
 export function MenuCloseButton() {
-    const t = useTranslations('others');
-
     return (
         <button onClick={closeMenuFunction} className="cursor-none relative group overflow-hidden size-fit uppercase md:text-lg md:leading-4 tracking-tight font-primary text-white">
-            {t('close')}
+            Fermer
              <span className="absolute top-0 bottom-0 left-0 my-auto bg-white block h-0.5 w-full"/>
         </button>
     )

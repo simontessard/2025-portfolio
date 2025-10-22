@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
 
 type ProjectProps = {
     title: string;
@@ -10,8 +9,6 @@ type ProjectProps = {
 }
 
 export default function Projet({ title, cover, path, technos }: ProjectProps) {
-    const t = useTranslations('common');
-
     return (
         <Link
             scroll={false}

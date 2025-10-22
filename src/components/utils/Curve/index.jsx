@@ -4,16 +4,13 @@ import { motion } from 'framer-motion'
 import { useRouter } from 'next/router';
 import { text, curve, translate } from './anim';
 import Entrance from "../Entrance";
-import {useTranslations} from "next-intl";
 
 const routePaths = {
     home: "/",
     about: "/about",
     work: "/work",
     // Projets
-    "project-iniva": "/work/iniva",
-    "project-chef": "/work/chefdechantier",
-    "project-tt": "/work/training-therapie"
+    "project-iniva": "/work/iniva"
 }
 
 const pathToKey = Object.fromEntries(
@@ -33,26 +30,15 @@ export default function Curve({children}) {
     const router = useRouter();
     const { asPath } = router;
 
-    const t = useTranslations('routes');
-
-    const getRouteTitle = (path) => {
-        const key = pathToKey[path];
-        if (!key) return '';
-
-        // Les noms propres ne sont pas traduits
-        if (key.startsWith('project-')) {
-            return path.split('/').pop() || '';
-        }
-
-        return t(key);
-    }
-
     const [dimensions, setDimensions] = useState({
         width: null,
         height: null
     })
 
     const isValidRoute = Object.values(routePaths).includes(asPath);
+
+    const currentRouteKey = pathToKey[asPath] || 'home';
+    const routeName = currentRouteKey.replace('project-', '').replace('-', ' ');
 
     useEffect( () => {
         function resize(){
@@ -73,7 +59,7 @@ export default function Curve({children}) {
             {isValidRoute && <Entrance/>}
             <div style={{opacity: dimensions.width == null ? 1 : 0}} className='background'/>
                 <motion.p className='route p-3 text-center text-white font-primary text-3xl md:text-4xl uppercase' {...anim(text)}>
-                    {getRouteTitle(asPath)}
+                    {routeName}
                 </motion.p>
                 {dimensions.width != null && <SVG {...dimensions}/>}
             {children}
