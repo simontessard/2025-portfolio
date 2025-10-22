@@ -1,13 +1,11 @@
 export default function Expertises() {
     const expertises = [
-        "Site vitrine",
-        "Web design",
-        "Recueil besoins",
-        "Conseil technique",
-        "Référencement",
-        "Audit",
-        "Maintenance",
-        "et plus"
+        "Interfaces modernes et performantes",
+        "Intégration UI depuis Figma",
+        "Travail en équipe produit et design",
+        "Optimisation SEO et accessibilité",
+        "Qualité, tests et bonnes pratiques",
+        "Veille et amélioration continue"
     ];
 
     return (
@@ -19,10 +17,10 @@ export default function Expertises() {
             <ul className="flex flex-wrap gap-x-2.5 md:gap-x-3.5 gap-y-2 md:gap-y-4 w-full lg:w-1/2">
                 {expertises.map((exp: string, index : number) => (
                     <li key={index} className="flex gap-2 md:gap-3.5 justify-center items-center">
-                        <p className="uppercase text-primary font-primary text-lg md:text-xl xl:text-3xl font-medium">
+                        <p className="uppercase text-primary font-primary font-medium">
                             {exp}
                         </p>
-                        <span className="block bg-primary size-1.5 md:size-2 rounded-full"/>
+                        <span className="block bg-primary size-1 md:size-1.5 rounded-full"/>
                     </li>
                 ))}
             </ul>

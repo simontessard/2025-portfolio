@@ -5,13 +5,13 @@ export default function Experience() {
             "year": "2024 - Aujourd'hui",
             "role": "Développeur Full-stack",
             "company": "Freelance",
-            "description": "Création de sites vitrines et applications web pour divers clients."
+            "description": "Création de sites vitrines et e-commerce pour divers clients."
         },
         {
             "year": "2023 - 2024",
             "role": "Développeur Front-end",
             "company": "Cobalt Studio",
-            "description": "+10 Projets variés en développement web, dans divers domaines."
+            "description": "+15 Projets variés en création de sites web, dans divers domaines."
         }
     ]
 
@@ -33,7 +33,7 @@ export default function Experience() {
                                 {exp.year}
                             </p>
                         </div>
-                        <p className="text-primary text-sm md:text-xl uppercase font-secondary">
+                        <p className="text-primary text-sm md:text-lg uppercase font-secondary">
                             {exp.company}
                         </p>
                         {exp.description &&

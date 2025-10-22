@@ -42,6 +42,8 @@ export default function Menu() {
                         className="js-menu-contact -translate-y-1 opacity-0 flex gap-5 xl:gap-6 text-white font-primary font-medium uppercase w-full">
                         <LinkHover text="LinkedIn" href="https://www.linkedin.com/in/simon-tessard-138733198/"/>
                         <LinkHover text="Email" href="mailto:pro@simontessard.fr"/>
+                        <LinkHover text="Tel" href="tel:0783263684"/>
+                        <LinkHover text="Github" href="https://github.com/simontessard"/>
                     </div>
 
                 </div>

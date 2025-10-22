@@ -6,7 +6,6 @@ import Intro from "@/components/about/Intro";
 import InfiniteCarousel from "@/components/about/InfiniteCarousel";
 import Head from "next/head";
 import Tools from "@/components/about/Tools";
-import Expertises from "@/components/about/Expertises";
 
 export default function About() {
     return (
@@ -26,7 +25,6 @@ export default function About() {
                 <InfiniteCarousel/>
                 <div className="px-4 md:px-6">
                     <Intro/>
-                    <Expertises/>
                     <Experience/>
                     <Tools/>
                 </div>

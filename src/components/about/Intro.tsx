@@ -3,7 +3,10 @@ import Paragraph from "@/components/about/Paragraph";
 export default function Intro() {
     const paragraphs = [
         "Je suis Simon TESSARD, un développeur web de 25 ans vivant à Rennes.",
-        "Mes compétences englobent donc le développement Web (Front-end et Back-end) et le Web Design, ainsi je peux créer votre site web de bout en bout."
+        "Passionné par la création d’interfaces modernes et performantes, je conçois et intègre des applications web en collaborant étroitement " +
+        "avec les équipes design et produit.",
+        "J’accorde une importance particulière à la qualité du code, à l’expérience utilisateur et à l’amélioration continue, " +
+        "afin de livrer des produits fiables, évolutifs et agréables à utiliser."
     ];
 
     return (
