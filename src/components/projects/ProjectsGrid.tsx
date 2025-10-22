@@ -9,7 +9,7 @@ type Project = {
     title: string;
     cover: string;
     path: string;
-    technos: string;
+    technos: string[];
     date: string;
 }
 

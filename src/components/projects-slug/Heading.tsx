@@ -5,7 +5,7 @@ interface Project {
     title: string;
     date: string;
     description: string;
-    technos: string;
+    technos: string[];
     services: string[];
     context: string;
     url: string;
@@ -53,7 +53,12 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
                                     Technologies
                                 </p>
                                 <p style={textStyle} className="font-primary uppercase max-md:text-sm mb-1 md:mb-1.5">
-                                    {project.technos}
+                                    {project.technos.map((techno, index) => (
+                                        <span key={index}>
+                                            {techno}
+                                            {index < project.technos.length - 1 && " - "}
+                                        </span>
+                                    ))}
                                 </p>
                             </div>
 

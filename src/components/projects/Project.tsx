@@ -5,7 +5,7 @@ type ProjectProps = {
     title: string;
     cover: string;
     path: string;
-    technos: string;
+    technos: string[];
 }
 
 export default function Projet({ title, cover, path, technos }: ProjectProps) {
@@ -27,7 +27,7 @@ export default function Projet({ title, cover, path, technos }: ProjectProps) {
             </div>
             <div className="flex flex-col">
                 <div className="flex items-center justify-between mb-0.5">
-                    <h2 className="text-primary tracking-tight font-primary text-xl 2xl:text-2xl uppercase">
+                    <h2 className="text-primary italic font-secondary text-xl 2xl:text-2xl uppercase">
                         {title}
                     </h2>
                     <svg
@@ -43,8 +43,13 @@ export default function Projet({ title, cover, path, technos }: ProjectProps) {
                         />
                     </svg>
                 </div>
-                <h3 className="font-secondary uppercase italic text-primary">
-                    {technos}
+                <h3 className="font-primary tracking-tight uppercase text-primary">
+                    {technos.map((techno, index) => (
+                        <span key={index}>
+                            {techno}
+                            {index < technos.length - 1 && " - "}
+                        </span>
+                    ))}
                 </h3>
             </div>
         </Link>

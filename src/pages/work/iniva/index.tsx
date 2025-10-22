@@ -8,13 +8,10 @@ import Head from 'next/head'
 import GalleryDesktop from "@/components/projects-slug/GalleryDesktop";
 import {useEffect} from "react";
 import useAppStore from "@/store/store";
-import { useTranslations } from 'next-intl';
+import projectsData from '@/data/projects.json';
 
 export default function Project() {
-    const t = useTranslations();
-    const projectsData = t.raw('projects');
-    const project = projectsData.iniva;
-    const projectData = t.raw('projects.iniva');
+    const project = projectsData.projects.iniva;
 
     const mainImg = [
         "/images/projects/iniva/large/iniva-main.png",
@@ -63,22 +60,22 @@ export default function Project() {
 
                 <GalleryDesktop
                     gallery={desktopImg}
-                    title={projectData.sections.logical.title}
+                    title={project.sections.logical.title}
                     color="#742e25"
-                    desc={projectData.sections.logical.description}
+                    desc={project.sections.logical.description}
                 />
 
                 <FourImages
                     gallery={galleryFour}
-                    title={projectData.sections.discover.title}
-                    desc={projectData.sections.discover.description}
+                    title={project.sections.discover.title}
+                    desc={project.sections.discover.description}
                 />
 
                 <GalleryMobile
                     gallery={phoneImg}
-                    title={projectData.sections.mobile.title}
+                    title={project.sections.mobile.title}
                     color="#742e25"
-                    desc={projectData.sections.mobile.description}
+                    desc={project.sections.mobile.description}
                 />
 
             </div>
