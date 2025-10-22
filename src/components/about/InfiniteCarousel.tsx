@@ -9,7 +9,7 @@ export default function InfiniteCarousel() {
         "/images/projects/tt/square/project-tt-pro.jpg",
         "/images/projects/iniva/square/desktop-1.jpg",
         "/images/projects/iniva/square/phone-5.jpg",
-        "/images/projects/tt/square/project-tt-pro.jpg",
+        "/images/projects/maxim/square/figma.jpg",
         "/images/projects/tt/square/project-tt.jpg",
         "/images/projects/iniva/square/phone-1.jpg",
         "/images/projects/maxim/logo.png"

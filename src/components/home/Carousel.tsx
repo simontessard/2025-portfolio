@@ -7,7 +7,6 @@ import Image from "next/image";
 
 export default function Carousel() {
     const slides = [
-        { src: "/images/projects/cdc/large/mockup.png", alt: "ChefDeChantier.fr section projets" },
         { src: "/images/projects/iniva/large/mockup-2.png", alt: "Iniva Tourism section découverte" },
         { src: "/images/projects/tt/square/project-tt-pro.jpg", alt: "TT Pro" },
         { src: "/images/projects/tt/square/project-tt.jpg", alt: "TT" },

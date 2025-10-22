@@ -31,7 +31,7 @@
       "date": "2025",
       "url": "https://www.maximelebec.fr/",
       "context": "Freelance",
-      "technos": ["Gsap", "Tailwind", "Javascript", "Figma"],
+      "technos": ["Gsap", "Tailwind", "Javascript", "ThreeJS", "Figma"],
       "description": "Réalisation du portfolio de Maxime Le Bec, graphiste et directeur artistique freelance. Le site met en avant son univers visuel à travers des animations immersives et des transitions fluides.",
       "cover": "/images/projects/maxim/logo.png",
       "services": ["Intégrations maquettes", "Création back-office personnalisé"],

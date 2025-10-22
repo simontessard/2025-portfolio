@@ -10,12 +10,11 @@ type NavigationButtonProps = {
 export default function NavigationButton({ href, text, color = "#0156cf", className = "" }: NavigationButtonProps) {
     return (
         <Link
-            scroll={false}
             href={href}
-            className={`group size-fit flex items-center gap-2 uppercase transition-colors duration-500 ${className}`}
+            className={`group size-fit flex items-center gap-2 text-xs md:text-sm uppercase transition-colors duration-500 ${className}`}
             style={{ color }}
         >
-            <svg className="shrink-0 -rotate-90 size-6 md:size-[1.15rem] md:group-hover:-translate-x-0.5 duration-300"
+            <svg className="shrink-0 -rotate-90 size-3 md:size-4 md:group-hover:-translate-x-0.5 duration-300"
                  xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 82 82">
                 <path fillRule="evenodd" clipRule="evenodd"

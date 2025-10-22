@@ -17,7 +17,7 @@ export default function Projects() {
                 <div className="px-4 md:px-6 pt-24 md:pt-32 pb-6">
                     <PageTitle
                         title="Mon travail"
-                        secondWords="(1 projet)"
+                        secondWords="(2 projets)"
                         className="mb-14 md:mb-20"
                     />
                     <ProjectsGrid/>

@@ -52,7 +52,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
                                 <p style={textStyle} className="font-secondary md:text-lg uppercase italic mb-1.5 sm:mb-2 md:mb-2.5 xl:mb-3">
                                     Technologies
                                 </p>
-                                <p style={textStyle} className="flex items-center font-primary uppercase max-md:text-sm mb-1 md:mb-1.5">
+                                <p style={textStyle} className="flex items-center flex-wrap font-primary uppercase max-md:text-sm mb-1 md:mb-1.5">
                                     {project.technos.map((techno, index) => (
                                         <span key={index} className="flex items-center size-fit">
                                             {techno}

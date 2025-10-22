@@ -43,7 +43,7 @@ export default function Projet({ title, cover, path, technos }: ProjectProps) {
                         />
                     </svg>
                 </div>
-                <h3 className="flex items-center font-primary tracking-tight max-md:text-sm uppercase text-primary">
+                <h3 className="flex items-center flex-wrap font-primary tracking-tight max-md:text-sm uppercase text-primary">
                     {technos.map((techno, index) => (
                         <span key={index} className="flex items-center size-fit">
                             {techno}
