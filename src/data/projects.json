@@ -1,5 +1,16 @@
 {
   "projects": {
+    "pixelbank": {
+      "path": "pixelbank",
+      "title": "PixelBank",
+      "date": "2025",
+      "url": "https://inivatourism.com/",
+      "context": "Perso",
+      "technos": ["VueJS", "NodeJS", "Express", "Tailwind", "Supabase"],
+      "description": "Ce projet perso est une web-app simulant un environnement bancaire, connexion/inscription, gestion de comptes, transactions, virements.",
+      "cover": "/images/projects/pixelbank/pixelbank-cover.jpg",
+      "services": ["Connexion front-end / back-end", "Intégration graphique"]
+    },
     "iniva": {
       "path": "iniva",
       "title": "Iniva Tourism",
@@ -31,7 +42,7 @@
       "date": "2025",
       "url": "https://www.maximelebec.fr/",
       "context": "Freelance",
-      "technos": ["Gsap", "Tailwind", "Javascript", "ThreeJS", "Figma"],
+      "technos": ["Gsap", "Tailwind", "Javascript", "ThreeJS", "BarbaJS", "Figma"],
       "description": "Réalisation du portfolio de Maxime Le Bec, graphiste et directeur artistique freelance. Le site met en avant son univers visuel à travers des animations immersives et des transitions fluides.",
       "cover": "/images/projects/maxim/logo.png",
       "services": ["Intégrations maquettes", "Création back-office personnalisé"],
