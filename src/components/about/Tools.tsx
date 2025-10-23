@@ -1,8 +1,9 @@
 export default function Tools() {
     const skills = [
-        { title: "Typescript", desc: "Langage" },
         { title: "ReactJS", desc: "Librairie" },
         { title: "NextJS", desc: "Framework" },
+        { title: "VueJS", desc: "Framework" },
+        { title: "Typescript", desc: "Langage" },
         { title: "Tailwind", desc: "CSS" },
         { title: "GSAP", desc: "Animation" },
         { title: "Framer-Motion", desc: "Animation" },
