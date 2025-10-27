@@ -21,6 +21,23 @@
         }
       }
     },
+    "cdc": {
+      "path": "cdc",
+      "title": "ChefDeChantier.fr",
+      "date": "2024",
+      "url": "https://devis.chefdechantier.fr/",
+      "context": "Alternance",
+      "technos": ["Vue", "Pinia", "Gsap", "Tailwind", "Javascript", "Wordpress", "Figma"],
+      "description": "Après avoir participé à la création du site vitrine de ChefDeChantier.fr, j'ai eu l'opportunité de travailler sur le tunnel d'acquisition de devis. Ce tunnel permet aux utilisateurs de répondre à une série de questions pour obtenir un devis personnalisé pour leurs projets de rénovation.",
+      "cover": "/images/projects/cdc/large/mockup.png",
+      "services": ["Développement front-end", "Intégrations maquettes", "Création back-office personnalisé"],
+      "sections": {
+        "conception": {
+          "title": "Un tunnel conçu pour la conversion",
+          "description": "Le tunnel d'acquisition a été conçu pour être intuitif et engageant, avec des animations GSAP et une gestion des états avec Pinia. Chaque étape du tunnel guide l'utilisateur à travers le processus de demande de devis, en mettant l'accent sur la simplicité et la clarté."
+        }
+      }
+    },
     "iniva": {
       "path": "iniva",
       "title": "Iniva Tourism",
