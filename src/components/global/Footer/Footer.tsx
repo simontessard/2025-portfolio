@@ -53,13 +53,17 @@ export default function Footer({ color = "#0156cf" }: FooterProps) {
             </div>
 
             <div style={{ color }} className="flex items-end justify-between font-primary w-full">
-                <div className="flex gap-5 uppercase">
+                <div className="flex max-md:flex-col gap-2 md:gap-5 uppercase">
                     <LinkHover text="LinkedIn" href="https://www.linkedin.com/in/simon-tessard-138733198/"/>
                     <LinkHover text="Email" href="mailto:pro@simontessard.fr"/>
                     <LinkHover text="Tel" href="tel:0783263684"/>
                     <LinkHover text="Github" href="https://github.com/simontessard"/>
                 </div>
                 <span className="text-xs font-primary">Simon TESSARD © 2025</span>
+                <a href="https://github.com/simontessard/2025-portfolio" target="_blank"
+                   className="text-xs md:text-sm uppercase font-primary">
+                    Créé avec NextJS.
+                </a>
             </div>
 
         </footer>

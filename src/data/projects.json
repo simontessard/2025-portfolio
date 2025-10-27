@@ -4,12 +4,22 @@
       "path": "pixelbank",
       "title": "PixelBank",
       "date": "2025",
-      "url": "https://inivatourism.com/",
-      "context": "Perso",
-      "technos": ["VueJS", "NodeJS", "Express", "Tailwind", "Supabase"],
-      "description": "Ce projet perso est une web-app simulant un environnement bancaire, connexion/inscription, gestion de comptes, transactions, virements.",
+      "url": "https://github.com/simontessard/pixel-bank",
+      "context": "Personnel",
+      "technos": ["VueJS", "NodeJS", "Express", "PostgreSQL", "Prisma", "GSAP", "Tailwind", "Supabase"],
+      "description": "Ce projet perso est une web-app simulant un environnement bancaire, connexion/inscription, gestion de comptes, transactions, virements. Mise en place de transitions et animations pour une expérience utilisateur fluide et agréable.",
       "cover": "/images/projects/pixelbank/pixelbank-cover.jpg",
-      "services": ["Connexion front-end / back-end", "Intégration graphique"]
+      "services": ["Connexion front-end / back-end", "Intégration graphique"],
+      "sections": {
+        "experience": {
+          "title": "Une expérience fluide et agréable",
+          "description": "L'application offre une interface utilisateur intuitive avec des animations et transitions soignées pour une navigation fluide."
+        },
+        "interaction": {
+          "title": "Mise en valeurs des données",
+          "description": "Les données financières sont présentées de manière claire et attrayante, facilitant la compréhension et l'interaction de l'utilisateur avec ses informations bancaires."
+        }
+      }
     },
     "iniva": {
       "path": "iniva",

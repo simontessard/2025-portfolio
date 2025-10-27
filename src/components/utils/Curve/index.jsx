@@ -9,9 +9,19 @@ const routePaths = {
     home: "/",
     about: "/about",
     work: "/work",
-    // Projets
-    "project-iniva": "/work/iniva"
+    "project-iniva": "/work/iniva",
+    "project-pixelbank": "/work/pixelbank",
+    "project-maxim": "/work/maxim"
 }
+
+const routeTranslations = {
+    home: "Accueil",
+    about: "À propos",
+    work: "Mon travail",
+    "project-iniva": "Iniva",
+    "project-pixelbank": "Pixelbank",
+    "project-maxim": "Maxim"
+};
 
 const pathToKey = Object.fromEntries(
     Object.entries(routePaths).map(([key, value]) => [value, key])
@@ -38,7 +48,7 @@ export default function Curve({children}) {
     const isValidRoute = Object.values(routePaths).includes(asPath);
 
     const currentRouteKey = pathToKey[asPath] || 'home';
-    const routeName = currentRouteKey.replace('project-', '').replace('-', ' ');
+    const routeName = routeTranslations[currentRouteKey] || currentRouteKey;
 
     useEffect( () => {
         function resize(){

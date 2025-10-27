@@ -40,7 +40,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
                         </p>
                     </div>
 
-                    <div className="flex max-xl:flex-col justify-between">
+                    <div className="flex max-xl:flex-col xl:gap-12 justify-between">
 
                         {/* Desc */}
                         <p style={textStyle} className="font-primary md:text-lg md:leading-8 md:max-w-4xl xl:max-w-2xl 2xl:max-w-3xl uppercase mb-8 md:mb-12">
@@ -52,7 +52,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
                                 <p style={textStyle} className="font-secondary md:text-lg uppercase italic mb-1.5 sm:mb-2 md:mb-2.5 xl:mb-3">
                                     Technologies
                                 </p>
-                                <p style={textStyle} className="flex items-center flex-wrap font-primary uppercase max-md:text-sm mb-1 md:mb-1.5">
+                                <p style={textStyle} className="flex items-center flex-wrap font-primary uppercase max-md:text-sm xl:max-w-sm mb-1 md:mb-1.5">
                                     {project.technos.map((techno, index) => (
                                         <span key={index} className="flex items-center size-fit">
                                             {techno}
@@ -64,7 +64,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
                             </div>
 
                             {/* Services */}
-                            <div className="max-md:w-1/2 flex flex-col">
+                            <div className="shrink-0 max-md:w-1/2 flex flex-col">
                                 <p style={textStyle} className="font-secondary md:text-lg uppercase italic mb-1.5 sm:mb-2 md:mb-2.5 xl:mb-3">
                                     Services
                                 </p>
@@ -77,7 +77,7 @@ export default function Heading({ project, color = "#0156cf" }: HeadingProps) {
                             </div>
 
                             {/* Client */}
-                            <div className="flex flex-col">
+                            <div className="shrink-0 flex flex-col">
                                 <p style={textStyle} className="font-secondary md:text-lg uppercase italic mb-1.5 sm:mb-2 md:mb-2.5 xl:mb-3">
                                     Contexte
                                 </p>

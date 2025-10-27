@@ -10,16 +10,11 @@ npm run dev
 yarn dev
 ```
 # WORKING ON
-- [ ] Meta tags all pages
-- [ ] Changes screenshoots mockups ?
+- [ ] Adding more projects
 
 # TODO
-- [ ] Faire un encadré "Disponible - Freelance" : https://yamateos.fr/projects/oxymore
 - [ ] https://www.awwwards.com/inspiration/other-projects-yamateos
 - [ ] Height of page transition on mobile ?
-- [ ] Credits of original portfolio
-- [ ] Change projects
-- [x] Internationalization
 - [x] Custom cursor
 - [x] Page 404
 - [x] Section "Outils" in page About
@@ -34,7 +29,6 @@ yarn dev
 - [x] Color change on project detail
 
 # Upcoming Features
-- [ ] Do a memo with tools in about page
 
 ## Ideas
     
