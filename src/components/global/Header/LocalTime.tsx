@@ -33,7 +33,7 @@ export default function LocalTime() {
     }, []);
 
     return (
-        <div className="local-time max-md:hidden size-fit fixed top-4 md:top-6 mx-auto inset-x-0 flex items-center gap-5">
+        <div className="local-time max-md:hidden size-fit fixed z-50 top-4 md:top-6 mx-auto inset-x-0 flex items-center gap-5">
 
             <div className="flex items-center gap-2">
                 <p style={{color}}
