@@ -13,7 +13,7 @@ export default function Footer({ color = "#0156cf" }: FooterProps) {
     return (
         <footer
             style={{ borderTopColor: color }}
-            className="flex flex-col border-t-2 pt-6 pb-4 mx-4 md:mx-6 mt-8 md:mt-16 xl:mt-20"
+            className="flex flex-col border-t-2 pt-6 pb-3.5 mx-4 md:mx-6 mt-8 md:mt-16 xl:mt-20"
         >
             <div className="flex flex-col gap-6 md:gap-4 mb-6 md:mb-10">
                 <div className="flex items-start justify-between w-full">

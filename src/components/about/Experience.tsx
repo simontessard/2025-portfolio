@@ -3,7 +3,7 @@ export default function Experience() {
     const experiences = [
         {
             "year": "2024 - Aujourd'hui",
-            "role": "Développeur Full-stack",
+            "role": "Développeur Front-end",
             "company": "Freelance",
             "description": "Création de sites vitrines et e-commerce pour divers clients."
         },

@@ -10,6 +10,7 @@ export default function Carousel() {
         { src: "/images/projects/iniva/large/mockup-2.png", alt: "Iniva Tourism" },
         { src: "/images/projects/maxim/logo.png", alt: "Logo Maxim" },
         { src: "/images/projects/pixelbank/pixelbank-cover.jpg", alt: "PixelBank couverture" },
+        { src: "/images/projects/cdc/large/mockup.png", alt: "CDC couverture" },
     ];
 
     return (
