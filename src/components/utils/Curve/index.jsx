@@ -12,7 +12,8 @@ const routePaths = {
     "project-iniva": "/work/iniva",
     "project-pixelbank": "/work/pixelbank",
     "project-maxim": "/work/maxim",
-    "project-cdc": "/work/cdc"
+    "project-cdc": "/work/cdc",
+    "project-freelance": "/work/freelance",
 }
 
 const routeTranslations = {
@@ -22,7 +23,8 @@ const routeTranslations = {
     "project-iniva": "Site : Iniva",
     "project-pixelbank": "Application : Pixelbank",
     "project-maxim": "Site : Maxim",
-    "project-cdc": "Site & Tunnel : ChefDeChantier"
+    "project-cdc": "Site & Tunnel : ChefDeChantier",
+    "project-freelance": "Portfolio Freelance",
 };
 
 const pathToKey = Object.fromEntries(

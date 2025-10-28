@@ -21,6 +21,17 @@
         }
       }
     },
+    "freelance": {
+      "path": "freelance",
+      "title": "Mon site freelance",
+      "date": "2025",
+      "url": "https://www.simontessard.fr/",
+      "context": "Freelance",
+      "technos": ["Nextjs", "React", "Gsap", "Framer-motion", "Tailwind", "SwiperCSS"],
+      "description": "Mon site vitrine personnel en tant que développeur web freelance. Il présente mes offres, mes services, mon portfolio de sites web réalisés, des témoignages clients. L'accent est mis sur une expérience utilisateur fluide et engageante grâce à des animations soignées.",
+      "cover": "/images/projects/freelance/square/hero.jpg",
+      "services": ["Développement front-end", "Expérience utilisateur", "Optimisation SEO"]
+    },
     "cdc": {
       "path": "cdc",
       "title": "ChefDeChantier.fr",
