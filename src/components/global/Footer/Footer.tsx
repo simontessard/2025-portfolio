@@ -13,7 +13,7 @@ export default function Footer({ color = "#0156cf" }: FooterProps) {
     return (
         <footer
             style={{ borderTopColor: color }}
-            className="flex flex-col border-t-2 pt-6 pb-3.5 mx-4 md:mx-6 mt-8 md:mt-16 xl:mt-20"
+            className="flex flex-col border-t-2 pt-6 pb-3 md:pb-3.5 mx-4 md:mx-6 mt-8 md:mt-16 xl:mt-20"
         >
             <div className="flex flex-col gap-6 md:gap-4 mb-6 md:mb-10">
                 <div className="flex items-start justify-between w-full">
@@ -52,16 +52,16 @@ export default function Footer({ color = "#0156cf" }: FooterProps) {
                 </div>
             </div>
 
-            <div style={{ color }} className="flex items-end justify-between font-primary w-full">
+            <div style={{ color }} className="flex max-md:flex-col max-md:gap-4 md:items-end justify-between font-primary w-full">
                 <div className="flex max-md:flex-col gap-2 md:gap-5 uppercase">
                     <LinkHover text="LinkedIn" href="https://www.linkedin.com/in/simon-tessard-138733198/"/>
                     <LinkHover text="Email" href="mailto:pro@simontessard.fr"/>
                     <LinkHover text="Tel" href="tel:0783263684"/>
                     <LinkHover text="Github" href="https://github.com/simontessard"/>
                 </div>
-                <span className="text-xs font-primary">Simon TESSARD © 2025</span>
+                <span className="size-fit max-md:mx-auto text-xs font-primary">Simon TESSARD © 2025</span>
                 <a href="https://github.com/simontessard/2025-portfolio" target="_blank"
-                   className="text-xs md:text-sm uppercase font-primary">
+                   className="max-md:hidden text-xs md:text-sm uppercase font-primary">
                     Créé avec NextJS.
                 </a>
             </div>
