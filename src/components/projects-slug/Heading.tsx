@@ -9,7 +9,7 @@ interface Project {
     services: string[];
     context: string;
     url: string;
-    code: string;
+    code?: string;
 }
 
 interface HeadingProps {
