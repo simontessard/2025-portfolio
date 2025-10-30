@@ -8,7 +8,7 @@ interface Project {
     technos: string[];
     services: string[];
     context: string;
-    url: string;
+    url?: string;
     code?: string;
 }
 
