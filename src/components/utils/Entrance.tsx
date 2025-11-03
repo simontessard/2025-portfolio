@@ -107,7 +107,7 @@ export default function Entrance() {
                     ))}
                 </div>
 
-                <div className="overflow-hidden flex flex-col pt-1.5 md:pt-2 xl:pt-2.5 font-secondary text-lg md:text-xl xl:text-2xl uppercase h-7 md:h-8 xl:h-[2.10rem] w-32 md:leading-8 p-1 max-md:mb-0.5">
+                <div className="overflow-hidden flex flex-col pt-1.5 md:pt-2 xl:pt-2.5 font-secondary text-lg md:text-xl xl:text-2xl uppercase h-7 md:h-8 xl:h-[2.10rem] md:leading-8 p-1 max-md:mb-0.5">
                     {WORDS.map((word, i) => (
                         <p key={i} className={`js-word-second-${i + 1}`}>{word.second}</p>
                     ))}
