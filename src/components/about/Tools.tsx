@@ -19,14 +19,14 @@ export default function Tools() {
                 Compétences
             </h2>
 
-            <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4 w-full lg:w-1/2">
+            <ul className="grid grid-cols-2 2xl:grid-cols-3 gap-4 w-full lg:w-1/2">
                 {skills.map((skill, index) => (
                     <li key={index}
                         className="flex flex-col gap-1 bg-primary/5 justify-center items-center aspect-square">
-                        <p className="uppercase text-primary font-primary md:text-lg lg:text-xl font-medium">
+                        <p className="uppercase text-primary font-primary text-sm md:text-lg xl:text-xl font-medium">
                             {skill.title}
                         </p>
-                        <p className="uppercase text-primary italic font-secondary text-sm lg:text-base font-medium">
+                        <p className="uppercase text-primary italic font-secondary text-xs md:text-sm xl:text-base font-medium">
                             {skill.desc}
                         </p>
                     </li>

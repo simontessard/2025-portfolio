@@ -23,7 +23,7 @@
     },
     "freelance": {
       "path": "freelance",
-      "title": "Mon site freelance",
+      "title": "site freelance",
       "date": "2025",
       "url": "https://www.simontessard.fr/",
       "code": "https://github.com/simontessard/simontessard-nextjs",
@@ -35,7 +35,7 @@
     },
     "cdc": {
       "path": "cdc",
-      "title": "ChefDeChantier.fr",
+      "title": "Site & tunnel de devis",
       "date": "2024",
       "url": "https://devis.chefdechantier.fr/",
       "context": "Alternance",
@@ -52,7 +52,7 @@
     },
     "iniva": {
       "path": "iniva",
-      "title": "Iniva Tourism",
+      "title": "L'expérience : Iniva Tourism",
       "date": "2025",
       "url": "https://inivatourism.com/",
       "context": "Freelance",

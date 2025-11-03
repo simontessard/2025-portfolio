@@ -1,4 +1,5 @@
 "use client";
+
 import {useLenis} from "lenis/react";
 import FooterLink from "@/components/global/Footer/FooterLink";
 import LinkHover from "@/components/global/LinkHover";
