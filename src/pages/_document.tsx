@@ -5,7 +5,9 @@ export default function Document() {
       <Html lang="en">
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
           <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-          <Head/>
+          <Head>
+              <meta name="robots" content="noindex, nofollow" />
+          </Head>
           <body className="antialiased">
             <Main/>
             <NextScript/>
