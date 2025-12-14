@@ -1,6 +1,6 @@
 export default function Tools() {
     const skills = [
-        { title: "ReactJS", desc: "Librairie" },
+        { title: "React", desc: "Librairie" },
         { title: "NextJS", desc: "Framework" },
         { title: "VueJS", desc: "Framework" },
         { title: "Typescript", desc: "Langage" },
