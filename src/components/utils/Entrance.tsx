@@ -4,8 +4,8 @@ import useAppStore from "@/store/store";
 
 const WORDS = [
     {first: "Simon", second: "TESSARD"},
-    {first: "Artisan", second: "web"},
-    {first: "Craft", second: "moderne"},
+    {first: "Full", second: "Stack"},
+    {first: "Build", second: "moderne"},
     {first: "Pixel", second: "Perfect"}
 ];
 
