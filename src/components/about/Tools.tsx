@@ -2,13 +2,13 @@ export default function Tools() {
     const skills = [
         { title: "React", desc: "Librairie" },
         { title: "NextJS", desc: "Framework" },
-        { title: "VueJS", desc: "Framework" },
+        { title: "Vue", desc: "Framework" },
+        { title: "NodeJS", desc: "Framework" },
+        { title: "PostgreSQL", desc: "Base de données" },
         { title: "Typescript", desc: "Langage" },
         { title: "Tailwind", desc: "CSS" },
         { title: "GSAP", desc: "Animation" },
-        { title: "Framer-Motion", desc: "Animation" },
         { title: "Figma", desc: "Design" },
-        { title: "Three.js", desc: "3D" },
     ];
     return (
         <div className="flex max-lg:flex-col lg:items-start justify-between w-full mb-16 md:mb-20 lg:mb-28 xl:mb-36 lg:pr-8 xl:pr-20 2xl:pr-52">

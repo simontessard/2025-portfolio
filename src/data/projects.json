@@ -6,7 +6,7 @@
       "date": "2025",
       "code": "https://github.com/simontessard/pixel-bank",
       "context": "Personnel",
-      "technos": ["VueJS", "NodeJS", "Express", "PostgreSQL", "Prisma", "GSAP", "Tailwind", "Supabase"],
+      "technos": ["Vue", "NodeJS", "Express", "PostgreSQL", "Prisma", "GSAP", "Tailwind", "Supabase"],
       "description": "Ce projet perso est une web-app simulant un environnement bancaire, connexion/inscription, gestion de comptes, transactions, virements. Mise en place de transitions et animations pour une expérience utilisateur fluide et agréable.",
       "cover": "/images/projects/pixelbank/pixelbank-cover.jpg",
       "services": ["Connexion front-end / back-end", "Intégration graphique"],
