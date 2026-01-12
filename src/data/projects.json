@@ -21,6 +21,27 @@
         }
       }
     },
+    "ycyw": {
+      "path": "ycyw",
+      "title": "Your Car Your Way : Chat",
+      "date": "2024",
+      "code": "https://github.com/simontessard/your-car-your-way",
+      "context": "Personnel",
+      "technos": ["Angular", "Java", "Spring Boot", "Websocket", "Material UI"],
+      "description": "Développement d'une fonctionnalité de chat en temps réel intégrée à une plateforme de location de voitures. L'application permet une communication instantanée entre les utilisateurs via les WebSockets, avec une interface moderne basée sur Angular Material.",
+      "cover": "/images/projects/ycyw/cover.png",
+      "services": ["Communication temps réel (WebSockets)", "Architecture Fullstack Java/Angular", "Design System Material UI"],
+      "sections": {
+        "experience": {
+          "title": "Réactivité et Fluidité",
+          "description": "Grâce à l'intégration de Spring WebSocket, les messages sont échangés instantanément sans rechargement de page, offrant une expérience de support client moderne et efficace."
+        },
+        "interaction": {
+          "title": "Interface Utilisateur Intuitive",
+          "description": "Utilisation des composants Angular Material pour créer un tunnel de discussion clair : gestion des pseudonymes, bulles de messages stylisées et feedback visuel lors de la connexion."
+        }
+      }
+    },
     "freelance": {
       "path": "freelance",
       "title": "site freelance",
