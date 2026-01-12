@@ -5,8 +5,7 @@ import useAppStore from "@/store/store";
 const WORDS = [
     {first: "Simon", second: "TESSARD"},
     {first: "Full", second: "Stack"},
-    {first: "Build", second: "moderne"},
-    {first: "Pixel", second: "Perfect"}
+    {first: "Build", second: "moderne"}
 ];
 
 export default function Entrance() {

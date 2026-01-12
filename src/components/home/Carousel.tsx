@@ -7,9 +7,9 @@ import Image from "next/image";
 
 export default function Carousel() {
     const slides = [
-        { src: "/images/projects/iniva/large/mockup-2.png", alt: "Iniva Tourism" },
         { src: "/images/projects/maxim/logo.png", alt: "Logo Maxim" },
         { src: "/images/projects/pixelbank/pixelbank-cover.jpg", alt: "PixelBank couverture" },
+        { src: "/images/projects/ycyw/cover.png", alt: "Your Car Your Way couverture" },
         { src: "/images/projects/cdc/large/mockup.png", alt: "CDC couverture" },
         { src: "/images/projects/freelance/square/hero.jpg", alt: "Freelance couverture" },
     ];
