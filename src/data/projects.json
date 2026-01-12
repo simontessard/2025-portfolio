@@ -29,7 +29,7 @@
       "context": "Personnel",
       "technos": ["Angular", "Java", "Spring Boot", "Websockets", "Material UI"],
       "description": "Développement d'une fonctionnalité de chat en temps réel intégrée à une plateforme de location de voitures. L'application permet une communication instantanée entre les utilisateurs via les WebSockets, avec une interface moderne basée sur Angular Material.",
-      "cover": "/images/projects/ycyw/cover.png",
+      "cover": "/images/projects/ycyw/cover.jpg",
       "services": ["Communication temps réel (WebSockets)", "Architecture Fullstack Java/Angular", "Design System Material UI"],
       "sections": {
         "experience": {

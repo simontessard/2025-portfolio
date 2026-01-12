@@ -13,8 +13,8 @@ export default function Project() {
     const project = projectsData.projects.ycyw;
 
     const mainImg = [
-        "/images/projects/ycyw/cover.png",
-        "/images/projects/ycyw/login.png",
+        "/images/projects/ycyw/cover.jpg",
+        "/images/projects/ycyw/login.jpg",
         "/images/projects/ycyw/chat.png",
     ];
 
